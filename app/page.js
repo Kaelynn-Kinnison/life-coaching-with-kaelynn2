@@ -1,294 +1,283 @@
 export default function Home() {
-  const testimonials = [
-    {
-      quote:
-        "Kaelynn has a natural ability to make people feel heard, understood, and supported without judgment. Conversations with her always leave me feeling more grounded, clear-minded, and motivated to move forward.",
-      name: "Sarah M.",
-    },
-    {
-      quote:
-        "Talking with Kaelynn helped me organize my thoughts and approach challenges with a clearer mindset. She balances compassion with accountability in a way that helped me follow through on goals I had been putting off.",
-      name: "Michael D.",
-    },
-    {
-      quote:
-        "As a young woman trying to figure out who I am and what I want for my future, Kaelynn has been incredibly supportive and encouraging. She helped me feel more confident in myself and reminded me that growth takes time.",
-      name: "Madison K.",
-    },
-  ];
-
-  const programs = [
-    {
-      title: "Starter Clarity",
-      price: "$1,200",
-      details: [
-        "6 coaching sessions",
-        "Goal clarity and direction",
-        "Personalized action plan",
-        "Email support",
-      ],
-      button: "Get Started",
-    },
-    {
-      title: "Transformation Coaching",
-      price: "$1,700",
-      featured: true,
-      details: [
-        "10 coaching sessions",
-        "Goal mapping",
-        "Habit building",
-        "Worksheets and reflection tools",
-        "Support between sessions",
-      ],
-      button: "Apply for Coaching",
-    },
-    {
-      title: "Premium Breakthrough",
-      price: "$3,000",
-      details: [
-        "12–14 coaching sessions",
-        "Deep life strategy",
-        "Weekly accountability",
-        "Priority scheduling",
-      ],
-      button: "Apply Now",
-    },
-  ];
-
   return (
-    <main className="min-h-screen bg-[#F7F2EC] text-[#2F2B28]">
-      <nav className="sticky top-0 z-50 bg-[#F7F2EC]/90 backdrop-blur border-b border-[#EADFD4]">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#home" className="font-serif text-xl tracking-wide">
+    <main className="min-h-screen bg-[#fdf8f3] text-[#3f2f2a]">
+      {/* Hero Section */}
+      <section className="px-6 py-24 text-center">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm uppercase tracking-[0.3em] text-[#9b6f5f] mb-4">
             Life Coaching with Kaelynn
-          </a>
-          <div className="hidden md:flex gap-8 text-sm tracking-wide">
-            <a href="#about" className="hover:text-[#C8A97E]">About</a>
-            <a href="#services" className="hover:text-[#C8A97E]">Services</a>
-            <a href="#programs" className="hover:text-[#C8A97E]">Programs</a>
-            <a href="#testimonials" className="hover:text-[#C8A97E]">Testimonials</a>
-            <a href="#book" className="hover:text-[#C8A97E]">Book</a>
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            Heal. Grow. Transform.
+          </h1>
+
+          <p className="text-xl md:text-2xl text-[#6b4b43] mb-8 leading-relaxed">
+            Supportive life coaching for individuals ready to gain clarity,
+            build confidence, create healthier patterns, and move forward with
+            purpose.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+            >
+              Book a Discovery Call
+            </a>
+
+            <a
+              href="/services"
+              className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da] transition"
+            >
+              Explore Services
+            </a>
           </div>
         </div>
-      </nav>
+      </section>
 
-      <section id="home" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F7F2EC] via-[#FBF7F2] to-white" />
-        <div className="relative max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+      {/* Mission Section */}
+      <section className="bg-white px-6 py-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            A Coaching Space for Personal Growth and Lasting Change
+          </h2>
+
+          <p className="text-lg text-[#6b4b43] leading-relaxed max-w-3xl mx-auto">
+            Life Coaching with Kaelynn is designed to help you reconnect with
+            yourself, strengthen your mindset, and create meaningful forward
+            movement. Through compassionate support, practical tools, and
+            intentional accountability, coaching helps you move from feeling
+            stuck or uncertain into a place of clarity, confidence, and personal
+            transformation.
+          </p>
+        </div>
+      </section>
+
+      {/* What Life Coaching Is */}
+      <section className="px-6 py-20">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img
-              src="/hibiscus-logo.png"
-              alt="Life Coaching with Kaelynn logo"
-              className="w-64 mb-8 rounded-3xl shadow-sm"
-            />
-            <p className="uppercase tracking-[0.35em] text-xs text-[#9C7E57] mb-5">
-              Clarity • Growth • Healing • Accountability
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              What Is Life Coaching?
+            </h2>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              Life coaching is a forward-focused partnership that helps you
+              identify where you are, where you want to go, and what steps will
+              help you get there. It creates space for reflection, clarity,
+              personal responsibility, and intentional action.
             </p>
-            <h1 className="text-5xl lg:text-7xl font-serif leading-tight mb-8">
-              Create meaningful change with clarity, healing, and support.
-            </h1>
-            <p className="text-xl leading-relaxed text-[#5A5550] mb-10 max-w-2xl">
-              Compassionate life coaching for personal growth, emotional healing,
-              confidence, and accountability — helping you move forward with purpose
-              and self-trust.
+
+            <p className="text-[#6b4b43] leading-relaxed">
+              Coaching can support you through personal growth, mindset shifts,
+              life transitions, emotional wellness, confidence building, and
+              goal achievement.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://calendly.com/kaelynnkinnison"
-                className="inline-flex justify-center rounded-full bg-[#C8A97E] px-8 py-4 text-white text-lg shadow-lg hover:opacity-90 transition"
-              >
-                Book Your Free Discovery Call
-              </a>
-              <a
-                href="#programs"
-                className="inline-flex justify-center rounded-full border border-[#C8A97E] px-8 py-4 text-lg hover:bg-white transition"
-              >
-                View Coaching Programs
-              </a>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-lg p-8">
+            <h3 className="text-2xl font-semibold mb-4">
+              Coaching may help you:
+            </h3>
+
+            <ul className="space-y-3 text-[#6b4b43]">
+              <li>• Gain clarity about your goals and direction</li>
+              <li>• Build confidence and self-trust</li>
+              <li>• Create healthier habits and patterns</li>
+              <li>• Move through change with support</li>
+              <li>• Stay accountable to meaningful action</li>
+              <li>• Reconnect with your purpose and values</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Who I Help */}
+      <section className="bg-[#f5e8df] px-6 py-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Who I Help
+          </h2>
+
+          <p className="text-lg text-[#6b4b43] leading-relaxed max-w-3xl mx-auto mb-10">
+            I support individuals who are ready to grow, heal, reset, and take
+            meaningful steps toward the life they want to create.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 text-left">
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Feeling Stuck
+              </h3>
+              <p className="text-[#6b4b43]">
+                For those who feel uncertain, overwhelmed, or unsure about their
+                next step.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Seeking Growth
+              </h3>
+              <p className="text-[#6b4b43]">
+                For those ready to build confidence, strengthen mindset, and
+                develop healthier habits.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Navigating Change
+              </h3>
+              <p className="text-[#6b4b43]">
+                For those moving through transitions, new seasons, or personal
+                reinvention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Coaching Services
+          </h2>
+
+          <p className="text-[#6b4b43] max-w-3xl mx-auto mb-12">
+            Each coaching service is designed to support healing, personal
+            growth, emotional wellness, accountability, and transformation.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Personal Growth Coaching
+              </h3>
+              <p className="text-[#6b4b43]">
+                Build self-awareness, confidence, direction, and intentional
+                habits that support the next version of you.
+              </p>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Mindset & Emotional Wellness
+              </h3>
+              <p className="text-[#6b4b43]">
+                Strengthen your mindset, manage negative thought patterns, and
+                create more emotional balance.
+              </p>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Accountability Coaching
+              </h3>
+              <p className="text-[#6b4b43]">
+                Stay committed to your goals with structure, support, reflection,
+                and practical action steps.
+              </p>
             </div>
           </div>
 
-          <div className="relative flex justify-center">
-            <div className="absolute w-[420px] h-[420px] bg-[#EEDFD8] rounded-full blur-3xl opacity-60" />
-            <img
-              src="/kaelynn-portrait.png"
-              alt="Kaelynn, life coach"
-              className="relative rounded-[2.5rem] shadow-2xl object-cover w-full max-w-[520px] border-8 border-white"
-            />
-          </div>
+          <a
+            href="/services"
+            className="inline-block mt-10 bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+          >
+            View All Services
+          </a>
         </div>
       </section>
 
-      <section id="about" className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <p className="uppercase tracking-[0.3em] text-xs text-[#9C7E57] mb-5">
-              Meet Your Coach
-            </p>
-            <h2 className="text-4xl lg:text-5xl font-serif leading-tight mb-8">
-              A supportive space for clarity, personal growth, and emotional wellness.
-            </h2>
-            <p className="text-lg leading-relaxed text-[#5A5550] mb-6">
-              Hi, I’m Kaelynn Kinnison, founder of Life Coaching with Kaelynn.
-              I help people gain clarity, build confidence, heal emotionally,
-              and move forward toward meaningful goals.
-            </p>
-            <p className="text-lg leading-relaxed text-[#5A5550]">
-              My coaching style blends compassion and accountability. Together,
-              we focus on where you are, where you want to go, and the aligned
-              steps that help you create lasting change.
-            </p>
-          </div>
-
-          <div className="grid gap-6">
-            {[
-              ["Clarity", "Understand what you truly want and identify the next aligned steps."],
-              ["Personal Growth", "Build confidence, self-trust, and healthier patterns over time."],
-              ["Emotional Healing", "Create space to process, reflect, and move forward with more peace."],
-              ["Accountability", "Stay focused, supported, and consistent while pursuing your goals."],
-            ].map(([title, text]) => (
-              <div key={title} className="bg-[#F7F2EC] rounded-3xl p-8 border border-[#EADFD4] shadow-sm">
-                <h3 className="text-2xl font-serif mb-3">{title}</h3>
-                <p className="text-[#5A5550] leading-relaxed">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="py-24 px-6 bg-[#F7F2EC]">
+      {/* Areas of Focus */}
+      <section className="px-6 py-20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#9C7E57] mb-5">
-            Coaching Services
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-serif mb-8">
-            Support for the season you are growing through.
+          <h2 className="text-3xl md:text-4xl font-bold mb-10">
+            Areas of Focus
           </h2>
-          <p className="text-lg text-[#5A5550] max-w-3xl mx-auto mb-14 leading-relaxed">
-            Coaching is designed to help you get unstuck, reconnect with yourself,
-            set intentional goals, and create practical movement toward the life
-            you want.
-          </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          <div className="flex flex-wrap justify-center gap-4">
             {[
-              ["Life Clarity Coaching", "For identifying what you want, what feels misaligned, and where to go next."],
-              ["Emotional Healing Support", "For navigating emotional blocks, self-doubt, and seasons of transition."],
-              ["Personal Growth Coaching", "For building confidence, self-awareness, and intentional habits."],
-              ["Accountability Coaching", "For staying consistent, focused, and supported while taking action."],
-            ].map(([title, text]) => (
-              <div key={title} className="bg-white rounded-3xl p-7 border border-[#EADFD4] shadow-sm">
-                <h3 className="text-xl font-serif mb-4">{title}</h3>
-                <p className="text-[#5A5550] leading-relaxed">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="programs" className="py-24 px-6 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#9C7E57] mb-5">
-            Coaching Programs
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-serif mb-8">
-            Choose your coaching path.
-          </h2>
-          <p className="text-lg text-[#5A5550] max-w-3xl mx-auto mb-16 leading-relaxed">
-            Each program is personalized to your goals and designed to support
-            clarity, healing, growth, and steady accountability.
-          </p>
-
-          <div className="grid lg:grid-cols-3 gap-8 items-stretch">
-            {programs.map((program) => (
-              <div
-                key={program.title}
-                className={`relative rounded-[2rem] p-9 shadow-xl border ${
-                  program.featured
-                    ? "bg-[#2F2B28] text-white border-[#C8A97E] lg:scale-105"
-                    : "bg-[#F7F2EC] border-[#EADFD4]"
-                }`}
+              "Healing",
+              "Personal Growth",
+              "Emotional Wellness",
+              "Self-Confidence",
+              "Self-Discovery",
+              "Resilience",
+              "Accountability",
+              "Life Purpose",
+              "Goal Achievement",
+              "Life Transitions",
+            ].map((item) => (
+              <span
+                key={item}
+                className="bg-white px-5 py-3 rounded-full shadow-sm text-[#6b4b43] font-medium"
               >
-                {program.featured && (
-                  <div className="absolute top-0 right-0 bg-[#D8A1A1] px-5 py-2 rounded-bl-2xl rounded-tr-[2rem] text-sm tracking-wide">
-                    MOST POPULAR
-                  </div>
-                )}
-                <h3 className="text-3xl font-serif mb-4">{program.title}</h3>
-                <p className="text-5xl font-serif mb-8">{program.price}</p>
-                <ul className={`space-y-4 mb-10 ${program.featured ? "text-[#E9DDD1]" : "text-[#5A5550]"}`}>
-                  {program.details.map((item) => (
-                    <li key={item}>• {item}</li>
-                  ))}
-                </ul>
-                <a
-                  href="https://calendly.com/kaelynnkinnison"
-                  className="inline-flex w-full justify-center rounded-full bg-[#C8A97E] px-6 py-4 text-white hover:opacity-90 transition"
-                >
-                  {program.button}
-                </a>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="testimonials" className="py-24 px-6 bg-[#F7F2EC]">
+      {/* Coaching Approach Preview */}
+      <section className="bg-[#f5e8df] px-6 py-20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#9C7E57] mb-5">
-            Testimonials
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-serif mb-14">
-            Support that feels grounded and genuine.
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            The Coaching Approach
           </h2>
 
-          <div className="grid lg:grid-cols-3 gap-8 text-left">
-            {testimonials.map((item) => (
-              <div key={item.name} className="bg-white rounded-3xl p-8 shadow-sm border border-[#EADFD4]">
-                <p className="text-lg leading-relaxed mb-6 text-[#5A5550]">“{item.quote}”</p>
-                <p className="font-medium">— {item.name}</p>
-              </div>
-            ))}
+          <p className="text-[#6b4b43] max-w-3xl mx-auto mb-12">
+            My coaching approach is built around a simple, supportive process
+            that helps you move from awareness to action.
+          </p>
+
+          <div className="grid md:grid-cols-5 gap-4">
+            {["Discover", "Clarify", "Create", "Act", "Transform"].map(
+              (step) => (
+                <div
+                  key={step}
+                  className="bg-white rounded-2xl p-5 shadow-md"
+                >
+                  <h3 className="font-semibold text-lg">{step}</h3>
+                </div>
+              )
+            )}
           </div>
+
+          <a
+            href="/coaching-approach"
+            className="inline-block mt-10 border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-white transition"
+          >
+            Learn About the Process
+          </a>
         </div>
       </section>
 
-      <section id="book" className="bg-[#2F2B28] text-white py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#C8A97E] mb-5">
-            Start Here
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-serif mb-6">
-            Schedule your free discovery call.
+      {/* Final CTA */}
+      <section className="px-6 py-24 text-center bg-[#7b4f43] text-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            Ready to Begin Your Transformation?
           </h2>
-          <p className="text-lg text-[#E9DDD1] mb-12 max-w-3xl mx-auto leading-relaxed">
-            We’ll talk about your goals, what you’re navigating, and whether coaching
-            feels like the right next step.
+
+          <p className="text-lg mb-8 text-[#f7e9df]">
+            You do not have to figure everything out alone. Coaching gives you a
+            space to feel supported, get clear, and take intentional steps
+            forward.
           </p>
 
-          <div className="bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-[#C8A97E]">
-            <iframe
-              src="https://calendly.com/kaelynnkinnison"
-              width="100%"
-              height="700"
-              className="w-full"
-            ></iframe>
-          </div>
+          <a
+            href="/contact"
+            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
+          >
+            Contact Kaelynn
+          </a>
         </div>
       </section>
-
-      <footer className="py-16 px-6 bg-[#F7F2EC] text-center border-t border-[#EADFD4]">
-        <img
-          src="/hibiscus-logo.png"
-          alt="Life Coaching with Kaelynn"
-          className="w-48 mx-auto mb-8 rounded-2xl"
-        />
-        <h3 className="text-3xl font-serif mb-4">Life Coaching with Kaelynn</h3>
-        <p className="text-[#5A5550] mb-2">kaelynnkinnison@gmail.com</p>
-        <p className="text-[#8A8178] text-sm mt-8">
-          © 2026 Life Coaching with Kaelynn. All rights reserved.
-        </p>
-      </footer>
     </main>
   );
 }
