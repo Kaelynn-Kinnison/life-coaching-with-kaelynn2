@@ -75,23 +75,56 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            My Mission
-          </p>
+     <section className="bg-white px-6 py-20">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <Image
+      src="/kaelynn-portrait.png"
+      alt="Portrait of Kaelynn Kinnison"
+      width={450}
+      height={550}
+      className="rounded-3xl shadow-xl object-cover mx-auto"
+    />
 
-          <h2 className="text-4xl font-bold mb-6">
-            Helping You Heal, Grow, and Transform
-          </h2>
+    <div>
+      <h2 className="text-4xl font-bold mb-6">Meet Kaelynn</h2>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            My mission is to help individuals heal, grow, and transform through
-            compassionate support, accountability, self-discovery, and
-            intentional action. I believe lasting change begins with
-            self-awareness, courage, and the willingness to take one step forward
-            at a time.
-          </p>
+      <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
+        What if the life you want is closer than you think?
+      </p>
+
+      <p className="text-[#6b4b43] leading-relaxed mb-4">
+        Hi, I&apos;m Kaelynn Kinnison, and I am passionate about helping people
+        move beyond feeling stuck and into a life of greater clarity,
+        confidence, and purpose.
+      </p>
+
+      <p className="text-[#6b4b43] leading-relaxed mb-4">
+        I believe every person has the ability to heal, grow, and transform.
+        Through compassionate support, accountability, and practical guidance, I
+        help clients navigate challenges, strengthen their mindset, build
+        confidence, and create meaningful change.
+      </p>
+
+      <p className="text-[#6b4b43] leading-relaxed mb-4">
+        As a certified Health and Wellness Coach and a Psychology student, I
+        combine personal development principles with a genuine commitment to
+        helping others discover their strengths and move forward with intention.
+      </p>
+
+      <p className="text-[#6b4b43] leading-relaxed mb-6">
+        One of my core beliefs is simple: no problem is too big, especially when
+        you don&apos;t have to face it alone.
+      </p>
+
+      <Link
+        href="/about"
+        className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold"
+      >
+        Read My Full Story
+      </Link>
+    </div>
+  </div>
+</section>
         </div>
       </section>
 
