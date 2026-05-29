@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,19 +28,19 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <a
               href="/contact#book"
-              className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33]"
+              className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
             >
               Book a Clarity Appointment
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="/pricing"
-              className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da]"
+              className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da] transition"
             >
               View Coaching Packages
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -77,17 +76,17 @@ export default function Home() {
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-6">
-              I&apos;d love to share more about my journey, my coaching
-              approach, and why helping others heal, grow, and transform means
-              so much to me.
+              I&apos;d love to share more about my journey, my coaching approach,
+              and why helping others heal, grow, and transform means so much to
+              me.
             </p>
 
-            <Link
-              href="/about"
-              className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold"
+            <a
+              href="https://www.lifecoachingwithkaelynn.com/about"
+              className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5f3c33] transition"
             >
               Read My Full Story
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -142,12 +141,12 @@ export default function Home() {
             Coaching gives you a space to feel supported, get clear, and take
             intentional steps forward.
           </p>
-          <Link
+          <a
             href="/contact#book"
-            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold"
+            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
           >
             Schedule Your Clarity Appointment
-          </Link>
+          </a>
         </div>
       </section>
     </main>
