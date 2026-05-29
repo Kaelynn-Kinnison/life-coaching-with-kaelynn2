@@ -23,48 +23,53 @@ export default function About() {
               Meet Kaelynn Kinnison
             </h1>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Hi, I&apos;m Kaelynn Kinnison.
+            <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
+              What if the life you want is closer than you think?
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              I am passionate about helping people discover their strengths,
-              overcome challenges, and create meaningful transformation in their
-              lives. I believe every individual has the ability to heal, grow,
-              and move forward with greater confidence, clarity, and purpose.
+              Hi, I&apos;m Kaelynn Kinnison, and I am passionate about helping
+              people move beyond feeling stuck and into a life of greater
+              clarity, confidence, and purpose.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              My coaching approach combines compassion, accountability, and
-              personal development to support clients through life&apos;s
-              challenges, transitions, and opportunities for growth. I strive to
-              create a supportive, non-judgmental space where clients feel heard,
-              encouraged, and empowered to take meaningful steps toward their
-              goals.
+              I believe that every person has the ability to heal, grow, and
+              transform, even when life&apos;s challenges feel overwhelming.
+              Sometimes the hardest part isn&apos;t finding the answer — it is
+              trying to carry everything alone. That&apos;s why I am committed
+              to creating a supportive space where you feel heard, encouraged,
+              and empowered to take meaningful steps forward.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              In addition to my life coaching work, I have earned a Health and
-              Wellness Coaching Certificate and am currently in my second year of
-              studying Psychology in college. These experiences have strengthened
-              my understanding of human behavior, personal growth, mindset
-              development, and the powerful connection between mental, emotional,
-              and physical well-being.
+              My journey into coaching began with a genuine desire to help
+              people recognize their strengths, overcome obstacles, and create
+              positive change in their lives. Through compassionate support,
+              accountability, and practical guidance, I help clients build
+              confidence, navigate transitions, strengthen their mindset, and
+              reconnect with what matters most.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              One of my core beliefs is that no problem is too big, especially
-              when you don&apos;t have to face it alone. While we cannot always
-              control life&apos;s circumstances, we can develop the tools,
-              resilience, and confidence needed to navigate them.
+              I have earned a Health and Wellness Coaching Certificate and am
+              currently in my second year of studying Psychology. These
+              experiences have deepened my understanding of personal growth,
+              emotional wellness, human behavior, and the powerful connection
+              between mindset and transformation.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              One of my core beliefs is simple: no problem is too big,
+              especially when you don&apos;t have to face it alone.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed">
-              Whether you are seeking healing, personal growth, greater
-              confidence, accountability, or support through a life transition, I
-              am committed to helping you move forward with purpose and
-              possibility. Together, we can create the next chapter of your
-              journey.
+              Whether you&apos;re seeking healing, personal growth,
+              accountability, greater confidence, or support through a major life
+              transition, my goal is to help you move forward with clarity,
+              courage, and purpose. Your next chapter is waiting — and you
+              don&apos;t have to navigate it by yourself.
             </p>
           </div>
         </div>
@@ -96,25 +101,19 @@ export default function About() {
             Coaching Values
           </p>
 
-          <h2 className="text-4xl font-bold mb-10">
-            What You Can Expect
-          </h2>
+          <h2 className="text-4xl font-bold mb-10">What You Can Expect</h2>
 
           <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Compassion
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Compassion</h3>
               <p className="text-[#6b4b43] leading-relaxed">
                 A safe, supportive, and non-judgmental coaching space where you
-                can feel heard and encouraged.
+                can feel heard, understood, and encouraged.
               </p>
             </div>
 
             <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Accountability
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Accountability</h3>
               <p className="text-[#6b4b43] leading-relaxed">
                 Support that helps you stay focused, follow through, and take
                 meaningful steps toward your goals.
@@ -122,9 +121,7 @@ export default function About() {
             </div>
 
             <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Growth
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Growth</h3>
               <p className="text-[#6b4b43] leading-relaxed">
                 Coaching that encourages self-awareness, confidence, resilience,
                 healing, and personal transformation.
@@ -134,10 +131,29 @@ export default function About() {
         </div>
       </section>
 
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+            My Coaching Philosophy
+          </p>
+
+          <h2 className="text-4xl font-bold mb-6">
+            You Are Not Meant to Do This Alone
+          </h2>
+
+          <p className="text-lg text-[#6b4b43] leading-relaxed">
+            Coaching is not about telling you who to become. It is about helping
+            you reconnect with who you are, identify what matters most, and move
+            forward with support, structure, and belief in your ability to
+            change.
+          </p>
+        </div>
+      </section>
+
       <section className="px-6 py-24 text-center bg-[#7b4f43] text-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            You Do Not Have to Face It Alone
+            Your Next Chapter Can Start Here
           </h2>
 
           <p className="text-lg mb-8 text-[#f7e9df]">
