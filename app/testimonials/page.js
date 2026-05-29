@@ -3,17 +3,17 @@ export default function Testimonials() {
     {
       quote:
         "Kaelynn helped me gain clarity, confidence, and direction during a season where I felt completely stuck.",
-      name: "Client Testimonial",
+      name: "Starter Client Testimonial",
     },
     {
       quote:
         "Through coaching, I learned how to hold myself accountable while still giving myself grace.",
-      name: "Client Testimonial",
+      name: "Starter Client Testimonial",
     },
     {
       quote:
         "This coaching experience helped me reconnect with myself and take meaningful steps toward the life I want.",
-      name: "Client Testimonial",
+      name: "Starter Client Testimonial",
     },
   ];
 
