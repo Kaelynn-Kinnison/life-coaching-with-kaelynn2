@@ -1,8 +1,8 @@
 export default function Contact() {
-  const calendlyUrl = "https://calendly.com/kaelynnkinnison";
+  const calendlyUrl = "https://calendly.com/YOUR-CALENDLY-LINK";
 
   return (
-    <main className="bg-[#fdf8f3]">
+    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
       <section className="px-6 py-20 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
@@ -66,6 +66,30 @@ export default function Contact() {
               title="Schedule a clarity appointment with Kaelynn"
               className="rounded-2xl"
             ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-12">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-[#fdf8f3] border border-[#e6d7cd] rounded-3xl p-8">
+            <h2 className="text-2xl font-bold mb-4 text-center">
+              Professional Disclaimer
+            </h2>
+
+            <p className="text-[#6b4b43] leading-relaxed text-center">
+              Life coaching is not therapy, counseling, mental health treatment,
+              medical care, or legal advice. Coaching is a collaborative process
+              designed to support personal growth, self-discovery,
+              accountability, mindset development, goal achievement, and life
+              transitions.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed text-center mt-4">
+              If you are experiencing a mental health crisis or require clinical
+              mental health services, please seek assistance from a licensed
+              mental health professional or appropriate healthcare provider.
+            </p>
           </div>
         </div>
       </section>
