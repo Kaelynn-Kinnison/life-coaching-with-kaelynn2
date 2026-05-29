@@ -58,21 +58,35 @@ export default function Home() {
 
           <div>
             <h2 className="text-4xl font-bold mb-6">Meet Kaelynn</h2>
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Hi, I&apos;m Kaelynn Kinnison. My passion is helping people heal,
-              grow, and transform into the best version of themselves.
+
+            <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
+              You do not have to navigate life&apos;s challenges alone.
             </p>
+
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Through compassionate support, accountability, and personal
-              development strategies, I help clients gain clarity, strengthen
-              confidence, navigate life transitions, and move forward with
-              purpose.
+              Life can feel overwhelming at times. Whether you&apos;re facing a
+              major transition, struggling to find direction, rebuilding
+              confidence, or simply feeling stuck, support can make the next step
+              feel possible.
             </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              My passion is helping people uncover their strengths, gain
+              clarity, and take meaningful steps toward the life they want to
+              create.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-6">
+              I&apos;d love to share more about my journey, my coaching
+              approach, and why helping others heal, grow, and transform means
+              so much to me.
+            </p>
+
             <Link
               href="/about"
               className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold"
             >
-              Read My Bio
+              Read My Full Story
             </Link>
           </div>
         </div>
