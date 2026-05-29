@@ -1,9 +1,19 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#fdf8f3] text-[#3f2f2a]">
       {/* Hero Section */}
       <section className="px-6 py-24 text-center">
         <div className="max-w-4xl mx-auto">
+          <Image
+            src="/hibiscus-logo.png"
+            alt="Life Coaching with Kaelynn logo"
+            width={140}
+            height={140}
+            className="mx-auto mb-6"
+          />
+
           <p className="text-sm uppercase tracking-[0.3em] text-[#9b6f5f] mb-4">
             Life Coaching with Kaelynn
           </p>
@@ -20,14 +30,14 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/contact"
+              href="mailto:kaelynnkinnison@gmail.com"
               className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
             >
               Book a Discovery Call
             </a>
 
             <a
-              href="/services"
+              href="#services"
               className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da] transition"
             >
               Explore Services
@@ -54,6 +64,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Kaelynn Section */}
+      <section className="bg-[#f5e8df] px-6 py-20">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex justify-center">
+            <Image
+              src="/kaelynn-portrait.png"
+              alt="Portrait of Kaelynn Kinnison"
+              width={450}
+              height={550}
+              className="rounded-3xl shadow-xl object-cover"
+            />
+          </div>
+
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Meet Kaelynn
+            </h2>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              Hi, I&apos;m Kaelynn Kinnison. My passion is helping people heal,
+              grow, and transform into the best version of themselves.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              Through compassionate support, accountability, and personal
+              development strategies, I help clients gain clarity, strengthen
+              confidence, navigate life transitions, and move forward with
+              purpose.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed">
+              I believe lasting transformation begins with self-awareness,
+              intentional action, and a willingness to embrace growth. My goal is
+              to create a supportive space where you can discover your strengths,
+              overcome obstacles, and build a life aligned with your values.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* What Life Coaching Is */}
       <section className="px-6 py-20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -71,8 +121,8 @@ export default function Home() {
 
             <p className="text-[#6b4b43] leading-relaxed">
               Coaching can support you through personal growth, mindset shifts,
-              life transitions, emotional wellness, confidence building, and
-              goal achievement.
+              life transitions, emotional wellness, confidence building, and goal
+              achievement.
             </p>
           </div>
 
@@ -96,9 +146,7 @@ export default function Home() {
       {/* Who I Help */}
       <section className="bg-[#f5e8df] px-6 py-20">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Who I Help
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Who I Help</h2>
 
           <p className="text-lg text-[#6b4b43] leading-relaxed max-w-3xl mx-auto mb-10">
             I support individuals who are ready to grow, heal, reset, and take
@@ -107,9 +155,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-white rounded-2xl p-6 shadow-md">
-              <h3 className="font-semibold text-xl mb-3">
-                Feeling Stuck
-              </h3>
+              <h3 className="font-semibold text-xl mb-3">Feeling Stuck</h3>
               <p className="text-[#6b4b43]">
                 For those who feel uncertain, overwhelmed, or unsure about their
                 next step.
@@ -117,9 +163,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-md">
-              <h3 className="font-semibold text-xl mb-3">
-                Seeking Growth
-              </h3>
+              <h3 className="font-semibold text-xl mb-3">Seeking Growth</h3>
               <p className="text-[#6b4b43]">
                 For those ready to build confidence, strengthen mindset, and
                 develop healthier habits.
@@ -127,9 +171,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-md">
-              <h3 className="font-semibold text-xl mb-3">
-                Navigating Change
-              </h3>
+              <h3 className="font-semibold text-xl mb-3">Navigating Change</h3>
               <p className="text-[#6b4b43]">
                 For those moving through transitions, new seasons, or personal
                 reinvention.
@@ -139,8 +181,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="px-6 py-20 bg-white">
+      {/* Services Section */}
+      <section id="services" className="px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Coaching Services
@@ -151,7 +193,7 @@ export default function Home() {
             growth, emotional wellness, accountability, and transformation.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
               <h3 className="text-xl font-semibold mb-3">
                 Personal Growth Coaching
@@ -177,18 +219,41 @@ export default function Home() {
                 Accountability Coaching
               </h3>
               <p className="text-[#6b4b43]">
-                Stay committed to your goals with structure, support, reflection,
-                and practical action steps.
+                Stay committed to your goals with structure, support,
+                reflection, and practical action steps.
+              </p>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Life Transition Coaching
+              </h3>
+              <p className="text-[#6b4b43]">
+                Receive support while moving through change, uncertainty, new
+                beginnings, or personal reinvention.
+              </p>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Healing & Self-Discovery Coaching
+              </h3>
+              <p className="text-[#6b4b43]">
+                Reconnect with yourself, explore your values, and create space
+                for emotional growth and personal healing.
+              </p>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl p-6 shadow-md">
+              <h3 className="text-xl font-semibold mb-3">
+                Confidence Coaching
+              </h3>
+              <p className="text-[#6b4b43]">
+                Build self-trust, overcome limiting beliefs, and develop the
+                confidence to move forward with purpose.
               </p>
             </div>
           </div>
-
-          <a
-            href="/services"
-            className="inline-block mt-10 bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
-          >
-            View All Services
-          </a>
         </div>
       </section>
 
@@ -223,7 +288,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Coaching Approach Preview */}
+      {/* Coaching Approach */}
       <section className="bg-[#f5e8df] px-6 py-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -238,22 +303,95 @@ export default function Home() {
           <div className="grid md:grid-cols-5 gap-4">
             {["Discover", "Clarify", "Create", "Act", "Transform"].map(
               (step) => (
-                <div
-                  key={step}
-                  className="bg-white rounded-2xl p-5 shadow-md"
-                >
+                <div key={step} className="bg-white rounded-2xl p-5 shadow-md">
                   <h3 className="font-semibold text-lg">{step}</h3>
                 </div>
               )
             )}
           </div>
+        </div>
+      </section>
 
-          <a
-            href="/coaching-approach"
-            className="inline-block mt-10 border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-white transition"
-          >
-            Learn About the Process
-          </a>
+      {/* Testimonials */}
+      <section className="bg-white px-6 py-20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Client Testimonials
+          </h2>
+
+          <p className="text-[#6b4b43] max-w-3xl mx-auto mb-12">
+            A space for future client stories, encouragement, and transformation
+            experiences.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 text-left">
+            <div className="bg-[#fdf8f3] rounded-2xl shadow-md p-6">
+              <p className="text-[#5f463f] italic mb-6">
+                “Kaelynn helped me gain clarity, confidence, and direction
+                during a season where I felt completely stuck.”
+              </p>
+              <h3 className="font-semibold text-[#4a2f2a]">
+                — Client Testimonial
+              </h3>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl shadow-md p-6">
+              <p className="text-[#5f463f] italic mb-6">
+                “Through coaching, I learned how to hold myself accountable
+                while still giving myself grace.”
+              </p>
+              <h3 className="font-semibold text-[#4a2f2a]">
+                — Client Testimonial
+              </h3>
+            </div>
+
+            <div className="bg-[#fdf8f3] rounded-2xl shadow-md p-6">
+              <p className="text-[#5f463f] italic mb-6">
+                “This coaching experience helped me reconnect with myself and
+                take meaningful steps toward the life I want.”
+              </p>
+              <h3 className="font-semibold text-[#4a2f2a]">
+                — Client Testimonial
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-[#f5e8df] px-6 py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Contact Kaelynn
+          </h2>
+
+          <p className="text-[#6b4b43] text-lg mb-10">
+            Ready to begin your healing, growth, and transformation journey?
+            Reach out today to schedule a discovery conversation.
+          </p>
+
+          <div className="bg-white rounded-3xl shadow-lg p-8 max-w-2xl mx-auto">
+            <p className="text-xl mb-4">
+              <strong>Kaelynn Kinnison</strong>
+            </p>
+
+            <p className="mb-3">
+              <strong>Email:</strong>{" "}
+              <a
+                href="mailto:kaelynnkinnison@gmail.com"
+                className="text-[#7b4f43] underline"
+              >
+                kaelynnkinnison@gmail.com
+              </a>
+            </p>
+
+            <p>
+              <strong>Phone:</strong>{" "}
+              <a href="tel:4027998166" className="text-[#7b4f43] underline">
+                (402) 799-8166
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -271,7 +409,7 @@ export default function Home() {
           </p>
 
           <a
-            href="/contact"
+            href="mailto:kaelynnkinnison@gmail.com"
             className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
           >
             Contact Kaelynn
