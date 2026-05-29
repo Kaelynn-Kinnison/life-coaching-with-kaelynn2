@@ -21,9 +21,7 @@ export default function RootLayout({ children }) {
                 width={55}
                 height={55}
               />
-              <span className="font-bold text-lg">
-                Life Coaching with Kaelynn
-              </span>
+              <span className="font-bold text-lg">Life Coaching with Kaelynn</span>
             </Link>
 
             <div className="flex flex-wrap justify-center gap-4 text-sm font-semibold text-[#6b4b43]">
