@@ -17,7 +17,7 @@ export default function Testimonials() {
     },
   ];
 
-  const trainingTestimonials = [
+  const trainingFeedback = [
     {
       quote:
         "Kaelynn has a natural ability to listen without judgment while helping people see possibilities they may not see for themselves. Her encouragement, compassion, and thoughtful questions helped me gain confidence and move forward with greater clarity.",
@@ -30,7 +30,7 @@ export default function Testimonials() {
     },
     {
       quote:
-        "One of Kaelynn's greatest strengths is her ability to help people feel heard and understood. She has a gift for encouraging others while helping them stay accountable to the goals they set for themselves.",
+        "One of Kaelynn’s greatest strengths is her ability to help people feel heard and understood. She has a gift for encouraging others while helping them stay accountable to the goals they set for themselves.",
       name: "Coaching Practicum Participant",
     },
     {
@@ -40,7 +40,7 @@ export default function Testimonials() {
     },
     {
       quote:
-        "I was impressed by Kaelynn's ability to connect with people from different backgrounds and make them feel supported. Her passion for helping others is evident in everything she does.",
+        "I was impressed by Kaelynn’s ability to connect with people from different backgrounds and make them feel supported. Her passion for helping others is evident in everything she does.",
       name: "Program Participant",
     },
     {
@@ -58,7 +58,9 @@ export default function Testimonials() {
             Testimonials
           </p>
 
-          <h1 className="text-5xl font-bold mb-6">Client Testimonials</h1>
+          <h1 className="text-5xl font-bold mb-6">
+            Client Testimonials
+          </h1>
 
           <p className="text-lg text-[#6b4b43] leading-relaxed">
             A space for client stories, encouragement, and transformation
@@ -69,17 +71,19 @@ export default function Testimonials() {
 
       <section className="bg-white px-6 py-20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-          {clientTestimonials.map((testimonial) => (
+          {clientTestimonials.map((item) => (
             <div
-              key={testimonial.quote}
+              key={item.quote}
               className="bg-[#fdf8f3] rounded-3xl shadow-md p-8"
             >
               <p className="text-xl mb-4">★★★★★</p>
+
               <p className="text-[#5f463f] italic mb-6">
-                “{testimonial.quote}”
+                &quot;{item.quote}&quot;
               </p>
+
               <h2 className="font-semibold text-[#4a2f2a]">
-                — {testimonial.name}
+                — {item.name}
               </h2>
             </div>
           ))}
@@ -104,17 +108,19 @@ export default function Testimonials() {
         </div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
-          {trainingTestimonials.map((testimonial) => (
+          {trainingFeedback.map((item) => (
             <div
-              key={testimonial.quote}
+              key={item.quote}
               className="bg-white rounded-3xl shadow-md p-8"
             >
               <p className="text-xl mb-4">★★★★★</p>
+
               <p className="text-[#5f463f] italic mb-6">
-                “{testimonial.quote}”
+                &quot;{item.quote}&quot;
               </p>
+
               <h2 className="font-semibold text-[#4a2f2a]">
-                — {testimonial.name}
+                — {item.name}
               </h2>
             </div>
           ))}
