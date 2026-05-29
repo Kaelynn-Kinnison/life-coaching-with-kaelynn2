@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,19 +28,19 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <a
               href="/contact#book"
               className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33]"
             >
               Book a Clarity Appointment
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="/pricing"
               className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da]"
             >
               View Coaching Packages
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -60,14 +59,13 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-6">Meet Kaelynn</h2>
 
             <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
-              You do not have to navigate life&apos;s challenges alone.
+              You do not have to navigate life’s challenges alone.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Life can feel overwhelming at times. Whether you&apos;re facing a
-              major transition, struggling to find direction, rebuilding
-              confidence, or simply feeling stuck, support can make the next
-              step feel possible.
+              Life can feel overwhelming at times. Whether you’re facing a major
+              transition, struggling to find direction, rebuilding confidence, or
+              simply feeling stuck, support can make the next step feel possible.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
@@ -77,17 +75,16 @@ export default function Home() {
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-6">
-              I&apos;d love to share more about my journey, my coaching
-              approach, and why helping others heal, grow, and transform means
-              so much to me.
+              I’d love to share more about my journey, my coaching approach, and
+              why helping others heal, grow, and transform means so much to me.
             </p>
 
-            <Link
+            <a
               href="/about"
-              className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold"
+              className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5f3c33]"
             >
               Read My Full Story
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -145,12 +142,12 @@ export default function Home() {
             intentional steps forward.
           </p>
 
-          <Link
+          <a
             href="/contact#book"
-            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold"
+            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df]"
           >
             Schedule Your Clarity Appointment
-          </Link>
+          </a>
         </div>
       </section>
     </main>
