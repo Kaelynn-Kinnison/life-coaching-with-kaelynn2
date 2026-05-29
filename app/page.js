@@ -9,8 +9,8 @@ export default function Home() {
           <Image
             src="/hibiscus-logo.png"
             alt="Life Coaching with Kaelynn logo"
-            width={150}
-            height={150}
+            width={250}
+            height={250}
             className="mx-auto mb-6"
           />
 
