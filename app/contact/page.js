@@ -1,5 +1,5 @@
 export default function Contact() {
-  const calendlyUrl = "https://calendly.com/kaelynnkinnison/clarity-appointment";
+  const calendlyUrl = "https://calendly.com/kaelynnkinnison";
 
   return (
     <main className="bg-[#fdf8f3]">
