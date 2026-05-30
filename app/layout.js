@@ -3,7 +3,8 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Life Coaching with Kaelynn",
-  description: "Heal. Grow. Transform.",
+  description:
+    "Personalized life coaching to help you heal, grow, and transform with clarity, confidence, and accountability.",
 };
 
 export default function RootLayout({ children }) {
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-7M7KB7PY2W');
           `}
