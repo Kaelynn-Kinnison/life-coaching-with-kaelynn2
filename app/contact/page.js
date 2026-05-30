@@ -1,94 +1,60 @@
+const email = "hello@lifecoachingwithkaelynn.com";
+const phone = "402-799-8166";
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
 export default function Contact() {
-  const calendlyUrl = "https://calendly.com/kaelynnkinnison";
-
   return (
-    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
-      <section className="px-6 py-20 text-center">
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Contact
-          </p>
+    <main className="bg-[#fdf8f3] text-[#3f342c]">
+      <section className="max-w-5xl mx-auto px-6 py-20">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Contact & Booking
+        </h1>
 
-          <h1 className="text-5xl font-bold mb-6">Contact Kaelynn</h1>
+        <p className="text-lg leading-8 max-w-3xl mb-8">
+          Ready to take the next step? Schedule a free discovery call to explore
+          your goals, your current season, and how coaching can support your
+          healing, growth, and transformation.
+        </p>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            Ready to begin your healing, growth, and transformation journey?
-            Reach out today or schedule your clarity appointment below.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-16">
-        <div className="max-w-3xl mx-auto text-center bg-[#fdf8f3] rounded-3xl shadow-lg p-8">
-          <p className="text-2xl font-bold mb-4">Kaelynn Kinnison</p>
-
-          <p className="mb-3">
-            <strong>Email:</strong>{" "}
-            <a
-              href="mailto:kaelynnkinnison@gmail.com"
-              className="text-[#7b4f43] underline"
-            >
-              kaelynnkinnison@gmail.com
-            </a>
-          </p>
-
-          <p>
-            <strong>Phone:</strong>{" "}
-            <a href="tel:4027998166" className="text-[#7b4f43] underline">
-              (402) 799-8166
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section id="book" className="px-6 py-20 bg-[#f5e8df] text-center">
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Schedule Your Appointment
-          </p>
-
-          <h2 className="text-4xl font-bold mb-6">
-            Book a Clarity Appointment
-          </h2>
-
-          <p className="text-[#6b4b43] max-w-3xl mx-auto mb-10">
-            Your clarity appointment is a supportive conversation designed to
-            help you discuss your goals, ask questions, and decide which
-            coaching option is the best fit for you.
-          </p>
-
-          <div className="bg-white rounded-3xl shadow-lg p-6">
-            <iframe
-              src={calendlyUrl}
-              width="100%"
-              height="700"
-              frameBorder="0"
-              title="Schedule a clarity appointment with Kaelynn"
-              className="rounded-2xl"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-12">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-[#fdf8f3] border border-[#e6d7cd] rounded-3xl p-8">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Professional Disclaimer
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="rounded-2xl bg-white border border-[#eadfd5] p-8 shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4">
+              Book a Free Discovery Call
             </h2>
 
-            <p className="text-[#6b4b43] leading-relaxed text-center">
-              Life coaching is not therapy, counseling, mental health treatment,
-              medical care, or legal advice. Coaching is a collaborative process
-              designed to support personal growth, self-discovery,
-              accountability, mindset development, goal achievement, and life
-              transitions.
+            <p className="leading-7 mb-6">
+              Use my Google Calendar booking page to choose a time that works
+              for you. Your appointment will include a Google Meet link once
+              scheduled.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed text-center mt-4">
-              If you are experiencing a mental health crisis or require clinical
-              mental health services, please seek assistance from a licensed
-              mental health professional or appropriate healthcare provider.
+            <a
+              href={bookingLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
+            >
+              Schedule Through Google Calendar
+            </a>
+          </div>
+
+          <div className="rounded-2xl bg-white border border-[#eadfd5] p-8 shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4">
+              Get in Touch
+            </h2>
+
+            <p className="mb-3">
+              <strong>Email:</strong>{" "}
+              <a href={`mailto:${email}`} className="underline">
+                {email}
+              </a>
+            </p>
+
+            <p>
+              <strong>Phone:</strong>{" "}
+              <a href={`tel:${phone}`} className="underline">
+                {phone}
+              </a>
             </p>
           </div>
         </div>
