@@ -4,97 +4,94 @@ export default function Pricing() {
   const offers = [
     {
       title: "Free Discovery Call",
-      price: "Free",
-      length: "20–30 minutes",
+      length: "Introductory Consultation",
       description:
-        "A complimentary conversation to discuss your goals, answer questions, and determine whether coaching is the right fit for you.",
+        "A complimentary conversation to discuss your goals, ask questions, and determine whether coaching is the right fit for you.",
       includes: [
-        "Introductory conversation",
-        "Goal discussion",
-        "Coaching fit assessment",
-        "Next-step recommendation",
+        "Discuss your current goals and challenges",
+        "Ask questions about the coaching process",
+        "Explore which coaching option may fit your needs",
+        "Determine next steps with clarity and confidence",
       ],
     },
     {
       title: "Clarity Session",
-      price: "$75",
-      length: "60 minutes",
+      length: "Single Focused Coaching Session",
       description:
-        "A focused coaching session designed to help you gain clarity, identify obstacles, and create a path forward.",
+        "A focused session designed to help you gain clarity, identify obstacles, and create an intentional path forward.",
       includes: [
-        "One private coaching session",
-        "Goal exploration",
-        "Mindset reflection",
-        "Action plan",
-        "Personalized guidance",
+        "Goal exploration and reflection",
+        "Support with identifying current obstacles",
+        "Mindset and direction-focused conversation",
+        "Personalized next-step action planning",
       ],
     },
     {
       title: "Foundation Coaching Program",
-      price: "$1,200",
-      length: "6 coaching sessions",
+      length: "Focused Growth Support",
       description:
-        "Designed for individuals seeking focused support and meaningful personal growth.",
+        "Designed for individuals seeking structure, accountability, and meaningful support while working toward personal growth goals.",
       includes: [
-        "6 coaching sessions",
+        "Private coaching sessions",
         "Goal setting and action planning",
         "Mindset development",
         "Accountability support",
         "Personal growth exercises",
-        "Email support between sessions",
+        "Support between sessions when appropriate",
       ],
     },
     {
       title: "Growth & Empowerment Program",
-      price: "$1,700",
-      length: "10 coaching sessions",
+      length: "Most Popular Coaching Path",
       badge: "Most Popular",
       description:
-        "Designed for individuals ready to create lasting change and develop greater confidence and resilience.",
+        "Designed for individuals ready to create lasting change, strengthen confidence, and move forward with greater purpose.",
       includes: [
-        "10 coaching sessions",
         "Personalized coaching plan",
         "Accountability coaching",
         "Mindset and emotional wellness support",
         "Life transition guidance",
         "Reflection exercises",
-        "Email support",
+        "Ongoing growth support",
       ],
     },
     {
       title: "Premium Transformation Program",
-      price: "$3,000",
-      length: "12–14 coaching sessions",
+      length: "Comprehensive Coaching Experience",
       description:
-        "A comprehensive coaching experience focused on deep personal transformation.",
+        "A deeper coaching partnership for individuals seeking meaningful transformation, personal growth, and continued support.",
       includes: [
-        "12–14 coaching sessions",
         "Personalized transformation roadmap",
         "Confidence and mindset coaching",
         "Emotional wellness support",
         "Accountability and habit development",
-        "Priority email support",
-        "Customized resources",
-        "Progress reviews and ongoing support",
+        "Customized growth resources",
+        "Progress reviews and continued support",
       ],
     },
   ];
 
   return (
-    <main className="bg-[#fdf8f3]">
+    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
       <section className="px-6 py-20 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Pricing
+            Coaching Options
           </p>
 
           <h1 className="text-5xl font-bold mb-6">
-            Coaching Packages & Pricing
+            Coaching Packages & Programs
           </h1>
 
           <p className="text-lg text-[#6b4b43] leading-relaxed">
-            Choose the level of support that best fits your current season of
-            life and personal growth journey.
+            Every coaching journey is personal. Package options are designed to
+            meet you where you are and support your healing, growth,
+            accountability, and transformation.
+          </p>
+
+          <p className="text-[#6b4b43] leading-relaxed mt-4">
+            For current pricing and availability, please schedule a discovery
+            call or contact Kaelynn directly.
           </p>
         </div>
       </section>
@@ -114,10 +111,6 @@ export default function Pricing() {
 
               <h2 className="text-2xl font-bold mb-3">{offer.title}</h2>
 
-              <p className="text-4xl font-bold text-[#7b4f43] mb-2">
-                {offer.price}
-              </p>
-
               <p className="text-[#9b6f5f] font-semibold mb-5">
                 {offer.length}
               </p>
@@ -134,12 +127,37 @@ export default function Pricing() {
 
               <Link
                 href="/contact#book"
-                className="mt-auto text-center bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold"
+                className="mt-auto text-center bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5f3c33]"
               >
-                Book This Option
+                Inquire About Pricing
               </Link>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-20 bg-[#f5e8df]">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+            Personalized Support
+          </p>
+
+          <h2 className="text-4xl font-bold mb-6">
+            Not Sure Which Option Is Right for You?
+          </h2>
+
+          <p className="text-lg text-[#6b4b43] leading-relaxed mb-8">
+            A discovery call is the best place to ask questions, discuss your
+            goals, and determine which coaching option aligns with your current
+            season of life.
+          </p>
+
+          <Link
+            href="/contact#book"
+            className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33]"
+          >
+            Schedule a Discovery Call
+          </Link>
         </div>
       </section>
     </main>
