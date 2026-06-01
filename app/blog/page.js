@@ -13,6 +13,12 @@ export default function BlogPage() {
       category: "Core Beliefs & Mindset",
       description:
         "Explore how deeply held beliefs can shape confidence, choices, relationships, and personal growth.",
+      {
+  title: "The Hidden Core Beliefs That May Be Holding You Back",
+  category: "Core Beliefs & Mindset",
+  description:
+    "Explore how deeply held beliefs can shape confidence, choices, relationships, and personal growth.",
+  link: "/blog/core-beliefs-holding-you-back",
     },
     {
       title: "Why Healing Is the Foundation of Transformation",
@@ -127,7 +133,7 @@ export default function BlogPage() {
               <p className="text-[#5f6f73] leading-7">{topic.description}</p>
              
                <Link
-                href="/blog/core-beliefs-holding-you-back"
+                href={topic.link}
                 className="inline-block mt-4 text-[#7a4b63] font-semibold hover:underline"
                 >
                 Read More →
