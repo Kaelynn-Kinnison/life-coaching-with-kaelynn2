@@ -3,8 +3,7 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 export default function CoreBeliefCoaching() {
   const explorationAreas = [
     {
-      title: "Limiting Beliefs & Self-Defeating Patterns",
-      text: "Identify and challenge the beliefs that may be keeping you stuck, holding you back from opportunities, or preventing you from creating the life you desire.",
+  
     },
     {
       title: "Self-Worth & Self-Confidence",
