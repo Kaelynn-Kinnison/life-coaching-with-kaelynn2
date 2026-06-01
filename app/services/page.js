@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Coaching Services | Life Coaching with Kaelynn",
+  description:
+    "Explore personalized coaching services including Core Belief Transformation Coaching, One-on-One Coaching, Accountability Coaching, Wellness Coaching, and Life Transition Coaching.",
+};
+
 export default function Services() {
   const services = [
     {
