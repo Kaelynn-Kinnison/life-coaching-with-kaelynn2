@@ -56,6 +56,7 @@ export default function RootLayout({ children }) {
                 <Link href="/about">About</Link>
                 <Link href="/life-coaching">Life Coaching</Link>
                 <Link href="/services">Services</Link>
+                <Link href="/blog">Blog</Link>
                 <Link href="/core-belief-coaching">Core Belief Coaching</Link>
                 <Link href="/pricing">Pricing</Link>
                 <Link href="/coaching-approach">Approach</Link>
