@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Contact | Life Coaching with Kaelynn",
+  description:
+    "Schedule a complimentary discovery call and connect with Kaelynn Kinnison to begin your healing, growth, and transformation journey.",
+};
 const email = "hello@lifecoachingwithkaelynn.com";
 const phone = "402-799-8166";
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
