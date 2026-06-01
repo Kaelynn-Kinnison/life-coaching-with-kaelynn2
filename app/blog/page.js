@@ -8,11 +8,7 @@ export const metadata = {
 
 export default function BlogPage() {
   const topics = [
-    {
-      title: "The Hidden Core Beliefs That May Be Holding You Back",
-      category: "Core Beliefs & Mindset",
-      description:
-        "Explore how deeply held beliefs can shape confidence, choices, relationships, and personal growth.",
+  
       {
   title: "The Hidden Core Beliefs That May Be Holding You Back",
   category: "Core Beliefs & Mindset",
@@ -25,13 +21,15 @@ export default function BlogPage() {
       category: "Healing & Emotional Wellness",
       description:
         "Learn why true change often begins with awareness, self-compassion, and emotional healing.",
+      link: "/blog/healing-foundation-of-transformation",
     },
-    {
-      title: "How Accountability Creates Lasting Change",
-      category: "Personal Growth & Accountability",
-      description:
-        "Discover how structure, support, and intentional action can help you stay committed to your goals.",
-    },
+  {
+  title: "How Accountability Creates Lasting Change",
+  category: "Personal Growth & Accountability",
+  description:
+    "Discover how structure, support, and intentional action can help you stay committed to your goals.",
+  link: "/blog/accountability-creates-lasting-change",
+},
   ];
 
   return (
