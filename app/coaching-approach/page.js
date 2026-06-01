@@ -1,31 +1,46 @@
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function CoachingApproach() {
-  const framework = [
+  const approachSteps = [
     {
-      title: "Heal",
+      title: "Awareness",
       description:
-        "Identify and release limiting beliefs, emotional barriers, and patterns that no longer serve you. Healing creates the foundation for meaningful growth by increasing awareness, fostering self-compassion, and uncovering the root causes of what may be holding you back.",
+        "We begin by creating awareness around your current goals, challenges, patterns, emotions, and the beliefs that may be influencing your decisions and behavior.",
     },
     {
-      title: "Grow",
+      title: "Clarity",
       description:
-        "Develop confidence, self-awareness, healthy habits, emotional resilience, and empowering beliefs. Growth occurs when you intentionally challenge old patterns and begin building the mindset and behaviors that support the life you want to create.",
+        "Together, we clarify what you truly want, what may be holding you back, and what needs to shift so your actions align with the person you are becoming.",
     },
     {
-      title: "Transform",
+      title: "Healing",
       description:
-        "Create lasting change by aligning your actions, decisions, and daily habits with the person you are becoming. Transformation is not about temporary motivation—it is about creating sustainable change that reflects your values, goals, and vision for your future.",
+        "We explore limiting beliefs, emotional barriers, and recurring patterns that may no longer serve you, creating space for self-compassion, confidence, and growth.",
+    },
+    {
+      title: "Growth",
+      description:
+        "You begin developing healthier habits, empowering beliefs, emotional resilience, stronger boundaries, and a deeper sense of self-trust.",
+    },
+    {
+      title: "Action",
+      description:
+        "We turn insight into intentional action through realistic goals, accountability, strategy, and next steps that support sustainable progress.",
+    },
+    {
+      title: "Transformation",
+      description:
+        "Transformation happens as your beliefs, choices, habits, and actions become aligned with your values, goals, and future vision.",
     },
   ];
 
-  const uniquePoints = [
-    "A personalized coaching experience tailored to your unique goals and needs",
-    "Support that focuses on healing, growth, confidence, and transformation",
-    "Accountability that helps you stay committed to your goals",
-    "A partnership built on trust, compassion, and encouragement",
-    "Guidance that addresses both mindset and action",
-    "Coaching that evolves with you as you grow",
+  const values = [
+    "Compassionate support",
+    "Honest accountability",
+    "Personalized guidance",
+    "Core belief awareness",
+    "Mindset and action alignment",
+    "Sustainable transformation",
   ];
 
   return (
@@ -37,119 +52,176 @@ export default function CoachingApproach() {
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            The Heal. Grow. Transform. Framework
+            A Personalized Approach to Healing, Growth, and Transformation
           </h1>
 
           <p className="text-lg leading-8 max-w-3xl mx-auto">
-            My coaching approach is designed to help you create lasting change
-            by addressing the beliefs, patterns, and actions that shape your
-            life. Together, we focus on healing what no longer serves you,
-            growing into confidence and self-awareness, and transforming your
-            vision into aligned action.
+            My coaching approach is built on partnership, trust, compassion,
+            clarity, and accountability. Together, we explore not only the goals
+            you want to achieve, but also the beliefs, patterns, and barriers
+            that may be shaping your current experience.
           </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {framework.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm"
-            >
-              <h2 className="text-3xl font-bold mb-4 text-[#9b6b5f]">
-                {item.title}
-              </h2>
-
-              <p className="leading-7">{item.description}</p>
-            </div>
-          ))}
         </div>
 
         <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 md:p-12 shadow-sm mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Why This Framework Works
+            Transformation Begins With Awareness
           </h2>
 
           <div className="space-y-5 text-lg leading-8">
             <p>
-              Many people focus solely on changing their behaviors, yet find
-              themselves returning to the same frustrations, habits, and
-              obstacles.
+              Many of the challenges we experience in life are connected to
+              beliefs, patterns, and experiences operating beneath the surface.
+              Through personalized coaching, we work to uncover the root causes
+              that may be limiting your growth and preventing you from fully
+              stepping into your potential.
             </p>
 
             <p>
-              True transformation begins at a deeper level.
+              True transformation does not begin with changing your behavior
+              alone. It begins with understanding the beliefs that drive your
+              behavior.
             </p>
 
             <p>
               Your beliefs influence your thoughts. Your thoughts influence your
-              actions. Your actions create your results.
-            </p>
-
-            <p>
-              If the underlying beliefs remain unchanged, lasting change becomes
-              difficult.
-            </p>
-
-            <p>
-              That is why my coaching approach focuses on identifying and
-              transforming the core beliefs that drive behavior, allowing you to
-              create growth that is authentic, sustainable, and aligned with the
-              life you want to live.
+              emotions. Your emotions affect your actions. Your actions create
+              your results.
             </p>
 
             <p className="font-semibold text-[#9b6b5f]">
-              Because true transformation does not begin with changing your
-              behavior. It begins with changing the beliefs that drive your
-              behavior.
+              When you change the beliefs that shape your life, you begin
+              changing the life those beliefs create.
             </p>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
+              My Framework
+            </p>
+
+            <h2 className="text-3xl md:text-5xl font-bold">
+              Correct. Heal. Grow. Transform.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
+              <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
+                Correct
+              </h3>
+              <p className="leading-7">
+                Identify the beliefs, patterns, and behaviors that are creating
+                misalignment, self-doubt, or repeated obstacles.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
+              <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
+                Heal
+              </h3>
+              <p className="leading-7">
+                Release limiting beliefs, emotional barriers, and patterns that
+                no longer serve you.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
+              <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
+                Grow
+              </h3>
+              <p className="leading-7">
+                Develop confidence, self-awareness, healthy habits, emotional
+                resilience, and empowering beliefs.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
+              <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
+                Transform
+              </h3>
+              <p className="leading-7">
+                Create lasting change by aligning your actions with the person
+                you are becoming.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="rounded-3xl bg-[#3f342c] text-white p-8 md:p-12 shadow-sm mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            What Makes Working With Me Unique
+            How We Work Together
           </h2>
 
-          <div className="space-y-5 text-lg leading-8">
-            <p>
-              Coaching is not one-size-fits-all, and neither is your journey.
-            </p>
+          <p className="text-lg leading-8 mb-8">
+            Coaching is not one-size-fits-all, and neither is your journey. Your
+            coaching experience is customized around your goals, your needs,
+            your current season, and the level of support that will help you
+            move forward with clarity and confidence.
+          </p>
 
-            <p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {approachSteps.map((step) => (
+              <div
+                key={step.title}
+                className="rounded-2xl bg-white/10 border border-white/20 p-5"
+              >
+                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
+                <p className="leading-7 text-white/90">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm">
+            <h2 className="text-3xl font-bold mb-5">
+              What Makes Working With Me Unique
+            </h2>
+
+            <p className="leading-8 mb-5">
               What makes working with me unique is my commitment to seeing the
               whole person—not just the goal you want to achieve. Together, we
               explore the patterns, beliefs, challenges, strengths, and
-              opportunities that influence your growth so lasting transformation
-              can occur from the inside out.
+              opportunities that influence your growth so that lasting
+              transformation can occur from the inside out.
             </p>
 
-            <p>
-              My coaching approach combines compassionate support with honest
+            <p className="leading-8">
+              My approach combines compassionate support with honest
               accountability. You will have a safe space to be heard,
               encouraged, challenged, and empowered while developing practical
               strategies for real-life change.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mt-8">
-            {uniquePoints.map((point) => (
-              <div
-                key={point}
-                className="rounded-2xl bg-white/10 border border-white/20 p-5"
-              >
-                {point}
-              </div>
-            ))}
+          <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm">
+            <h2 className="text-3xl font-bold mb-5">
+              What You Can Expect
+            </h2>
+
+            <div className="space-y-3">
+              {values.map((value) => (
+                <div
+                  key={value}
+                  className="rounded-2xl bg-[#fdf8f3] border border-[#eadfd5] p-4"
+                >
+                  ✔ {value}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         <div className="text-center rounded-3xl bg-white border border-[#eadfd5] p-8 md:p-12 shadow-sm">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Begin Your Transformation?
+            Ready to Take the Next Step?
           </h2>
 
           <p className="text-lg leading-8 max-w-3xl mx-auto mb-6">
-            Schedule a complimentary discovery call to explore your goals,
+            Schedule a complimentary discovery call to discuss your goals,
             current challenges, and the coaching support that best fits your
             journey.
           </p>
