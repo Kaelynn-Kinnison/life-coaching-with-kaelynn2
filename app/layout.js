@@ -78,6 +78,12 @@ export default function RootLayout({ children }) {
               <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/services">
                 Services
               </Link>
+                    <Link
+  className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+  href="/blog"
+>
+  Blog
+</Link>
               <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/core-belief-coaching">
                 Core Belief Coaching
               </Link>
