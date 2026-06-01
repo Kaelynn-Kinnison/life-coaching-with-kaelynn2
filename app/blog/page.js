@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog | Life Coaching with Kaelynn",
+  title: "The Heal. Grow. Transform. Blog | Life Coaching with Kaelynn",
   description:
-    "Explore insights on healing, mindset, personal growth, life transitions, wellness, accountability, and transformational coaching.",
+    "Explore articles on healing, core belief transformation, mindset, emotional wellness, personal growth, accountability, and life transitions with Transformational Life Coach Kaelynn Kinnison.",
 };
 
 export default function BlogPage() {
@@ -31,14 +30,11 @@ export default function BlogPage() {
 
   return (
     <main className="min-h-screen bg-[#fdf8f3] text-[#263238]">
-      <section className="w-full">
-        <Image
+      <section className="w-full bg-[#fdf8f3]">
+        <img
           src="/blog-banner.png"
           alt="Life Coaching with Kaelynn Heal Grow Transform Blog Banner"
-          width={1600}
-          height={900}
-          className="w-full h-auto"
-          priority
+          className="w-full h-auto block"
         />
       </section>
 
@@ -47,13 +43,15 @@ export default function BlogPage() {
           <p className="uppercase tracking-[0.3em] text-sm text-[#b07a3c] mb-4">
             Life Coaching with Kaelynn
           </p>
+
           <h1 className="text-4xl md:text-5xl font-serif text-[#1f2d3d] mb-6">
             Welcome to the Blog
           </h1>
+
           <div className="w-24 h-[2px] bg-[#b07a3c] mx-auto" />
         </div>
 
-        <div className="bg-white/80 rounded-3xl shadow-md p-8 md:p-12 leading-8 text-lg">
+        <div className="bg-white rounded-3xl shadow-md p-8 md:p-12 leading-8 text-lg">
           <p className="mb-6">Welcome.</p>
 
           <p className="mb-6">
@@ -105,6 +103,7 @@ export default function BlogPage() {
           <h2 className="text-3xl md:text-4xl font-serif text-[#1f2d3d] mb-4">
             Featured Blog Topics
           </h2>
+
           <p className="text-lg max-w-2xl mx-auto text-[#5f6f73]">
             Begin with these foundational topics created to support healing,
             growth, clarity, and lasting transformation.
@@ -115,14 +114,16 @@ export default function BlogPage() {
           {topics.map((topic, index) => (
             <article
               key={index}
-              className="bg-white rounded-3xl shadow-md p-8 border border-[#eadfd4] hover:shadow-lg transition"
+              className="bg-white rounded-3xl shadow-md p-8 border border-[#eadfd4]"
             >
               <p className="text-sm uppercase tracking-[0.2em] text-[#b07a3c] mb-4">
                 {topic.category}
               </p>
+
               <h3 className="text-2xl font-serif text-[#1f2d3d] mb-4">
                 {topic.title}
               </h3>
+
               <p className="text-[#5f6f73] leading-7">{topic.description}</p>
             </article>
           ))}
@@ -133,10 +134,12 @@ export default function BlogPage() {
         <h2 className="text-3xl md:text-4xl font-serif mb-4">
           Ready to Begin Your Own Transformation?
         </h2>
+
         <p className="max-w-2xl mx-auto mb-8 text-lg">
-          Schedule a complimentary discovery call and let’s explore what’s
+          Schedule a complimentary discovery call and let's explore what's
           possible together.
         </p>
+
         <Link
           href="/contact"
           className="inline-block bg-white text-[#7a4b63] px-8 py-4 rounded-full font-semibold hover:bg-[#fdf8f3] transition"
