@@ -3,7 +3,8 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 export default function CoreBeliefCoaching() {
   const explorationAreas = [
     {
-  
+      title: "Limiting Beliefs & Self-Defeating Patterns",
+      text: "Identify and challenge the beliefs that may be keeping you stuck, holding you back from opportunities, or preventing you from creating the life you desire.",
     },
     {
       title: "Self-Worth & Self-Confidence",
@@ -65,7 +66,6 @@ export default function CoreBeliefCoaching() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f342c]">
       <section className="max-w-6xl mx-auto px-6 py-20">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
@@ -128,7 +128,7 @@ export default function CoreBeliefCoaching() {
             {explorationAreas.map((area) => (
               <div
                 key={area.title}
-                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-5"
+                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-5 min-h-[150px]"
               >
                 <h3 className="font-semibold text-[#9b6b5f] mb-2">
                   {area.title}
@@ -152,10 +152,7 @@ export default function CoreBeliefCoaching() {
 
           <div className="grid md:grid-cols-2 gap-4">
             {benefits.map((benefit) => (
-              <div
-                key={benefit}
-                className="bg-white/10 rounded-xl p-4"
-              >
+              <div key={benefit} className="bg-white/10 rounded-xl p-4">
                 ✔ {benefit}
               </div>
             ))}
@@ -182,12 +179,11 @@ export default function CoreBeliefCoaching() {
             href={bookingLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold"
+            className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
           >
             Schedule Your Discovery Call
           </a>
         </div>
-
       </section>
     </main>
   );
