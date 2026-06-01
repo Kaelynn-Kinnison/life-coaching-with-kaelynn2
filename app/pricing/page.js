@@ -14,6 +14,19 @@ export default function Pricing() {
       ],
     },
     {
+      title: "Core Belief Transformation Coaching",
+      description:
+        "A deeper transformational coaching package focused on identifying limiting beliefs, emotional barriers, self-defeating patterns, and the beliefs that may be driving your behavior.",
+      includes: [
+        "Core belief identification process",
+        "Limiting belief and pattern exploration",
+        "Personalized transformation plan",
+        "Reflection exercises and journal prompts",
+        "Support for confidence, self-worth, and emotional resilience",
+        "Aligned action steps for lasting change",
+      ],
+    },
+    {
       title: "One-on-One Coaching",
       description:
         "Personalized coaching support focused on clarity, confidence, healing, growth, transformation, and intentional action.",
