@@ -1,4 +1,11 @@
+export const metadata = {
+  title: "Coaching Programs | Life Coaching with Kaelynn",
+  description:
+    "Programs are customized based on your goals, level of support desired, and coaching needs. Schedule a complimentary discovery call to receive a personalized recommendation and investment overview.",
+};
+
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
 
 export default function Pricing() {
   const programs = [
