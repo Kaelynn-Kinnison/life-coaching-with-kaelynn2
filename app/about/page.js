@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+  title: "About Kaelynn Kinnison | Transformational Life Coach",
+  description:
+    "Meet Kaelynn Kinnison, Transformational Life Coach. Learn about her coaching philosophy, background, and commitment to helping clients heal, grow, and transform.",
+};
 export default function About() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f2f2a]">
