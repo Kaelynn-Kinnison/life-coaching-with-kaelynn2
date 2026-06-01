@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Life Coaching | Life Coaching with Kaelynn",
+  description:
+    "Personalized life coaching to help you gain clarity, build confidence, strengthen accountability, navigate life changes, and create lasting personal growth and transformation.",
+};
+
 export default function LifeCoaching() {
   return (
     <main className="bg-[#fdf8f3]">
