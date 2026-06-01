@@ -125,6 +125,15 @@ export default function BlogPage() {
               </h3>
 
               <p className="text-[#5f6f73] leading-7">{topic.description}</p>
+             
+               <Link
+                href="/blog/core-beliefs-holding-you-back"
+                className="inline-block mt-4 text-[#7a4b63] font-semibold hover:underline"
+                >
+                Read More →
+</Link>
+
+
             </article>
           ))}
         </div>
