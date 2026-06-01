@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Coaching Approach | Life Coaching with Kaelynn",
+  description:
+    "Discover the Correct. Heal. Grow. Transform. framework and learn how lasting transformation begins by changing the beliefs that drive behavior.",
+};
+
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function CoachingApproach() {
