@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Client Testimonials | Life Coaching with Kaelynn",
+  description:
+    "Read testimonials from coaching clients who have experienced personal growth, increased confidence, greater clarity, and meaningful life transformation through coaching with Kaelynn Kinnison.",
+};
+
 export default function Testimonials() {
   const clientTestimonials = [
     {
