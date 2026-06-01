@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Life Coaching with Kaelynn | Heal. Grow. Transform.",
+  description:
+    "Transformational life coaching focused on healing, personal growth, confidence, accountability, and lasting change through the Correct. Heal. Grow. Transform. framework.",
+};
+
 export default function Home() {
   return (
     <main>
