@@ -1,4 +1,12 @@
+export const metadata = {
+  title: "Core Belief Transformation Coaching | Life Coaching with Kaelynn",
+  description:
+    "Identify and transform limiting beliefs, build confidence, improve self-worth, and create lasting personal growth through Core Belief Transformation Coaching with Kaelynn Kinnison.",
+};
+
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
+
 
 export default function CoreBeliefCoaching() {
   const explorationAreas = [
