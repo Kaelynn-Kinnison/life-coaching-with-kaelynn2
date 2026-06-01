@@ -162,11 +162,8 @@ return (
       </nav>
     </header>
 
-    {children}
-
-  </body>
-</html>
-```
-
-);
+           {children}
+      </body>
+    </html>
+  );
 }
