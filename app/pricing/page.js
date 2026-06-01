@@ -1,163 +1,141 @@
-import Link from "next/link";
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function Pricing() {
-  const offers = [
+  const programs = [
     {
       title: "Free Discovery Call",
-      length: "Introductory Consultation",
       description:
-        "A complimentary conversation to discuss your goals, ask questions, and determine whether coaching is the right fit for you.",
+        "A complimentary call to discuss your goals, current challenges, coaching needs, and the best support option for your journey.",
       includes: [
-        "Discuss your current goals and challenges",
-        "Ask questions about the coaching process",
-        "Explore which coaching option may fit your needs",
-        "Determine next steps with clarity and confidence",
+        "Goal and needs discussion",
+        "Coaching fit conversation",
+        "Personalized recommendation",
+        "Next-step guidance",
       ],
     },
     {
-      title: "Clarity Session",
-      length: "Single Focused Coaching Session",
+      title: "One-on-One Coaching",
       description:
-        "A focused session designed to help you gain clarity, identify obstacles, and create an intentional path forward.",
-      includes: [
-        "Goal exploration and reflection",
-        "Support with identifying current obstacles",
-        "Mindset and direction-focused conversation",
-        "Personalized next-step action planning",
-      ],
-    },
-    {
-      title: "Foundation Coaching Program",
-      length: "Focused Growth Support",
-      description:
-        "Designed for individuals seeking structure, accountability, and meaningful support while working toward personal growth goals.",
+        "Personalized coaching support focused on clarity, confidence, healing, growth, transformation, and intentional action.",
       includes: [
         "Private coaching sessions",
-        "Goal setting and action planning",
-        "Mindset development",
-        "Accountability support",
-        "Personal growth exercises",
-        "Support between sessions when appropriate",
+        "Personalized growth plan",
+        "Goal setting and action steps",
+        "Supportive accountability",
       ],
     },
     {
-      title: "Growth & Empowerment Program",
-      length: "Most Popular Coaching Path",
-      badge: "Most Popular",
+      title: "Accountability Coaching",
       description:
-        "Designed for individuals ready to create lasting change, strengthen confidence, and move forward with greater purpose.",
+        "Structured support for follow-through, consistency, motivation, habit building, and personal responsibility.",
       includes: [
-        "Personalized coaching plan",
-        "Accountability coaching",
-        "Mindset and emotional wellness support",
-        "Life transition guidance",
-        "Reflection exercises",
-        "Ongoing growth support",
+        "Weekly accountability focus",
+        "Habit and goal tracking",
+        "Progress check-ins",
+        "Action planning support",
       ],
     },
     {
-      title: "Premium Transformation Program",
-      length: "Comprehensive Coaching Experience",
+      title: "Wellness Coaching",
       description:
-        "A deeper coaching partnership for individuals seeking meaningful transformation, personal growth, and continued support.",
+        "Support for creating healthier routines, managing stress, improving balance, and building sustainable self-care habits.",
       includes: [
-        "Personalized transformation roadmap",
-        "Confidence and mindset coaching",
-        "Emotional wellness support",
-        "Accountability and habit development",
-        "Customized growth resources",
-        "Progress reviews and continued support",
+        "Wellness goal planning",
+        "Lifestyle habit support",
+        "Stress management focus",
+        "Mind-body balance",
+      ],
+    },
+    {
+      title: "Life Transition Coaching",
+      description:
+        "Guidance and support through major life changes, personal reinvention, emotional adjustment, and new beginnings.",
+      includes: [
+        "Transition clarity work",
+        "Emotional support and reflection",
+        "Confidence-building tools",
+        "Next-chapter planning",
       ],
     },
   ];
 
   return (
-    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
-      <section className="px-6 py-20 text-center">
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Coaching Options
+    <main className="bg-[#fdf8f3] text-[#3f342c]">
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <div className="text-center mb-14">
+          <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
+            Coaching Programs
           </p>
 
-          <h1 className="text-5xl font-bold mb-6">
-            Coaching Packages & Programs
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Personalized Coaching Support
           </h1>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            Every coaching journey is personal. Package options are designed to
-            meet you where you are and support your healing, growth,
-            accountability, and transformation.
+          <p className="text-lg leading-8 max-w-3xl mx-auto mb-6">
+            Programs are customized based on your goals, level of support
+            desired, and coaching needs. Schedule a complimentary discovery call
+            to receive a personalized recommendation and investment overview.
           </p>
 
-          <p className="text-[#6b4b43] leading-relaxed mt-4">
-            For current pricing and availability, please schedule a discovery
-            call or contact Kaelynn directly.
-          </p>
+          <a
+            href={bookingLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
+          >
+            Book a Free Discovery Call
+          </a>
         </div>
-      </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-          {offers.map((offer) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {programs.map((program) => (
             <div
-              key={offer.title}
-              className="bg-[#fdf8f3] rounded-3xl shadow-lg p-8 flex flex-col"
+              key={program.title}
+              className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm"
             >
-              {offer.badge && (
-                <p className="bg-[#7b4f43] text-white text-sm px-4 py-2 rounded-full w-fit mb-4">
-                  {offer.badge}
-                </p>
-              )}
+              <h2 className="text-2xl font-semibold mb-4">
+                {program.title}
+              </h2>
 
-              <h2 className="text-2xl font-bold mb-3">{offer.title}</h2>
-
-              <p className="text-[#9b6f5f] font-semibold mb-5">
-                {offer.length}
+              <p className="leading-7 mb-6">
+                {program.description}
               </p>
 
-              <p className="text-[#6b4b43] leading-relaxed mb-6">
-                {offer.description}
-              </p>
-
-              <ul className="space-y-3 text-[#6b4b43] mb-8">
-                {offer.includes.map((item) => (
-                  <li key={item}>• {item}</li>
+              <ul className="space-y-3 mb-6">
+                {program.includes.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="text-[#9b6b5f]">•</span>
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
 
-              <Link
-                href="/contact#book"
-                className="mt-auto text-center bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5f3c33]"
-              >
-                Inquire About Pricing
-              </Link>
+              <p className="font-semibold text-[#9b6b5f]">
+                Investment discussed during discovery call.
+              </p>
             </div>
           ))}
         </div>
-      </section>
 
-      <section className="px-6 py-20 bg-[#f5e8df]">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Personalized Support
-          </p>
-
-          <h2 className="text-4xl font-bold mb-6">
-            Not Sure Which Option Is Right for You?
+        <div className="mt-16 rounded-3xl bg-white border border-[#eadfd5] p-8 md:p-10 text-center shadow-sm">
+          <h2 className="text-3xl font-bold mb-4">
+            Not Sure Which Program Fits Best?
           </h2>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed mb-8">
-            A discovery call is the best place to ask questions, discuss your
-            goals, and determine which coaching option aligns with your current
-            season of life.
+          <p className="text-lg leading-8 max-w-3xl mx-auto mb-6">
+            That is exactly what the discovery call is for. Together, we will
+            talk through your goals, current season, desired level of support,
+            and the coaching option that best aligns with your needs.
           </p>
 
-          <Link
-            href="/contact#book"
-            className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33]"
+          <a
+            href={bookingLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
           >
-            Schedule a Discovery Call
-          </Link>
+            Schedule Your Complimentary Discovery Call
+          </a>
         </div>
       </section>
     </main>
