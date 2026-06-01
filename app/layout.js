@@ -4,96 +4,169 @@ import Link from "next/link";
 import { Playfair_Display, Inter } from "next/font/google";
 
 const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
+subsets: ["latin"],
+variable: "--font-playfair",
 });
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+subsets: ["latin"],
+variable: "--font-inter",
 });
 
 export const metadata = {
-  title: "Life Coaching with Kaelynn",
-  description:
-    "Personalized life coaching to help you heal, grow, and transform with clarity, confidence, and accountability.",
+title: "Life Coaching with Kaelynn",
+description:
+"Personalized life coaching to help you heal, grow, and transform with clarity, confidence, and accountability.",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-[#fdf8f3] text-[#3f342c] antialiased">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-7M7KB7PY2W"
-          strategy="afterInteractive"
-        />
+return (
+<html lang="en" className={`${playfair.variable} ${inter.variable}`}> <body className="bg-[#fdf8f3] text-[#3f342c] antialiased">
 
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-7M7KB7PY2W');
-          `}
-        </Script>
+```
+    <Script
+      src="https://www.googletagmanager.com/gtag/js?id=G-7M7KB7PY2W"
+      strategy="afterInteractive"
+    />
 
-        <header className="bg-[#fdf8f3] border-b border-[#eadfd5] sticky top-0 z-50">
-          <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
-            <div className="flex items-center justify-center md:justify-between">
-              <Link href="/" className="flex items-center gap-3">
-                <img
-                  src="/hibiscus-logo.png"
-                  alt="Life Coaching with Kaelynn logo"
-                  className="h-10 w-10 object-contain"
-                />
-                <span className="font-semibold text-[#3f342c] text-sm sm:text-base">
-                  Life Coaching with Kaelynn
-                </span>
-              </Link>
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7M7KB7PY2W');
+      `}
+    </Script>
 
-              <div className="hidden md:flex items-center gap-5 text-sm font-medium text-[#3f342c]">
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/life-coaching">Life Coaching</Link>
-                <Link href="/services">Services</Link>
-                <Link href="/pricing">Pricing</Link>
-                <Link href="/coaching-approach">Approach</Link>
-                <Link href="/testimonials">Testimonials</Link>
-                <Link href="/contact">Contact</Link>
-              </div>
-            </div>
+    <header className="bg-[#fdf8f3] border-b border-[#eadfd5] sticky top-0 z-50">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
 
-            <div className="md:hidden mt-4 grid grid-cols-2 gap-2 text-center text-sm font-medium text-[#3f342c]">
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/">
-                Home
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/about">
-                About
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/life-coaching">
-                Life Coaching
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/services">
-                Services
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/pricing">
-                Pricing
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/coaching-approach">
-                Approach
-              </Link>
-              <Link className="rounded-full bg-white border border-[#eadfd5] px-3 py-2" href="/testimonials">
-                Testimonials
-              </Link>
-              <Link className="rounded-full bg-[#3f342c] text-white px-3 py-2" href="/contact">
-                Contact
-              </Link>
-            </div>
-          </nav>
-        </header>
+        <div className="flex items-center justify-center md:justify-between">
 
-        {children}
-      </body>
-    </html>
-  );
+          <Link href="/" className="flex items-center gap-3">
+            <img
+              src="/hibiscus-logo.png"
+              alt="Life Coaching with Kaelynn Logo"
+              className="h-10 w-10 object-contain"
+            />
+
+            <span className="font-semibold text-[#3f342c] text-sm sm:text-base">
+              Life Coaching with Kaelynn
+            </span>
+          </Link>
+
+          <div className="hidden md:flex items-center gap-5 text-sm font-medium text-[#3f342c]">
+
+            <Link href="/">Home</Link>
+
+            <Link href="/about">About</Link>
+
+            <Link href="/life-coaching">
+              Life Coaching
+            </Link>
+
+            <Link href="/services">
+              Services
+            </Link>
+
+            <Link href="/core-belief-coaching">
+              Core Belief Coaching
+            </Link>
+
+            <Link href="/pricing">
+              Pricing
+            </Link>
+
+            <Link href="/coaching-approach">
+              Approach
+            </Link>
+
+            <Link href="/testimonials">
+              Testimonials
+            </Link>
+
+            <Link href="/contact">
+              Contact
+            </Link>
+
+          </div>
+        </div>
+
+        <div className="md:hidden mt-4 grid grid-cols-2 gap-2 text-center text-sm font-medium text-[#3f342c]">
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/"
+          >
+            Home
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/about"
+          >
+            About
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/life-coaching"
+          >
+            Life Coaching
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/services"
+          >
+            Services
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/core-belief-coaching"
+          >
+            Core Belief Coaching
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/pricing"
+          >
+            Pricing
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/coaching-approach"
+          >
+            Approach
+          </Link>
+
+          <Link
+            className="rounded-full bg-white border border-[#eadfd5] px-3 py-2"
+            href="/testimonials"
+          >
+            Testimonials
+          </Link>
+
+          <Link
+            className="rounded-full bg-[#3f342c] text-white px-3 py-2 col-span-2"
+            href="/contact"
+          >
+            Contact
+          </Link>
+
+        </div>
+
+      </nav>
+    </header>
+
+    {children}
+
+  </body>
+</html>
+```
+
+);
 }
