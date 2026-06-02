@@ -71,16 +71,18 @@ export default function Services() {
       ],
     },
    
-    {
+      {
       title: "Healing & Self-Discovery Coaching",
-  bestFor: "You want to reconnect with yourself and your identity.",
-  description:
-    "Creates space to explore your values, reconnect with who you are, and move forward with self-understanding.",
-  outcomes: [
-    "Deeper self-discovery",
-    "Clearer values",
-    "Stronger identity",
-    "More self-compassion",
-  ],
-},
-const commonNeeds = [
+      bestFor: "You want to reconnect with yourself and your identity.",
+      description:
+        "Creates space to explore your values, reconnect with who you are, and move forward with self-understanding.",
+      outcomes: [
+        "Deeper self-discovery",
+        "Clearer values",
+        "Stronger identity",
+        "More self-compassion",
+      ],
+    },
+  ];
+
+  const commonNeeds = [
