@@ -56,41 +56,41 @@ export default function LifeCoaching() {
 
   return (
     <main className="bg-[#fdf8f3] text-[#3f2f2a]">
-      <section className="px-6 py-20 text-center">
-        <div className="max-w-5xl mx-auto">
-        <section className="px-6 py-20">
-  <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-        Life Coaching
-      </p>
+      <section className="px-6 py-20">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+              Life Coaching
+            </p>
 
-      <h1 className="text-5xl md:text-6xl font-bold mb-6">
-        Coaching for Clarity, Confidence, and Lasting Change
-      </h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              Coaching for Clarity, Confidence, and Lasting Change
+            </h1>
 
-      <p className="text-xl text-[#6b4b43] leading-relaxed mb-8">
-        Life coaching helps you move beyond feeling stuck and into a life of
-        greater confidence, purpose, growth, and transformation.
-      </p>
+            <p className="text-xl text-[#6b4b43] leading-relaxed mb-8">
+              Life coaching helps you move beyond feeling stuck and into a life
+              of greater confidence, purpose, growth, and transformation.
+            </p>
 
-      <a
-        href="/contact#book"
-        className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
-      >
-        Book a Free Discovery Call
-      </a>
-    </div>
+            <a
+              href="/contact#book"
+              className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+            >
+              Book a Free Discovery Call
+            </a>
+          </div>
 
-    <div>
-      <img
-        src="/life-coaching-hero.png"
-        alt="Person climbing a mountain path at sunrise representing growth and transformation"
-        className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
-      />
-    
-  </div>
-</section> 
+          <div>
+            <img
+              src="/life-coaching-hero.png"
+              alt="Person climbing a mountain path at sunrise representing growth and transformation"
+              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#7b4f43] text-white px-6 py-20">
         <div className="max-w-5xl mx-auto text-center">
           <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
             Who Coaching Is For
@@ -195,16 +195,14 @@ export default function LifeCoaching() {
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed">
-              Coaching gives you a space to be supported, encouraged, challenged,
-              and held accountable while you create meaningful change in your
-              life.
+              Coaching gives you a space to be supported, encouraged,
+              challenged, and held accountable while you create meaningful
+              change in your life.
             </p>
           </div>
 
           <div className="bg-[#7b4f43] text-white rounded-3xl p-8 shadow-md">
-            <h2 className="text-3xl font-bold mb-5">
-              No Problem Is Too Big
-            </h2>
+            <h2 className="text-3xl font-bold mb-5">No Problem Is Too Big</h2>
 
             <p className="leading-relaxed mb-4 text-[#f7e9df]">
               One of my core beliefs is that no problem is too big, especially
