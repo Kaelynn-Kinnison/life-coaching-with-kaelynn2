@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Coaching Approach | Life Coaching with Kaelynn",
+  title: "Coaching Approach | Core Belief Transformation Method",
   description:
-    "Discover the Correct. Heal. Grow. Transform. framework and learn how lasting transformation begins by changing the beliefs that drive behavior.",
+    "Discover the Core Belief Transformation Method, Kaelynn's signature coaching framework for identifying limiting beliefs, creating emotional healing, and building lasting transformation.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -11,32 +11,27 @@ export default function CoachingApproach() {
     {
       title: "Awareness",
       description:
-        "We begin by creating awareness around your goals, challenges, patterns, emotions, and the beliefs that may be influencing your decisions and behavior.",
+        "We begin by creating awareness around your goals, challenges, emotions, patterns, and the core beliefs that may be influencing your decisions and behavior.",
     },
     {
-      title: "Clarity",
+      title: "Understanding",
       description:
-        "Together, we gain clarity about what you truly want, what may be holding you back, and what needs to shift so your actions align with the person you are becoming.",
+        "Together, we explore how those beliefs may be affecting your confidence, relationships, emotions, choices, habits, and results.",
     },
     {
-      title: "Healing",
+      title: "Challenge",
       description:
-        "We explore limiting beliefs, emotional barriers, and recurring patterns that may no longer serve you, creating space for confidence, self-compassion, and growth.",
-    },
-    {
-      title: "Growth",
-      description:
-        "You begin developing healthier habits, empowering beliefs, emotional resilience, stronger boundaries, and deeper self-trust.",
-    },
-    {
-      title: "Action",
-      description:
-        "We turn insight into intentional action through realistic goals, accountability, strategy, and next steps that support sustainable progress.",
+        "We gently question beliefs that may no longer be serving you and begin separating truth from old conditioning, fear, or past experiences.",
     },
     {
       title: "Transformation",
       description:
-        "Transformation occurs when your beliefs, habits, choices, and actions become aligned with your values and future vision.",
+        "You begin replacing limiting beliefs with healthier, empowering perspectives that support healing, confidence, emotional wellness, and growth.",
+    },
+    {
+      title: "Alignment",
+      description:
+        "We create actions, habits, boundaries, and accountability that support the new belief system you are choosing to live from.",
     },
   ];
 
@@ -52,21 +47,20 @@ export default function CoachingApproach() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f342c]">
       <section className="max-w-6xl mx-auto px-6 py-20">
-
         <div className="text-center mb-16">
           <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
             Coaching Approach
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            A Personalized Approach to Healing, Growth, and Transformation
+            The Core Belief Transformation Method™
           </h1>
 
           <p className="text-lg leading-8 max-w-3xl mx-auto">
             My coaching approach is built on partnership, trust, compassion,
-            clarity, and accountability. Together, we explore not only the
-            goals you want to achieve, but also the beliefs, patterns, and
-            barriers that may be shaping your current experience.
+            clarity, and accountability. Together, we explore not only the goals
+            you want to achieve, but also the core beliefs, emotional patterns,
+            and barriers that may be shaping your current experience.
           </p>
         </div>
 
@@ -106,56 +100,68 @@ export default function CoachingApproach() {
         <div className="mb-16">
           <div className="text-center mb-10">
             <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
-              My Framework
+              My Signature Framework
             </p>
 
             <h2 className="text-3xl md:text-5xl font-bold">
-              Correct. Heal. Grow. Transform.
+              The Core Belief Transformation Method™
             </h2>
+
+            <p className="text-lg leading-8 max-w-3xl mx-auto mt-6">
+              My signature coaching framework helps clients identify limiting
+              beliefs, create emotional healing, develop empowering
+              perspectives, and build lasting transformation from the inside out.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-
+          <div className="grid md:grid-cols-5 gap-6">
             <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
               <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
-                Correct
+                Awareness
               </h3>
               <p className="leading-7">
-                Identify the beliefs, patterns, and behaviors that are creating
-                misalignment, self-doubt, or repeated obstacles.
+                Identify the limiting belief operating beneath the challenge.
               </p>
             </div>
 
             <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
               <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
-                Heal
+                Understanding
               </h3>
               <p className="leading-7">
-                Release limiting beliefs, emotional barriers, and patterns that
-                no longer serve you.
+                Explore how that belief influences thoughts, emotions,
+                decisions, relationships, and behaviors.
               </p>
             </div>
 
             <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
               <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
-                Grow
+                Challenge
               </h3>
               <p className="leading-7">
-                Develop confidence, self-awareness, healthy habits, emotional
-                resilience, and empowering beliefs.
+                Question beliefs that may no longer be serving your growth.
               </p>
             </div>
 
             <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
               <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
-                Transform
+                Transformation
               </h3>
               <p className="leading-7">
-                Create lasting change by aligning your actions with the person
-                you are becoming.
+                Replace limiting beliefs with healthier, empowering
+                perspectives.
               </p>
             </div>
 
+            <div className="rounded-3xl bg-white border border-[#eadfd5] p-7 shadow-sm">
+              <h3 className="text-2xl font-bold mb-3 text-[#9b6b5f]">
+                Alignment
+              </h3>
+              <p className="leading-7">
+                Create actions, habits, and accountability that support lasting
+                change.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -170,9 +176,7 @@ export default function CoachingApproach() {
                 key={step.title}
                 className="rounded-2xl bg-white/10 border border-white/20 p-5"
               >
-                <h3 className="text-xl font-semibold mb-3">
-                  {step.title}
-                </h3>
+                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
 
                 <p className="leading-7 text-white/90">
                   {step.description}
@@ -183,28 +187,34 @@ export default function CoachingApproach() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-
           <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm">
             <h2 className="text-3xl font-bold mb-5">
               What Makes Working With Me Unique
             </h2>
 
             <p className="leading-8 mb-5">
-              What makes working with me unique is my commitment to seeing the
-              whole person—not just the goal you want to achieve.
+              Many coaching programs focus primarily on goals, habits, or
+              accountability. While those are important, I believe lasting
+              change happens when we address the beliefs operating beneath the
+              surface.
+            </p>
+
+            <p className="leading-8 mb-5">
+              Through the Core Belief Transformation Method™, I help clients
+              identify and transform limiting beliefs that may be influencing
+              confidence, relationships, emotional wellness, self-worth,
+              decision-making, and goal achievement.
             </p>
 
             <p className="leading-8">
-              Together, we explore the patterns, beliefs, challenges,
-              strengths, and opportunities that influence your growth so that
-              lasting transformation can occur from the inside out.
+              By creating change at the belief level, clients often experience
+              deeper and more sustainable transformation than motivation alone
+              can provide.
             </p>
           </div>
 
           <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-sm">
-            <h2 className="text-3xl font-bold mb-5">
-              What You Can Expect
-            </h2>
+            <h2 className="text-3xl font-bold mb-5">What You Can Expect</h2>
 
             <div className="space-y-3">
               {values.map((value) => (
@@ -217,7 +227,6 @@ export default function CoachingApproach() {
               ))}
             </div>
           </div>
-
         </div>
 
         <div className="text-center rounded-3xl bg-white border border-[#eadfd5] p-8 md:p-12 shadow-sm">
@@ -227,8 +236,7 @@ export default function CoachingApproach() {
 
           <p className="text-lg leading-8 max-w-3xl mx-auto mb-6">
             Schedule a complimentary discovery call to discuss your goals,
-            current challenges, and the coaching support that best fits your
-            journey.
+            current challenges, and the beliefs that may be keeping you stuck.
           </p>
 
           <a
@@ -240,7 +248,6 @@ export default function CoachingApproach() {
             Book a Free Discovery Call
           </a>
         </div>
-
       </section>
     </main>
   );
