@@ -128,7 +128,7 @@ export default function Services() {
 
           <div>
             <img
-              src="/services-hero.png"
+             src="/life-coaching-hero.png"
               alt="Warm reflective coaching space for personal growth and clarity"
               className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
             />
