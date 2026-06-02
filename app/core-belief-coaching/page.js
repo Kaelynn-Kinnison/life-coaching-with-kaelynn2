@@ -4,11 +4,32 @@ export const metadata = {
     "Identify and transform limiting beliefs, build confidence, improve self-worth, and create lasting personal growth through Core Belief Transformation Coaching with Kaelynn Kinnison.",
 };
 
-const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
-
-
+const bookingLink = "https://calendly.com/kaelynnkinnison";
 
 export default function CoreBeliefCoaching() {
+  const methodSteps = [
+    {
+      title: "Awareness",
+      text: "Identify the limiting belief, emotional pattern, or self-defeating thought that may be operating beneath the surface.",
+    },
+    {
+      title: "Understanding",
+      text: "Explore how the belief may be influencing your confidence, emotions, choices, relationships, habits, and results.",
+    },
+    {
+      title: "Challenge",
+      text: "Gently question beliefs that may no longer be serving you and begin separating truth from old conditioning, fear, or past experiences.",
+    },
+    {
+      title: "Transformation",
+      text: "Replace limiting beliefs with healthier, more empowering perspectives that support healing, confidence, and growth.",
+    },
+    {
+      title: "Alignment",
+      text: "Create actions, habits, boundaries, and accountability that support the new belief system you are choosing to live from.",
+    },
+  ];
+
   const explorationAreas = [
     {
       title: "Limiting Beliefs & Self-Defeating Patterns",
@@ -109,9 +130,32 @@ export default function CoreBeliefCoaching() {
           <div>
             <img
               src="/core-belief-transformation.jpg"
-              alt="Growth and healing journey"
-              className="rounded-3xl shadow-lg border border-[#eadfd5] w-full"
+              alt="Core Belief Transformation Coaching"
+              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full"
             />
+
+            <div className="mt-6 bg-white border border-[#eadfd5] rounded-3xl p-6 shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 text-[#9b6b5f]">
+                Why Core Beliefs Matter
+              </h3>
+
+              <p className="leading-7 mb-4">
+                Core beliefs influence how you see yourself, what you believe is
+                possible, how you respond to challenges, and the choices you
+                make.
+              </p>
+
+              <p className="leading-7 mb-4">
+                When limiting beliefs go unchallenged, they can quietly
+                influence confidence, relationships, emotional wellness,
+                motivation, and results.
+              </p>
+
+              <p className="font-semibold text-[#9b6b5f] leading-7">
+                When you change the beliefs that shape your life, you begin
+                changing the life those beliefs create.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -121,15 +165,9 @@ export default function CoreBeliefCoaching() {
           </h2>
 
           <p className="text-lg leading-8 mb-8">
-            Transformation begins with awareness.
-          </p>
-
-          <p className="leading-8 mb-8">
-            Many of the challenges we experience in life are connected to
-            beliefs, patterns, and experiences operating beneath the surface.
-            Through personalized coaching, we work to uncover the root causes
-            that may be limiting your growth and preventing you from fully
-            stepping into your potential.
+            Transformation begins with awareness. Many of the challenges we
+            experience in life are connected to beliefs, patterns, and
+            experiences operating beneath the surface.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -143,6 +181,71 @@ export default function CoreBeliefCoaching() {
                 </h3>
 
                 <p className="leading-7">{area.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
+          <p className="uppercase tracking-[0.25em] text-sm text-white/70 mb-4">
+            Signature Method
+          </p>
+
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            The Core Belief Transformation Method™
+          </h2>
+
+          <p className="text-lg leading-8 mb-10 text-white/90">
+            This five-step process helps you move from awareness to lasting
+            transformation by identifying limiting beliefs, understanding their
+            impact, challenging old patterns, creating healthier perspectives,
+            and aligning your actions with the person you are becoming.
+          </p>
+
+          <div className="grid md:grid-cols-5 gap-5">
+            {methodSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="rounded-2xl bg-white/10 border border-white/20 p-5"
+              >
+                <p className="text-white/70 text-sm mb-2">
+                  Step {index + 1}
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
+
+                <p className="leading-7 text-white/90">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
+          <h2 className="text-3xl font-bold mb-6">
+            Common Limiting Beliefs Clients May Explore
+          </h2>
+
+          <p className="text-lg leading-8 mb-8">
+            These beliefs can show up in different ways and may affect
+            confidence, relationships, decisions, goals, and emotional wellness.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              "I'm not good enough.",
+              "I always fail.",
+              "I don't deserve success.",
+              "I have to be perfect.",
+              "My needs don't matter.",
+              "I can't trust myself.",
+              "Change is too hard for me.",
+              "I am too far behind.",
+            ].map((belief) => (
+              <div
+                key={belief}
+                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-4 text-[#6b4b43] font-medium"
+              >
+                “{belief}”
               </div>
             ))}
           </div>
