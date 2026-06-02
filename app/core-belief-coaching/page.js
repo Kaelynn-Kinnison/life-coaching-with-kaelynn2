@@ -4,7 +4,7 @@ export const metadata = {
     "Explore Core Belief Transformation Coaching with Kaelynn Kinnison. Identify limiting beliefs, build confidence, improve self-worth, reduce self-sabotage, and create lasting personal growth.",
 };
 
-const bookingLink = "https://calendly.com/kaelynnkinnison";
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function CoreBeliefCoaching() {
   const methodSteps = [
@@ -266,9 +266,7 @@ export default function CoreBeliefCoaching() {
             </div>
 
             <div className="bg-[#3f342c] text-white rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-4">
-                Empowering Belief
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Empowering Belief</h3>
               <p className="text-lg font-semibold mb-4">
                 “I am worthy, capable, and growing.”
               </p>
