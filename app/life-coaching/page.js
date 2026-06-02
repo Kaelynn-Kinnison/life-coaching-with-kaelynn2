@@ -58,23 +58,39 @@ export default function LifeCoaching() {
     <main className="bg-[#fdf8f3] text-[#3f2f2a]">
       <section className="px-6 py-20 text-center">
         <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Life Coaching
-          </p>
+        <section className="px-6 py-20">
+  <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+        Life Coaching
+      </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Coaching for Clarity, Confidence, and Lasting Change
-          </h1>
+      <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        Coaching for Clarity, Confidence, and Lasting Change
+      </h1>
 
-          <p className="text-xl text-[#6b4b43] leading-relaxed max-w-4xl mx-auto">
-            Life coaching is a supportive partnership that helps you move from
-            feeling stuck, overwhelmed, or uncertain into a place of clarity,
-            confidence, accountability, and intentional growth.
-          </p>
-        </div>
-      </section>
+      <p className="text-xl text-[#6b4b43] leading-relaxed mb-8">
+        Life coaching helps you move beyond feeling stuck and into a life of
+        greater confidence, purpose, growth, and transformation.
+      </p>
 
-      <section className="bg-[#7b4f43] text-white px-6 py-20">
+      <a
+        href="/contact#book"
+        className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+      >
+        Book a Free Discovery Call
+      </a>
+    </div>
+
+    <div>
+      <img
+        src="/life-coaching-hero.png"
+        alt="Person climbing a mountain path at sunrise representing growth and transformation"
+        className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
+      />
+    
+  </div>
+</section> 
         <div className="max-w-5xl mx-auto text-center">
           <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
             Who Coaching Is For
