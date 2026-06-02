@@ -1,142 +1,126 @@
 export const metadata = {
-  title: "Core Belief Transformation Coaching | Life Coaching with Kaelynn",
+  title: "Coaching Services | Life Coaching with Kaelynn",
   description:
-    "Explore Core Belief Transformation Coaching with Kaelynn Kinnison. Identify limiting beliefs, build confidence, improve self-worth, reduce self-sabotage, and create lasting personal growth.",
+    "Explore life coaching services with Kaelynn including personal growth coaching, confidence coaching, accountability coaching, life transition coaching, emotional wellness coaching, and healing support.",
 };
 
 const bookingLink = "https://calendly.com/kaelynnkinnison";
 
-export default function CoreBeliefCoaching() {
-  const methodSteps = [
+export default function Services() {
+  const services = [
     {
-      title: "Awareness",
-      text: "Identify the limiting belief, emotional pattern, or self-defeating thought that may be operating beneath the surface.",
+      title: "Personal Growth Coaching",
+      bestFor: "You want clarity, direction, and intentional growth.",
+      description:
+        "Personal Growth Coaching supports you in becoming more self-aware, identifying what matters most, and taking meaningful steps toward the life you want to create.",
+      outcomes: [
+        "Greater clarity",
+        "Stronger self-awareness",
+        "Personal direction",
+        "More intentional choices",
+      ],
     },
     {
-      title: "Understanding",
-      text: "Explore how that belief may be influencing your confidence, emotions, choices, relationships, habits, and results.",
+      title: "Confidence Coaching",
+      bestFor: "You struggle with self-doubt or second-guessing yourself.",
+      description:
+        "Confidence Coaching helps you strengthen self-trust, recognize your worth, and begin taking action with greater courage and belief in yourself.",
+      outcomes: [
+        "Increased self-trust",
+        "Stronger self-worth",
+        "Less fear of judgment",
+        "More confident decisions",
+      ],
     },
     {
-      title: "Challenge",
-      text: "Gently question beliefs that may no longer be serving you and begin separating truth from old conditioning, fear, or past experiences.",
+      title: "Accountability Coaching",
+      bestFor: "You know what you want but need support following through.",
+      description:
+        "Accountability Coaching provides structure, encouragement, and practical support so you can stay focused, take action, and remain committed to your goals.",
+      outcomes: [
+        "Clear action steps",
+        "Consistent follow-through",
+        "Reduced procrastination",
+        "Support staying focused",
+      ],
     },
     {
-      title: "Transformation",
-      text: "Replace limiting beliefs with healthier, more empowering perspectives that support healing, confidence, and growth.",
+      title: "Life Transition Coaching",
+      bestFor: "You are navigating change, uncertainty, or a new chapter.",
+      description:
+        "Life Transition Coaching supports you through seasons of change, helping you process uncertainty, make grounded decisions, and move forward with confidence.",
+      outcomes: [
+        "Support through change",
+        "Better decision-making",
+        "Renewed direction",
+        "Confidence in your next chapter",
+      ],
     },
     {
-      title: "Alignment",
-      text: "Create actions, habits, boundaries, and accountability that support the new belief system you are choosing to live from.",
+      title: "Mindset & Emotional Wellness Coaching",
+      bestFor: "You want healthier thought patterns and emotional balance.",
+      description:
+        "Mindset and Emotional Wellness Coaching helps you recognize patterns, manage overwhelm, reduce negative self-talk, and create healthier ways of responding.",
+      outcomes: [
+        "Healthier mindset",
+        "Emotional awareness",
+        "Less overwhelm",
+        "Stronger resilience",
+      ],
+    },
+    {
+      title: "Healing & Self-Discovery Coaching",
+      bestFor: "You want to reconnect with yourself and your identity.",
+      description:
+        "Healing and Self-Discovery Coaching creates space to explore your values, reconnect with who you are, and move forward with greater self-understanding.",
+      outcomes: [
+        "Deeper self-discovery",
+        "Clearer values",
+        "Stronger identity",
+        "More self-compassion",
+      ],
     },
   ];
 
-  const explorationAreas = [
-    {
-      title: "Limiting Beliefs & Self-Defeating Patterns",
-      text: "Identify and challenge the beliefs that may be keeping you stuck, holding you back from opportunities, or preventing you from creating the life you desire.",
-    },
-    {
-      title: "Self-Worth & Self-Confidence",
-      text: "Strengthen your sense of self, develop confidence in your abilities, and learn to recognize your value beyond external validation.",
-    },
-    {
-      title: "Fear of Failure, Rejection, or Judgment",
-      text: "Explore the fears that may be influencing your decisions, limiting your growth, or preventing you from taking meaningful action.",
-    },
-    {
-      title: "Perfectionism & Overthinking",
-      text: "Learn to release unrealistic expectations, quiet self-criticism, and embrace progress over perfection.",
-    },
-    {
-      title: "People-Pleasing & Boundary Setting",
-      text: "Develop healthier boundaries, communicate your needs effectively, and build relationships that support your well-being.",
-    },
-    {
-      title: "Imposter Syndrome",
-      text: "Recognize and overcome feelings of self-doubt while building confidence in your abilities, accomplishments, and potential.",
-    },
-    {
-      title: "Emotional Triggers & Recurring Life Patterns",
-      text: "Gain awareness of emotional responses and recurring situations that continue to create frustration, stress, or setbacks.",
-    },
-    {
-      title: "Personal Identity & Self-Concept",
-      text: "Explore who you are beyond past experiences, limitations, and labels while creating a stronger vision for who you are becoming.",
-    },
-    {
-      title: "Goal Achievement Barriers",
-      text: "Identify what is standing between you and your goals and create strategies that support sustainable success.",
-    },
-    {
-      title: "Relationship Dynamics",
-      text: "Examine relationship patterns, communication styles, and beliefs that may be impacting your connections with others.",
-    },
-    {
-      title: "Life Transitions & Personal Growth",
-      text: "Navigate change with greater confidence, clarity, and resilience while building a foundation for your next chapter.",
-    },
-  ];
-
-  const benefits = [
-    "Greater self-awareness and personal insight",
-    "Increased confidence and self-trust",
-    "Improved decision-making and clarity",
-    "Stronger boundaries and healthier relationships",
-    "Reduced self-sabotaging behaviors",
-    "Increased motivation and follow-through",
-    "Greater emotional resilience",
-    "A stronger sense of purpose and direction",
-    "Improved self-worth and self-acceptance",
-    "More authentic and fulfilling relationships",
-    "Better alignment between goals, values, and actions",
-    "Lasting personal growth and transformation",
-  ];
-
-  const commonBeliefs = [
-    "I'm not good enough.",
-    "I always fail.",
-    "I don't deserve success.",
-    "I have to be perfect.",
-    "My needs don't matter.",
-    "I can't trust myself.",
-    "Change is too hard for me.",
-    "I am too far behind.",
+  const commonNeeds = [
+    "Feeling stuck",
+    "Low confidence",
+    "Overthinking",
+    "People-pleasing",
+    "Life changes",
+    "Lack of direction",
+    "Self-doubt",
+    "Accountability",
+    "Emotional overwhelm",
+    "Goal follow-through",
+    "Personal growth",
+    "Healing and self-discovery",
   ];
 
   return (
-    <main className="bg-[#fdf8f3] text-[#3f342c]">
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
+      <section className="px-6 py-20">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
-              Signature Coaching Method
+            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+              Coaching Services
             </p>
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Core Belief Transformation Coaching™
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              Personalized Coaching for Your Growth, Confidence, and Next Chapter
             </h1>
 
-            <p className="text-2xl font-semibold text-[#9b6b5f] leading-relaxed mb-6">
-              Change the beliefs. Change the patterns. Change the life.
-            </p>
-
-            <p className="text-lg leading-8 mb-6">
-              Many people spend years trying to change behaviors, habits, and
-              circumstances without addressing the underlying beliefs that
-              influence them.
-            </p>
-
-            <p className="text-lg leading-8 mb-8">
-              Core Belief Transformation Coaching™ focuses on identifying and
-              transforming the beliefs operating beneath the surface so you can
-              create meaningful and lasting change from the inside out.
+            <p className="text-xl text-[#6b4b43] leading-relaxed mb-8">
+              Coaching services are designed to meet you where you are and help
+              you move forward with clarity, support, accountability, and
+              purpose.
             </p>
 
             <a
               href={bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
+              className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
             >
               Book a Free Discovery Call
             </a>
@@ -144,189 +128,165 @@ export default function CoreBeliefCoaching() {
 
           <div>
             <img
-              src="/core-belief-transformation.jpg"
-              alt="Core Belief Transformation Coaching"
-              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full"
+              src="/kaelynn-portrait.png"
+              alt="Kaelynn Kinnison Life Coaching Services"
+              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
             />
-
-            <div className="mt-6 bg-white border border-[#eadfd5] rounded-3xl p-6 shadow-sm">
-              <h2 className="text-2xl font-bold mb-4 text-[#9b6b5f]">
-                Why Core Beliefs Matter
-              </h2>
-
-              <p className="leading-7 mb-4">
-                Core beliefs influence how you see yourself, what you believe is
-                possible, how you respond to challenges, and the choices you
-                make.
-              </p>
-
-              <p className="leading-7 mb-4">
-                When limiting beliefs go unchallenged, they can quietly
-                influence confidence, relationships, emotional wellness,
-                motivation, and results.
-              </p>
-
-              <p className="font-semibold text-[#9b6b5f] leading-7">
-                When you change the beliefs that shape your life, you begin
-                changing the life those beliefs create.
-              </p>
-            </div>
           </div>
         </div>
+      </section>
 
-        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            What Are Core Beliefs?
-          </h2>
-
-          <div className="space-y-5 text-lg leading-8">
-            <p>
-              Core beliefs are deeply held beliefs about yourself, others, and
-              the world around you. They often form through life experiences,
-              relationships, challenges, messages you received, and patterns you
-              learned over time.
-            </p>
-
-            <p>
-              These beliefs can influence confidence, self-worth, emotional
-              responses, relationships, boundaries, decision-making, and goal
-              achievement.
-            </p>
-
-            <p className="font-semibold text-[#9b6b5f]">
-              When a limiting core belief goes unchallenged, it can continue
-              shaping your life even when you are ready for something different.
-            </p>
-          </div>
-        </section>
-
-        <section className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
-          <p className="uppercase tracking-[0.25em] text-sm text-white/70 mb-4">
-            Signature Method
+      <section className="bg-white px-6 py-20">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+            What I Help With
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            The Core Belief Transformation Method™
+          <h2 className="text-4xl font-bold mb-6">
+            Coaching Services Designed Around Real-Life Challenges
           </h2>
 
-          <p className="text-lg leading-8 mb-10 text-white/90">
-            This five-step process helps you move from awareness to lasting
-            transformation by identifying limiting beliefs, understanding their
-            impact, challenging old patterns, creating healthier perspectives,
-            and aligning your actions with the person you are becoming.
+          <p className="text-lg text-[#6b4b43] leading-relaxed max-w-4xl mx-auto mb-12">
+            Each service focuses on a specific area of growth. During your
+            discovery call, we can discuss which type of support best aligns with
+            your current goals, challenges, and season of life.
           </p>
 
-          <div className="grid md:grid-cols-5 gap-5">
-            {methodSteps.map((step, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+            {services.map((service) => (
               <div
-                key={step.title}
-                className="rounded-2xl bg-white/10 border border-white/20 p-5"
+                key={service.title}
+                className="bg-[#fdf8f3] rounded-3xl shadow-md p-8 border border-[#eadfd5] flex flex-col"
               >
-                <p className="text-white/70 text-sm mb-2">
-                  Step {index + 1}
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+
+                <p className="text-[#9b6f5f] font-semibold mb-4">
+                  Best for: {service.bestFor}
                 </p>
 
-                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
+                <p className="text-[#6b4b43] leading-relaxed mb-6">
+                  {service.description}
+                </p>
 
-                <p className="leading-7 text-white/90">{step.text}</p>
+                <div className="mt-auto">
+                  <p className="font-semibold text-[#7b4f43] mb-3">
+                    Possible outcomes:
+                  </p>
+
+                  <ul className="space-y-2 text-[#6b4b43]">
+                    {service.outcomes.map((item) => (
+                      <li key={item}>✔ {item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            What We May Explore Together
-          </h2>
+      <section className="bg-[#f5e8df] px-6 py-20">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+          <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-md">
+            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+              Personalized Support
+            </p>
 
-          <p className="text-lg leading-8 mb-8">
-            Transformation begins with awareness. Many of the challenges we
-            experience in life are connected to beliefs, patterns, and
-            experiences operating beneath the surface.
+            <h2 className="text-4xl font-bold mb-6">
+              You Do Not Have to Know Exactly What You Need Yet
+            </h2>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              Many people come to coaching knowing they want something to change,
+              but not knowing exactly where to begin. That is okay.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              During your discovery call, we will talk through what you are
+              experiencing, what you want to work toward, and which coaching
+              support may be the best fit for your current season.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed">
+              Your coaching experience can be personalized around your goals,
+              challenges, patterns, and desired outcomes.
+            </p>
+          </div>
+
+          <div className="rounded-3xl bg-[#7b4f43] text-white p-8 shadow-md">
+            <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
+              Signature Foundation
+            </p>
+
+            <h2 className="text-4xl font-bold mb-6">
+              Supported by the Core Belief Transformation Method™
+            </h2>
+
+            <p className="text-[#f7e9df] leading-relaxed mb-6">
+              While this page focuses on the different services I offer, my
+              coaching foundation remains rooted in identifying the beliefs,
+              patterns, and self-concepts that may be influencing your current
+              experience.
+            </p>
+
+            <p className="text-[#f7e9df] leading-relaxed mb-8">
+              If you want to learn more about the deeper method behind my
+              coaching, visit the Core Belief Coaching page.
+            </p>
+
+            <a
+              href="/core-belief-coaching"
+              className="inline-block bg-white text-[#7b4f43] px-6 py-3 rounded-full font-semibold hover:bg-[#f5e8df] transition"
+            >
+              Learn About the Method
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+            Common Reasons People Seek Coaching
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {explorationAreas.map((area) => (
-              <div
-                key={area.title}
-                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-5 min-h-[150px]"
+          <h2 className="text-4xl font-bold mb-10">
+            You May Be Looking for Support With...
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            {commonNeeds.map((item) => (
+              <span
+                key={item}
+                className="bg-[#fdf8f3] px-5 py-3 rounded-full shadow-sm text-[#6b4b43] font-medium border border-[#eadfd5]"
               >
-                <h3 className="font-semibold text-[#9b6b5f] mb-2">
-                  {area.title}
-                </h3>
-
-                <p className="leading-7">{area.text}</p>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            Common Limiting Beliefs Clients May Explore
+      <section className="bg-[#7b4f43] text-white px-6 py-24 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Find the Right Coaching Support?
           </h2>
 
-          <p className="text-lg leading-8 mb-8">
-            These beliefs can show up in different ways and may affect
-            confidence, relationships, decisions, goals, and emotional wellness.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            {commonBeliefs.map((belief) => (
-              <div
-                key={belief}
-                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-4 text-[#6b4b43] font-medium"
-              >
-                “{belief}”
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            Benefits of Core Belief Transformation Coaching
-          </h2>
-
-          <p className="text-lg leading-8 mb-8">
-            When you begin changing the beliefs that drive your thoughts,
-            emotions, and behaviors, meaningful transformation becomes possible.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            {benefits.map((benefit) => (
-              <div key={benefit} className="bg-white/10 rounded-xl p-4">
-                ✔ {benefit}
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-8 text-lg leading-8">
-            Because when you change the beliefs that shape your life, you begin
-            changing the life those beliefs create.
-          </p>
-        </section>
-
-        <section className="text-center rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Begin Your Transformation?
-          </h2>
-
-          <p className="text-lg leading-8 max-w-3xl mx-auto mb-8">
-            Schedule a complimentary discovery call to explore your goals,
-            current challenges, and how Core Belief Transformation Coaching™ can
-            support your healing, growth, and next chapter.
+          <p className="text-lg text-[#f7e9df] leading-relaxed mb-8">
+            A discovery call is the best first step to talk through your goals,
+            ask questions, and decide which coaching service is right for you.
           </p>
 
           <a
             href={bookingLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-[#3f342c] px-6 py-3 text-white font-semibold hover:bg-[#5a4a3f] transition"
+            className="inline-block bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
           >
-            Schedule Your Discovery Call
+            Book a Free Discovery Call
           </a>
-        </section>
+        </div>
       </section>
     </main>
   );
