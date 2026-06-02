@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Core Belief Transformation Coaching | Life Coaching with Kaelynn",
   description:
-    "Identify and transform limiting beliefs, build confidence, improve self-worth, and create lasting personal growth through Core Belief Transformation Coaching with Kaelynn Kinnison.",
+    "Explore Core Belief Transformation Coaching with Kaelynn Kinnison. Identify limiting beliefs, build confidence, improve self-worth, reduce self-sabotage, and create lasting personal growth.",
 };
 
 const bookingLink = "https://calendly.com/kaelynnkinnison";
@@ -10,15 +10,15 @@ export default function CoreBeliefCoaching() {
   const methodSteps = [
     {
       title: "Awareness",
-      text: "Identify the limiting belief, emotional pattern, or self-defeating thought that may be operating beneath the surface.",
+      text: "Identify the limiting belief, emotional pattern, or self-defeating thought operating beneath the surface.",
     },
     {
       title: "Understanding",
-      text: "Explore how the belief may be influencing your confidence, emotions, choices, relationships, habits, and results.",
+      text: "Explore how that belief affects your confidence, emotions, decisions, relationships, habits, and results.",
     },
     {
       title: "Challenge",
-      text: "Gently question beliefs that may no longer be serving you and begin separating truth from old conditioning, fear, or past experiences.",
+      text: "Question beliefs that may no longer be serving your growth and separate truth from fear, conditioning, or past experiences.",
     },
     {
       title: "Transformation",
@@ -31,65 +31,44 @@ export default function CoreBeliefCoaching() {
   ];
 
   const explorationAreas = [
-    {
-      title: "Limiting Beliefs & Self-Defeating Patterns",
-      text: "Identify and challenge the beliefs that may be keeping you stuck, holding you back from opportunities, or preventing you from creating the life you desire.",
-    },
-    {
-      title: "Self-Worth & Self-Confidence",
-      text: "Strengthen your sense of self, develop confidence in your abilities, and learn to recognize your value beyond external validation.",
-    },
-    {
-      title: "Fear of Failure, Rejection, or Judgment",
-      text: "Explore the fears that may be influencing your decisions, limiting your growth, or preventing you from taking meaningful action.",
-    },
-    {
-      title: "Perfectionism & Overthinking",
-      text: "Learn to release unrealistic expectations, quiet self-criticism, and embrace progress over perfection.",
-    },
-    {
-      title: "People-Pleasing & Boundary Setting",
-      text: "Develop healthier boundaries, communicate your needs effectively, and build relationships that support your well-being.",
-    },
-    {
-      title: "Imposter Syndrome",
-      text: "Recognize and overcome feelings of self-doubt while building confidence in your abilities, accomplishments, and potential.",
-    },
-    {
-      title: "Emotional Triggers & Recurring Life Patterns",
-      text: "Gain awareness of emotional responses and recurring situations that continue to create frustration, stress, or setbacks.",
-    },
-    {
-      title: "Personal Identity & Self-Concept",
-      text: "Explore who you are beyond past experiences, limitations, and labels while creating a stronger vision for who you are becoming.",
-    },
-    {
-      title: "Goal Achievement Barriers",
-      text: "Identify what is standing between you and your goals and create strategies that support sustainable success.",
-    },
-    {
-      title: "Relationship Dynamics",
-      text: "Examine relationship patterns, communication styles, and beliefs that may be impacting your connections with others.",
-    },
-    {
-      title: "Life Transitions & Personal Growth",
-      text: "Navigate change with greater confidence, clarity, and resilience while building a foundation for your next chapter.",
-    },
+    "Limiting beliefs and self-defeating patterns",
+    "Self-worth and self-confidence",
+    "Fear of failure, rejection, or judgment",
+    "Perfectionism and overthinking",
+    "People-pleasing and boundary setting",
+    "Imposter syndrome",
+    "Emotional triggers and recurring patterns",
+    "Personal identity and self-concept",
+    "Goal achievement barriers",
+    "Relationship dynamics",
+    "Life transitions and personal growth",
+    "Self-sabotage and procrastination",
+  ];
+
+  const commonBeliefs = [
+    "I'm not good enough.",
+    "I always fail.",
+    "I don't deserve success.",
+    "I have to be perfect.",
+    "My needs don't matter.",
+    "I can't trust myself.",
+    "Change is too hard for me.",
+    "I am too far behind.",
   ];
 
   const benefits = [
-    "Greater self-awareness and personal insight",
+    "Greater self-awareness",
     "Increased confidence and self-trust",
-    "Improved decision-making and clarity",
-    "Stronger boundaries and healthier relationships",
+    "Improved decision-making",
+    "Healthier boundaries",
     "Reduced self-sabotaging behaviors",
     "Increased motivation and follow-through",
-    "Greater emotional resilience",
-    "A stronger sense of purpose and direction",
-    "Improved self-worth and self-acceptance",
-    "More authentic and fulfilling relationships",
-    "Better alignment between goals, values, and actions",
-    "Lasting personal growth and transformation",
+    "Stronger emotional resilience",
+    "A stronger sense of purpose",
+    "Improved self-worth",
+    "More authentic relationships",
+    "Better alignment between goals and actions",
+    "Lasting personal growth",
   ];
 
   return (
@@ -98,23 +77,27 @@ export default function CoreBeliefCoaching() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <p className="uppercase tracking-[0.25em] text-sm text-[#9b6b5f] mb-4">
-              Core Belief Transformation Coaching
+              Signature Coaching Method
             </p>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Change the Beliefs. Change the Pattern. Change the Life.
+              Core Belief Transformation Coaching™
             </h1>
 
+            <p className="text-2xl font-semibold text-[#9b6b5f] leading-relaxed mb-6">
+              Change the beliefs. Change the patterns. Change the life.
+            </p>
+
             <p className="text-lg leading-8 mb-6">
-              Many people spend years trying to change behaviors, habits, and
-              circumstances without addressing the underlying beliefs that
-              influence them.
+              Many people try to change behaviors, habits, relationships, or
+              circumstances without addressing the beliefs that may be driving
+              those patterns beneath the surface.
             </p>
 
             <p className="text-lg leading-8 mb-8">
-              Core Belief Transformation Coaching focuses on identifying and
-              transforming the beliefs operating beneath the surface so you can
-              create meaningful and lasting change from the inside out.
+              Core Belief Transformation Coaching™ helps you identify limiting
+              beliefs, challenge old patterns, and develop healthier
+              perspectives so lasting change can begin from the inside out.
             </p>
 
             <a
@@ -135,9 +118,9 @@ export default function CoreBeliefCoaching() {
             />
 
             <div className="mt-6 bg-white border border-[#eadfd5] rounded-3xl p-6 shadow-sm">
-              <h3 className="text-2xl font-bold mb-4 text-[#9b6b5f]">
+              <h2 className="text-2xl font-bold mb-4 text-[#9b6b5f]">
                 Why Core Beliefs Matter
-              </h3>
+              </h2>
 
               <p className="leading-7 mb-4">
                 Core beliefs influence how you see yourself, what you believe is
@@ -146,9 +129,9 @@ export default function CoreBeliefCoaching() {
               </p>
 
               <p className="leading-7 mb-4">
-                When limiting beliefs go unchallenged, they can quietly
-                influence confidence, relationships, emotional wellness,
-                motivation, and results.
+                When limiting beliefs go unchallenged, they can quietly shape
+                confidence, relationships, emotional wellness, motivation, and
+                results.
               </p>
 
               <p className="font-semibold text-[#9b6b5f] leading-7">
@@ -159,36 +142,33 @@ export default function CoreBeliefCoaching() {
           </div>
         </div>
 
-        <div className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
-          <h2 className="text-3xl font-bold mb-6">
-            What We May Explore Together
-          </h2>
+        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
+          <h2 className="text-3xl font-bold mb-6">What Are Core Beliefs?</h2>
 
-          <p className="text-lg leading-8 mb-8">
-            Transformation begins with awareness. Many of the challenges we
-            experience in life are connected to beliefs, patterns, and
-            experiences operating beneath the surface.
-          </p>
+          <div className="space-y-5 text-lg leading-8">
+            <p>
+              Core beliefs are deeply held beliefs about yourself, others, and
+              the world around you. They often form through life experiences,
+              relationships, challenges, repeated messages, and patterns learned
+              over time.
+            </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {explorationAreas.map((area) => (
-              <div
-                key={area.title}
-                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-5 min-h-[150px]"
-              >
-                <h3 className="font-semibold text-[#9b6b5f] mb-2">
-                  {area.title}
-                </h3>
+            <p>
+              These beliefs can influence your confidence, self-worth,
+              emotional responses, relationships, boundaries, decision-making,
+              and ability to follow through on goals.
+            </p>
 
-                <p className="leading-7">{area.text}</p>
-              </div>
-            ))}
+            <p className="font-semibold text-[#9b6b5f]">
+              When a limiting core belief goes unchallenged, it can continue
+              shaping your life even when you are ready for something different.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
+        <section className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
           <p className="uppercase tracking-[0.25em] text-sm text-white/70 mb-4">
-            Signature Method
+            The Process
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -218,9 +198,32 @@ export default function CoreBeliefCoaching() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
+        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
+          <h2 className="text-3xl font-bold mb-6">
+            What We May Explore Together
+          </h2>
+
+          <p className="text-lg leading-8 mb-8">
+            Core Belief Transformation Coaching™ may support many areas of
+            personal growth, healing, confidence, emotional wellness, and life
+            transformation.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            {explorationAreas.map((item) => (
+              <div
+                key={item}
+                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-5 text-[#6b4b43] font-medium"
+              >
+                • {item}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-3xl bg-[#f5e8df] border border-[#eadfd5] p-10 shadow-sm mb-16">
           <h2 className="text-3xl font-bold mb-6">
             Common Limiting Beliefs Clients May Explore
           </h2>
@@ -231,27 +234,53 @@ export default function CoreBeliefCoaching() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-4">
-            {[
-              "I'm not good enough.",
-              "I always fail.",
-              "I don't deserve success.",
-              "I have to be perfect.",
-              "My needs don't matter.",
-              "I can't trust myself.",
-              "Change is too hard for me.",
-              "I am too far behind.",
-            ].map((belief) => (
+            {commonBeliefs.map((belief) => (
               <div
                 key={belief}
-                className="bg-[#fdf8f3] border border-[#eadfd5] rounded-2xl p-4 text-[#6b4b43] font-medium"
+                className="bg-white border border-[#eadfd5] rounded-2xl p-5 text-[#6b4b43] font-medium"
               >
                 “{belief}”
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
+        <section className="rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm mb-16">
+          <h2 className="text-3xl font-bold mb-6">
+            How Core Beliefs Can Affect Your Life
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-[#fdf8f3] rounded-3xl p-8 border border-[#eadfd5]">
+              <h3 className="text-2xl font-bold text-[#9b6b5f] mb-4">
+                Limiting Belief
+              </h3>
+              <p className="text-lg font-semibold mb-4">
+                “I&apos;m not good enough.”
+              </p>
+              <p className="leading-7 text-[#6b4b43]">
+                This belief may show up as perfectionism, people-pleasing,
+                avoiding opportunities, fear of failure, or constantly needing
+                outside validation.
+              </p>
+            </div>
+
+            <div className="bg-[#3f342c] text-white rounded-3xl p-8">
+              <h3 className="text-2xl font-bold mb-4">
+                Empowering Belief
+              </h3>
+              <p className="text-lg font-semibold mb-4">
+                “I am worthy, capable, and growing.”
+              </p>
+              <p className="leading-7 text-white/90">
+                This belief supports confidence, healthier choices, stronger
+                boundaries, increased self-trust, and more aligned action.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-3xl bg-[#3f342c] text-white p-10 shadow-sm mb-16">
           <h2 className="text-3xl font-bold mb-6">
             Benefits of Core Belief Transformation Coaching
           </h2>
@@ -268,21 +297,16 @@ export default function CoreBeliefCoaching() {
               </div>
             ))}
           </div>
+        </section>
 
-          <p className="mt-8 text-lg leading-8">
-            Because when you change the beliefs that shape your life, you begin
-            changing the life those beliefs create.
-          </p>
-        </div>
-
-        <div className="text-center rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm">
+        <section className="text-center rounded-3xl bg-white border border-[#eadfd5] p-10 shadow-sm">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Begin Your Transformation?
           </h2>
 
           <p className="text-lg leading-8 max-w-3xl mx-auto mb-8">
             Schedule a complimentary discovery call to explore your goals,
-            current challenges, and how core belief transformation coaching can
+            current challenges, and how Core Belief Transformation Coaching™ can
             support your healing, growth, and next chapter.
           </p>
 
@@ -294,7 +318,7 @@ export default function CoreBeliefCoaching() {
           >
             Schedule Your Discovery Call
           </a>
-        </div>
+        </section>
       </section>
     </main>
   );
