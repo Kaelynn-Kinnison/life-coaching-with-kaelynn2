@@ -128,10 +128,10 @@ export default function Services() {
 
           <div>
             <img
-              src="/kaelynn-portrait.png"
-              alt="Kaelynn Kinnison Life Coaching Services"
-              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
-            />
+  src="/services-hero.jpg"
+  alt="Personal growth and transformation journey"
+  className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
+/>
           </div>
         </div>
       </section>
