@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "Coaching Services | Life Coaching with Kaelynn",
   description:
     "Explore life coaching services with Kaelynn including personal growth coaching, confidence coaching, accountability coaching, life transition coaching, emotional wellness coaching, and healing support.",
 };
 
-const bookingLink = "https://calendly.com/kaelynnkinnison";
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function Services() {
   const services = [
@@ -12,7 +14,7 @@ export default function Services() {
       title: "Personal Growth Coaching",
       bestFor: "You want clarity, direction, and intentional growth.",
       description:
-        "Personal Growth Coaching supports you in becoming more self-aware, identifying what matters most, and taking meaningful steps toward the life you want to create.",
+        "Supports self-awareness, personal direction, confidence, and meaningful growth.",
       outcomes: [
         "Greater clarity",
         "Stronger self-awareness",
@@ -24,7 +26,7 @@ export default function Services() {
       title: "Confidence Coaching",
       bestFor: "You struggle with self-doubt or second-guessing yourself.",
       description:
-        "Confidence Coaching helps you strengthen self-trust, recognize your worth, and begin taking action with greater courage and belief in yourself.",
+        "Helps strengthen self-trust, self-worth, courage, and confidence in your decisions.",
       outcomes: [
         "Increased self-trust",
         "Stronger self-worth",
@@ -36,7 +38,7 @@ export default function Services() {
       title: "Accountability Coaching",
       bestFor: "You know what you want but need support following through.",
       description:
-        "Accountability Coaching provides structure, encouragement, and practical support so you can stay focused, take action, and remain committed to your goals.",
+        "Provides structure, encouragement, and support so you can stay focused and take action.",
       outcomes: [
         "Clear action steps",
         "Consistent follow-through",
@@ -48,7 +50,7 @@ export default function Services() {
       title: "Life Transition Coaching",
       bestFor: "You are navigating change, uncertainty, or a new chapter.",
       description:
-        "Life Transition Coaching supports you through seasons of change, helping you process uncertainty, make grounded decisions, and move forward with confidence.",
+        "Supports you through life changes, decisions, reinvention, and moving forward with confidence.",
       outcomes: [
         "Support through change",
         "Better decision-making",
@@ -60,7 +62,7 @@ export default function Services() {
       title: "Mindset & Emotional Wellness Coaching",
       bestFor: "You want healthier thought patterns and emotional balance.",
       description:
-        "Mindset and Emotional Wellness Coaching helps you recognize patterns, manage overwhelm, reduce negative self-talk, and create healthier ways of responding.",
+        "Helps you recognize patterns, manage overwhelm, reduce negative self-talk, and build resilience.",
       outcomes: [
         "Healthier mindset",
         "Emotional awareness",
@@ -72,7 +74,7 @@ export default function Services() {
       title: "Healing & Self-Discovery Coaching",
       bestFor: "You want to reconnect with yourself and your identity.",
       description:
-        "Healing and Self-Discovery Coaching creates space to explore your values, reconnect with who you are, and move forward with greater self-understanding.",
+        "Creates space to explore your values, reconnect with who you are, and move forward with self-understanding.",
       outcomes: [
         "Deeper self-discovery",
         "Clearer values",
@@ -127,10 +129,13 @@ export default function Services() {
           </div>
 
           <div>
-            <img
-             src="/life-coaching-hero.png"
+            <Image
+              src="/services-hero.png"
               alt="Warm reflective coaching space for personal growth and clarity"
-              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
+              width={900}
+              height={650}
+              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full h-auto object-cover"
+              priority
             />
           </div>
         </div>
@@ -201,12 +206,6 @@ export default function Services() {
               but not knowing exactly where to begin. That is okay.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              During your discovery call, we will talk through what you are
-              experiencing, what you want to work toward, and which coaching
-              support may be the best fit for your current season.
-            </p>
-
             <p className="text-[#6b4b43] leading-relaxed">
               Your coaching experience can be personalized around your goals,
               challenges, patterns, and desired outcomes.
@@ -222,16 +221,10 @@ export default function Services() {
               Supported by the Core Belief Transformation Method™
             </h2>
 
-            <p className="text-[#f7e9df] leading-relaxed mb-6">
-              While this page focuses on the different services I offer, my
-              coaching foundation remains rooted in identifying the beliefs,
-              patterns, and self-concepts that may be influencing your current
-              experience.
-            </p>
-
             <p className="text-[#f7e9df] leading-relaxed mb-8">
-              If you want to learn more about the deeper method behind my
-              coaching, visit the Core Belief Coaching page.
+              While this page focuses on the services I offer, my coaching
+              foundation remains rooted in identifying the beliefs, patterns, and
+              self-concepts that may be influencing your current experience.
             </p>
 
             <a
