@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export const metadata = {
   title: "About Kaelynn Kinnison | Transformational Life Coach",
   description:
-    "Meet Kaelynn Kinnison, Transformational Life Coach. Learn about her coaching philosophy, background, and commitment to helping clients heal, grow, and transform.",
+    "Meet Kaelynn Kinnison, Transformational Life Coach. Learn about her coaching philosophy, background, and Core Belief Transformation Method.",
 };
+
 export default function About() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f2f2a]">
@@ -88,11 +90,43 @@ export default function About() {
           </h2>
 
           <p className="text-lg text-[#6b4b43] leading-relaxed">
-            My mission is to help individuals heal, grow, and transform through
-            compassionate support, accountability, self-discovery, and
-            intentional action. I believe lasting change begins with
-            self-awareness, courage, and the willingness to take one step
-            forward at a time.
+            My mission is to help individuals heal, grow, and transform by
+            identifying and changing the core beliefs that influence their
+            thoughts, emotions, behaviors, relationships, confidence, and
+            results.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#7b4f43] text-white px-6 py-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
+            Signature Method
+          </p>
+
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Why I Created the Core Belief Transformation Method™
+          </h2>
+
+          <p className="text-lg text-[#f7e9df] leading-relaxed mb-6">
+            Through my coaching education, personal growth work, and studies in
+            Psychology, I noticed a common pattern: many people know what they
+            want to change, but still struggle to create lasting results.
+          </p>
+
+          <p className="text-lg text-[#f7e9df] leading-relaxed mb-6">
+            Often, the issue is not a lack of motivation or desire. The deeper
+            challenge is the belief system operating beneath the surface.
+            Beliefs such as “I&apos;m not good enough,” “I always fail,” or “I
+            don&apos;t deserve success” can quietly influence confidence,
+            emotions, decisions, relationships, and follow-through.
+          </p>
+
+          <p className="text-lg text-[#f7e9df] leading-relaxed">
+            The Core Belief Transformation Method™ was created to help clients
+            identify those limiting beliefs, challenge old patterns, and build
+            healthier beliefs that support healing, confidence, accountability,
+            emotional wellness, and lasting transformation.
           </p>
         </div>
       </section>
@@ -103,9 +137,7 @@ export default function About() {
             Coaching Values
           </p>
 
-          <h2 className="text-4xl font-bold mb-10">
-            What You Can Expect
-          </h2>
+          <h2 className="text-4xl font-bold mb-10">What You Can Expect</h2>
 
           <div className="grid md:grid-cols-3 gap-6 text-left">
             <div className="bg-white rounded-3xl shadow-md p-8">
@@ -147,9 +179,9 @@ export default function About() {
 
           <p className="text-lg text-[#6b4b43] leading-relaxed">
             Coaching is not about telling you who to become. It is about helping
-            you reconnect with who you are, identify what matters most, and move
-            forward with support, structure, and belief in your ability to
-            change.
+            you reconnect with who you are, identify what matters most, uncover
+            the beliefs that may be keeping you stuck, and move forward with
+            support, structure, and belief in your ability to change.
           </p>
         </div>
       </section>
