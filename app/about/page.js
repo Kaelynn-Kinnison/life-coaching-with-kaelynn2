@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Kaelynn Kinnison | Transformational Life Coach",
   description:
-    "Meet Kaelynn Kinnison, Transformational Life Coach. Learn about her coaching philosophy, background, and Core Belief Transformation Method.",
+    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Learn about her coaching philosophy, background, and commitment to helping clients heal, grow, and transform.",
 };
 
 export default function About() {
@@ -30,50 +30,72 @@ export default function About() {
             </h1>
 
             <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
-              What if the life you want is closer than you think?
+              What if the life you want is already within reach?
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Hi, I&apos;m Kaelynn Kinnison, and I am passionate about helping
-              people move beyond feeling stuck and into a life of greater
-              clarity, confidence, and purpose.
+              Hi, I&apos;m Kaelynn Kinnison, Transformational Life Coach and
+              creator of the Core Belief Transformation Method™.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              My passion is helping people break free from the beliefs,
+              patterns, and obstacles that keep them feeling stuck so they can
+              create meaningful, lasting change in their lives.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4">
+              Through my work with clients, I have discovered that many
+              struggles are not caused by a lack of motivation, willpower, or
+              desire. More often, they are connected to deeply held beliefs
+              about ourselves, our worth, our capabilities, and what we believe
+              is possible for our future.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
               I believe every person has the ability to heal, grow, and
-              transform, even when life&apos;s challenges feel overwhelming.
-              Sometimes the hardest part isn&apos;t finding the answer—it&apos;s
-              trying to carry everything alone.
+              transform. Sometimes the greatest challenge is not knowing what to
+              do—it&apos;s trying to carry the weight of life&apos;s challenges
+              alone.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
               My journey into coaching began with a genuine desire to help
               people recognize their strengths, overcome obstacles, and create
-              positive change in their lives. Through compassionate support,
-              accountability, and practical guidance, I help clients build
-              confidence, navigate transitions, strengthen their mindset, and
-              reconnect with what matters most.
+              positive change. As I continued my coaching education and studies
+              in Psychology, I became increasingly fascinated by the powerful
+              connection between beliefs, mindset, emotions, behavior, and
+              personal transformation.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
               I have earned a Health and Wellness Coaching Certificate and am
-              currently in my second year of studying Psychology. These
-              experiences have deepened my understanding of personal growth,
-              emotional wellness, human behavior, and the powerful connection
-              between mindset and transformation.
+              currently pursuing my degree in Psychology. These experiences have
+              strengthened my understanding of human behavior, emotional
+              wellness, personal growth, and the lasting impact our beliefs have
+              on the lives we create.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed mb-4">
+              This passion ultimately led me to develop the Core Belief
+              Transformation Method™—a coaching approach designed to help
+              individuals identify limiting beliefs, challenge old patterns,
+              develop healthier perspectives, and create lasting transformation
+              from the inside out.
+            </p>
+
+            <p className="text-[#6b4b43] leading-relaxed mb-4 font-semibold">
               One of my core beliefs is simple: no problem is too big,
               especially when you don&apos;t have to face it alone.
             </p>
 
             <p className="text-[#6b4b43] leading-relaxed">
-              Whether you&apos;re seeking healing, personal growth,
-              accountability, greater confidence, or support through a major
-              life transition, my goal is to help you move forward with clarity,
-              courage, and purpose. Your next chapter is waiting—and you
-              don&apos;t have to navigate it by yourself.
+              Whether you&apos;re seeking greater confidence, emotional
+              wellness, healing, personal growth, stronger relationships,
+              accountability, or support through a major life transition, my
+              goal is to provide a supportive space where you can gain clarity,
+              discover your strengths, and move forward with courage and
+              purpose.
             </p>
           </div>
         </div>
@@ -193,8 +215,8 @@ export default function About() {
           </h2>
 
           <p className="text-lg mb-8 text-[#f7e9df]">
-            No problem is too big when you have support, clarity, and someone
-            walking beside you as you move forward.
+            Your next chapter is waiting—and you don&apos;t have to navigate it
+            by yourself.
           </p>
 
           <Link
