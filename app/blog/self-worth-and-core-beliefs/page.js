@@ -16,21 +16,17 @@ export default function SelfWorthCoreBeliefsArticle() {
     className="w-full max-w-2xl mx-auto rounded-3xl shadow-md"
   />
 </div>
-        <div className="mb-10 text-center">
-          <p className="uppercase tracking-[0.25em] text-sm text-[#b07a3c] mb-3">
-            Self-Worth & Core Beliefs
-          </p>
+       <div className="mb-10 text-center">
+  <p className="uppercase tracking-[0.25em] text-sm text-[#b07a3c] mb-3">
+    Self-Worth & Core Beliefs
+  </p>
 
-          <h1 className="text-4xl md:text-5xl font-serif text-[#1f2d3d] mb-6">
-            The Connection Between Self-Worth and Core Beliefs
-          </h1>
+  <h1 className="text-4xl md:text-5xl font-serif text-[#1f2d3d] mb-6">
+    The Connection Between Self-Worth and Core Beliefs
+  </h1>
 
-          <p className="text-[#7a4b63] font-medium">
-            By Kaelynn Kinnison | Life Coaching with Kaelynn
-          </p>
-
-          <div className="w-24 h-[2px] bg-[#b07a3c] mx-auto mt-6"></div>
-        </div>
+  <div className="w-24 h-[2px] bg-[#b07a3c] mx-auto"></div>
+</div>
 
         <div className="prose prose-lg max-w-none text-[#4a5560] leading-8">
           <p>
