@@ -9,6 +9,13 @@ export default function SelfWorthCoreBeliefsArticle() {
   return (
     <main className="min-h-screen bg-[#fdf8f3] py-16 px-6">
       <article className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg p-8 md:p-12">
+    <div className="mb-10">
+  <img
+    src="/self-worth-core-beliefs.jpg"
+    alt="Self-Worth and Core Beliefs"
+    className="w-full max-w-2xl mx-auto rounded-3xl shadow-md"
+  />
+</div>
         <div className="mb-10 text-center">
           <p className="uppercase tracking-[0.25em] text-sm text-[#b07a3c] mb-3">
             Self-Worth & Core Beliefs
