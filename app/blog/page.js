@@ -30,6 +30,14 @@ export default function BlogPage() {
     "Discover how structure, support, and intentional action can help you stay committed to your goals.",
   link: "/blog/accountability-creates-lasting-change",
 },
+   {
+  title: "The Connection Between Self-Worth and Core Beliefs",
+  category: "Self-Worth & Core Beliefs",
+  description:
+    "Discover how your core beliefs shape confidence, self-worth, people-pleasing, perfectionism, and personal growth.",
+  link: "/blog/self-worth-and-core-beliefs",
+},
+    
   ];
 
   return (
