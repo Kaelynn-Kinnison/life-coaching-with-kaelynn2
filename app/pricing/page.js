@@ -1,233 +1,323 @@
-```jsx
 import Link from "next/link";
 
 export const metadata = {
-  title: "Coaching Programs | Life Coaching with Kaelynn",
+  title: "Coaching Programs & Investment | Life Coaching with Kaelynn",
   description:
-    "Explore coaching programs designed to help you heal, grow, and transform through personalized support, accountability, and Core Belief Transformation Coaching™.",
+    "Explore premium coaching programs with Life Coaching with Kaelynn, including Growth Coaching, Signature Core Belief Transformation Coaching, Premium Transformation Coaching, and ongoing accountability membership.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-export default function PackagesPage() {
-  return (
-    <main className="bg-white">
+const programs = [
+  {
+    badge: "Standard Coaching Experience",
+    title: "Growth Coaching Program",
+    price: "$1,497",
+    length: "10 Weeks",
+    icon: "🌱",
+    featured: false,
+    description:
+      "Perfect for individuals seeking clarity, confidence, accountability, and support while working toward meaningful personal or professional goals.",
+    includes: [
+      "Ten 60-minute coaching sessions",
+      "Personalized growth plan",
+      "Goal-setting framework",
+      "Weekly action steps",
+      "Habit and progress tracking",
+      "Accountability support",
+      "Email support between sessions",
+    ],
+    idealFor: [
+      "Personal growth",
+      "Confidence building",
+      "Goal achievement",
+      "Motivation",
+      "Wellness goals",
+      "Life balance",
+    ],
+    outcome:
+      "Gain clarity, confidence, and momentum while building habits that support long-term success.",
+  },
+  {
+    badge: "Most Popular",
+    title: "Heal. Grow. Transform. Signature Coaching Experience",
+    price: "$2,497",
+    length: "12 Weeks",
+    icon: "🌿",
+    featured: true,
+    subtitle: "Core Belief Transformation Coaching",
+    description:
+      "This signature program helps uncover and transform the limiting beliefs that may be influencing your confidence, decisions, relationships, self-worth, and personal growth.",
+    includes: [
+      "Twelve 60-minute coaching sessions",
+      "Core belief discovery process",
+      "Limiting belief assessment",
+      "Personalized transformation roadmap",
+      "Goal setting and action planning",
+      "Reflection exercises and worksheets",
+      "Habit and progress tracking",
+      "Accountability support",
+      "Email support between sessions",
+      "End-of-program transformation review",
+    ],
+    idealFor: [
+      "Low self-confidence",
+      "Self-sabotage",
+      "People-pleasing",
+      "Perfectionism",
+      "Fear of failure",
+      "Imposter syndrome",
+      "Emotional healing",
+      "Life transitions",
+    ],
+    outcome:
+      "Develop a stronger sense of self-worth, confidence, clarity, and alignment while creating meaningful transformation from the inside out.",
+  },
+  {
+    badge: "VIP Coaching Experience",
+    title: "Premium Transformation Experience",
+    price: "$4,997",
+    length: "16 Weeks",
+    icon: "🦋",
+    featured: false,
+    description:
+      "The highest level of coaching support for individuals committed to deep personal transformation and meaningful change across multiple areas of life.",
+    includes: [
+      "Sixteen 60-minute coaching sessions",
+      "Everything included in the Signature Coaching Experience",
+      "Personalized transformation blueprint",
+      "Weekly accountability check-ins",
+      "Priority scheduling",
+      "Unlimited email support",
+      "Personalized wellness planning",
+      "Guided journal prompts",
+      "Advanced habit tracking system",
+      "Progress monitoring reviews",
+      "Mid-week support touchpoints",
+      "End-of-program success strategy",
+    ],
+    idealFor: [
+      "Deep personal transformation",
+      "Major life changes",
+      "High-level accountability",
+      "Multiple areas of focus",
+      "Long-term success",
+    ],
+    outcome:
+      "Create lasting transformation through deeper self-awareness, consistent action, accountability, and personalized coaching support.",
+  },
+  {
+    badge: "Ongoing Coaching Support",
+    title: "Accountability & Growth Membership",
+    price: "$297",
+    length: "Monthly",
+    icon: "🌟",
+    featured: false,
+    description:
+      "Designed for coaching graduates who want continued support, accountability, and encouragement after completing a coaching program.",
+    includes: [
+      "One monthly coaching session",
+      "Monthly goal review",
+      "Accountability check-ins",
+      "Habit tracking support",
+      "Email support",
+      "Growth resources",
+      "Priority access to future programs",
+    ],
+    idealFor: [
+      "Coaching graduates",
+      "Continued accountability",
+      "Goal maintenance",
+      "Habit reinforcement",
+      "Long-term growth",
+    ],
+    outcome:
+      "Maintain momentum, reinforce positive habits, and continue progressing toward your goals.",
+  },
+];
 
-      {/* HERO */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-widest text-teal-700 font-semibold mb-4">
-            Coaching Programs
+export default function PricingPage() {
+  return (
+    <main className="bg-white text-slate-900">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Coaching Programs & Investment
           </p>
 
-          <h1 className="text-5xl font-bold text-slate-900 mb-6">
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
             Heal. Grow. Transform.
           </h1>
 
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Transformation doesn't happen through information alone.
-            It happens when you uncover what is holding you back,
-            create a clear path forward, and take consistent action toward
-            the life you truly want.
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
+            Premium transformational coaching designed to help you uncover what
+            is holding you back, build confidence, and create meaningful change
+            from the inside out.
           </p>
+
+          <div className="mt-10">
+            <Link
+              href={bookingLink}
+              target="_blank"
+              className="inline-flex rounded-full bg-teal-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-teal-800"
+            >
+              Schedule Your Free Discovery Call
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* INTRO */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Coaching Designed Around Lasting Transformation
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
+            Coaching Rooted in Core Belief Transformation
           </h2>
 
-          <p className="text-lg text-slate-700 leading-relaxed">
-            Every coaching program combines personalized support,
-            practical strategies, accountability, and transformational
-            coaching techniques to help you build confidence, gain clarity,
-            overcome obstacles, and create meaningful change.
+          <p className="text-lg leading-8 text-slate-700">
+            Many people focus on changing behaviors without understanding the
+            beliefs driving those behaviors. Core belief work helps identify the
+            patterns, thoughts, and internal stories that may be affecting your
+            confidence, relationships, decision-making, and personal growth.
           </p>
 
-          <p className="text-lg text-slate-700 mt-6 leading-relaxed">
-            All programs begin with a complimentary Discovery Call
-            to determine the best fit for your goals and needs.
+          <p className="mt-6 text-lg leading-8 text-slate-700">
+            These coaching programs combine personalized support, practical
+            strategies, reflection exercises, and accountability so you can
+            create change that lasts.
           </p>
         </div>
       </section>
 
-      {/* PROGRAMS */}
-      <section className="py-16 px-6 bg-slate-50">
-        <div className="max-w-6xl mx-auto grid gap-10">
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
+          {programs.map((program) => (
+            <article
+              key={program.title}
+              className={
+                program.featured
+                  ? "rounded-3xl border-4 border-teal-700 bg-white p-8 shadow-2xl"
+                  : "rounded-3xl border border-slate-200 bg-white p-8 shadow-lg"
+              }
+            >
+              <div className="mb-4 flex items-center justify-between gap-4">
+                <span className="text-4xl">{program.icon}</span>
 
-          {/* STANDARD */}
-          <div className="bg-white rounded-3xl shadow-lg p-10">
-            <h3 className="text-3xl font-bold mb-2">
-              🌱 Growth Coaching Program
-            </h3>
+                <span
+                  className={
+                    program.featured
+                      ? "rounded-full bg-teal-700 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white"
+                      : "rounded-full bg-teal-50 px-4 py-2 text-xs font-bold uppercase tracking-wide text-teal-800"
+                  }
+                >
+                  {program.badge}
+                </span>
+              </div>
 
-            <p className="text-lg text-slate-500 mb-4">
-              Standard Coaching Experience
-            </p>
+              <h3 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">
+                {program.title}
+              </h3>
 
-            <p className="text-4xl font-bold text-teal-700 mb-8">
-              $1,497
-            </p>
+              {program.subtitle && (
+                <p className="mb-4 text-lg font-semibold text-teal-800">
+                  {program.subtitle}
+                </p>
+              )}
 
-            <p className="text-slate-700 mb-6">
-              Perfect for individuals seeking clarity, confidence,
-              accountability, and support while working toward meaningful
-              personal or professional goals.
-            </p>
+              <div className="mb-6 flex flex-wrap items-end gap-3">
+                <p className="text-4xl font-bold text-teal-700">
+                  {program.price}
+                </p>
+                <p className="pb-1 text-lg font-medium text-slate-500">
+                  | {program.length}
+                </p>
+              </div>
 
-            <ul className="space-y-2 text-slate-700">
-              <li>✔ Ten 60-Minute Coaching Sessions</li>
-              <li>✔ Personalized Growth Plan</li>
-              <li>✔ Goal-Setting Framework</li>
-              <li>✔ Weekly Action Steps</li>
-              <li>✔ Habit & Progress Tracking</li>
-              <li>✔ Accountability Support</li>
-              <li>✔ Email Support Between Sessions</li>
-            </ul>
-          </div>
+              <p className="mb-8 text-base leading-7 text-slate-700">
+                {program.description}
+              </p>
 
-          {/* SIGNATURE */}
-          <div className="bg-white border-4 border-teal-600 rounded-3xl shadow-xl p-10">
-            <div className="inline-block bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              MOST POPULAR
-            </div>
+              <div className="grid gap-8 md:grid-cols-2">
+                <div>
+                  <h4 className="mb-4 text-lg font-bold text-slate-900">
+                    This Program Includes:
+                  </h4>
 
-            <h3 className="text-3xl font-bold mb-2">
-              🌿 Heal. Grow. Transform.
-            </h3>
+                  <ul className="space-y-3 text-slate-700">
+                    {program.includes.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="font-bold text-teal-700">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-            <p className="text-lg text-slate-500 mb-4">
-              Signature Coaching Experience
-            </p>
+                <div>
+                  <h4 className="mb-4 text-lg font-bold text-slate-900">
+                    Ideal For:
+                  </h4>
 
-            <p className="text-4xl font-bold text-teal-700 mb-8">
-              $2,497
-            </p>
+                  <ul className="space-y-3 text-slate-700">
+                    {program.idealFor.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="font-bold text-teal-700">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
 
-            <h4 className="text-xl font-semibold mb-4">
-              Core Belief Transformation Coaching™
-            </h4>
+              <div className="mt-8 rounded-2xl bg-teal-50 p-6">
+                <h4 className="mb-2 text-lg font-bold text-slate-900">
+                  Outcome
+                </h4>
+                <p className="leading-7 text-slate-700">{program.outcome}</p>
+              </div>
 
-            <p className="text-slate-700 leading-relaxed mb-6">
-              Most people know what they want to change.
-              What they don't always understand is why they continue to
-              repeat the same patterns, struggle with confidence,
-              experience self-sabotage, or feel stuck.
-            </p>
-
-            <p className="text-slate-700 leading-relaxed mb-6">
-              Core Belief Transformation Coaching™ helps uncover and
-              transform the limiting beliefs influencing your confidence,
-              decisions, relationships, self-worth, and personal growth.
-            </p>
-
-            <ul className="space-y-2 text-slate-700">
-              <li>✔ Twelve 60-Minute Coaching Sessions</li>
-              <li>✔ Core Belief Discovery Process</li>
-              <li>✔ Limiting Belief Assessment</li>
-              <li>✔ Personalized Transformation Roadmap</li>
-              <li>✔ Goal Setting & Action Planning</li>
-              <li>✔ Reflection Exercises</li>
-              <li>✔ Habit Tracking</li>
-              <li>✔ Accountability Support</li>
-              <li>✔ Email Support Between Sessions</li>
-              <li>✔ End-of-Program Transformation Review</li>
-            </ul>
-          </div>
-
-          {/* PREMIUM */}
-          <div className="bg-white rounded-3xl shadow-lg p-10">
-            <h3 className="text-3xl font-bold mb-2">
-              🦋 Premium Transformation Experience
-            </h3>
-
-            <p className="text-lg text-slate-500 mb-4">
-              VIP Coaching Experience
-            </p>
-
-            <p className="text-4xl font-bold text-teal-700 mb-8">
-              $4,997
-            </p>
-
-            <p className="text-slate-700 mb-6">
-              The highest level of coaching support for individuals
-              committed to deep personal transformation and meaningful
-              change across multiple areas of life.
-            </p>
-
-            <ul className="space-y-2 text-slate-700">
-              <li>✔ Sixteen 60-Minute Coaching Sessions</li>
-              <li>✔ Personalized Transformation Blueprint</li>
-              <li>✔ Weekly Accountability Check-Ins</li>
-              <li>✔ Priority Scheduling</li>
-              <li>✔ Unlimited Email Support</li>
-              <li>✔ Personalized Wellness Planning</li>
-              <li>✔ Guided Journal Prompts</li>
-              <li>✔ Advanced Habit Tracking</li>
-              <li>✔ Progress Monitoring Reviews</li>
-              <li>✔ Mid-Week Support Touchpoints</li>
-            </ul>
-          </div>
-
-          {/* MEMBERSHIP */}
-          <div className="bg-white rounded-3xl shadow-lg p-10">
-            <h3 className="text-3xl font-bold mb-2">
-              🌟 Accountability & Growth Membership
-            </h3>
-
-            <p className="text-lg text-slate-500 mb-4">
-              Ongoing Coaching Support
-            </p>
-
-            <p className="text-4xl font-bold text-teal-700 mb-8">
-              $297 / Month
-            </p>
-
-            <p className="text-slate-700 mb-6">
-              Continue your growth and maintain momentum after completing
-              a coaching program.
-            </p>
-
-            <ul className="space-y-2 text-slate-700">
-              <li>✔ One Monthly Coaching Session</li>
-              <li>✔ Monthly Goal Review</li>
-              <li>✔ Accountability Check-Ins</li>
-              <li>✔ Habit Tracking Support</li>
-              <li>✔ Email Support</li>
-              <li>✔ Growth Resources</li>
-            </ul>
-          </div>
-
+              <div className="mt-8">
+                <Link
+                  href={bookingLink}
+                  target="_blank"
+                  className={
+                    program.featured
+                      ? "inline-flex rounded-full bg-teal-700 px-7 py-3 font-semibold text-white transition hover:bg-teal-800"
+                      : "inline-flex rounded-full border border-teal-700 px-7 py-3 font-semibold text-teal-800 transition hover:bg-teal-50"
+                  }
+                >
+                  Schedule Discovery Call
+                </Link>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* DISCOVERY CALL */}
-      <section className="py-24 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-4xl rounded-3xl bg-slate-900 p-10 text-center text-white shadow-xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
             Complimentary Discovery Call
+          </p>
+
+          <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+            Not Sure Which Program Is Right for You?
           </h2>
 
-          <p className="text-lg text-slate-700 mb-8">
-            A free 30-minute consultation designed to discuss your goals,
-            challenges, and determine which coaching program is the best fit
-            for your journey.
+          <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-200">
+            Your free 30-minute Discovery Call is designed to discuss your
+            goals, challenges, and determine which coaching program best fits
+            your current season of life.
           </p>
 
           <Link
             href={bookingLink}
             target="_blank"
-            className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-xl font-semibold transition"
+            className="inline-flex rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
           >
-            Schedule Your Free Discovery Call
+            Book Your Free Discovery Call
           </Link>
         </div>
       </section>
-
     </main>
   );
 }
-```
