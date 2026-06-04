@@ -2,229 +2,387 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Kaelynn Kinnison | Transformational Life Coach",
+  title: "About Kaelynn Kinnison | Life Coaching with Kaelynn",
   description:
-    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Learn about her coaching philosophy, background, and commitment to helping clients heal, grow, and transform.",
+    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Learn about her mission, coaching philosophy, education, and passion for helping individuals heal, grow, and transform.",
 };
 
-export default function About() {
-  return (
-    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
-      <section className="px-6 py-20">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <Image
-            src="/kaelynn-portrait.png"
-            alt="Portrait of Kaelynn Kinnison"
-            width={450}
-            height={550}
-            className="rounded-3xl shadow-xl object-cover mx-auto"
-          />
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
+const credentials = [
+  {
+    icon: "🎓",
+    title: "Psychology Studies",
+    text: "Degree Candidate",
+  },
+  {
+    icon: "🌿",
+    title: "Health & Wellness",
+    text: "Coaching Certificate",
+  },
+  {
+    icon: "✨",
+    title: "Signature Method",
+    text: "Core Belief Transformation Method™",
+  },
+  {
+    icon: "🦋",
+    title: "Founder",
+    text: "Life Coaching with Kaelynn",
+  },
+];
+
+const whoIHelp = [
+  "Individuals who feel stuck repeating the same patterns",
+  "People struggling with confidence and self-worth",
+  "Individuals navigating life transitions",
+  "People seeking greater clarity and purpose",
+  "Those ready to challenge limiting beliefs",
+  "Individuals pursuing healing and growth",
+];
+
+const beliefFormula = ["Belief", "Thought", "Emotion", "Action", "Result"];
+
+const values = [
+  {
+    title: "Compassion",
+    text: "A safe, supportive, and non-judgmental coaching space where you can feel heard, understood, and encouraged.",
+  },
+  {
+    title: "Accountability",
+    text: "Support that helps you stay focused, follow through, and take meaningful steps toward your goals.",
+  },
+  {
+    title: "Growth",
+    text: "Coaching that encourages self-awareness, confidence, resilience, healing, and personal transformation.",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <main className="bg-white text-slate-900">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-              About Kaelynn
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Meet Kaelynn
             </p>
 
-            <h1 className="text-5xl font-bold mb-6">
-              Meet Kaelynn Kinnison
+            <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-6xl">
+              Kaelynn Kinnison
             </h1>
 
-            <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
-              What if the life you want is already within reach?
+            <p className="mb-6 text-2xl font-semibold leading-relaxed text-teal-700">
+              What if the life you want is closer than you think?
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Hi, I&apos;m Kaelynn Kinnison, Transformational Life Coach and
-              creator of the Core Belief Transformation Method™.
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              I am a Transformational Life Coach and creator of the Core Belief
+              Transformation Method™.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              My passion is helping people break free from the beliefs,
-              patterns, and obstacles that keep them feeling stuck so they can
-              create meaningful, lasting change in their lives.
+            <p className="mb-8 text-lg leading-8 text-slate-700">
+              My passion is helping people uncover the beliefs, patterns, and
+              obstacles that may be holding them back so they can create
+              meaningful and lasting change.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Through my work with clients, I have discovered that many
-              struggles are not caused by a lack of motivation, willpower, or
-              desire. More often, they are connected to deeply held beliefs
-              about ourselves, our worth, our capabilities, and what we believe
-              is possible for our future.
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/core-belief-coaching"
+                className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
+              >
+                Learn About My Method
+              </Link>
+
+              <Link
+                href={bookingLink}
+                target="_blank"
+                className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
+              >
+                Book Discovery Call
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <Image
+              src="/kaelynn-portrait.png"
+              alt="Portrait of Kaelynn Kinnison"
+              width={500}
+              height={650}
+              className="rounded-3xl object-cover shadow-2xl"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-slate-200">
+            <p className="mb-6 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Education • Training • Expertise
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
+            <div className="grid gap-6 md:grid-cols-4">
+              {credentials.map((item) => (
+                <div key={item.title} className="text-center">
+                  <div className="mb-3 text-3xl">{item.icon}</div>
+
+                  <h3 className="font-bold text-slate-900">{item.title}</h3>
+
+                  <p className="mt-2 text-sm text-slate-600">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Why I Do This Work
+          </p>
+
+          <h2 className="mb-10 text-center text-4xl font-bold text-slate-900">
+            Helping People Heal, Grow, and Transform
+          </h2>
+
+          <div className="space-y-6 text-lg leading-8 text-slate-700">
+            <p>
+              Through my coaching journey and studies in Psychology, I became
+              increasingly fascinated by the connection between beliefs,
+              emotions, behavior, confidence, self-worth, and personal growth.
+            </p>
+
+            <p>
+              Time and time again, I discovered that many struggles are not
+              caused by a lack of motivation, willpower, intelligence, or
+              desire.
+            </p>
+
+            <p>
+              Often, they are connected to deeply held beliefs about ourselves,
+              our worth, our capabilities, and what we believe is possible for
+              our future.
+            </p>
+
+            <p>
               I believe every person has the ability to heal, grow, and
               transform. Sometimes the greatest challenge is not knowing what to
-              do—it&apos;s trying to carry the weight of life&apos;s challenges
-              alone.
+              do. It is trying to carry life&apos;s challenges alone.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              My journey into coaching began with a genuine desire to help
-              people recognize their strengths, overcome obstacles, and create
-              positive change. As I continued my coaching education and studies
-              in Psychology, I became increasingly fascinated by the powerful
-              connection between beliefs, mindset, emotions, behavior, and
-              personal transformation.
-            </p>
-
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              I have earned a Health and Wellness Coaching Certificate and am
-              currently pursuing my degree in Psychology. These experiences have
-              strengthened my understanding of human behavior, emotional
-              wellness, personal growth, and the lasting impact our beliefs have
-              on the lives we create.
-            </p>
-
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              This passion ultimately led me to develop the Core Belief
-              Transformation Method™—a coaching approach designed to help
-              individuals identify limiting beliefs, challenge old patterns,
-              develop healthier perspectives, and create lasting transformation
-              from the inside out.
-            </p>
-
-            <p className="text-[#6b4b43] leading-relaxed mb-4 font-semibold">
+            <p className="font-semibold text-teal-700">
               One of my core beliefs is simple: no problem is too big,
-              especially when you don&apos;t have to face it alone.
-            </p>
-
-            <p className="text-[#6b4b43] leading-relaxed">
-              Whether you&apos;re seeking greater confidence, emotional
-              wellness, healing, personal growth, stronger relationships,
-              accountability, or support through a major life transition, my
-              goal is to provide a supportive space where you can gain clarity,
-              discover your strengths, and move forward with courage and
-              purpose.
+              especially when you do not have to face it alone.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            My Mission
+      <section className="bg-teal-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            The Core Belief Connection
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
-            Helping You Heal, Grow, and Transform
+          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
+            Belief → Thought → Emotion → Action → Result
           </h2>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            My mission is to help individuals heal, grow, and transform by
-            identifying and changing the core beliefs that influence their
-            thoughts, emotions, behaviors, relationships, confidence, and
-            results.
+          <p className="mx-auto mb-12 max-w-3xl text-lg leading-8 text-slate-700">
+            The beliefs we carry often influence how we think, how we feel, how
+            we respond, and what results we create in our lives.
           </p>
+
+          <div className="grid gap-4 md:grid-cols-5">
+            {beliefFormula.map((item) => (
+              <div key={item} className="rounded-3xl bg-white p-6 shadow-md">
+                <h3 className="text-xl font-bold text-teal-700">{item}</h3>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="bg-[#7b4f43] text-white px-6 py-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
             Signature Method
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
             Why I Created the Core Belief Transformation Method™
           </h2>
 
-          <p className="text-lg text-[#f7e9df] leading-relaxed mb-6">
-            Through my coaching education, personal growth work, and studies in
-            Psychology, I noticed a common pattern: many people know what they
-            want to change, but still struggle to create lasting results.
+          <p className="mb-6 text-lg leading-8 text-slate-700">
+            Many people know what they want to change, yet they continue
+            repeating the same patterns, experiencing the same frustrations, or
+            struggling to create lasting results.
           </p>
 
-          <p className="text-lg text-[#f7e9df] leading-relaxed mb-6">
-            Often, the issue is not a lack of motivation or desire. The deeper
-            challenge is the belief system operating beneath the surface.
-            Beliefs such as “I&apos;m not good enough,” “I always fail,” or “I
-            don&apos;t deserve success” can quietly influence confidence,
-            emotions, decisions, relationships, and follow-through.
+          <p className="mb-6 text-lg leading-8 text-slate-700">
+            I created the Core Belief Transformation Method™ to help individuals
+            identify limiting beliefs, challenge old patterns, and build
+            healthier beliefs that support confidence, self-worth,
+            accountability, emotional wellness, and lasting transformation.
           </p>
 
-          <p className="text-lg text-[#f7e9df] leading-relaxed">
-            The Core Belief Transformation Method™ was created to help clients
-            identify those limiting beliefs, challenge old patterns, and build
-            healthier beliefs that support healing, confidence, accountability,
-            emotional wellness, and lasting transformation.
+          <p className="text-lg leading-8 text-slate-700">
+            This approach allows coaching to become more than motivation. It
+            becomes a process of self-awareness, alignment, and meaningful
+            personal change.
           </p>
         </div>
       </section>
 
-      <section className="px-6 py-20 bg-[#f5e8df]">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Coaching Values
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Who I Help
           </p>
 
-          <h2 className="text-4xl font-bold mb-10">What You Can Expect</h2>
+          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl">
+            Support for People Ready for Meaningful Change
+          </h2>
 
-          <div className="grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">Compassion</h3>
-              <p className="text-[#6b4b43] leading-relaxed">
-                A safe, supportive, and non-judgmental coaching space where you
-                can feel heard, understood, and encouraged.
+          <div className="grid gap-5 md:grid-cols-2">
+            {whoIHelp.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm ring-1 ring-slate-200"
+              >
+                <span className="font-bold text-teal-700">✓</span> {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-900 px-6 py-20 text-white">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+            What Makes My Coaching Different
+          </p>
+
+          <h2 className="mb-8 text-3xl font-bold md:text-4xl">
+            Creating Change From the Inside Out
+          </h2>
+
+          <p className="mb-6 text-lg leading-8 text-slate-200">
+            Many coaching approaches focus primarily on goals, motivation, or
+            accountability.
+          </p>
+
+          <p className="mb-6 text-lg leading-8 text-slate-200">
+            While those tools are valuable, lasting transformation often begins
+            by understanding the beliefs influencing your thoughts, emotions,
+            decisions, and behaviors.
+          </p>
+
+          <p className="text-lg leading-8 text-slate-200">
+            Through Core Belief Transformation Coaching™, we work from the
+            inside out so change can become more sustainable, meaningful, and
+            aligned with the life you want to create.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Education & Training
+          </p>
+
+          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
+            Professional Background
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl bg-teal-50 p-8 shadow-sm">
+              <h3 className="mb-3 text-xl font-bold text-slate-900">
+                Health & Wellness Coaching Certificate
+              </h3>
+
+              <p className="text-slate-700">
+                Training focused on wellness, behavior change, accountability,
+                self-care, and healthy lifestyle transformation.
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">Accountability</h3>
-              <p className="text-[#6b4b43] leading-relaxed">
-                Support that helps you stay focused, follow through, and take
-                meaningful steps toward your goals.
-              </p>
-            </div>
+            <div className="rounded-3xl bg-teal-50 p-8 shadow-sm">
+              <h3 className="mb-3 text-xl font-bold text-slate-900">
+                Psychology Studies
+              </h3>
 
-            <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="text-2xl font-bold mb-4">Growth</h3>
-              <p className="text-[#6b4b43] leading-relaxed">
-                Coaching that encourages self-awareness, confidence,
-                resilience, healing, and personal transformation.
+              <p className="text-slate-700">
+                Currently pursuing a degree in Psychology with a strong interest
+                in mindset, human behavior, emotional wellness, self-worth, and
+                personal transformation.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            My Coaching Philosophy
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Coaching Values
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
-            You Are Not Meant to Do This Alone
+          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
+            What You Can Expect
           </h2>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            Coaching is not about telling you who to become. It is about helping
-            you reconnect with who you are, identify what matters most, uncover
-            the beliefs that may be keeping you stuck, and move forward with
-            support, structure, and belief in your ability to change.
-          </p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {values.map((value) => (
+              <div
+                key={value.title}
+                className="rounded-3xl bg-white p-8 text-left shadow-md ring-1 ring-slate-200"
+              >
+                <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                  {value.title}
+                </h3>
+
+                <p className="leading-7 text-slate-700">{value.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="px-6 py-24 text-center bg-[#7b4f43] text-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Your Next Chapter Can Start Here
+      <section className="bg-slate-900 px-6 py-24 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-6 text-4xl font-bold md:text-5xl">
+            The Life You Want Begins With the Beliefs You Choose to Change
           </h2>
 
-          <p className="text-lg mb-8 text-[#f7e9df]">
-            Your next chapter is waiting—and you don&apos;t have to navigate it
-            by yourself.
+          <p className="mb-10 text-lg leading-8 text-slate-200">
+            If you are ready to explore what may be holding you back and begin
+            creating meaningful transformation, I invite you to schedule a
+            complimentary Discovery Call.
           </p>
 
-          <Link
-            href="/contact#book"
-            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df]"
-          >
-            Book a Clarity Appointment
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/pricing"
+              className="inline-flex rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
+            >
+              View Programs & Investment
+            </Link>
+
+            <Link
+              href={bookingLink}
+              target="_blank"
+              className="inline-flex rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+            >
+              Schedule Your Discovery Call
+            </Link>
+          </div>
         </div>
       </section>
     </main>
