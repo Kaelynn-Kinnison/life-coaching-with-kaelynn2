@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Core Belief Coaching Blog | Life Coaching with Kaelynn",
   description:
-    "Read articles on core beliefs, limiting beliefs, self-worth, confidence, emotional wellness, accountability, personal growth, and lasting transformation with Life Coaching with Kaelynn.",
+    "Read professional coaching articles on core beliefs, limiting beliefs, self-worth, confidence, emotional wellness, accountability, personal growth, and lasting transformation.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -11,7 +11,7 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const posts = [
   {
     title: "The Hidden Core Beliefs That May Be Holding You Back",
-    category: "Core Beliefs & Mindset",
+    category: "Core Beliefs",
     description:
       "Explore how deeply held beliefs can shape confidence, choices, relationships, self-worth, and personal growth.",
     link: "/blog/core-beliefs-holding-you-back",
@@ -19,23 +19,23 @@ const posts = [
   },
   {
     title: "The Connection Between Self-Worth and Core Beliefs",
-    category: "Self-Worth & Core Beliefs",
+    category: "Self-Worth",
     description:
-      "Discover how your core beliefs shape confidence, people-pleasing, perfectionism, emotional patterns, and personal growth.",
+      "Discover how core beliefs can influence confidence, people-pleasing, perfectionism, and personal growth.",
     link: "/blog/self-worth-and-core-beliefs",
     featured: true,
   },
   {
     title: "Why Healing Is the Foundation of Transformation",
-    category: "Healing & Emotional Wellness",
+    category: "Healing",
     description:
-      "Learn why true change often begins with awareness, self-compassion, emotional healing, and a willingness to grow.",
+      "Learn why meaningful change often begins with awareness, self-compassion, emotional healing, and growth.",
     link: "/blog/healing-foundation-of-transformation",
     featured: true,
   },
   {
     title: "How Accountability Creates Lasting Change",
-    category: "Personal Growth & Accountability",
+    category: "Accountability",
     description:
       "Discover how structure, support, reflection, and intentional action can help you stay committed to your goals.",
     link: "/blog/accountability-creates-lasting-change",
@@ -43,7 +43,7 @@ const posts = [
   },
   {
     title: "Why Self-Sabotage Happens",
-    category: "Core Beliefs & Patterns",
+    category: "Mindset Patterns",
     description:
       "Understand how self-sabotage may be connected to fear, limiting beliefs, self-worth, and old internal patterns.",
     link: "/blog/why-self-sabotage-happens",
@@ -59,7 +59,7 @@ const posts = [
   },
   {
     title: "Confidence Starts with What You Believe About Yourself",
-    category: "Confidence & Self-Worth",
+    category: "Confidence",
     description:
       "Explore how confidence grows when you begin shifting the beliefs that shape your identity, choices, and self-trust.",
     link: "/blog/confidence-starts-with-belief",
@@ -88,8 +88,8 @@ const categories = [
   "Transformation",
 ];
 
-const startHere = posts.filter((post) => post.featured);
-const allPosts = posts;
+const featuredPosts = posts.filter((post) => post.featured);
+const regularPosts = posts.filter((post) => !post.featured);
 
 export default function BlogPage() {
   return (
@@ -105,10 +105,9 @@ export default function BlogPage() {
           </h1>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
-            Explore articles on core beliefs, limiting beliefs, confidence,
-            self-worth, emotional wellness, accountability, and personal growth.
-            This blog was created to support reflection, clarity, and lasting
-            transformation from the inside out.
+            Explore professional coaching articles on core beliefs, limiting
+            beliefs, confidence, self-worth, emotional wellness, accountability,
+            and personal growth.
           </p>
         </div>
       </section>
@@ -120,33 +119,25 @@ export default function BlogPage() {
           </p>
 
           <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-            A Space for Reflection, Awareness, and Possibility
+            A Professional Resource for Reflection and Personal Growth
           </h2>
 
           <div className="space-y-5 text-lg leading-8 text-slate-700">
             <p>
-              Life has a way of presenting moments that challenge us, shape us,
-              and invite us to become more than we were yesterday. Sometimes we
-              find ourselves searching for answers. Other times, we are simply
-              looking for the courage to take the next step.
+              This blog was created as a resource for individuals who want to
+              better understand themselves, recognize limiting beliefs, build
+              confidence, and create meaningful personal change.
             </p>
 
             <p>
-              Here you will find insights on mindset, emotional wellness,
-              personal development, life transitions, self-discovery, and the
-              beliefs that influence the way we experience life.
-            </p>
-
-            <p>
-              Whether you are navigating change, rebuilding confidence, pursuing
-              a meaningful goal, or learning to trust yourself again, my hope is
-              that these articles provide encouragement, perspective, and
-              practical tools you can carry into everyday life.
+              Here you will find articles focused on core belief transformation,
+              emotional wellness, mindset, self-worth, accountability, life
+              transitions, and practical growth tools.
             </p>
 
             <p className="font-semibold text-teal-700">
-              Transformation does not happen all at once. It happens through
-              awareness, intentional choices, and a willingness to keep moving
+              Transformation does not happen all at once. It begins with
+              awareness, intentional choices, and the willingness to keep moving
               forward.
             </p>
 
@@ -169,14 +160,12 @@ export default function BlogPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              New to core belief work? Begin with these articles to understand
-              how beliefs shape confidence, self-worth, healing, and personal
-              transformation.
+              New to core belief work? Begin with these cornerstone articles.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {startHere.map((post) => (
+            {featuredPosts.map((post) => (
               <article
                 key={post.title}
                 className="rounded-3xl border-2 border-teal-700 bg-white p-8 shadow-xl"
@@ -213,16 +202,16 @@ export default function BlogPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Featured Blog Articles
+              More Articles
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Explore Healing, Mindset, and Personal Growth
+              Continue Exploring Healing, Mindset, and Growth
             </h2>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {allPosts.map((post) => (
+            {regularPosts.map((post) => (
               <article
                 key={post.title}
                 className="rounded-3xl border border-slate-200 bg-white p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
