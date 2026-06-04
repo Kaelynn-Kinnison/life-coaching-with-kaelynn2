@@ -1,206 +1,362 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Life Coaching with Kaelynn | Heal. Grow. Transform.",
   description:
-    "Transformational life coaching focused on healing, personal growth, confidence, accountability, and lasting change through Core Belief Transformation Coaching.",
+    "Core Belief Transformation Coaching for individuals ready to uncover limiting beliefs, rebuild confidence, strengthen self-worth, and create lasting change from the inside out.",
 };
+
+const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
+const signs = [
+  "You repeat patterns you deeply want to change",
+  "You struggle with confidence or self-worth",
+  "You overthink decisions or second-guess yourself",
+  "You people-please or fear disappointing others",
+  "You know what to do but struggle to follow through",
+  "You feel stuck even though you are ready for more",
+];
+
+const beliefFormula = ["Belief", "Thought", "Emotion", "Action", "Result"];
+
+const credentials = [
+  "Health & Wellness Coaching Certificate",
+  "Psychology Degree Candidate",
+  "Creator of the Core Belief Transformation Method™",
+  "Founder of Life Coaching with Kaelynn",
+];
+
+const methodSteps = [
+  {
+    step: "01",
+    title: "Awareness",
+    text: "Identify the belief or pattern operating beneath the surface.",
+  },
+  {
+    step: "02",
+    title: "Understanding",
+    text: "Explore how that belief affects confidence, emotions, decisions, and actions.",
+  },
+  {
+    step: "03",
+    title: "Transformation",
+    text: "Create healthier beliefs, aligned habits, and meaningful next steps.",
+  },
+];
+
+const programs = [
+  {
+    title: "Growth Coaching Program",
+    investment: "$1,497",
+    length: "10 Weeks",
+    text: "For clarity, confidence, accountability, and personal growth.",
+  },
+  {
+    title: "Signature Coaching Experience",
+    investment: "$2,497",
+    length: "12 Weeks",
+    text: "Core Belief Transformation Coaching for deeper personal change.",
+    featured: true,
+  },
+  {
+    title: "Premium Transformation Experience",
+    investment: "$4,997",
+    length: "16 Weeks",
+    text: "The highest level of coaching support for significant transformation.",
+  },
+  {
+    title: "Accountability & Growth Membership",
+    investment: "$297",
+    length: "Monthly",
+    text: "Ongoing coaching support for continued growth and accountability.",
+  },
+];
+
+const focusAreas = [
+  "Core Beliefs",
+  "Limiting Beliefs",
+  "Self-Worth",
+  "Self-Confidence",
+  "Healing",
+  "Personal Growth",
+  "Emotional Wellness",
+  "Accountability",
+  "Life Transitions",
+  "Goal Achievement",
+  "Mindset Alignment",
+  "Lasting Transformation",
+];
 
 export default function Home() {
   return (
-    <main>
-      <section className="px-6 py-24 text-center bg-[#fdf8f3]">
-        <div className="max-w-4xl mx-auto">
+    <main className="bg-white text-slate-900">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
+        <div className="mx-auto max-w-5xl">
           <Image
             src="/hibiscus-logo.png"
             alt="Life Coaching with Kaelynn logo"
-            width={350}
-            height={350}
+            width={260}
+            height={260}
             className="mx-auto mb-6"
+            priority
           />
 
-          <p className="uppercase tracking-[0.3em] text-[#9b6f5f] mb-4 text-sm">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-teal-700">
             Life Coaching with Kaelynn
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
             Heal. Grow. Transform.
           </h1>
 
-          <p className="text-xl md:text-2xl text-[#6b4b43] leading-relaxed mb-8">
-            Core Belief Transformation Coaching for individuals ready to gain
-            clarity, build confidence, overcome limiting beliefs, and create
-            lasting personal change.
+          <p className="mx-auto mb-8 max-w-3xl text-xl leading-8 text-slate-700 md:text-2xl">
+            Core Belief Transformation Coaching for individuals ready to uncover
+            limiting beliefs, rebuild confidence, strengthen self-worth, and
+            create lasting change from the inside out.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact#book"
-              className="bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Link
+              href={bookingLink}
+              target="_blank"
+              className="rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
             >
-              Book a Clarity Appointment
-            </a>
+              Schedule Your Free Discovery Call
+            </Link>
 
-            <a
+            <Link
               href="/pricing"
-              className="border border-[#7b4f43] text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f1e3da] transition"
+              className="rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
             >
-              View Coaching Packages
-            </a>
+              View Programs & Investment
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Is This You?
+          </p>
+
+          <h2 className="mb-10 text-center text-3xl font-bold text-slate-900 md:text-4xl">
+            You May Be Ready for Coaching If...
+          </h2>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {signs.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-teal-50 p-5 text-slate-700 shadow-sm"
+              >
+                <span className="font-bold text-teal-700">✓</span> {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-teal-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            The Core Belief Connection
+          </p>
+
+          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
+            Belief → Thought → Emotion → Action → Result
+          </h2>
+
+          <p className="mx-auto mb-12 max-w-3xl text-lg leading-8 text-slate-700">
+            The beliefs you carry influence how you think, how you feel, how you
+            respond, and what results you create. When the belief changes, the
+            pattern can begin to change too.
+          </p>
+
+          <div className="grid gap-4 md:grid-cols-5">
+            {beliefFormula.map((item) => (
+              <div key={item} className="rounded-3xl bg-white p-6 shadow-md">
+                <h3 className="text-xl font-bold text-teal-700">{item}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="bg-white px-6 py-20">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <Image
-            src="/kaelynn-portrait.png"
-            alt="Portrait of Kaelynn Kinnison"
-            width={450}
-            height={550}
-            className="rounded-3xl shadow-xl object-cover mx-auto"
-          />
+        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-center">
+          <div className="flex justify-center">
+            <Image
+              src="/kaelynn-portrait.png"
+              alt="Portrait of Kaelynn Kinnison"
+              width={450}
+              height={550}
+              className="rounded-3xl object-cover shadow-2xl"
+            />
+          </div>
 
           <div>
-            <h2 className="text-4xl font-bold mb-6">Meet Kaelynn</h2>
-
-            <p className="text-2xl font-semibold text-[#7b4f43] leading-relaxed mb-6">
-              You do not have to navigate life&apos;s challenges alone.
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Meet Kaelynn
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Life can feel overwhelming at times. Whether you&apos;re facing a
-              major transition, struggling to find direction, rebuilding
-              confidence, or simply feeling stuck, support can make the next step
-              feel possible.
+            <h2 className="mb-6 text-4xl font-bold text-slate-900">
+              You Do Not Have to Navigate Life&apos;s Challenges Alone
+            </h2>
+
+            <p className="mb-5 text-lg leading-8 text-slate-700">
+              I am Kaelynn Kinnison, Transformational Life Coach and creator of
+              the Core Belief Transformation Method™.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              My passion is helping people uncover their strengths, gain
-              clarity, and take meaningful steps toward the life they want to
-              create.
+            <p className="mb-5 text-lg leading-8 text-slate-700">
+              My passion is helping people uncover the beliefs, patterns, and
+              obstacles that may be holding them back so they can gain clarity,
+              build confidence, and create meaningful change.
             </p>
 
-            <p className="text-[#6b4b43] leading-relaxed mb-6">
-              I&apos;d love to share more about my journey, my coaching approach,
-              and why helping others heal, grow, and transform means so much to
-              me.
-            </p>
+            <div className="mb-8 grid gap-3 sm:grid-cols-2">
+              {credentials.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-teal-50 p-4 text-sm font-semibold text-slate-800"
+                >
+                  ✓ {item}
+                </div>
+              ))}
+            </div>
 
-            <a
-              href="https://www.lifecoachingwithkaelynn.com/about"
-              className="inline-block mt-4 bg-[#7b4f43] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+            <Link
+              href="/about"
+              className="inline-flex rounded-full bg-teal-700 px-7 py-3 font-semibold text-white transition hover:bg-teal-800"
             >
               Read My Full Story
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 bg-[#f5e8df] text-center">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">
-            A Coaching Space for Personal Growth and Lasting Change
-          </h2>
-          <p className="text-lg text-[#6b4b43] leading-relaxed">
-            My mission is to help individuals heal, grow, and transform by
-            identifying and changing the core beliefs that influence their
-            thoughts, emotions, behaviors, and results.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
+      <section className="bg-slate-50 px-6 py-20 text-center">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
             Signature Method
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
             The Core Belief Transformation Method™
           </h2>
 
-          <p className="text-lg text-[#6b4b43] leading-relaxed max-w-4xl mx-auto mb-12">
+          <p className="mx-auto mb-12 max-w-4xl text-lg leading-8 text-slate-700">
             Many challenges are not caused by a lack of motivation, discipline,
             or desire. They are often rooted in deeply held beliefs that shape
             how you see yourself, what you believe is possible, and how you move
-            through life. Core Belief Transformation Coaching helps you identify
-            those limiting beliefs, challenge old patterns, and create healthier
-            beliefs that support lasting change.
+            through life.
           </p>
 
-          <div className="grid md:grid-cols-5 gap-6 text-left">
-            {[
-              {
-                step: "1",
-                title: "Awareness",
-                text: "Identify the limiting belief operating beneath the surface.",
-              },
-              {
-                step: "2",
-                title: "Understanding",
-                text: "Explore how the belief may be affecting confidence, choices, emotions, and patterns.",
-              },
-              {
-                step: "3",
-                title: "Challenge",
-                text: "Question the belief and begin separating truth from old conditioning.",
-              },
-              {
-                step: "4",
-                title: "Transform",
-                text: "Replace limiting beliefs with healthier, more empowering perspectives.",
-              },
-              {
-                step: "5",
-                title: "Align",
-                text: "Create new actions and habits that support the belief you are choosing to live from.",
-              },
-            ].map((item) => (
+          <div className="grid gap-6 text-left md:grid-cols-3">
+            {methodSteps.map((item) => (
               <div
                 key={item.title}
-                className="bg-[#fdf8f3] rounded-3xl shadow-md p-6"
+                className="rounded-3xl bg-white p-8 shadow-md ring-1 ring-slate-200"
               >
-                <p className="text-[#7b4f43] font-bold text-lg mb-2">
+                <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-teal-700">
                   Step {item.step}
                 </p>
-                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-[#6b4b43] leading-relaxed">{item.text}</p>
+
+                <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="leading-7 text-slate-700">{item.text}</p>
               </div>
             ))}
           </div>
 
-          <a
-            href="/services"
-            className="inline-block mt-10 bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+          <Link
+            href="/core-belief-coaching"
+            className="mt-10 inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
           >
-            Explore Coaching Services
-          </a>
+            Explore Core Belief Coaching
+          </Link>
         </div>
       </section>
 
-      <section className="bg-[#f5e8df] px-6 py-20 text-center">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-10">Coaching Focus Areas</h2>
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Coaching Programs
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+              Choose the Level of Support That Fits Your Next Season
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {programs.map((program) => (
+              <div
+                key={program.title}
+                className={
+                  program.featured
+                    ? "rounded-3xl border-4 border-teal-700 bg-white p-6 shadow-xl"
+                    : "rounded-3xl border border-slate-200 bg-white p-6 shadow-md"
+                }
+              >
+                {program.featured && (
+                  <p className="mb-4 inline-block rounded-full bg-teal-700 px-3 py-1 text-xs font-bold uppercase text-white">
+                    Most Popular
+                  </p>
+                )}
+
+                <h3 className="mb-3 text-xl font-bold text-slate-900">
+                  {program.title}
+                </h3>
+
+                <p className="mb-1 text-sm font-bold uppercase tracking-wide text-teal-700">
+                  Investment
+                </p>
+
+                <p className="mb-1 text-3xl font-bold text-teal-700">
+                  {program.investment}
+                </p>
+
+                <p className="mb-4 text-sm font-medium text-slate-500">
+                  {program.length}
+                </p>
+
+                <p className="leading-7 text-slate-700">{program.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/pricing"
+              className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
+            >
+              View Programs & Investment
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-teal-50 px-6 py-20 text-center">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Coaching Focus Areas
+          </p>
+
+          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
+            Support for Healing, Growth, and Lasting Transformation
+          </h2>
 
           <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "Core Beliefs",
-              "Limiting Beliefs",
-              "Healing",
-              "Personal Growth",
-              "Emotional Wellness",
-              "Self-Confidence",
-              "Self-Discovery",
-              "Resilience",
-              "Accountability",
-              "Life Purpose",
-              "Goal Achievement",
-              "Life Transitions",
-            ].map((item) => (
+            {focusAreas.map((item) => (
               <span
                 key={item}
-                className="bg-white px-5 py-3 rounded-full shadow-sm text-[#6b4b43] font-medium"
+                className="rounded-full bg-white px-5 py-3 font-medium text-slate-700 shadow-sm"
               >
                 {item}
               </span>
@@ -209,21 +365,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-24 text-center bg-[#7b4f43] text-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Begin Your Transformation?
+      <section className="bg-slate-900 px-6 py-24 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-6 text-4xl font-bold md:text-5xl">
+            The Life You Want Begins With the Beliefs You Choose to Change
           </h2>
-          <p className="text-lg mb-8 text-[#f7e9df]">
+
+          <p className="mb-10 text-lg leading-8 text-slate-200">
             Coaching gives you a space to feel supported, identify what has been
-            keeping you stuck, and take intentional steps forward.
+            keeping you stuck, and take intentional steps toward the life you
+            are ready to create.
           </p>
-          <a
-            href="/contact#book"
-            className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
-          >
-            Schedule Your Clarity Appointment
-          </a>
+
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Link
+              href={bookingLink}
+              target="_blank"
+              className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
+            >
+              Schedule Your Free Discovery Call
+            </Link>
+
+            <Link
+              href="/pricing"
+              className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+            >
+              View Programs & Investment
+            </Link>
+          </div>
         </div>
       </section>
     </main>
