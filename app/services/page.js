@@ -1,244 +1,305 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Coaching Services | Life Coaching with Kaelynn",
   description:
-    "Explore life coaching services with Kaelynn including personal growth coaching, confidence coaching, accountability coaching, life transition coaching, emotional wellness coaching, and healing support.",
+    "Explore coaching services rooted in Core Belief Transformation Coaching, including confidence coaching, self-worth coaching, life transition support, accountability, wellness alignment, and personal growth.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-export default function Services() {
-  const services = [
-    {
-      title: "Personal Growth Coaching",
-      bestFor: "You want clarity, direction, and intentional growth.",
-      description:
-        "Personal Growth Coaching supports you in becoming more self-aware, identifying what matters most, and taking meaningful steps toward the life you want to create.",
-      outcomes: ["Greater clarity", "Stronger self-awareness", "Personal direction", "More intentional choices"],
-    },
-    {
-      title: "Confidence Coaching",
-      bestFor: "You struggle with self-doubt or second-guessing yourself.",
-      description:
-        "Confidence Coaching helps you strengthen self-trust, recognize your worth, and begin taking action with greater courage and belief in yourself.",
-      outcomes: ["Increased self-trust", "Stronger self-worth", "Less fear of judgment", "More confident decisions"],
-    },
-    {
-      title: "Accountability Coaching",
-      bestFor: "You know what you want but need support following through.",
-      description:
-        "Accountability Coaching provides structure, encouragement, and practical support so you can stay focused, take action, and remain committed to your goals.",
-      outcomes: ["Clear action steps", "Consistent follow-through", "Reduced procrastination", "Support staying focused"],
-    },
-    {
-      title: "Life Transition Coaching",
-      bestFor: "You are navigating change, uncertainty, or a new chapter.",
-      description:
-        "Life Transition Coaching supports you through seasons of change, helping you process uncertainty, make grounded decisions, and move forward with confidence.",
-      outcomes: ["Support through change", "Better decision-making", "Renewed direction", "Confidence in your next chapter"],
-    },
-    {
-      title: "Mindset & Emotional Wellness Coaching",
-      bestFor: "You want healthier thought patterns and emotional balance.",
-      description:
-        "Mindset and Emotional Wellness Coaching helps you recognize patterns, manage overwhelm, reduce negative self-talk, and create healthier ways of responding.",
-      outcomes: ["Healthier mindset", "Emotional awareness", "Less overwhelm", "Stronger resilience"],
-    },
-    {
-      title: "Healing & Self-Discovery Coaching",
-      bestFor: "You want to reconnect with yourself and your identity.",
-      description:
-        "Healing and Self-Discovery Coaching creates space to explore your values, reconnect with who you are, and move forward with greater self-understanding.",
-      outcomes: ["Deeper self-discovery", "Clearer values", "Stronger identity", "More self-compassion"],
-    },
-  ];
+const services = [
+  {
+    title: "Core Belief Transformation",
+    icon: "🌿",
+    description:
+      "Identify the beliefs, stories, and patterns that may be influencing your confidence, choices, relationships, and personal growth.",
+    focus: [
+      "Limiting belief awareness",
+      "Self-worth development",
+      "Pattern recognition",
+      "Inner growth and reflection",
+    ],
+  },
+  {
+    title: "Confidence & Self-Worth Coaching",
+    icon: "✨",
+    description:
+      "Build a stronger relationship with yourself by challenging self-doubt, strengthening self-trust, and learning to make decisions from confidence instead of fear.",
+    focus: [
+      "Confidence building",
+      "Self-trust",
+      "Boundary awareness",
+      "Overcoming self-doubt",
+    ],
+  },
+  {
+    title: "Life Transition Coaching",
+    icon: "🦋",
+    description:
+      "Receive support while navigating major life changes, uncertainty, emotional shifts, and new seasons of personal growth.",
+    focus: [
+      "Career changes",
+      "Relationship transitions",
+      "Identity shifts",
+      "Personal reinvention",
+    ],
+  },
+  {
+    title: "Accountability & Goal Support",
+    icon: "🎯",
+    description:
+      "Create structure, consistency, and momentum with coaching support designed to help you follow through on what matters most.",
+    focus: [
+      "Goal setting",
+      "Weekly action steps",
+      "Habit tracking",
+      "Progress accountability",
+    ],
+  },
+  {
+    title: "Wellness & Lifestyle Alignment",
+    icon: "🌱",
+    description:
+      "Align your daily habits, routines, energy, and self-care with the life you are working to create.",
+    focus: [
+      "Self-care routines",
+      "Stress management",
+      "Wellness habits",
+      "Life balance",
+    ],
+  },
+  {
+    title: "Personal Growth & Emotional Wellness",
+    icon: "💛",
+    description:
+      "Develop greater self-awareness, emotional clarity, and personal resilience as you move toward healing, growth, and transformation.",
+    focus: [
+      "Emotional awareness",
+      "Mindset support",
+      "Personal development",
+      "Healing-focused growth",
+    ],
+  },
+];
 
-  const commonNeeds = [
-    "Feeling stuck",
-    "Low confidence",
-    "Overthinking",
-    "People-pleasing",
-    "Life changes",
-    "Lack of direction",
-    "Self-doubt",
-    "Accountability",
-    "Emotional overwhelm",
-    "Goal follow-through",
-    "Personal growth",
-    "Healing and self-discovery",
-  ];
-
+export default function ServicesPage() {
   return (
-    <main className="bg-[#fdf8f3] text-[#3f2f2a]">
-      <section className="px-6 py-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-              Coaching Services
-            </p>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Personalized Coaching for Your Growth, Confidence, and Next Chapter
-            </h1>
-            <p className="text-xl text-[#6b4b43] leading-relaxed mb-8">
-              Coaching services are designed to meet you where you are and help
-              you move forward with clarity, support, accountability, and purpose.
-            </p>
-            <a
+    <main className="bg-white text-slate-900">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Coaching Services
+          </p>
+
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+            Coaching Services Rooted in Core Belief Transformation
+          </h1>
+
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
+            Your confidence, decisions, relationships, habits, and goals are
+            often shaped by what you believe about yourself and what you believe
+            is possible. Coaching helps you identify those patterns and create
+            change from the inside out.
+          </p>
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/pricing"
+              className="inline-flex rounded-full bg-teal-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-teal-800"
+            >
+              Explore Programs & Investment
+            </Link>
+
+            <Link
               href={bookingLink}
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#7b4f43] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5f3c33] transition"
+              className="inline-flex rounded-full border border-teal-700 px-8 py-4 text-base font-semibold text-teal-800 transition hover:bg-teal-50"
             >
-              Book a Free Discovery Call
-            </a>
-          </div>
-
-          <div>
-            <Image
-              src="/services-hero.png"
-              alt="Person reflecting at sunrise representing personal growth, clarity, and transformation"
-              width={900}
-              height={650}
-              priority
-              className="rounded-3xl shadow-xl border border-[#eadfd5] w-full max-h-[620px] object-cover"
-            />
+              Book a Discovery Call
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            What I Help With
-          </p>
-          <h2 className="text-4xl font-bold mb-6">
-            Coaching Services Designed Around Real-Life Challenges
-          </h2>
-          <p className="text-lg text-[#6b4b43] leading-relaxed max-w-4xl mx-auto mb-12">
-            Each service focuses on a specific area of growth. During your
-            discovery call, we can discuss which type of support best aligns with
-            your current goals, challenges, and season of life.
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            The Core Belief Connection
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
+            Lasting Change Starts Beneath the Surface
+          </h2>
+
+          <p className="text-lg leading-8 text-slate-700">
+            Many people try to change their habits, relationships, goals, or
+            confidence without first understanding the beliefs driving their
+            patterns. When those beliefs remain unexamined, it can be easy to
+            repeat the same cycles even when you deeply want something
+            different.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-slate-700">
+            Core Belief Transformation Coaching focuses on identifying the
+            inner stories that may be shaping how you see yourself, what you
+            allow, what you avoid, and how you move through life.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Areas of Support
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+              Coaching Services Designed to Help You Heal, Grow, and Transform
+            </h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
-              <div
+              <article
                 key={service.title}
-                className="bg-[#fdf8f3] rounded-3xl shadow-md p-8 border border-[#eadfd5] flex flex-col"
+                className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-[#9b6f5f] font-semibold mb-4">
-                  Best for: {service.bestFor}
-                </p>
-                <p className="text-[#6b4b43] leading-relaxed mb-6">
+                <div className="mb-5 text-4xl">{service.icon}</div>
+
+                <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                  {service.title}
+                </h3>
+
+                <p className="mb-6 leading-7 text-slate-700">
                   {service.description}
                 </p>
-                <div className="mt-auto">
-                  <p className="font-semibold text-[#7b4f43] mb-3">
-                    Possible outcomes:
-                  </p>
-                  <ul className="space-y-2 text-[#6b4b43]">
-                    {service.outcomes.map((item) => (
-                      <li key={item}>✔ {item}</li>
+
+                <div className="rounded-2xl bg-teal-50 p-5">
+                  <h4 className="mb-3 font-bold text-slate-900">
+                    Focus Areas:
+                  </h4>
+
+                  <ul className="space-y-2 text-slate-700">
+                    {service.focus.map((item) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="font-bold text-teal-700">✓</span>
+                        <span>{item}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f5e8df] px-6 py-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
-          <div className="rounded-3xl bg-white border border-[#eadfd5] p-8 shadow-md">
-            <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-              Personalized Support
-            </p>
-            <h2 className="text-4xl font-bold mb-6">
-              You Do Not Have to Know Exactly What You Need Yet
-            </h2>
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              Many people come to coaching knowing they want something to change,
-              but not knowing exactly where to begin. That is okay.
-            </p>
-            <p className="text-[#6b4b43] leading-relaxed mb-4">
-              During your discovery call, we will talk through what you are
-              experiencing, what you want to work toward, and which coaching
-              support may be the best fit for your current season.
-            </p>
-            <p className="text-[#6b4b43] leading-relaxed">
-              Your coaching experience can be personalized around your goals,
-              challenges, patterns, and desired outcomes.
-            </p>
-          </div>
+      <section className="bg-teal-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-10 md:grid-cols-3">
+            <div className="rounded-3xl bg-white p-8 shadow-md">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-teal-700">
+                Step One
+              </p>
 
-          <div className="rounded-3xl bg-[#7b4f43] text-white p-8 shadow-md">
-            <p className="uppercase tracking-[0.25em] text-[#f7e9df] text-sm mb-3">
-              Signature Foundation
-            </p>
-            <h2 className="text-4xl font-bold mb-6">
-              Supported by the Core Belief Transformation Method™
-            </h2>
-            <p className="text-[#f7e9df] leading-relaxed mb-6">
-              While this page focuses on the different services I offer, my
-              coaching foundation remains rooted in identifying the beliefs,
-              patterns, and self-concepts that may be influencing your current
-              experience.
-            </p>
-            <p className="text-[#f7e9df] leading-relaxed mb-8">
-              If you want to learn more about the deeper method behind my
-              coaching, visit the Core Belief Coaching page.
-            </p>
-            <a
-              href="/core-belief-coaching"
-              className="inline-block bg-white text-[#7b4f43] px-6 py-3 rounded-full font-semibold hover:bg-[#f5e8df] transition"
+              <h3 className="mb-3 text-2xl font-bold text-slate-900">
+                Identify the Belief
+              </h3>
+
+              <p className="leading-7 text-slate-700">
+                We explore the beliefs and inner stories that may be shaping
+                your confidence, choices, habits, and emotional patterns.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-8 shadow-md">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-teal-700">
+                Step Two
+              </p>
+
+              <h3 className="mb-3 text-2xl font-bold text-slate-900">
+                Understand the Pattern
+              </h3>
+
+              <p className="leading-7 text-slate-700">
+                We connect those beliefs to the patterns showing up in your
+                life, such as self-doubt, people-pleasing, avoidance, or
+                inconsistency.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-8 shadow-md">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-teal-700">
+                Step Three
+              </p>
+
+              <h3 className="mb-3 text-2xl font-bold text-slate-900">
+                Create New Alignment
+              </h3>
+
+              <p className="leading-7 text-slate-700">
+                Through reflection, coaching, action steps, and accountability,
+                you begin creating choices that align with the life you want.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-5xl rounded-3xl bg-white p-10 text-center shadow-xl ring-1 ring-slate-200">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            How Services Connect to Programs
+          </p>
+
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
+            Your Coaching Plan Is Personalized to Your Goals
+          </h2>
+
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
+            These service areas are integrated into the Growth Coaching Program,
+            Signature Coaching Experience, Premium Transformation Experience,
+            and ongoing Accountability & Growth Membership. During your
+            Discovery Call, we will discuss your goals and determine which
+            coaching path best fits your current season of life.
+          </p>
+
+          <div className="mt-10">
+            <Link
+              href="/pricing"
+              className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
             >
-              Learn About the Method
-            </a>
+              View Coaching Programs & Investment
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.25em] text-[#9b6f5f] text-sm mb-3">
-            Common Reasons People Seek Coaching
+      <section className="px-6 pb-20">
+        <div className="mx-auto max-w-4xl rounded-3xl bg-slate-900 p-10 text-center text-white shadow-xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+            Begin Your Transformation
           </p>
-          <h2 className="text-4xl font-bold mb-10">
-            You May Be Looking for Support With...
-          </h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {commonNeeds.map((item) => (
-              <span
-                key={item}
-                className="bg-[#fdf8f3] px-5 py-3 rounded-full shadow-sm text-[#6b4b43] font-medium border border-[#eadfd5]"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className="bg-[#7b4f43] text-white px-6 py-24 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Find the Right Coaching Support?
+          <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+            Ready to Understand What Has Been Holding You Back?
           </h2>
-          <p className="text-lg text-[#f7e9df] leading-relaxed mb-8">
-            A discovery call is the best first step to talk through your goals,
-            ask questions, and decide which coaching service is right for you.
+
+          <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-200">
+            Schedule a complimentary Discovery Call to discuss your goals,
+            challenges, and the type of coaching support that would best serve
+            your growth.
           </p>
-          <a
+
+          <Link
             href={bookingLink}
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df] transition"
+            className="inline-flex rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
           >
-            Book a Free Discovery Call
-          </a>
+            Schedule Your Free Discovery Call
+          </Link>
         </div>
       </section>
     </main>
