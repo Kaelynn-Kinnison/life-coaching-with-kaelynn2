@@ -12,6 +12,7 @@ const programs = [
   {
     badge: "Standard Coaching Experience",
     title: "Growth Coaching Program",
+    investmentLabel: "Investment",
     price: "$1,497",
     length: "10 Weeks",
     icon: "🌱",
@@ -41,6 +42,7 @@ const programs = [
   {
     badge: "Most Popular",
     title: "Heal. Grow. Transform. Signature Coaching Experience",
+    investmentLabel: "Investment",
     price: "$2,497",
     length: "12 Weeks",
     icon: "🌿",
@@ -76,6 +78,7 @@ const programs = [
   {
     badge: "VIP Coaching Experience",
     title: "Premium Transformation Experience",
+    investmentLabel: "Investment",
     price: "$4,997",
     length: "16 Weeks",
     icon: "🦋",
@@ -109,6 +112,7 @@ const programs = [
   {
     badge: "Ongoing Coaching Support",
     title: "Accountability & Growth Membership",
+    investmentLabel: "Monthly Investment",
     price: "$297",
     length: "Monthly",
     icon: "🌟",
@@ -188,6 +192,65 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="bg-teal-50 px-6 py-16">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Why Investment Matters
+          </p>
+
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
+            One of the Most Important Investments You Can Make Is in the Life
+            You Want to Create
+          </h2>
+
+          <p className="mx-auto max-w-4xl text-lg leading-8 text-slate-700">
+            Many people invest in their careers, homes, education, families, and
+            future plans. Yet one of the most valuable investments you can make
+            is in your own healing, growth, confidence, mindset, and personal
+            development.
+          </p>
+
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-slate-700">
+            Coaching is not simply an investment in a program. It is an
+            investment in the beliefs you choose to transform, the confidence
+            you choose to build, the goals you choose to pursue, and the life
+            you are ready to create.
+          </p>
+
+          <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-6 shadow-md">
+              <h3 className="mb-2 font-bold text-slate-900">
+                Greater Confidence
+              </h3>
+              <p className="text-slate-700">
+                Build trust in yourself, your decisions, and your ability to move
+                forward.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-6 shadow-md">
+              <h3 className="mb-2 font-bold text-slate-900">
+                Stronger Self-Worth
+              </h3>
+              <p className="text-slate-700">
+                Begin shifting the beliefs that may be keeping you stuck,
+                uncertain, or disconnected from your value.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-6 shadow-md">
+              <h3 className="mb-2 font-bold text-slate-900">
+                Lasting Transformation
+              </h3>
+              <p className="text-slate-700">
+                Create change that reaches beyond the coaching sessions and
+                impacts your life long-term.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-50 px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
           {programs.map((program) => (
@@ -223,12 +286,17 @@ export default function PricingPage() {
                 </p>
               )}
 
-              <div className="mb-6 flex flex-wrap items-end gap-3">
+              <div className="mb-8 rounded-2xl bg-teal-50 p-6">
+                <p className="mb-1 text-sm font-bold uppercase tracking-[0.18em] text-teal-800">
+                  {program.investmentLabel}
+                </p>
+
                 <p className="text-4xl font-bold text-teal-700">
                   {program.price}
                 </p>
-                <p className="pb-1 text-lg font-medium text-slate-500">
-                  | {program.length}
+
+                <p className="mt-1 text-lg font-medium text-slate-600">
+                  {program.length}
                 </p>
               </div>
 
@@ -268,7 +336,7 @@ export default function PricingPage() {
                 </div>
               </div>
 
-              <div className="mt-8 rounded-2xl bg-teal-50 p-6">
+              <div className="mt-8 rounded-2xl bg-slate-50 p-6">
                 <h4 className="mb-2 text-lg font-bold text-slate-900">
                   Outcome
                 </h4>
@@ -290,6 +358,28 @@ export default function PricingPage() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-4xl rounded-3xl bg-white p-10 shadow-xl ring-1 ring-slate-200">
+          <h2 className="mb-6 text-center text-3xl font-bold text-slate-900 md:text-4xl">
+            Why Coaching Is Framed as an Investment
+          </h2>
+
+          <p className="text-lg leading-8 text-slate-700">
+            Coaching is referred to as an investment because the benefits of
+            personal growth often extend far beyond the coaching experience
+            itself. When you invest in your mindset, confidence, self-worth,
+            goals, relationships, and personal development, the impact can reach
+            every area of your life.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-slate-700">
+            The work you do today has the potential to influence how you make
+            decisions, how you show up for yourself, how you pursue your goals,
+            and how you create the future you want.
+          </p>
         </div>
       </section>
 
