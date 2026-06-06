@@ -45,29 +45,75 @@ const methodSteps = [
   },
 ];
 
+const healFramework = [
+  {
+    letter: "H",
+    title: "Hear the Story",
+    text: "Understand the current challenge while exploring emotions, experiences, and the impact they have had on your life.",
+  },
+  {
+    letter: "E",
+    title: "Expose the Belief",
+    text: "Identify limiting beliefs, recurring patterns, and hidden narratives that may be keeping you stuck.",
+  },
+  {
+    letter: "A",
+    title: "Align with Truth",
+    text: "Challenge old stories and replace them with empowering beliefs that support confidence, growth, and possibility.",
+  },
+  {
+    letter: "L",
+    title: "Live the Transformation",
+    text: "Build sustainable habits, accountability, and action steps that create lasting change in everyday life.",
+  },
+];
+
+const growFramework = [
+  {
+    letter: "G",
+    title: "Gain Awareness",
+    text: "Understand the problem, the pattern, and what is currently keeping you stuck.",
+  },
+  {
+    letter: "R",
+    title: "Reveal Core Beliefs",
+    text: "Identify the hidden beliefs, fears, and barriers influencing your choices.",
+  },
+  {
+    letter: "O",
+    title: "Open New Possibilities",
+    text: "Reframe old narratives, create a new vision, and explore healthier ways forward.",
+  },
+  {
+    letter: "W",
+    title: "Walk Forward",
+    text: "Take consistent action with support, accountability, and intentional next steps.",
+  },
+];
+
 const programs = [
   {
     title: "Growth Coaching Program",
-    investment: "$1,497",
+    investment: "Schedule to Discuss",
     length: "10 Weeks",
     text: "For clarity, confidence, accountability, and personal growth.",
   },
   {
     title: "Signature Coaching Experience",
-    investment: "$2,497",
+    investment: "Schedule to Discuss",
     length: "12 Weeks",
     text: "Core Belief Transformation Coaching for deeper personal change.",
     featured: true,
   },
   {
     title: "Premium Transformation Experience",
-    investment: "$4,997",
+    investment: "Schedule to Discuss",
     length: "16 Weeks",
     text: "The highest level of coaching support for significant transformation.",
   },
   {
     title: "Accountability & Growth Membership",
-    investment: "$297",
+    investment: "Schedule to Discuss",
     length: "Monthly",
     text: "Ongoing coaching support for continued growth and accountability.",
   },
@@ -129,7 +175,7 @@ export default function Home() {
               href="/pricing"
               className="rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
             >
-              View Programs & Investment
+              Explore Coaching Options
             </Link>
           </div>
         </div>
@@ -282,6 +328,85 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Signature Framework
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+              The H.E.A.L.™ Framework
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+              The H.E.A.L.™ Framework is the foundation of my Core Belief
+              Transformation Coaching™ process. It helps uncover the beliefs
+              beneath the surface, create healthier perspectives, and build
+              lasting change through intentional action.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {healFramework.map((item) => (
+              <div
+                key={item.letter}
+                className="rounded-3xl bg-teal-50 p-8 shadow-md"
+              >
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-teal-700 text-2xl font-bold text-white">
+                  {item.letter}
+                </div>
+
+                <h3 className="mb-3 text-xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="leading-7 text-slate-700">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-teal-50 px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Coaching Process
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+              The G.R.O.W.™ Framework
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+              Every coaching journey begins with awareness and moves toward
+              intentional action. The G.R.O.W.™ Framework provides a simple path
+              forward for clients seeking clarity, confidence, and momentum.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {growFramework.map((item) => (
+              <div
+                key={item.letter}
+                className="rounded-3xl bg-white p-8 shadow-md"
+              >
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-teal-700 text-2xl font-bold text-white">
+                  {item.letter}
+                </div>
+
+                <h3 className="mb-3 text-xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="leading-7 text-slate-700">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
@@ -306,7 +431,7 @@ export default function Home() {
               >
                 {program.featured && (
                   <p className="mb-4 inline-block rounded-full bg-teal-700 px-3 py-1 text-xs font-bold uppercase text-white">
-                    Most Popular
+                    Signature Experience
                   </p>
                 )}
 
@@ -318,7 +443,7 @@ export default function Home() {
                   Investment
                 </p>
 
-                <p className="mb-1 text-3xl font-bold text-teal-700">
+                <p className="mb-1 text-2xl font-bold text-teal-700">
                   {program.investment}
                 </p>
 
@@ -336,7 +461,7 @@ export default function Home() {
               href="/pricing"
               className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
             >
-              View Programs & Investment
+              Explore Coaching Options
             </Link>
           </div>
         </div>
@@ -390,7 +515,7 @@ export default function Home() {
               href="/pricing"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
-              View Programs & Investment
+              Explore Coaching Options
             </Link>
           </div>
         </div>
