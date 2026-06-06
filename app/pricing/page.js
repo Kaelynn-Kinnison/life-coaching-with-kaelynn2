@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Coaching Programs & Investment | Life Coaching with Kaelynn",
   description:
-    "Explore premium coaching programs with Life Coaching with Kaelynn, including Growth Coaching, Signature Core Belief Transformation Coaching, Premium Transformation Coaching, and ongoing accountability membership.",
+    "Explore coaching programs with Life Coaching with Kaelynn and schedule a discovery call to discuss your investment.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -13,7 +13,7 @@ const programs = [
     badge: "Standard Coaching Experience",
     title: "Growth Coaching Program",
     investmentLabel: "Investment",
-    price: "$1,497",
+    investmentText: "Schedule a Discovery Call to Discuss Your Investment",
     length: "10 Weeks",
     icon: "🌱",
     featured: false,
@@ -43,7 +43,7 @@ const programs = [
     badge: "Most Popular",
     title: "Heal. Grow. Transform. Signature Coaching Experience",
     investmentLabel: "Investment",
-    price: "$2,497",
+    investmentText: "Schedule a Discovery Call to Discuss Your Investment",
     length: "12 Weeks",
     icon: "🌿",
     featured: true,
@@ -79,7 +79,7 @@ const programs = [
     badge: "VIP Coaching Experience",
     title: "Premium Transformation Experience",
     investmentLabel: "Investment",
-    price: "$4,997",
+    investmentText: "Schedule a Discovery Call to Discuss Your Investment",
     length: "16 Weeks",
     icon: "🦋",
     featured: false,
@@ -112,8 +112,8 @@ const programs = [
   {
     badge: "Ongoing Coaching Support",
     title: "Accountability & Growth Membership",
-    investmentLabel: "Monthly Investment",
-    price: "$297",
+    investmentLabel: "Membership Investment",
+    investmentText: "Schedule a Discovery Call to Discuss Your Investment",
     length: "Monthly",
     icon: "🌟",
     featured: false,
@@ -195,56 +195,54 @@ export default function PricingPage() {
       <section className="bg-teal-50 px-6 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Why Investment Matters
+            Your Coaching Investment
           </p>
 
           <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-            One of the Most Important Investments You Can Make Is in the Life
-            You Want to Create
+            Schedule a Discovery Call to Discuss Your Investment
           </h2>
 
           <p className="mx-auto max-w-4xl text-lg leading-8 text-slate-700">
-            Many people invest in their careers, homes, education, families, and
-            future plans. Yet one of the most valuable investments you can make
-            is in your own healing, growth, confidence, mindset, and personal
-            development.
+            Every client’s goals, challenges, and desired transformation are
+            personal. During your complimentary Discovery Call, we will discuss
+            where you are now, what you want to create, and which coaching
+            experience may be the best fit for you.
           </p>
 
           <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-slate-700">
-            Coaching is not simply an investment in a program. It is an
-            investment in the beliefs you choose to transform, the confidence
-            you choose to build, the goals you choose to pursue, and the life
-            you are ready to create.
+            This allows your coaching recommendation and investment to be
+            discussed with care, clarity, and alignment before you make a
+            decision.
           </p>
 
           <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-3">
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <h3 className="mb-2 font-bold text-slate-900">
-                Greater Confidence
+                Personalized Recommendation
               </h3>
               <p className="text-slate-700">
-                Build trust in yourself, your decisions, and your ability to move
-                forward.
+                We will discuss which coaching experience best fits your goals
+                and current season of life.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <h3 className="mb-2 font-bold text-slate-900">
-                Stronger Self-Worth
+                Clear Next Steps
               </h3>
               <p className="text-slate-700">
-                Begin shifting the beliefs that may be keeping you stuck,
-                uncertain, or disconnected from your value.
+                You will leave the call with a better understanding of your
+                options and how coaching can support you.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <h3 className="mb-2 font-bold text-slate-900">
-                Lasting Transformation
+                Investment Discussion
               </h3>
               <p className="text-slate-700">
-                Create change that reaches beyond the coaching sessions and
-                impacts your life long-term.
+                Your investment will be discussed during the call based on the
+                coaching program that fits your needs.
               </p>
             </div>
           </div>
@@ -287,15 +285,15 @@ export default function PricingPage() {
               )}
 
               <div className="mb-8 rounded-2xl bg-teal-50 p-6">
-                <p className="mb-1 text-sm font-bold uppercase tracking-[0.18em] text-teal-800">
+                <p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-teal-800">
                   {program.investmentLabel}
                 </p>
 
-                <p className="text-4xl font-bold text-teal-700">
-                  {program.price}
+                <p className="text-2xl font-bold leading-snug text-teal-700">
+                  {program.investmentText}
                 </p>
 
-                <p className="mt-1 text-lg font-medium text-slate-600">
+                <p className="mt-3 text-lg font-medium text-slate-600">
                   {program.length}
                 </p>
               </div>
@@ -353,7 +351,7 @@ export default function PricingPage() {
                       : "inline-flex rounded-full border border-teal-700 px-7 py-3 font-semibold text-teal-800 transition hover:bg-teal-50"
                   }
                 >
-                  Schedule Discovery Call
+                  Discuss Your Investment
                 </Link>
               </div>
             </article>
@@ -390,7 +388,7 @@ export default function PricingPage() {
           </p>
 
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Not Sure Which Program Is Right for You?
+            Ready to Discuss Your Coaching Investment?
           </h2>
 
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-200">
@@ -404,7 +402,7 @@ export default function PricingPage() {
             target="_blank"
             className="inline-flex rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
           >
-            Book Your Free Discovery Call
+            Schedule Your Free Discovery Call
           </Link>
         </div>
       </section>
