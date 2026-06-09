@@ -26,13 +26,13 @@ export const posts = [
     featured: true,
     published: true,
   },
-  {
-    title: "Why Self-Sabotage Happens",
-    slug: "why-self-sabotage-happens",
-    category: "Mindset Patterns",
-    description:
-      "Understand how self-sabotage may be connected to fear, limiting beliefs, self-worth, and old internal patterns.",
-    featured: false,
-    published: false,
-  },
+{
+  title: "Why Self-Sabotage Happens",
+  slug: "why-self-sabotage-happens",
+  category: "Mindset Patterns",
+  description:
+    "Understand how self-sabotage may be connected to fear, limiting beliefs, self-worth, and old internal patterns.",
+  featured: false,
+  published: true,
+},
 ];
