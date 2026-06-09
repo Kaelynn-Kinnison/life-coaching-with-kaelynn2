@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { posts } from "./posts";
 
 export const metadata = {
   title: "Core Belief Coaching Blog | Life Coaching with Kaelynn",
@@ -7,99 +8,6 @@ export const metadata = {
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
-
-const posts = [
-  {
-    title: "The Hidden Core Beliefs That May Be Holding You Back",
-    category: "Core Beliefs",
-    description:
-      "Explore how deeply held beliefs can shape confidence, choices, relationships, self-worth, and personal growth.",
-    link: "/blog/core-beliefs-holding-you-back",
-    featured: true,
-    published: true,
-  },
-  {
-    title: "The Connection Between Self-Worth and Core Beliefs",
-    category: "Self-Worth",
-    description:
-      "Discover how core beliefs can influence confidence, people-pleasing, perfectionism, and personal growth.",
-    link: "/blog/self-worth-and-core-beliefs",
-    featured: true,
-    published: true,
-  },
-  {
-    title: "Why Healing Is the Foundation of Transformation",
-    category: "Healing",
-    description:
-      "Learn why meaningful change often begins with awareness, self-compassion, emotional healing, and growth.",
-    link: "/blog/healing-foundation-of-transformation",
-    featured: true,
-    published: true,
-  },
-  {
-    title: "How Accountability Creates Lasting Change",
-    category: "Accountability",
-    description:
-      "Discover how structure, support, reflection, and intentional action can help you stay committed to your goals.",
-    link: "/blog/accountability-creates-lasting-change",
-    featured: false,
-    published: true,
-  },
-  {
-    title: "Why Self-Sabotage Happens",
-    category: "Mindset Patterns",
-    description:
-      "Understand how self-sabotage may be connected to fear, limiting beliefs, self-worth, and old internal patterns.",
-    link: "/blog/why-self-sabotage-happens",
-    featured: false,
-    published: false,
-  },
-  {
-    title: "How to Identify Limiting Beliefs in Daily Life",
-    category: "Limiting Beliefs",
-    description:
-      "Learn how limiting beliefs can show up in your thoughts, habits, decisions, relationships, and emotional responses.",
-    link: "/blog/identify-limiting-beliefs",
-    featured: false,
-    published: false,
-  },
-  {
-    title: "Confidence Starts with What You Believe About Yourself",
-    category: "Confidence",
-    description:
-      "Explore how confidence grows when you begin shifting the beliefs that shape your identity, choices, and self-trust.",
-    link: "/blog/confidence-starts-with-belief",
-    featured: false,
-    published: false,
-  },
-  {
-    title: "Rewriting the Stories That Hold You Back",
-    category: "Personal Growth",
-    description:
-      "Discover how old internal stories can influence your life and how new beliefs can support growth and transformation.",
-    link: "/blog/rewriting-stories-that-hold-you-back",
-    featured: false,
-    published: false,
-  },
-  {
-    title: "The Difference Between Healing and Avoidance",
-    category: "Healing & Awareness",
-    description:
-      "Learn the difference between truly processing growth and unintentionally avoiding what needs attention.",
-    link: "/blog/healing-vs-avoidance",
-    featured: false,
-    published: false,
-  },
-  {
-    title: "How Core Beliefs Influence Relationships",
-    category: "Relationships & Core Beliefs",
-    description:
-      "Explore how beliefs about worth, trust, safety, and connection can influence relationship patterns.",
-    link: "/blog/core-beliefs-and-relationships",
-    featured: false,
-    published: false,
-  },
-];
 
 const categories = [
   "Core Beliefs",
@@ -114,11 +22,13 @@ const categories = [
   "Personal Growth",
 ];
 
-const featuredPosts = posts.filter((post) => post.featured && post.published);
-const publishedPosts = posts.filter((post) => !post.featured && post.published);
-const comingSoonPosts = posts.filter((post) => !post.published);
-
 export default function BlogPage() {
+  const featuredPosts = posts.filter((post) => post.featured && post.published);
+  const publishedPosts = posts.filter(
+    (post) => !post.featured && post.published
+  );
+  const comingSoonPosts = posts.filter((post) => !post.published);
+
   return (
     <main className="bg-white text-slate-900">
       <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
@@ -192,98 +102,102 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Start Here
-            </p>
+      {featuredPosts.length > 0 && (
+        <section className="bg-slate-50 px-6 py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 text-center">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+                Start Here
+              </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Foundational Articles for Core Belief Transformation
-            </h2>
+              <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+                Foundational Articles for Core Belief Transformation
+              </h2>
 
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              New to core belief work? Begin with these published cornerstone
-              articles.
-            </p>
-          </div>
+              <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+                New to core belief work? Begin with these published cornerstone
+                articles.
+              </p>
+            </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
-            {featuredPosts.map((post) => (
-              <article
-                key={post.title}
-                className="rounded-3xl border-2 border-teal-700 bg-white p-8 shadow-xl"
-              >
-                <p className="mb-4 inline-block rounded-full bg-teal-700 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white">
-                  Start Here
-                </p>
-
-                <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
-                  {post.category}
-                </p>
-
-                <h3 className="mb-4 text-2xl font-bold text-slate-900">
-                  {post.title}
-                </h3>
-
-                <p className="mb-6 leading-7 text-slate-700">
-                  {post.description}
-                </p>
-
-                <Link
-                  href={post.link}
-                  className="font-semibold text-teal-700 hover:underline"
+            <div className="grid gap-8 md:grid-cols-3">
+              {featuredPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="rounded-3xl border-2 border-teal-700 bg-white p-8 shadow-xl"
                 >
-                  Read Article →
-                </Link>
-              </article>
-            ))}
+                  <p className="mb-4 inline-block rounded-full bg-teal-700 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white">
+                    Start Here
+                  </p>
+
+                  <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
+                    {post.category}
+                  </p>
+
+                  <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                    {post.title}
+                  </h3>
+
+                  <p className="mb-6 leading-7 text-slate-700">
+                    {post.description}
+                  </p>
+
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="font-semibold text-teal-700 hover:underline"
+                  >
+                    Read Article →
+                  </Link>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              More Articles
-            </p>
+      {publishedPosts.length > 0 && (
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 text-center">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+                More Articles
+              </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Continue Exploring Healing, Mindset, and Growth
-            </h2>
-          </div>
+              <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+                Continue Exploring Healing, Mindset, and Growth
+              </h2>
+            </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {publishedPosts.map((post) => (
-              <article
-                key={post.title}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
-              >
-                <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-teal-700">
-                  {post.category}
-                </p>
-
-                <h3 className="mb-4 text-xl font-bold text-slate-900">
-                  {post.title}
-                </h3>
-
-                <p className="mb-6 leading-7 text-slate-700">
-                  {post.description}
-                </p>
-
-                <Link
-                  href={post.link}
-                  className="font-semibold text-teal-700 hover:underline"
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {publishedPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="rounded-3xl border border-slate-200 bg-white p-7 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
                 >
-                  Read More →
-                </Link>
-              </article>
-            ))}
+                  <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-teal-700">
+                    {post.category}
+                  </p>
+
+                  <h3 className="mb-4 text-xl font-bold text-slate-900">
+                    {post.title}
+                  </h3>
+
+                  <p className="mb-6 leading-7 text-slate-700">
+                    {post.description}
+                  </p>
+
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="font-semibold text-teal-700 hover:underline"
+                  >
+                    Read More →
+                  </Link>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {comingSoonPosts.length > 0 && (
         <section className="bg-slate-50 px-6 py-20">
@@ -306,7 +220,7 @@ export default function BlogPage() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {comingSoonPosts.map((post) => (
                 <article
-                  key={post.title}
+                  key={post.slug}
                   className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md opacity-90"
                 >
                   <div className="mb-4">
