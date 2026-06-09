@@ -1,3 +1,4 @@
+```jsx
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts } from "../posts";
@@ -46,7 +47,7 @@ export default function BlogArticlePage({ params }) {
 
       <article className="px-6 py-16">
         <div className="mx-auto max-w-4xl space-y-8 text-lg leading-8 text-slate-700">
-          {post.content.map((section, index) => {
+          {post.content?.map((section, index) => {
             if (section.type === "heading") {
               return (
                 <h2
@@ -104,3 +105,4 @@ export default function BlogArticlePage({ params }) {
     </main>
   );
 }
+```
