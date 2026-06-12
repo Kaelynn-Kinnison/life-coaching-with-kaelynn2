@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About Kaelynn Kinnison | Life Coaching with Kaelynn",
   description:
-    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Learn about her mission, coaching philosophy, education, and passion for helping individuals heal, grow, and transform.",
+    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Coaching for women who feel stuck, unfulfilled, or uncertain about what's next.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -33,12 +33,12 @@ const credentials = [
 ];
 
 const whoIHelp = [
-  "Individuals who feel stuck repeating the same patterns",
-  "People struggling with confidence and self-worth",
-  "Individuals navigating life transitions",
-  "People seeking greater clarity and purpose",
-  "Those ready to challenge limiting beliefs",
-  "Individuals pursuing healing and growth",
+  "Women wondering, 'Is this all there is?'",
+  "Women feeling stuck between who they were and who they want to become",
+  "Women navigating major life transitions",
+  "Women rebuilding confidence and self-worth",
+  "Women healing from difficult life experiences",
+  "Women seeking clarity, purpose, and direction",
 ];
 
 const beliefFormula = ["Belief", "Thought", "Emotion", "Action", "Result"];
@@ -73,36 +73,59 @@ export default function AboutPage() {
             </h1>
 
             <p className="mb-6 text-2xl font-semibold leading-relaxed text-teal-700">
-              What if the life you want is closer than you think?
+              If You&apos;ve Been Wondering What&apos;s Next, You&apos;re Not Alone.
             </p>
 
             <p className="mb-6 text-lg leading-8 text-slate-700">
-              I am a Transformational Life Coach and creator of the Core Belief
-              Transformation Method™.
+              Have you ever found yourself asking,{" "}
+              <strong>&quot;Is this all there is?&quot;</strong>
             </p>
 
-            <p className="mb-8 text-lg leading-8 text-slate-700">
-              My passion is helping people uncover the beliefs, patterns, and
-              obstacles that may be holding them back so they can create
-              meaningful and lasting change.
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              From the outside, life may look fine. You have responsibilities,
+              relationships, and a routine you have built over the years. Yet
+              something inside keeps whispering that there has to be more. More
+              purpose. More fulfillment. More of you.
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/core-belief-coaching"
-                className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
-              >
-                Learn About My Method
-              </Link>
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              I understand that feeling because I have lived through seasons
+              where I questioned who I was, what I truly wanted, and what was
+              next for me. I know what it feels like to carry self-doubt, to
+              feel stuck between where you are and where you want to be, and to
+              wonder if real change is even possible.
+            </p>
 
-              <Link
-                href={bookingLink}
-                target="_blank"
-                className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
-              >
-                Book Discovery Call
-              </Link>
-            </div>
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              What I discovered is that many of the things keeping us stuck are
+              not a lack of motivation or willpower. They are often the beliefs
+              we have carried about ourselves for years.
+            </p>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              As I began doing my own personal growth work, I became passionate
+              about helping other women break free from those same limitations.
+              Women who are ready to stop simply surviving and start creating a
+              life that feels meaningful, aligned, and authentic.
+            </p>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              Today, through Life Coaching with Kaelynn, I help women gain
+              clarity, rebuild confidence, challenge limiting beliefs, and
+              create a vision for their next chapter.
+            </p>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              Whether you are navigating a major life transition, healing from
+              difficult experiences, rebuilding after adversity, or simply
+              feeling called toward something more, you do not have to figure it
+              out alone.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700">
+              My mission is simple: to help women rediscover themselves, trust
+              themselves again, and confidently create what comes next.
+            </p>
           </div>
 
           <div className="flex justify-center">
@@ -147,7 +170,7 @@ export default function AboutPage() {
           </p>
 
           <h2 className="mb-10 text-center text-4xl font-bold text-slate-900">
-            Helping People Heal, Grow, and Transform
+            Helping Women Create Their Next Chapter
           </h2>
 
           <div className="space-y-6 text-lg leading-8 text-slate-700">
@@ -170,7 +193,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              I believe every person has the ability to heal, grow, and
+              I believe every woman has the ability to heal, grow, and
               transform. Sometimes the greatest challenge is not knowing what to
               do. It is trying to carry life&apos;s challenges alone.
             </p>
@@ -219,13 +242,13 @@ export default function AboutPage() {
           </h2>
 
           <p className="mb-6 text-lg leading-8 text-slate-700">
-            Many people know what they want to change, yet they continue
+            Many women know what they want to change, yet they continue
             repeating the same patterns, experiencing the same frustrations, or
             struggling to create lasting results.
           </p>
 
           <p className="mb-6 text-lg leading-8 text-slate-700">
-            I created the Core Belief Transformation Method™ to help individuals
+            I created the Core Belief Transformation Method™ to help women
             identify limiting beliefs, challenge old patterns, and build
             healthier beliefs that support confidence, self-worth,
             accountability, emotional wellness, and lasting transformation.
@@ -246,7 +269,7 @@ export default function AboutPage() {
           </p>
 
           <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl">
-            Support for People Ready for Meaningful Change
+            Support for Women Ready for Meaningful Change
           </h2>
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -358,7 +381,7 @@ export default function AboutPage() {
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            The Life You Want Begins With the Beliefs You Choose to Change
+            Your Next Chapter Is Waiting
           </h2>
 
           <p className="mb-10 text-lg leading-8 text-slate-200">
