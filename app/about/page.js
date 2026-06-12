@@ -85,29 +85,31 @@ export default function AboutPage() {
               Kaelynn Kinnison
             </h1>
 
-            <p className="mb-6 text-2xl font-semibold leading-relaxed text-teal-700">
-              I help women feel seen, supported, and confident as they create
-              their next chapter.
-            </p>
+           <h2 className="mb-6 text-3xl font-semibold leading-relaxed text-teal-700">
+  For the woman who feels tired, discouraged, afraid, guilty, or alone — you are not broken, and you do not have to carry this by yourself.
+</h2>
 
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              I am the founder of Life Coaching with Kaelynn, where I support
-              women who feel stuck, uncertain, disconnected, or ready for
-              something more.
-            </p>
+<p className="mb-6 text-lg leading-8 text-slate-700">
+  There are seasons in life when you can look like you are holding everything together on the outside, while inside you feel overwhelmed, disconnected, uncertain, or quietly falling apart.
+</p>
 
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              My work is rooted in compassion, accountability, self-awareness,
-              and the belief that meaningful change becomes possible when you
-              no longer have to carry everything alone.
-            </p>
+<p className="mb-6 text-lg leading-8 text-slate-700">
+  You may be carrying guilt for wanting more, fear of starting over, sadness over what has changed, or discouragement because you have tried to move forward before and still feel stuck.
+</p>
 
-            <p className="mb-8 text-lg leading-8 text-slate-700">
-              Through coaching, I help women rebuild confidence, reconnect with
-              themselves, and begin taking steps toward a life that feels more
-              aligned, purposeful, and true to who they are becoming.
-            </p>
+<p className="mb-6 text-lg leading-8 text-slate-700">
+  <strong>
+    Your feelings are not too much, your story is not too heavy, and your desire for a different life matters.
+  </strong>
+</p>
 
+<p className="mb-6 text-lg leading-8 text-slate-700">
+  Through Life Coaching with Kaelynn, I help women who feel lost, stuck, or emotionally worn down begin to reconnect with themselves, rebuild confidence, and take one honest step at a time toward healing, clarity, and meaningful change.
+</p>
+
+<p className="mb-8 text-lg leading-8 text-slate-700">
+  You do not need to have all the answers before you begin. You only need a safe place to start — and you do not have to start alone.
+</p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link
                 href={bookingLink}
