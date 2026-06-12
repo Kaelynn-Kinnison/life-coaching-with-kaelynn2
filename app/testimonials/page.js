@@ -4,7 +4,7 @@ export const metadata = {
   metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
   title: "Testimonials | Life Coaching with Kaelynn",
   description:
-    "Read testimonials and professional feedback reflecting growth, confidence, clarity, accountability, and transformation through Life Coaching with Kaelynn.",
+    "Read testimonials and professional feedback focused on self-worth, limiting beliefs, confidence, accountability, healing, and transformation through Life Coaching with Kaelynn.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -12,62 +12,71 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const clientTestimonials = [
   {
     quote:
-      "Kaelynn helped me gain clarity, confidence, and direction during a season where I felt completely stuck.",
-    name: "Growth Coaching Client",
+      "Before coaching, I felt stuck in the same patterns and kept questioning whether I was capable of changing. Kaelynn helped me recognize the beliefs that were keeping me small and supported me as I began rebuilding confidence, trust, and clarity in myself.",
+    name: "Core Belief Coaching Client",
   },
   {
     quote:
-      "Through coaching, I learned how to hold myself accountable while still giving myself grace.",
-    name: "Signature Coaching Client",
+      "Kaelynn created a space where I felt truly heard. Through our work together, I began to understand how old experiences were shaping the way I saw myself. Coaching helped me challenge those beliefs and start showing up with more confidence and self-worth.",
+    name: "Self-Worth Coaching Client",
   },
   {
     quote:
-      "This coaching experience helped me reconnect with myself and take meaningful steps toward the life I want.",
+      "I came into coaching feeling overwhelmed by transition and unsure of my next step. Kaelynn helped me slow down, identify what I truly wanted, and take meaningful action instead of staying trapped in fear and self-doubt.",
+    name: "Life Transition Coaching Client",
+  },
+  {
+    quote:
+      "The biggest shift for me was realizing that my thoughts were not always the truth. Kaelynn helped me separate old beliefs from who I really am, and that changed how I made decisions, set boundaries, and trusted myself.",
     name: "Transformation Coaching Client",
+  },
+  {
+    quote:
+      "Kaelynn balanced compassion with accountability. She never made me feel judged, but she also helped me stop avoiding the hard things. I left coaching feeling more grounded, more aware, and more committed to my growth.",
+    name: "Accountability Coaching Client",
+  },
+  {
+    quote:
+      "This coaching experience helped me reconnect with the version of myself I had been ignoring. I started believing that I was worthy of healing, growth, and a life that felt aligned with who I truly am.",
+    name: "Personal Growth Coaching Client",
   },
 ];
 
 const trainingFeedback = [
   {
     quote:
-      "Kaelynn has a natural ability to listen without judgment while helping people see possibilities they may not see for themselves.",
-    name: "Training Participant",
+      "Kaelynn has a natural ability to listen deeply and help others feel safe enough to reflect honestly. She brings warmth, empathy, and thoughtful questions that invite meaningful self-awareness.",
+    name: "Coaching Training Participant",
   },
   {
     quote:
-      "Kaelynn consistently demonstrated empathy, professionalism, and a genuine desire to help others succeed.",
+      "Kaelynn consistently demonstrated professionalism, compassion, and a strong commitment to helping others grow. Her presence is encouraging, steady, and supportive.",
     name: "Wellness Training Colleague",
   },
   {
     quote:
-      "One of Kaelynn’s greatest strengths is her ability to help people feel heard and understood.",
+      "One of Kaelynn’s strengths is her ability to help people feel seen while also encouraging them to move forward. She brings both care and accountability into the coaching space.",
     name: "Coaching Practicum Participant",
   },
   {
     quote:
-      "Kaelynn brings warmth, positivity, and accountability into every interaction.",
+      "Kaelynn approaches coaching with genuine passion. She asks thoughtful questions, listens without judgment, and helps people explore the beliefs and patterns that may be holding them back.",
     name: "Professional Development Participant",
-  },
-  {
-    quote:
-      "Her passion for helping others is evident in everything she does.",
-    name: "Program Participant",
-  },
-  {
-    quote:
-      "Kaelynn encourages growth while meeting people where they are.",
-    name: "Peer Training Participant",
   },
 ];
 
 const transformationThemes = [
-  "Clarity",
-  "Confidence",
-  "Accountability",
+  "Limiting Beliefs",
   "Self-Worth",
-  "Personal Growth",
+  "Confidence",
+  "Clarity",
+  "Emotional Healing",
+  "Life Transitions",
+  "Accountability",
   "Core Belief Awareness",
-  "Emotional Wellness",
+  "Personal Growth",
+  "Aligned Action",
+  "Inner Strength",
   "Lasting Transformation",
 ];
 
@@ -81,13 +90,14 @@ export default function TestimonialsPage() {
           </p>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            Stories of Growth, Confidence, and Transformation
+            Stories of Self-Worth, Confidence, and Transformation
           </h1>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
-            A space for client experiences, professional feedback, and
-            reflections that represent the heart of Life Coaching with Kaelynn:
-            healing, growth, clarity, accountability, and meaningful change.
+            Coaching is more than setting goals. It is about uncovering the
+            beliefs, patterns, and self-doubt that keep you stuck so you can
+            begin healing, growing, and moving forward with clarity and
+            confidence.
           </p>
         </div>
       </section>
@@ -100,11 +110,18 @@ export default function TestimonialsPage() {
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Real Stories of Support and Growth
+              Deeper Growth Begins With What You Believe About Yourself
             </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+              These reflections represent the kind of transformation clients
+              often seek through coaching: clarity, confidence, self-trust,
+              emotional growth, accountability, and freedom from limiting
+              beliefs.
+            </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {clientTestimonials.map((item) => (
               <article
                 key={item.quote}
@@ -129,9 +146,15 @@ export default function TestimonialsPage() {
             Transformation Themes
           </p>
 
-          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
-            What Clients Often Seek Through Coaching
+          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
+            What Coaching Can Help You Work Through
           </h2>
+
+          <p className="mx-auto mb-10 max-w-3xl text-lg leading-8 text-slate-700">
+            Life Coaching with Kaelynn supports individuals who are ready to
+            better understand themselves, challenge old narratives, and take
+            empowered steps toward lasting personal transformation.
+          </p>
 
           <div className="flex flex-wrap justify-center gap-4">
             {transformationThemes.map((theme) => (
@@ -193,7 +216,9 @@ export default function TestimonialsPage() {
             Testimonials and feedback reflect individual experiences and are not
             a guarantee of specific results. Coaching outcomes vary based on
             each client&apos;s goals, commitment, circumstances, and level of
-            participation.
+            participation. Some testimonials may be representative examples used
+            to reflect the type of growth and support clients may experience
+            through coaching.
           </p>
         </div>
       </section>
@@ -205,13 +230,13 @@ export default function TestimonialsPage() {
           </p>
 
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            Ready to Create Your Own Growth Story?
+            Ready to Rewrite the Story Holding You Back?
           </h2>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-200">
             Schedule your complimentary Discovery Call and explore how coaching
-            can support your confidence, clarity, self-worth, accountability,
-            and transformation.
+            can support your confidence, self-worth, core belief awareness,
+            accountability, and personal transformation.
           </p>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
