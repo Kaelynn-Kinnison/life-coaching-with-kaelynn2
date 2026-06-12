@@ -93,25 +93,27 @@ export default function Home() {
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-         <p className="mb-6 text-center text-3xl font-black uppercase tracking-[0.2em] text-teal-700 md:text-4xl">
-  Is This You?
-</p>
+          <p className="mb-6 text-center text-3xl font-black uppercase tracking-[0.2em] text-teal-700 md:text-4xl">
+            Is This You?
+          </p>
 
-         <h2 className="mb-6 text-center text-5xl font-black tracking-tight text-slate-900 md:text-6xl">
-  You May Be Ready for Coaching If...
-</h2>
-                <p className="mx-auto mb-12 max-w-3xl text-center text-xl leading-8 text-slate-700">
-  If these statements resonate with you, you are not alone. Many women arrive here feeling exhausted, discouraged, uncertain, or disconnected from themselves.
-</p>
+          <h2 className="mb-6 text-center text-5xl font-black tracking-tight text-slate-900 md:text-6xl">
+            You May Be Ready for Coaching If...
+          </h2>
+
+          <p className="mx-auto mb-12 max-w-3xl text-center text-xl leading-8 text-slate-700">
+            If these statements resonate with you, you are not alone. Many women
+            arrive here feeling exhausted, discouraged, uncertain, or
+            disconnected from themselves.
+          </p>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-           className="rounded-3xl bg-teal-50 p-6 text-xl font-semibold leading-8 text-slate-800 shadow-md ring-1 ring-teal-100"
+            {signs.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl bg-teal-50 p-5 text-slate-700 shadow-sm"
+                className="rounded-3xl bg-teal-50 p-6 text-xl font-semibold leading-8 text-slate-800 shadow-md ring-1 ring-teal-100"
               >
-                <span className="font-bold text-teal-700">✓</span>{" "}
-               {item}
+                <span className="font-bold text-teal-700">✓</span> {item}
               </div>
             ))}
           </div>
