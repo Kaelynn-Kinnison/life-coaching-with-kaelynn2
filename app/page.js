@@ -53,30 +53,6 @@ const discoveryCallSteps = [
   "Decide which coaching option fits your season",
 ];
 
-const programs = [
-  {
-    title: "Growth Coaching Program",
-    length: "10 Weeks",
-    text: "For women seeking clarity, confidence, accountability, and personal growth.",
-  },
-  {
-    title: "Signature Coaching Experience",
-    length: "12 Weeks",
-    text: "Core Belief Transformation Coaching for women ready for deeper personal change.",
-    featured: true,
-  },
-  {
-    title: "Premium Transformation Experience",
-    length: "16 Weeks",
-    text: "The highest level of coaching support for women ready to create significant transformation.",
-  },
-  {
-    title: "Accountability & Growth Membership",
-    length: "Monthly",
-    text: "Ongoing coaching support for continued growth, confidence, and accountability.",
-  },
-];
-
 export default function Home() {
   return (
     <main className="bg-white text-slate-900">
@@ -121,10 +97,10 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
             >
-              Explore Coaching Options
+              View Coaching Services
             </Link>
           </div>
         </div>
@@ -233,66 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Coaching Programs
-            </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Choose the Level of Support That Fits Your Season
-            </h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {programs.map((program) => (
-              <div
-                key={program.title}
-                className={
-                  program.featured
-                    ? "rounded-3xl border-4 border-teal-700 bg-white p-6 shadow-xl"
-                    : "rounded-3xl border border-slate-200 bg-white p-6 shadow-md"
-                }
-              >
-                {program.featured && (
-                  <p className="mb-4 inline-block rounded-full bg-teal-700 px-3 py-1 text-xs font-bold uppercase text-white">
-                    Signature Experience
-                  </p>
-                )}
-
-                <h3 className="mb-3 text-xl font-bold text-slate-900">
-                  {program.title}
-                </h3>
-
-                <p className="mb-1 text-sm font-bold uppercase tracking-wide text-teal-700">
-                  Investment
-                </p>
-
-                <p className="mb-1 text-2xl font-bold text-teal-700">
-                  Schedule to Discuss
-                </p>
-
-                <p className="mb-4 text-sm font-medium text-slate-500">
-                  {program.length}
-                </p>
-
-                <p className="leading-7 text-slate-700">{program.text}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link
-              href="/pricing"
-              className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
-            >
-              Explore Coaching Options
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-white px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
           <div>
@@ -391,10 +307,10 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
-              Explore Coaching Options
+              View Coaching Services
             </Link>
           </div>
         </div>
