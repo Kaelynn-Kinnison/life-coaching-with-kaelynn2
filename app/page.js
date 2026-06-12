@@ -27,18 +27,22 @@ const outcomes = [
   "A vision for your next chapter",
 ];
 
-const whyWomenWorkWithMe = [
+const whyThisWorks = [
   {
-    title: "You feel heard",
-    text: "Coaching gives you a safe space to be honest about what you are carrying without judgment.",
+    title: "You Feel Heard",
+    text: "You get space to talk honestly about what you are carrying without judgment, pressure, or shame.",
   },
   {
-    title: "You gain clarity",
-    text: "Together, we slow down the noise and identify what is keeping you stuck.",
+    title: "You Gain Clarity",
+    text: "Together, we sort through the noise so you can understand what feels stuck and what needs to shift.",
   },
   {
-    title: "You move forward",
-    text: "You leave with realistic next steps, encouragement, and accountability.",
+    title: "You Rebuild Confidence",
+    text: "Coaching helps you strengthen self-trust, reconnect with your voice, and begin believing in your next chapter.",
+  },
+  {
+    title: "You Take Action",
+    text: "You leave with realistic next steps, support, and accountability so change becomes more than an idea.",
   },
 ];
 
@@ -92,19 +96,19 @@ export default function Home() {
           </p>
 
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
-            Is This All There Is?
+            Feeling Stuck in Life? Let’s Discover What Comes Next.
           </h1>
 
           <p className="mx-auto mb-6 max-w-4xl text-xl leading-8 text-slate-700 md:text-2xl">
-            Helping women who feel stuck, unfulfilled, or uncertain about
-            what&apos;s next rediscover themselves, rebuild confidence, and
-            create a meaningful next chapter.
+            Supportive life coaching for women who are ready to rebuild
+            confidence, reconnect with themselves, and create a meaningful next
+            chapter.
           </p>
 
           <p className="mx-auto mb-8 max-w-3xl text-lg leading-8 text-slate-600">
-            You do not have to figure out your next season alone. Coaching gives
-            you space to feel heard, gain clarity, and move forward with support
-            and accountability.
+            You do not have to figure out this season alone. Coaching gives you
+            space to feel heard, gain clarity, and move forward with support and
+            accountability.
           </p>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
@@ -171,56 +175,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-center">
-          <div className="flex justify-center">
-            <Image
-              src="/kaelynn-portrait.png"
-              alt="Portrait of Kaelynn Kinnison"
-              width={450}
-              height={550}
-              className="rounded-3xl object-cover shadow-2xl"
-            />
-          </div>
-
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Meet Kaelynn
-            </p>
-
-            <h2 className="mb-6 text-4xl font-bold text-slate-900">
-              I Help Women Create Their Next Chapter
-            </h2>
-
-            <p className="mb-5 text-lg leading-8 text-slate-700">
-              I am Kaelynn Kinnison, founder of Life Coaching with Kaelynn. I
-              help women who feel stuck, uncertain, or disconnected from
-              themselves gain clarity, rebuild confidence, and move forward with
-              purpose.
-            </p>
-
-            <p className="mb-5 text-lg leading-8 text-slate-700">
-              My coaching is rooted in compassion, accountability, personal
-              growth, and the belief that no woman has to navigate her healing
-              or transformation alone.
-            </p>
-
-            <p className="mb-8 text-lg leading-8 text-slate-700">
-              Through my signature Core Belief Transformation Coaching, I help
-              women uncover the beliefs and patterns that may be holding them
-              back so they can create change from the inside out.
-            </p>
-
-            <Link
-              href="/about"
-              className="inline-flex rounded-full bg-teal-700 px-7 py-3 font-semibold text-white transition hover:bg-teal-800"
-            >
-              Read My Full Story
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-teal-50 px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
@@ -248,16 +202,22 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Why Women Work With Me
+              Why Coaching Can Help
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Compassionate Support With Honest Accountability
+              You Do Not Need to Have It All Figured Out to Begin
             </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
+              Coaching helps you slow down, understand what is keeping you
+              stuck, and begin taking steps that feel aligned with the woman you
+              are becoming.
+            </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {whyWomenWorkWithMe.map((item) => (
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {whyThisWorks.map((item) => (
               <div
                 key={item.title}
                 className="rounded-3xl bg-white p-8 shadow-md ring-1 ring-slate-200"
