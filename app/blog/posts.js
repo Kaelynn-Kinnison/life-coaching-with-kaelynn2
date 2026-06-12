@@ -1,5 +1,14 @@
 export const posts = [
   {
+    title: "When Life Changes, So Must You",
+    slug: "life-transitions-with-confidence",
+    category: "Life Transitions",
+    description:
+      "A guide for women navigating life transitions, rebuilding confidence, rediscovering themselves, and creating a meaningful new chapter.",
+    featured: true,
+    published: true,
+  },
+  {
     title: "The Hidden Core Beliefs That May Be Holding You Back",
     slug: "core-beliefs-holding-you-back",
     category: "Core Beliefs",
