@@ -19,14 +19,14 @@ export const metadata = {
     "Helping women transform limiting core beliefs that keep them stuck in self-doubt, people-pleasing, fear of judgment, and self-sabotage so they can build confidence, self-trust, and lasting change.",
 };
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/core-belief-coaching", label: "Core Belief Coaching" },
-  { href: "/coaching-approach", label: "H.E.A.L. Framework" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/contact", label: "Contact" },
+const navigation = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Core Belief Coaching", href: "/core-belief-coaching" },
+  { name: "H.E.A.L. Framework", href: "/heal-framework" },
+  { name: "Blog", href: "/blog" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function RootLayout({ children }) {
