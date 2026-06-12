@@ -36,15 +36,6 @@ const coachingStyle = [
   "Action-oriented",
 ];
 
-const supportAreas = [
-  "Self-doubt and confidence",
-  "Overthinking and second-guessing",
-  "People-pleasing and boundaries",
-  "Life transitions and personal reinvention",
-  "Emotional wellness and self-awareness",
-  "Accountability and follow-through",
-];
-
 const rightFit = [
   "You want to feel heard without being judged.",
   "You are tired of repeating the same patterns.",
@@ -118,7 +109,7 @@ export default function CoachingApproachPage() {
               </Link>
 
               <Link
-                href="/pricing"
+                href="/services"
                 className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
               >
                 View Programs
@@ -310,37 +301,6 @@ export default function CoachingApproachPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Areas of Support
-            </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 md:text-5xl">
-              Where Coaching Can Support You
-            </h2>
-
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              Core belief work may be part of the process, but this page is
-              focused on the experience of coaching and the real-life areas
-              where support can help you move forward.
-            </p>
-          </div>
-
-          <div className="grid gap-5 md:grid-cols-3">
-            {supportAreas.map((item) => (
-              <div
-                key={item}
-                className="rounded-3xl bg-white p-6 text-lg font-medium text-slate-700 shadow-sm ring-1 ring-slate-200"
-              >
-                <span className="font-bold text-teal-700">✓</span> {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
           <div className="rounded-3xl bg-teal-50 p-10 shadow-xl ring-1 ring-teal-100">
@@ -464,7 +424,7 @@ export default function CoachingApproachPage() {
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-950"
             >
               View Programs
