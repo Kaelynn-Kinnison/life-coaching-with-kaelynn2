@@ -27,30 +27,11 @@ const outcomes = [
   "A vision for your next chapter",
 ];
 
-const whyThisWorks = [
-  {
-    title: "You Feel Heard",
-    text: "You get space to talk honestly about what you are carrying without judgment, pressure, or shame.",
-  },
-  {
-    title: "You Gain Clarity",
-    text: "Together, we sort through the noise so you can understand what feels stuck and what needs to shift.",
-  },
-  {
-    title: "You Rebuild Confidence",
-    text: "Coaching helps you strengthen self-trust, reconnect with your voice, and begin believing in your next chapter.",
-  },
-  {
-    title: "You Take Action",
-    text: "You leave with realistic next steps, support, and accountability so change becomes more than an idea.",
-  },
-];
-
 const discoveryCallSteps = [
   "Talk about where you are right now",
   "Explore what feels stuck or unclear",
-  "Discuss your goals and desired change",
-  "Decide which coaching option fits your season",
+  "Discuss what you want to change",
+  "Decide which coaching support fits your season",
 ];
 
 export default function Home() {
@@ -72,19 +53,23 @@ export default function Home() {
           </p>
 
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
-            Feeling Stuck in Life? Let’s Discover What Comes Next.
+            Feeling Stuck in Life?{" "}
+            <span className="text-teal-700">
+              Let’s Discover What Comes Next.
+            </span>
           </h1>
 
           <p className="mx-auto mb-6 max-w-4xl text-xl leading-8 text-slate-700 md:text-2xl">
-            Supportive life coaching for women who are ready to rebuild
-            confidence, reconnect with themselves, and create a meaningful next
-            chapter.
+            Supportive life coaching for women who are ready to{" "}
+            <strong>rebuild confidence</strong>,{" "}
+            <strong>reconnect with themselves</strong>, and{" "}
+            <strong>create a meaningful next chapter</strong>.
           </p>
 
           <p className="mx-auto mb-8 max-w-3xl text-lg leading-8 text-slate-600">
             You do not have to figure out this season alone. Coaching gives you
-            space to feel heard, gain clarity, and move forward with support and
-            accountability.
+            space to <strong>feel heard</strong>, <strong>gain clarity</strong>,
+            and <strong>move forward with support and accountability</strong>.
           </p>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
@@ -122,7 +107,8 @@ export default function Home() {
                 key={item}
                 className="rounded-2xl bg-teal-50 p-5 text-slate-700 shadow-sm"
               >
-                <span className="font-bold text-teal-700">✓</span> {item}
+                <span className="font-bold text-teal-700">✓</span>{" "}
+                <strong>{item}</strong>
               </div>
             ))}
           </div>
@@ -145,8 +131,10 @@ export default function Home() {
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-300">
             Many women believe something is wrong with them because they feel
             restless, disconnected, or unsure. But sometimes that feeling is not
-            failure. Sometimes it is a sign that you are outgrowing the version
-            of yourself that got you here.
+            failure. Sometimes it is a sign that you are{" "}
+            <strong className="text-white">
+              outgrowing the version of yourself that got you here.
+            </strong>
           </p>
         </div>
       </section>
@@ -158,7 +146,9 @@ export default function Home() {
           </p>
 
           <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
-            Support for Clarity, Confidence, and Meaningful Change
+            Support for <span className="text-teal-700">Clarity</span>,{" "}
+            <span className="text-teal-700">Confidence</span>, and{" "}
+            <span className="text-teal-700">Meaningful Change</span>
           </h2>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -167,42 +157,8 @@ export default function Home() {
                 key={item}
                 className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
               >
-                <span className="font-bold text-teal-700">✓</span> {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Why Coaching Can Help
-            </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              You Do Not Need to Have It All Figured Out to Begin
-            </h2>
-
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              Coaching helps you slow down, understand what is keeping you
-              stuck, and begin taking steps that feel aligned with the woman you
-              are becoming.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {whyThisWorks.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl bg-white p-8 shadow-md ring-1 ring-slate-200"
-              >
-                <h3 className="mb-4 text-2xl font-bold text-slate-900">
-                  {item.title}
-                </h3>
-
-                <p className="leading-7 text-slate-700">{item.text}</p>
+                <span className="font-bold text-teal-700">✓</span>{" "}
+                <strong>{item}</strong>
               </div>
             ))}
           </div>
@@ -217,7 +173,8 @@ export default function Home() {
             </p>
 
             <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-              What Happens During Your Free Discovery Call?
+              What Happens During Your{" "}
+              <span className="text-teal-700">Free Discovery Call?</span>
             </h2>
 
             <p className="mb-6 text-lg leading-8 text-slate-700">
@@ -227,9 +184,9 @@ export default function Home() {
             </p>
 
             <p className="text-lg leading-8 text-slate-700">
-              There is no pressure. It is simply a chance to be heard, ask
-              questions, and explore what level of support fits your current
-              season.
+              There is <strong>no pressure</strong>. It is simply a chance to be{" "}
+              <strong>heard</strong>, ask questions, and explore what level of
+              support fits your current season.
             </p>
           </div>
 
@@ -240,7 +197,8 @@ export default function Home() {
                   key={item}
                   className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
                 >
-                  <span className="font-bold text-teal-700">✓</span> {item}
+                  <span className="font-bold text-teal-700">✓</span>{" "}
+                  <strong>{item}</strong>
                 </div>
               ))}
             </div>
@@ -258,32 +216,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-teal-50 px-6 py-20 text-center">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Coaching Focus
-          </p>
-
-          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
-            Coaching for Women Ready to Feel Like Themselves Again
-          </h2>
-
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-            Whether you are rebuilding confidence, navigating a transition,
-            healing from difficult experiences, or creating a new vision for
-            your life, coaching can help you reconnect with who you are and move
-            forward with support.
-          </p>
-
-          <p className="mx-auto mt-10 max-w-3xl text-sm leading-7 text-slate-600">
-            Coaching with Kaelynn is supportive, forward-focused coaching. It is
-            not therapy, mental health counseling, or substance abuse treatment.
-            If you are in crisis or need clinical care, please contact a
-            licensed mental health or medical professional.
-          </p>
-        </div>
-      </section>
-
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
@@ -293,8 +225,10 @@ export default function Home() {
           <p className="mb-10 text-lg leading-8 text-slate-200">
             You do not have to spend another year wondering what is next for
             you. Together, we can uncover what has been holding you back, build
-            confidence in who you are becoming, and create a future that feels
-            meaningful, purposeful, and aligned with who you truly are.
+            confidence in who you are becoming, and create a future that feels{" "}
+            <strong className="text-white">
+              meaningful, purposeful, and aligned with who you truly are.
+            </strong>
           </p>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
