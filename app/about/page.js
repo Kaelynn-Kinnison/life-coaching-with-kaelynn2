@@ -82,7 +82,7 @@ export default function AboutPage() {
             </p>
 
             <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              Kaelynn Kinnison
+              A Safe Place to Begin Again
             </h1>
 
            <h2 className="mb-6 text-3xl font-semibold leading-relaxed text-teal-700">
