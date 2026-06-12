@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Life Coaching with Kaelynn | Is This All There Is?",
+  title: "Life Coach for Women | Find Clarity, Confidence & Your Next Chapter",
   description:
-    "Life Coaching with Kaelynn helps women who feel stuck, unfulfilled, or uncertain about what's next rediscover themselves, rebuild confidence, and create a meaningful next chapter.",
+    "Life Coaching with Kaelynn helps women who feel stuck, unfulfilled, or uncertain about what's next gain clarity, rebuild confidence, overcome limiting beliefs, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
