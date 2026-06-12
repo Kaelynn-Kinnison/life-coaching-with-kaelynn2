@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Coaching Approach | Life Coaching with Kaelynn",
   description:
-    "Discover what coaching with Kaelynn feels like: compassionate support, honest accountability, self-awareness, confidence-building, and action-focused growth for women ready for transformation.",
+    "Discover what coaching with Kaelynn feels like: compassionate support, honest accountability, confidence-building, clarity, and action-focused growth for women creating their next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -11,19 +11,19 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const sessionFlow = [
   {
     title: "You Bring What Is Real",
-    text: "We begin with what is actually happening in your life, your thoughts, your emotions, your goals, and the places where you feel stuck.",
+    text: "We begin with what is actually happening in your life, your emotions, your goals, and the places where you feel stuck or uncertain.",
   },
   {
     title: "We Slow Down the Pattern",
-    text: "Together, we look beneath the surface to notice the repeated thoughts, reactions, fears, habits, or beliefs that may be shaping your choices.",
+    text: "Together, we notice the thoughts, reactions, fears, habits, or beliefs that may be shaping your choices.",
   },
   {
     title: "We Create Clarity",
-    text: "You begin seeing what is yours to carry, what is not, what needs to change, and what next step feels aligned with who you are becoming.",
+    text: "You begin seeing what is yours to carry, what is not, what needs to change, and what next step feels aligned.",
   },
   {
     title: "You Leave With Direction",
-    text: "Each session is designed to help you leave with more self-awareness, practical next steps, and accountability that supports your growth.",
+    text: "Each session is designed to help you leave with practical next steps, self-awareness, and accountability.",
   },
 ];
 
@@ -68,6 +68,21 @@ const about = [
   "Taking realistic steps toward change",
 ];
 
+const clientJourney = [
+  {
+    title: "Feeling Stuck",
+    text: "You may begin feeling overwhelmed, uncertain, disconnected, or unsure of what needs to change.",
+  },
+  {
+    title: "Finding Clarity",
+    text: "Through coaching, you begin sorting through the noise and understanding what is really happening beneath the surface.",
+  },
+  {
+    title: "Taking Aligned Action",
+    text: "You start making choices that support the woman you are becoming, with accountability and encouragement along the way.",
+  },
+];
+
 export default function CoachingApproachPage() {
   return (
     <main className="bg-white text-slate-900">
@@ -82,8 +97,8 @@ export default function CoachingApproachPage() {
             </p>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              A Coaching Space Where You Can Feel Heard, Supported, and
-              Challenged to Grow
+              A Coaching Space for Women Ready to Rebuild Confidence and Create
+              Their Next Chapter
             </h1>
 
             <p className="mb-8 text-lg leading-8 text-slate-700 md:text-xl">
@@ -146,10 +161,10 @@ export default function CoachingApproachPage() {
           </h2>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-            You are a person with a story, emotions, goals, patterns, strengths,
-            and experiences that deserve to be understood. My coaching approach
-            begins with seeing the whole person, not just the problem you want
-            to solve.
+            You are a person with a story, emotions, goals, patterns,
+            strengths, and experiences that deserve to be understood. My
+            coaching approach begins with seeing the whole person, not just the
+            problem you want to solve.
           </p>
         </div>
       </section>
@@ -196,6 +211,39 @@ export default function CoachingApproachPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              The Client Journey
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-5xl">
+              From Feeling Stuck to Taking Aligned Action
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {clientJourney.map((item, index) => (
+              <article
+                key={item.title}
+                className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-teal-100"
+              >
+                <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-teal-700">
+                  Phase 0{index + 1}
+                </p>
+
+                <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="leading-8 text-slate-700">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
               What Sessions Are Like
             </p>
 
@@ -208,7 +256,7 @@ export default function CoachingApproachPage() {
             {sessionFlow.map((item, index) => (
               <article
                 key={item.title}
-                className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-teal-100"
+                className="rounded-3xl bg-slate-50 p-8 shadow-md ring-1 ring-slate-200"
               >
                 <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-teal-700">
                   Session Step 0{index + 1}
@@ -274,9 +322,9 @@ export default function CoachingApproachPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              Core belief work may be part of the process, but coaching is also
-              about helping you navigate the real-life places where those
-              beliefs show up.
+              Core belief work may be part of the process, but this page is
+              focused on the experience of coaching and the real-life areas
+              where support can help you move forward.
             </p>
           </div>
 
@@ -352,14 +400,15 @@ export default function CoachingApproachPage() {
           </p>
 
           <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-            Core Belief Work May Be Part of the Process
+            Core Belief Work May Be Woven Into Coaching
           </h2>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-            My signature Core Belief Transformation Method may be woven into
-            your coaching experience when it supports your goals. This allows us
-            to look beneath the surface, identify what may be keeping you stuck,
-            and create meaningful change from the inside out.
+            When it supports your goals, my signature Core Belief
+            Transformation Method may be part of your coaching experience. The
+            full Core Belief page explains the method in detail, while this page
+            is designed to help you understand the experience of working with
+            me.
           </p>
 
           <div className="mt-8">
