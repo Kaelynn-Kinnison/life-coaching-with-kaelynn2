@@ -4,10 +4,42 @@ import Link from "next/link";
 export const metadata = {
   title: "About Kaelynn Kinnison | Life Coaching with Kaelynn",
   description:
-    "Meet Kaelynn Kinnison, Transformational Life Coach and creator of the Core Belief Transformation Method. Coaching for women who feel stuck, unfulfilled, or uncertain about what's next.",
+    "Meet Kaelynn Kinnison, founder of Life Coaching with Kaelynn. Learn about her story, values, coaching style, and passion for helping women rebuild confidence and create their next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
+const beliefs = [
+  "I believe no woman should have to face life’s challenges alone.",
+  "I believe confidence can be rebuilt.",
+  "I believe self-worth is not something you have to earn.",
+  "I believe healing and growth can happen in any season of life.",
+  "I believe your past may have shaped you, but it does not have to define your future.",
+];
+
+const womenConnect = [
+  {
+    title: "I Listen Without Judgment",
+    text: "You deserve a space where you can be honest about what you are carrying and feel safe enough to be seen.",
+  },
+  {
+    title: "I Balance Compassion With Accountability",
+    text: "I will support you with care while also encouraging you to take meaningful steps toward the growth you want.",
+  },
+  {
+    title: "I Believe Growth Is Personal",
+    text: "Your journey does not need to look like anyone else’s. Coaching meets you where you are and supports where you want to go.",
+  },
+];
+
+const whoIHelp = [
+  "Women wondering, “Is this all there is?”",
+  "Women rebuilding confidence and self-worth",
+  "Women who have lost themselves while caring for everyone else",
+  "Women navigating life transitions or personal reinvention",
+  "Women seeking clarity, purpose, and direction",
+  "Women ready to create a meaningful next chapter",
+];
 
 const credentials = [
   {
@@ -21,41 +53,22 @@ const credentials = [
     text: "Coaching Certificate",
   },
   {
-    icon: "✨",
-    title: "Signature Method",
-    text: "Core Belief Transformation Method™",
-  },
-  {
     icon: "🦋",
     title: "Founder",
     text: "Life Coaching with Kaelynn",
   },
+  {
+    icon: "✨",
+    title: "Signature Support",
+    text: "Core Belief Transformation Coaching",
+  },
 ];
 
-const whoIHelp = [
-  "Women wondering, 'Is this all there is?'",
-  "Women feeling stuck between who they were and who they want to become",
-  "Women navigating major life transitions",
-  "Women rebuilding confidence and self-worth",
-  "Women healing from difficult life experiences",
-  "Women seeking clarity, purpose, and direction",
-];
-
-const beliefFormula = ["Belief", "Thought", "Emotion", "Action", "Result"];
-
-const values = [
-  {
-    title: "Compassion",
-    text: "A safe, supportive, and non-judgmental coaching space where you can feel heard, understood, and encouraged.",
-  },
-  {
-    title: "Accountability",
-    text: "Support that helps you stay focused, follow through, and take meaningful steps toward your goals.",
-  },
-  {
-    title: "Growth",
-    text: "Coaching that encourages self-awareness, confidence, resilience, healing, and personal transformation.",
-  },
+const funFacts = [
+  "I am passionate about personal growth and transformation.",
+  "I believe second chapters can be powerful.",
+  "I am continuing my education in Psychology.",
+  "I love helping women reconnect with who they are.",
 ];
 
 export default function AboutPage() {
@@ -73,59 +86,44 @@ export default function AboutPage() {
             </h1>
 
             <p className="mb-6 text-2xl font-semibold leading-relaxed text-teal-700">
-              If You&apos;ve Been Wondering What&apos;s Next, You&apos;re Not Alone.
+              I help women feel seen, supported, and confident as they create
+              their next chapter.
             </p>
 
             <p className="mb-6 text-lg leading-8 text-slate-700">
-              Have you ever found yourself asking,{" "}
-              <strong>&quot;Is this all there is?&quot;</strong>
+              I am the founder of Life Coaching with Kaelynn, where I support
+              women who feel stuck, uncertain, disconnected, or ready for
+              something more.
             </p>
 
             <p className="mb-6 text-lg leading-8 text-slate-700">
-              From the outside, life may look fine. You have responsibilities,
-              relationships, and a routine you have built over the years. Yet
-              something inside keeps whispering that there has to be more. More
-              purpose. More fulfillment. More of you.
+              My work is rooted in compassion, accountability, self-awareness,
+              and the belief that meaningful change becomes possible when you
+              no longer have to carry everything alone.
             </p>
 
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              I understand that feeling because I have lived through seasons
-              where I questioned who I was, what I truly wanted, and what was
-              next for me. I know what it feels like to carry self-doubt, to
-              feel stuck between where you are and where you want to be, and to
-              wonder if real change is even possible.
+            <p className="mb-8 text-lg leading-8 text-slate-700">
+              Through coaching, I help women rebuild confidence, reconnect with
+              themselves, and begin taking steps toward a life that feels more
+              aligned, purposeful, and true to who they are becoming.
             </p>
 
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              What I discovered is that many of the things keeping us stuck are
-              not a lack of motivation or willpower. They are often the beliefs
-              we have carried about ourselves for years.
-            </p>
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Link
+                href={bookingLink}
+                target="_blank"
+                className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
+              >
+                Schedule Discovery Call
+              </Link>
 
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              As I began doing my own personal growth work, I became passionate
-              about helping other women break free from those same limitations.
-              Women who are ready to stop simply surviving and start creating a
-              life that feels meaningful, aligned, and authentic.
-            </p>
-
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              Today, through Life Coaching with Kaelynn, I help women gain
-              clarity, rebuild confidence, challenge limiting beliefs, and
-              create a vision for their next chapter.
-            </p>
-
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              Whether you are navigating a major life transition, healing from
-              difficult experiences, rebuilding after adversity, or simply
-              feeling called toward something more, you do not have to figure it
-              out alone.
-            </p>
-
-            <p className="text-lg leading-8 text-slate-700">
-              My mission is simple: to help women rediscover themselves, trust
-              themselves again, and confidently create what comes next.
-            </p>
+              <Link
+                href="/coaching-approach"
+                className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
+              >
+                My Coaching Approach
+              </Link>
+            </div>
           </div>
 
           <div className="flex justify-center">
@@ -141,11 +139,195 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-16">
+      <section className="px-6 py-20">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="rounded-3xl bg-slate-950 p-10 text-white shadow-xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+              The Woman Behind the Coach
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+              I know what it feels like to question what comes next.
+            </h2>
+
+            <p className="mb-5 leading-8 text-slate-300">
+              I understand seasons of self-doubt, uncertainty, and wondering if
+              real change is possible.
+            </p>
+
+            <p className="mb-5 leading-8 text-slate-300">
+              I know what it feels like to want more for your life but not know
+              exactly where to begin.
+            </p>
+
+            <p className="leading-8 text-slate-300">
+              My own growth journey is part of what led me to this work. It
+              gave me a deep passion for helping women feel less alone, more
+              understood, and more confident as they begin creating their next
+              chapter.
+            </p>
+          </div>
+
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Why I Do This Work
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-5xl">
+              Because no woman should feel like she has to figure it all out by
+              herself.
+            </h2>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              I believe women are capable of powerful transformation when they
+              have a safe space to be honest, reflect, heal, grow, and take
+              supported action.
+            </p>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              Many women spend years holding everything together for everyone
+              else while slowly losing connection with their own needs, voice,
+              confidence, and dreams.
+            </p>
+
+            <p className="text-lg leading-8 text-slate-700">
+              My mission is to help women rediscover themselves, trust
+              themselves again, and confidently create what comes next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-teal-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            What I Believe
+          </p>
+
+          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-5xl">
+            The Beliefs That Guide My Coaching
+          </h2>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            {beliefs.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white p-6 text-left text-lg font-medium leading-8 text-slate-700 shadow-sm"
+              >
+                <span className="font-bold text-teal-700">✓</span> {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Why Women Connect With Me
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 md:text-5xl">
+              Support That Feels Compassionate, Honest, and Personal
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {womenConnect.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-3xl bg-white p-8 shadow-md ring-1 ring-slate-200"
+              >
+                <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="leading-8 text-slate-700">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            Who I Help
+          </p>
+
+          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl">
+            Women Ready to Reconnect With Themselves
+          </h2>
+
+          <div className="grid gap-5 md:grid-cols-2">
+            {whoIHelp.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm ring-1 ring-slate-200"
+              >
+                <span className="font-bold text-teal-700">✓</span> {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+              Signature Support
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-5xl">
+              Core Belief Work Is One Way I Support Transformation
+            </h2>
+
+            <p className="mb-6 text-lg leading-8 text-slate-700">
+              While this page is about who I am, my signature Core Belief
+              Transformation Coaching may be woven into the coaching experience
+              when it supports a client&apos;s goals.
+            </p>
+
+            <p className="mb-8 text-lg leading-8 text-slate-700">
+              This deeper work helps women explore the beliefs and patterns that
+              may be keeping them stuck so they can begin creating change from
+              the inside out.
+            </p>
+
+            <Link
+              href="/core-belief-coaching"
+              className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
+            >
+              Learn About Core Belief Coaching
+            </Link>
+          </div>
+
+          <div className="rounded-3xl bg-teal-50 p-10 shadow-xl ring-1 ring-teal-100">
+            <h3 className="mb-6 text-3xl font-bold text-slate-900">
+              A Few Things You Should Know About Me
+            </h3>
+
+            <div className="grid gap-4">
+              {funFacts.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
+                >
+                  <span className="font-bold text-teal-700">✓</span> {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-20">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-slate-200">
             <p className="mb-6 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Education • Training • Expertise
+              Education • Training • Background
             </p>
 
             <div className="grid gap-6 md:grid-cols-4">
@@ -163,247 +345,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Why I Do This Work
-          </p>
-
-          <h2 className="mb-10 text-center text-4xl font-bold text-slate-900">
-            Helping Women Create Their Next Chapter
-          </h2>
-
-          <div className="space-y-6 text-lg leading-8 text-slate-700">
-            <p>
-              Through my coaching journey and studies in Psychology, I became
-              increasingly fascinated by the connection between beliefs,
-              emotions, behavior, confidence, self-worth, and personal growth.
-            </p>
-
-            <p>
-              Time and time again, I discovered that many struggles are not
-              caused by a lack of motivation, willpower, intelligence, or
-              desire.
-            </p>
-
-            <p>
-              Often, they are connected to deeply held beliefs about ourselves,
-              our worth, our capabilities, and what we believe is possible for
-              our future.
-            </p>
-
-            <p>
-              I believe every woman has the ability to heal, grow, and
-              transform. Sometimes the greatest challenge is not knowing what to
-              do. It is trying to carry life&apos;s challenges alone.
-            </p>
-
-            <p className="font-semibold text-teal-700">
-              One of my core beliefs is simple: no problem is too big,
-              especially when you do not have to face it alone.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-teal-50 px-6 py-20">
-        <div className="mx-auto max-w-6xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            The Core Belief Connection
-          </p>
-
-          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
-            Belief → Thought → Emotion → Action → Result
-          </h2>
-
-          <p className="mx-auto mb-12 max-w-3xl text-lg leading-8 text-slate-700">
-            The beliefs we carry often influence how we think, how we feel, how
-            we respond, and what results we create in our lives.
-          </p>
-
-          <div className="grid gap-4 md:grid-cols-5">
-            {beliefFormula.map((item) => (
-              <div key={item} className="rounded-3xl bg-white p-6 shadow-md">
-                <h3 className="text-xl font-bold text-teal-700">{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Signature Method
-          </p>
-
-          <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
-            Why I Created the Core Belief Transformation Method™
-          </h2>
-
-          <p className="mb-6 text-lg leading-8 text-slate-700">
-            Many women know what they want to change, yet they continue
-            repeating the same patterns, experiencing the same frustrations, or
-            struggling to create lasting results.
-          </p>
-
-          <p className="mb-6 text-lg leading-8 text-slate-700">
-            I created the Core Belief Transformation Method™ to help women
-            identify limiting beliefs, challenge old patterns, and build
-            healthier beliefs that support confidence, self-worth,
-            accountability, emotional wellness, and lasting transformation.
-          </p>
-
-          <p className="text-lg leading-8 text-slate-700">
-            This approach allows coaching to become more than motivation. It
-            becomes a process of self-awareness, alignment, and meaningful
-            personal change.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Who I Help
-          </p>
-
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900 md:text-4xl">
-            Support for Women Ready for Meaningful Change
-          </h2>
-
-          <div className="grid gap-5 md:grid-cols-2">
-            {whoIHelp.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm ring-1 ring-slate-200"
-              >
-                <span className="font-bold text-teal-700">✓</span> {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-900 px-6 py-20 text-white">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-            What Makes My Coaching Different
-          </p>
-
-          <h2 className="mb-8 text-3xl font-bold md:text-4xl">
-            Creating Change From the Inside Out
-          </h2>
-
-          <p className="mb-6 text-lg leading-8 text-slate-200">
-            Many coaching approaches focus primarily on goals, motivation, or
-            accountability.
-          </p>
-
-          <p className="mb-6 text-lg leading-8 text-slate-200">
-            While those tools are valuable, lasting transformation often begins
-            by understanding the beliefs influencing your thoughts, emotions,
-            decisions, and behaviors.
-          </p>
-
-          <p className="text-lg leading-8 text-slate-200">
-            Through Core Belief Transformation Coaching™, we work from the
-            inside out so change can become more sustainable, meaningful, and
-            aligned with the life you want to create.
-          </p>
-        </div>
-      </section>
-
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Education & Training
-          </p>
-
-          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
-            Professional Background
-          </h2>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl bg-teal-50 p-8 shadow-sm">
-              <h3 className="mb-3 text-xl font-bold text-slate-900">
-                Health & Wellness Coaching Certificate
-              </h3>
-
-              <p className="text-slate-700">
-                Training focused on wellness, behavior change, accountability,
-                self-care, and healthy lifestyle transformation.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-teal-50 p-8 shadow-sm">
-              <h3 className="mb-3 text-xl font-bold text-slate-900">
-                Psychology Studies
-              </h3>
-
-              <p className="text-slate-700">
-                Currently pursuing a degree in Psychology with a strong interest
-                in mindset, human behavior, emotional wellness, self-worth, and
-                personal transformation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-6xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Coaching Values
-          </p>
-
-          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
-            What You Can Expect
-          </h2>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {values.map((value) => (
-              <div
-                key={value.title}
-                className="rounded-3xl bg-white p-8 text-left shadow-md ring-1 ring-slate-200"
-              >
-                <h3 className="mb-4 text-2xl font-bold text-slate-900">
-                  {value.title}
-                </h3>
-
-                <p className="leading-7 text-slate-700">{value.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="bg-slate-900 px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            Your Next Chapter Is Waiting
+            You Do Not Have to Navigate Your Next Chapter Alone
           </h2>
 
           <p className="mb-10 text-lg leading-8 text-slate-200">
-            If you are ready to explore what may be holding you back and begin
-            creating meaningful transformation, I invite you to schedule a
+            If you are ready to be supported, heard, encouraged, and challenged
+            as you create meaningful change, I invite you to schedule a
             complimentary Discovery Call.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/pricing"
+              href={bookingLink}
+              target="_blank"
               className="inline-flex rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
             >
-              View Programs & Investment
+              Schedule Your Discovery Call
             </Link>
 
             <Link
-              href={bookingLink}
-              target="_blank"
+              href="/pricing"
               className="inline-flex rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
-              Schedule Your Discovery Call
+              View Programs
             </Link>
           </div>
         </div>
