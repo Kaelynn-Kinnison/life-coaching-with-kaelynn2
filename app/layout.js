@@ -22,12 +22,10 @@ export const metadata = {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/core-belief-coaching", label: "Core Belief Coaching" },
-  { href: "/services", label: "Services" },
   { href: "/coaching-approach", label: "H.E.A.L. Framework" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/testimonials", label: "Testimonials" },
-  { href: "/pricing", label: "Investment" },
   { href: "/contact", label: "Contact" },
 ];
 
