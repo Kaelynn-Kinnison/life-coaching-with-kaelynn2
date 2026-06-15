@@ -66,23 +66,30 @@ export default function BlogPage() {
             </div>
           </div>
 
-          <div className="relative min-h-[320px] overflow-hidden rounded-[2rem] shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
-            <img
-              src="/blog-banner.png"
-              alt="A peaceful coaching journal scene"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#3f342c]/65 via-[#3f342c]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f7d7c7]">
+          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
+            <div className="bg-[#f7efe8] p-3 sm:p-4">
+              <img
+                src="/blog-banner.png"
+                alt="Life Coaching with Kaelynn blog banner"
+                className="h-auto w-full rounded-[1.4rem] object-contain"
+              />
+            </div>
+
+            <div className="border-t border-[#eadfd5] p-6 sm:p-7">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
                 New Article
               </p>
-              <h2 className="mt-3 text-2xl font-bold leading-tight sm:text-3xl">
+              <h2 className="mt-2 text-2xl font-bold leading-tight text-[#3f342c]">
                 When Hope Feels Lost
               </h2>
+              <p className="mt-3 leading-7 text-[#6f5a4d]">
+                A supportive coaching article about hopelessness, limiting
+                beliefs, emotional wellness, and finding hope through healing
+                and growth.
+              </p>
               <Link
                 href="/blog/when-hope-feels-lost"
-                className="mt-5 inline-flex rounded-full bg-white px-5 py-3 text-sm font-bold text-[#3f342c] transition hover:bg-[#f7efe8]"
+                className="mt-5 inline-flex rounded-full bg-[#0f766e] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#115e59]"
               >
                 Read the Article
               </Link>
