@@ -1,11 +1,7 @@
-```jsx
-import Link from "next/link";
-
 export const metadata = {
-  title:
-    "When Hope Feels Lost: Finding Your Way Through Hopelessness and Despair | Life Coaching with Kaelynn",
+  title: "When Hope Feels Lost | Life Coaching with Kaelynn",
   description:
-    "A coaching article about hopelessness, despair, limiting beliefs, emotional wellness, and finding a path forward through healing, growth, and transformation.",
+    "A Life Coaching with Kaelynn article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing, growth, and transformation.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -13,21 +9,19 @@ const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 export default function WhenHopeFeelsLostPage() {
   return (
     <main className="bg-white text-slate-900">
-      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Emotional Wellness • Core Beliefs • Personal Growth
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
+        <div className="mx-auto max-w-4xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-teal-700">
+            Emotional Wellness | Core Beliefs | Personal Growth
           </p>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            When Hope Feels Lost: Finding Your Way Through Hopelessness and
-            Despair
+            When Hope Feels Lost
           </h1>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
-            Hopelessness can feel overwhelming, but your current situation is
-            not your final destination. Healing begins with awareness,
-            support, and one small step forward.
+            Finding your way through hopelessness, despair, and the limiting
+            beliefs that can make life feel overwhelming.
           </p>
 
           <p className="mt-6 font-semibold text-slate-900">
@@ -78,7 +72,7 @@ export default function WhenHopeFeelsLostPage() {
               <p>
                 Hopelessness often develops when we have experienced repeated
                 disappointments, setbacks, or emotional pain. Over time, our
-                minds may begin creating beliefs such as:
+                minds may begin creating beliefs that make us feel powerless.
               </p>
 
               <ul className="list-disc space-y-3 pl-6">
@@ -94,24 +88,19 @@ export default function WhenHopeFeelsLostPage() {
                 how we see ourselves, our circumstances, and the possibilities
                 ahead of us.
               </p>
-
-              <p>
-                The challenge is that when we believe these thoughts, we stop
-                looking for new possibilities. We stop taking action. We stop
-                believing that transformation is possible.
-              </p>
             </div>
           </section>
 
           <section className="rounded-3xl bg-slate-50 p-8 md:p-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900">
-              The Hidden Connection Between Core Beliefs and Despair
+              The Connection Between Core Beliefs and Despair
             </h2>
 
             <div className="space-y-5 text-lg leading-8 text-slate-700">
               <p>
                 Many people focus only on changing their circumstances, but few
-                stop to examine the beliefs driving their emotions and decisions.
+                stop to examine the beliefs driving their emotions and
+                decisions.
               </p>
 
               <p>
@@ -126,12 +115,6 @@ export default function WhenHopeFeelsLostPage() {
                 <li>I am destined to fail.</li>
                 <li>I will always be alone.</li>
               </ul>
-
-              <p>
-                These beliefs are rarely formed overnight. They often develop
-                from past experiences, painful relationships, criticism,
-                disappointment, failures, or difficult life transitions.
-              </p>
 
               <p className="font-semibold text-teal-700">
                 The good news is that beliefs can be challenged, examined, and
@@ -163,8 +146,8 @@ export default function WhenHopeFeelsLostPage() {
                 </li>
                 <li>Hope is asking for support when you feel alone.</li>
                 <li>
-                  Hope is reminding yourself that today&apos;s pain does not
-                  predict tomorrow&apos;s possibilities.
+                  Hope is reminding yourself that current pain does not predict
+                  future possibilities.
                 </li>
               </ul>
 
@@ -186,8 +169,8 @@ export default function WhenHopeFeelsLostPage() {
                 </h3>
                 <p>
                   Avoiding emotions does not make them disappear. Give yourself
-                  permission to be honest about your pain, your fear, and what
-                  has been weighing on you.
+                  permission to be honest about your pain, fear, and what has
+                  been weighing on you.
                 </p>
               </div>
 
@@ -197,7 +180,7 @@ export default function WhenHopeFeelsLostPage() {
                 </h3>
                 <p>
                   Every emotion has a story attached to it. When you feel
-                  hopeless, ask yourself: What am I believing right now?
+                  hopeless, ask yourself what you are believing in that moment.
                 </p>
               </div>
 
@@ -206,10 +189,9 @@ export default function WhenHopeFeelsLostPage() {
                   3. Challenge the Narrative
                 </h3>
                 <p>
-                  Once you identify the belief, examine it. Ask yourself if it
-                  is completely true, what evidence supports it, what evidence
-                  challenges it, and what you would tell a friend who believed
-                  the same thing.
+                  Once you identify the belief, examine it. Ask whether it is
+                  completely true, what evidence challenges it, and what you
+                  would tell a friend who believed the same thing.
                 </p>
               </div>
 
@@ -219,7 +201,7 @@ export default function WhenHopeFeelsLostPage() {
                 </h3>
                 <p>
                   Hopelessness thrives in inaction. Healing often begins with
-                  one small step, such as journaling, taking a walk, calling a
+                  one small step, such as journaling, walking, reaching out to a
                   trusted person, setting a simple goal, or asking for support.
                 </p>
               </div>
@@ -233,9 +215,8 @@ export default function WhenHopeFeelsLostPage() {
 
             <div className="space-y-5 text-lg leading-8 text-slate-700">
               <p>
-                The circumstances you are facing today may be difficult. They
-                may be painful. They may feel overwhelming. But your story is
-                still being written.
+                The circumstances you are facing today may be difficult,
+                painful, or overwhelming. But your story is still being written.
               </p>
 
               <p>
@@ -273,7 +254,7 @@ export default function WhenHopeFeelsLostPage() {
           </section>
 
           <section className="rounded-3xl bg-slate-900 p-8 text-center text-white md:p-12">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-teal-300">
               Begin Your Own Transformation
             </p>
 
@@ -288,20 +269,21 @@ export default function WhenHopeFeelsLostPage() {
             </p>
 
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Link
+              <a
                 href={bookingLink}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
               >
                 Schedule Your Free Discovery Call
-              </Link>
+              </a>
 
-              <Link
+              <a
                 href="/blog"
                 className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
               >
                 Back to Blog
-              </Link>
+              </a>
             </div>
           </section>
         </div>
