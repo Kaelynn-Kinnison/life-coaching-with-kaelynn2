@@ -69,9 +69,9 @@ export default function BlogPage() {
           <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
             <div className="bg-[#f7efe8] p-3 sm:p-4">
               <img
-                src="/blog-banner.png"
-                alt="Life Coaching with Kaelynn blog banner"
-                className="h-auto w-full rounded-[1.4rem] object-contain"
+                src="/life-coaching-hero.png"
+                alt="A woman walking a mountain path at sunrise"
+                className="h-72 w-full rounded-[1.4rem] object-cover object-center sm:h-80"
               />
             </div>
 
