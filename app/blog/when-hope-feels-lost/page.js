@@ -1,286 +1,117 @@
 export const metadata = {
   title: "When Hope Feels Lost | Life Coaching with Kaelynn",
   description:
-    "A Life Coaching with Kaelynn article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing, growth, and transformation.",
+    "A coaching article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing, growth, and transformation.",
 };
 
-const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 export default function WhenHopeFeelsLostPage() {
   return (
-    <main className="bg-white text-slate-900">
-      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
+    <main className="min-h-screen bg-white text-slate-700">
+      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-teal-700">
-            Emotional Wellness | Core Beliefs | Personal Growth
-          </p>
+          <a
+            href="/blog"
+            className="inline-flex rounded-full border border-teal-200 px-5 py-2 text-sm font-semibold text-teal-700 transition hover:border-teal-500 hover:bg-teal-50"
+          >
+            Back to Blog
+          </a>
 
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            When Hope Feels Lost
-          </h1>
-
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
-            Finding your way through hopelessness, despair, and the limiting
-            beliefs that can make life feel overwhelming.
-          </p>
-
-          <p className="mt-6 font-semibold text-slate-900">
-            By Kaelynn Kinnison | Life Coaching with Kaelynn
-          </p>
+          <div className="mt-10 rounded-3xl border border-teal-100 bg-white p-8 shadow-sm sm:p-12">
+            <p className="text-sm font-semibold uppercase tracking-wide text-teal-700">
+              Emotional Wellness
+            </p>
+            <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+              When Hope Feels Lost
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-slate-600">
+              Hopelessness can make the future feel closed, heavy, and painfully
+              out of reach. But feeling hopeless does not mean you are without
+              options. It may mean your heart, mind, and nervous system are
+              asking for care, support, and a new way forward.
+            </p>
+          </div>
         </div>
       </section>
 
-      <article className="px-6 py-16">
-        <div className="mx-auto max-w-4xl space-y-12">
-          <section className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-slate-200 md:p-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
+      <article className="px-6 pb-20">
+        <div className="mx-auto max-w-4xl space-y-10">
+          <section className="rounded-3xl bg-slate-50 p-8 sm:p-10">
+            <h2 className="text-2xl font-bold text-slate-900">
               Have You Ever Felt Like Giving Up?
             </h2>
-
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
               <p>
-                There are moments in life when the weight of disappointment,
-                heartbreak, failure, loss, or uncertainty feels overwhelming.
-                The future can seem unclear, motivation can disappear, and even
-                getting through the day can feel exhausting.
+                There are moments in life when everything feels like too much.
+                You may be tired of trying, tired of hoping, or tired of
+                carrying pain that other people cannot see. Maybe you have done
+                everything you know to do, but nothing seems to change.
               </p>
-
               <p>
-                Hopelessness can make us believe that nothing will ever change.
-                Despair can convince us that we are alone in our struggles.
-                Together, they can create a powerful emotional state that leaves
-                us feeling stuck and disconnected from ourselves and others.
-              </p>
-
-              <p className="rounded-2xl border-l-4 border-teal-700 bg-teal-50 p-6 font-semibold text-slate-900">
-                Your current situation is not your final destination.
-              </p>
-
-              <p>
-                The emotions you are experiencing are real, but they do not
-                define your future.
+                If you have ever felt this way, you are not broken. You are
+                human. Hopelessness often rises when we have been overwhelmed
+                for too long without enough rest, clarity, safety, or support.
               </p>
             </div>
           </section>
 
-          <section>
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
+          <section className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10">
+            <h2 className="text-2xl font-bold text-slate-900">
               Understanding Hopelessness
             </h2>
-
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
               <p>
-                Hopelessness often develops when we have experienced repeated
-                disappointments, setbacks, or emotional pain. Over time, our
-                minds may begin creating beliefs that make us feel powerless.
+                Hopelessness can feel like a final answer, but it is often a
+                signal. It may be pointing to exhaustion, disappointment, grief,
+                unmet needs, or an old story that has gone unchallenged for too
+                long.
               </p>
-
-              <ul className="list-disc space-y-3 pl-6">
-                <li>Nothing ever works out for me.</li>
-                <li>I will never be happy again.</li>
-                <li>I am not strong enough to overcome this.</li>
-                <li>Things will never change.</li>
-                <li>There is no point in trying.</li>
-              </ul>
-
               <p>
-                These thoughts can become deeply rooted core beliefs that shape
-                how we see ourselves, our circumstances, and the possibilities
-                ahead of us.
+                In coaching, we do not shame the hopeless feeling. We slow down
+                enough to understand what it is trying to protect you from and
+                what it may be asking you to heal.
               </p>
             </div>
           </section>
 
-          <section className="rounded-3xl bg-slate-50 p-8 md:p-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
+          <section className="rounded-3xl bg-teal-50 p-8 sm:p-10">
+            <h2 className="text-2xl font-bold text-slate-900">
               The Connection Between Core Beliefs and Despair
             </h2>
-
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
               <p>
-                Many people focus only on changing their circumstances, but few
-                stop to examine the beliefs driving their emotions and
-                decisions.
+                Sometimes despair is intensified by limiting beliefs that feel
+                true because they have been repeated internally for years. These
+                beliefs might sound like, &quot;Nothing ever works out for
+                me,&quot; &quot;I am too far behind,&quot; or &quot;I will
+                always feel this way.&quot;
               </p>
-
               <p>
-                When hopelessness takes hold, it is often connected to deeper
-                beliefs such as:
-              </p>
-
-              <ul className="list-disc space-y-3 pl-6">
-                <li>I am not enough.</li>
-                <li>I am powerless.</li>
-                <li>I am unworthy of happiness.</li>
-                <li>I am destined to fail.</li>
-                <li>I will always be alone.</li>
-              </ul>
-
-              <p className="font-semibold text-teal-700">
-                The good news is that beliefs can be challenged, examined, and
-                rewritten.
+                Those thoughts can shape how you interpret setbacks, choices,
+                relationships, and your own worth. When they remain unchecked,
+                they can make temporary pain feel permanent.
               </p>
             </div>
           </section>
 
-          <section>
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
-              What Hope Really Looks Like
-            </h2>
-
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
-              <p>
-                Many people think hope means feeling positive all the time. It
-                does not.
-              </p>
-
-              <p>
-                Hope is choosing to believe that change is possible even when
-                you cannot yet see the full outcome.
-              </p>
-
-              <ul className="list-disc space-y-3 pl-6">
-                <li>
-                  Hope is taking one small step when you would rather stay
-                  stuck.
-                </li>
-                <li>Hope is asking for support when you feel alone.</li>
-                <li>
-                  Hope is reminding yourself that current pain does not predict
-                  future possibilities.
-                </li>
-              </ul>
-
-              <p className="rounded-2xl border-l-4 border-teal-700 bg-teal-50 p-6 font-semibold text-slate-900">
-                Sometimes hope is not a feeling. Sometimes hope is a decision.
-              </p>
-            </div>
-          </section>
-
-          <section className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-slate-200 md:p-12">
-            <h2 className="mb-8 text-3xl font-bold text-slate-900">
-              Four Steps to Move Through Hopelessness
-            </h2>
-
-            <div className="space-y-8 text-lg leading-8 text-slate-700">
-              <div>
-                <h3 className="mb-3 text-2xl font-bold text-teal-700">
-                  1. Acknowledge What You Are Feeling
-                </h3>
-                <p>
-                  Avoiding emotions does not make them disappear. Give yourself
-                  permission to be honest about your pain, fear, and what has
-                  been weighing on you.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-3 text-2xl font-bold text-teal-700">
-                  2. Identify the Belief Beneath the Emotion
-                </h3>
-                <p>
-                  Every emotion has a story attached to it. When you feel
-                  hopeless, ask yourself what you are believing in that moment.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-3 text-2xl font-bold text-teal-700">
-                  3. Challenge the Narrative
-                </h3>
-                <p>
-                  Once you identify the belief, examine it. Ask whether it is
-                  completely true, what evidence challenges it, and what you
-                  would tell a friend who believed the same thing.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="mb-3 text-2xl font-bold text-teal-700">
-                  4. Take One Small Action
-                </h3>
-                <p>
-                  Hopelessness thrives in inaction. Healing often begins with
-                  one small step, such as journaling, walking, reaching out to a
-                  trusted person, setting a simple goal, or asking for support.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
-              You Are Not Stuck Forever
-            </h2>
-
-            <div className="space-y-5 text-lg leading-8 text-slate-700">
-              <p>
-                The circumstances you are facing today may be difficult,
-                painful, or overwhelming. But your story is still being written.
-              </p>
-
-              <p>
-                Healing does not happen overnight. Growth does not happen
-                overnight. Transformation does not happen overnight.
-              </p>
-
-              <p className="font-semibold text-teal-700">
-                But each begins with a single decision to keep moving forward.
-              </p>
-            </div>
-          </section>
-
-          <section className="rounded-3xl bg-teal-50 p-8 text-center md:p-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
-              Final Thoughts
-            </h2>
-
-            <div className="mx-auto max-w-3xl space-y-5 text-lg leading-8 text-slate-700">
-              <p>
-                If you are experiencing hopelessness or despair, remember this:
-                you are stronger than the beliefs trying to convince you
-                otherwise.
-              </p>
-
-              <p>
-                You are capable of healing. You are capable of growth. You are
-                capable of transformation.
-              </p>
-
-              <p className="text-2xl font-bold text-teal-700">
-                Heal. Grow. Transform.
-              </p>
-            </div>
-          </section>
-
-          <section className="rounded-3xl bg-slate-900 p-8 text-center text-white md:p-12">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-teal-300">
-              Begin Your Own Transformation
+          <section className="rounded-3xl bg-teal-700 p-8 text-white shadow-sm sm:p-10">
+            <h2 className="text-2xl font-bold">Discovery Call CTA</h2>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-teal-50">
+              If you are ready to explore what is keeping you stuck and begin
+              moving toward healing and transformation, I would be honored to
+              support you.
             </p>
-
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-              You Do Not Have to Face This Alone
-            </h2>
-
-            <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-200">
-              If you are feeling stuck, overwhelmed, or ready to create
-              meaningful change, schedule a complimentary Discovery Call and
-              explore how coaching can support your next step.
-            </p>
-
-            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href={bookingLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
+                href={bookingUrl}
+                className="inline-flex justify-center rounded-full bg-white px-6 py-3 text-sm font-bold text-teal-700 transition hover:bg-teal-50"
               >
                 Schedule Your Free Discovery Call
               </a>
-
               <a
                 href="/blog"
-                className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+                className="inline-flex justify-center rounded-full border border-white px-6 py-3 text-sm font-bold text-white transition hover:bg-teal-600"
               >
                 Back to Blog
               </a>
@@ -291,4 +122,3 @@ export default function WhenHopeFeelsLostPage() {
     </main>
   );
 }
-```
