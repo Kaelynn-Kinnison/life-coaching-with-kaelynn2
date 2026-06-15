@@ -53,4 +53,13 @@ export const posts = [
     featured: false,
     published: true,
   },
+  {
+    title: "When Hope Feels Lost",
+    slug: "when-hope-feels-lost",
+    category: "Emotional Wellness",
+    description:
+      "A supportive coaching article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing and growth.",
+    featured: false,
+    published: true,
+  },
 ];
