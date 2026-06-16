@@ -43,7 +43,7 @@ const programs = [
     ],
   },
   {
-    name: "Reclaim Her",
+    name: "Reclaim Her VIP Experience",
     duration: "6-month private coaching experience",
     investment: "$5,997",
     tagline: "Rediscover Yourself. Reclaim Your Life.",

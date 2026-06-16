@@ -93,11 +93,11 @@ export default function LifeCoachingPage() {
                 target="_blank"
                 className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
               >
-                Book a Free Discovery Call
+                Schedule a Discovery Call
               </Link>
 
               <Link
-                href="/pricing"
+                href="/services"
                 className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
               >
                 View Programs
@@ -378,11 +378,11 @@ export default function LifeCoachingPage() {
               target="_blank"
               className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
             >
-              Book a Free Discovery Call
+              Schedule a Discovery Call
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
               View Programs

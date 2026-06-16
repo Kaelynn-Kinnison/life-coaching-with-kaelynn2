@@ -98,11 +98,11 @@ export default function CoreBeliefCoachingPage() {
               target="_blank"
               className="rounded-full bg-white px-8 py-4 font-semibold text-slate-950 transition hover:bg-teal-50"
             >
-              Book Your Discovery Call
+              Schedule a Discovery Call
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-950"
             >
               View Programs
@@ -415,7 +415,7 @@ export default function CoreBeliefCoachingPage() {
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-950"
             >
               View Programs
