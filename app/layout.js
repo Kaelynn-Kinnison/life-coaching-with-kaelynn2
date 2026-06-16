@@ -14,9 +14,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Core Belief Transformation Coaching | Life Coaching with Kaelynn",
+  title: "Nebraska Life Coach for Women | Life Coaching with Kaelynn",
   description:
-    "Helping women transform limiting core beliefs that keep them stuck in self-doubt, people-pleasing, fear of judgment, and self-sabotage so they can build confidence, self-trust, and lasting change.",
+    "Nebraska-based virtual life coaching for women of all ages ready to transform limiting core beliefs, rebuild confidence, and create a meaningful next chapter.",
 };
 
 const navigation = [

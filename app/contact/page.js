@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact & Booking | Life Coaching with Kaelynn",
+  title: "Contact Nebraska Life Coach Kaelynn | Virtual Coaching",
   description:
-    "Schedule a Discovery Call with Life Coaching with Kaelynn and take the first step toward clarity, confidence, and your next chapter.",
+    "Schedule a Discovery Call with Nebraska-based life coach Kaelynn for virtual coaching that supports clarity, confidence, and your next chapter.",
 };
 
 const email = "hello@lifecoachingwithkaelynn.com";
@@ -32,7 +32,8 @@ export default function Contact() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
             If something in you is ready for clarity, confidence, and meaningful
-            change, a Discovery Call is a gentle place to begin.
+            change, a Discovery Call is a gentle place to begin. I am based in
+            Nebraska and offer virtual coaching for women of all ages.
           </p>
         </div>
       </section>
@@ -51,7 +52,8 @@ export default function Contact() {
             <p className="mt-5 leading-8 text-[#6f5a4d]">
               This call is a calm, no-pressure space to talk about where you
               are, what you are hoping for, and whether coaching is the right
-              support for your season.
+              support for your season, whether you are local to Nebraska or
+              connecting virtually.
             </p>
 
             <div className="mt-7 grid gap-3">

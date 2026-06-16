@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Coaching Programs | Life Coaching with Kaelynn",
+  title: "Nebraska & Virtual Coaching Programs for Women | Kaelynn",
   description:
-    "Explore Core Belief Transformation coaching programs for women ready to reconnect with who they are, rebuild confidence, and create a meaningful next chapter.",
+    "Explore Nebraska-based virtual coaching programs for women of all ages ready to rebuild confidence, transform core beliefs, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -173,7 +173,8 @@ export default function ServicesPage() {
               I help women who have spent years surviving reconnect with who
               they truly are, rebuild their confidence, and create a meaningful
               next chapter through Core Belief Transformation and intentional
-              personal growth.
+              personal growth. Based in Nebraska, I offer virtual coaching for
+              women of all ages and seasons of life.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -206,7 +207,8 @@ export default function ServicesPage() {
               </p>
               <p className="mt-3 text-xl font-semibold leading-8 text-[#3f342c]">
                 Gentle support, clear structure, and practical growth tools for
-                women ready to move beyond survival mode.
+                women in Nebraska and virtually across the U.S. who are ready
+                to move beyond survival mode.
               </p>
             </div>
           </div>

@@ -2,15 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Kaelynn Kinnison | Life Coaching with Kaelynn",
+  title: "About Kaelynn Kinnison | Nebraska Life Coach for Women",
   description:
-    "Meet Kaelynn Kinnison, founder of Life Coaching with Kaelynn and a coach for women creating a meaningful next chapter.",
+    "Meet Kaelynn Kinnison, a Nebraska-based life coach offering virtual coaching for women of all ages who are creating a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const facts = [
   "Founder of Life Coaching with Kaelynn",
+  "Based in Nebraska and available virtually",
   "Health and wellness coaching certificate",
   "Continuing education in psychology",
   "Focused on Core Belief Transformation and intentional personal growth",
@@ -34,7 +35,8 @@ export default function AboutPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A coach for women who are ready to come back to themselves.
+              A Nebraska life coach for women who are ready to come back to
+              themselves.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
@@ -45,9 +47,10 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              My coaching style is steady, honest, and deeply personal. I care
-              about helping you feel safe enough to tell the truth and supported
-              enough to do something with it.
+              I relate to the woman who looks capable on the outside while
+              quietly wondering how to feel like herself again. My coaching
+              style is steady, honest, and deeply personal because I know how
+              much it matters to feel understood before you try to change.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -102,10 +105,11 @@ export default function AboutPage() {
               outgrown, and what they are ready to choose next.
             </p>
             <p>
-              Coaching is not about giving you a new personality or a perfect
-              life plan. It is about helping you reconnect with your own voice,
-              trust yourself more deeply, and take steps that feel aligned with
-              the life you want to create.
+              From Nebraska, I work virtually with women of all ages and stages
+              of life. Coaching is not about giving you a new personality or a
+              perfect life plan. It is about helping you reconnect with your own
+              voice, trust yourself more deeply, and take steps that feel
+              aligned with the life you want to create.
             </p>
           </div>
         </div>

@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Life Coaching with Kaelynn | Core Belief Transformation for Women",
+  title:
+    "Nebraska Life Coach for Women | Virtual Coaching with Kaelynn",
   description:
-    "Life Coaching with Kaelynn helps women who have spent years surviving reconnect with who they are, rebuild confidence, and create a meaningful next chapter.",
+    "Nebraska-based virtual life coaching for women of all ages who are ready to rebuild confidence, reconnect with themselves, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -39,6 +40,12 @@ const outcomes = [
   "Create change that feels grounded, honest, and sustainable",
 ];
 
+const coachingAccess = [
+  "Nebraska-based coaching with a personal, grounded feel",
+  "Virtual sessions available for women across the U.S.",
+  "Support for women of all ages and seasons of life",
+];
+
 export default function Home() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f342c]">
@@ -55,10 +62,10 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I help women who have spent years surviving reconnect with who
-              they truly are, rebuild their confidence, and create a meaningful
-              next chapter through Core Belief Transformation and intentional
-              personal growth.
+              I am a Nebraska-based life coach offering virtual coaching for
+              women of all ages who have spent years surviving and are ready to
+              reconnect with who they truly are, rebuild confidence, and create
+              a meaningful next chapter.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -98,6 +105,19 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
+          {coachingAccess.map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl bg-white p-5 text-center font-semibold leading-7 text-[#5f4c41] shadow-sm ring-1 ring-[#eadfd5]"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
