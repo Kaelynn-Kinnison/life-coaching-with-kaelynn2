@@ -11,10 +11,9 @@ const phone = "402-799-8166";
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const callSteps = [
-  "Share what has been feeling heavy, stuck, or unclear",
-  "Talk through what you want to change or create",
-  "Ask questions about coaching and the program options",
-  "Decide whether working together feels like the right fit",
+  "Share what brings you here",
+  "Ask questions about coaching",
+  "Choose the next best step",
 ];
 
 export default function Contact() {
@@ -27,13 +26,13 @@ export default function Contact() {
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-            Take the first supported step toward your next chapter.
+            Let us start with a conversation.
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-            If something in you is ready for clarity, confidence, and meaningful
-            change, a Discovery Call is a gentle place to begin. I am based in
-            Nebraska and offer virtual coaching for women of all ages.
+            I am based in Nebraska and offer virtual coaching for women of all
+            ages. A Discovery Call is a simple place to see if coaching feels
+            like the right fit.
           </p>
         </div>
       </section>
@@ -46,14 +45,12 @@ export default function Contact() {
             </p>
 
             <h2 className="mt-4 text-3xl font-bold leading-tight">
-              A conversation before a commitment.
+              A conversation before any commitment.
             </h2>
 
             <p className="mt-5 leading-8 text-[#6f5a4d]">
-              This call is a calm, no-pressure space to talk about where you
-              are, what you are hoping for, and whether coaching is the right
-              support for your season, whether you are local to Nebraska or
-              connecting virtually.
+              This is a calm, no-pressure space to talk about what you need and
+              what kind of support may help.
             </p>
 
             <div className="mt-7 grid gap-3">

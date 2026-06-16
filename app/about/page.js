@@ -10,18 +10,29 @@ export const metadata = {
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const facts = [
-  "Founder of Life Coaching with Kaelynn",
-  "Based in Nebraska and available virtually",
-  "Health and wellness coaching certificate",
-  "Continuing education in psychology",
-  "Focused on Core Belief Transformation and intentional personal growth",
+  {
+    label: "Founder",
+    value: "Life Coaching with Kaelynn",
+  },
+  {
+    label: "Training",
+    value: "Health & Wellness Coaching Certificate",
+  },
+  {
+    label: "Education",
+    value: "Continuing Education in Psychology",
+  },
+  {
+    label: "Specialty",
+    value: "Core Beliefs, Confidence & Personal Growth",
+  },
 ];
 
 const coachingStyle = [
-  "Warm and compassionate",
-  "Calm and grounded",
-  "Honest without being harsh",
-  "Focused on practical next steps",
+  "Warm",
+  "Grounded",
+  "Honest",
+  "Practical",
 ];
 
 export default function AboutPage() {
@@ -35,22 +46,18 @@ export default function AboutPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A Nebraska life coach for women who are ready to come back to
-              themselves.
+              I know how much it matters to feel understood.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I created Life Coaching with Kaelynn to support women who are
-              ready for more than surviving. My work blends compassionate
-              listening, core belief work, and intentional action so clients can
-              rebuild confidence and create a meaningful next chapter.
+              I created Life Coaching with Kaelynn for women who are tired of
+              carrying everything quietly and are ready for honest, steady
+              support.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
               I relate to the woman who looks capable on the outside while
-              quietly wondering how to feel like herself again. My coaching
-              style is steady, honest, and deeply personal because I know how
-              much it matters to feel understood before you try to change.
+              quietly wondering how to feel like herself again.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -93,23 +100,19 @@ export default function AboutPage() {
               Why This Work Matters to Me
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              I believe a woman can rebuild her life without abandoning who she
-              is.
+              My work is personal because transformation is personal.
             </h2>
           </div>
 
           <div className="space-y-5 text-lg leading-8 text-[#6f5a4d]">
             <p>
-              I am passionate about the quiet, meaningful work of helping women
-              understand themselves again: what shaped them, what they have
-              outgrown, and what they are ready to choose next.
+              I care about creating a space where you can tell the truth, hear
+              yourself clearly, and begin making choices from self-trust instead
+              of fear.
             </p>
             <p>
               From Nebraska, I work virtually with women of all ages and stages
-              of life. Coaching is not about giving you a new personality or a
-              perfect life plan. It is about helping you reconnect with your own
-              voice, trust yourself more deeply, and take steps that feel
-              aligned with the life you want to create.
+              of life.
             </p>
           </div>
         </div>
@@ -119,12 +122,20 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
           <div className="rounded-[2rem] bg-[#3f342c] p-8 text-white md:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">
-              My Background
+              Credentials & Background
             </p>
             <div className="mt-6 grid gap-4">
               {facts.map((item) => (
-                <div key={item} className="rounded-2xl bg-white/10 p-5">
-                  {item}
+                <div
+                  key={item.label}
+                  className="rounded-2xl border border-white/10 bg-white/10 p-5"
+                >
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#f7d7c7]">
+                    {item.label}
+                  </p>
+                  <p className="mt-2 text-lg font-semibold leading-7">
+                    {item.value}
+                  </p>
                 </div>
               ))}
             </div>
