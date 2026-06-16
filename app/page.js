@@ -46,6 +46,12 @@ const coachingAccess = [
   "Support for women of all ages and seasons of life",
 ];
 
+const niche = [
+  "Women who have spent years surviving",
+  "Women who feel disconnected from themselves",
+  "Women ready for confidence, clarity, and a meaningful next chapter",
+];
+
 export default function Home() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f342c]">
@@ -116,6 +122,27 @@ export default function Home() {
               {item}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-12 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#eadfd5] md:p-10">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+            Who I Help
+          </p>
+          <h2 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl">
+            My work is for women who are ready to stop living in survival mode.
+          </h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {niche.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-[#f7efe8] p-5 font-semibold leading-7 text-[#5f4c41]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
