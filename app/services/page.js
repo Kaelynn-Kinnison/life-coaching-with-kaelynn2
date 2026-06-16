@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Coaching Programs | Life Coaching with Kaelynn",
+  title: "Nebraska & Virtual Coaching Programs for Women | Kaelynn",
   description:
-    "Explore Core Belief Transformation coaching programs for women ready to reconnect with who they are, rebuild confidence, and create a meaningful next chapter.",
+    "Explore Nebraska-based virtual coaching programs for women of all ages ready to rebuild confidence, transform core beliefs, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -173,7 +173,8 @@ export default function ServicesPage() {
               I help women who have spent years surviving reconnect with who
               they truly are, rebuild their confidence, and create a meaningful
               next chapter through Core Belief Transformation and intentional
-              personal growth.
+              personal growth. Based in Nebraska, I offer virtual coaching for
+              women of all ages and seasons of life.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -206,33 +207,10 @@ export default function ServicesPage() {
               </p>
               <p className="mt-3 text-xl font-semibold leading-8 text-[#3f342c]">
                 Gentle support, clear structure, and practical growth tools for
-                women ready to move beyond survival mode.
+                women in Nebraska and virtually across the U.S. who are ready
+                to move beyond survival mode.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              Offer Suite
-            </p>
-            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Choose the level of support that fits your season.
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              Each coaching experience is designed to help you build awareness,
-              strengthen self-trust, and take intentional steps toward a more
-              meaningful next chapter.
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-2">
-            {programs.map((program) => (
-              <ProgramCard key={program.name} program={program} />
-            ))}
           </div>
         </div>
       </section>
@@ -283,6 +261,30 @@ export default function ServicesPage() {
                 emergency service.
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Offer Suite
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Choose the level of support that fits your season.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
+              Each coaching experience is designed to help you build awareness,
+              strengthen self-trust, and take intentional steps toward a more
+              meaningful next chapter.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {programs.map((program) => (
+              <ProgramCard key={program.name} program={program} />
+            ))}
           </div>
         </div>
       </section>
