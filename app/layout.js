@@ -25,7 +25,6 @@ const navigation = [
   { name: "Coaching Approach", href: "/coaching-approach" },
   { name: "Core Belief Coaching", href: "/core-belief-coaching" },
   { name: "H.E.A.L. Framework", href: "/heal-framework" },
-  { name: "Services", href: "/services" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
@@ -70,7 +69,7 @@ export default function RootLayout({ children }) {
                 </div>
               </Link>
 
-              <div className="hidden items-center gap-3 text-xs font-medium text-[#3f342c] lg:flex lg:text-sm">
+              <div className="hidden items-center gap-4 text-sm font-medium text-[#3f342c] md:flex">
                 {navigation.map((link) => (
                   <Link
                     key={link.href}
@@ -83,7 +82,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-2 text-center text-sm font-medium text-[#3f342c] lg:hidden">
+            <div className="mt-4 grid grid-cols-2 gap-2 text-center text-sm font-medium text-[#3f342c] md:hidden">
               {navigation.map((link) => (
                 <Link
                   key={link.href}
