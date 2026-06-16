@@ -165,16 +165,14 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Reconnect with who you are and create your next chapter with
-              confidence.
+              Choose the coaching experience that fits this season of your
+              life.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I help women who have spent years surviving reconnect with who
-              they truly are, rebuild their confidence, and create a meaningful
-              next chapter through Core Belief Transformation and intentional
-              personal growth. Based in Nebraska, I offer virtual coaching for
-              women of all ages and seasons of life.
+              These virtual coaching experiences offer different levels of
+              structure, depth, and support for women in Nebraska and across the
+              U.S.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -206,9 +204,7 @@ export default function ServicesPage() {
                 Core Belief Transformation
               </p>
               <p className="mt-3 text-xl font-semibold leading-8 text-[#3f342c]">
-                Gentle support, clear structure, and practical growth tools for
-                women in Nebraska and virtually across the U.S. who are ready
-                to move beyond survival mode.
+                A clear path, steady support, and practical tools for real life.
               </p>
             </div>
           </div>
@@ -226,18 +222,15 @@ export default function ServicesPage() {
                 My Commitment to You
               </h2>
               <p className="mt-6 text-lg leading-8 text-[#f7efe8]">
-                Transformation is a partnership. My commitment is to bring
-                guidance, accountability, support, and proven tools. Your
-                commitment is to show up, engage, and take action.
+                Coaching works best when support and commitment meet.
               </p>
             </div>
 
             <div className="space-y-5 bg-white p-8 text-lg leading-8 text-[#5f4c41] md:p-12">
               <p>
-                I believe transformation happens when coaching and commitment
-                work together. My role is to provide guidance, accountability,
-                support, and proven tools for growth. Your role is to show up,
-                engage in the process, and take action.
+                My role is to bring guidance, accountability, support, and
+                proven tools for growth. Your role is to show up, engage in the
+                process, and take action.
               </p>
 
               <p>
@@ -247,10 +240,8 @@ export default function ServicesPage() {
               </p>
 
               <p>
-                My goal is not simply to provide coaching sessions. It is to
-                provide a transformational experience that supports you in
-                creating your next chapter with clarity, confidence, and
-                purpose.
+                My goal is to provide a coaching experience that feels
+                supportive, clear, and meaningful.
               </p>
 
               <div className="rounded-2xl bg-[#f7efe8] p-5 text-base leading-7 text-[#6f5a4d]">
@@ -272,12 +263,11 @@ export default function ServicesPage() {
               Offer Suite
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Choose the level of support that fits your season.
+              Choose the experience that fits your season.
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              Each coaching experience is designed to help you build awareness,
-              strengthen self-trust, and take intentional steps toward a more
-              meaningful next chapter.
+              Compare the options below and choose the experience that matches
+              the depth of support you want right now.
             </p>
           </div>
 
@@ -296,14 +286,12 @@ export default function ServicesPage() {
           </p>
 
           <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-            You do not have to know the whole path before you take the first
-            step.
+            Start with a Discovery Call.
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
-            A Discovery Call gives us space to talk through where you are, what
-            you want to change, and which coaching experience may best support
-            your next chapter.
+            We will talk through your goals and decide which coaching experience
+            fits best.
           </p>
 
           <Link

@@ -11,33 +11,33 @@ export const metadata = {
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const clientFeelings = [
-  "You have been strong for so long that you are tired of only surviving.",
-  "You are ready to reconnect with who you are beneath the roles and responsibilities.",
-  "You want confidence, clarity, and a life that feels meaningful again.",
+  "You look capable, but inside you feel disconnected.",
+  "You are tired of living on autopilot.",
+  "You are ready for life to feel like yours again.",
 ];
 
 const path = [
   {
     title: "Feel Seen",
-    text: "We begin with honest space for what you are carrying, without judgment or pressure to have it all figured out.",
+    text: "We start with what is real, without judgment or pressure.",
   },
   {
-    title: "Understand the Pattern",
-    text: "Together, we look beneath the surface at the beliefs, fears, and old stories that may be shaping your choices.",
+    title: "Find the Pattern",
+    text: "We notice the beliefs and habits that keep pulling you back.",
   },
   {
-    title: "Create Your Next Chapter",
-    text: "You begin taking aligned action with support, accountability, and a clearer sense of who you are becoming.",
+    title: "Move Differently",
+    text: "You practice new choices with support, clarity, and accountability.",
   },
 ];
 
 const outcomes = [
-  "Rebuild confidence and self-trust",
-  "Reconnect with your needs, voice, and identity",
-  "Understand limiting beliefs and old patterns",
-  "Clarify what you want your next chapter to look like",
-  "Take meaningful steps with accountability and support",
-  "Create change that feels grounded, honest, and sustainable",
+  "More self-trust",
+  "Clearer direction",
+  "Healthier boundaries",
+  "Less overthinking",
+  "More aligned action",
+  "A stronger sense of self",
 ];
 
 const coachingAccess = [
@@ -57,15 +57,14 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              For the woman who is ready to stop surviving and begin living
-              with clarity, confidence, and purpose.
+              Come back to yourself and create a life that feels meaningful
+              again.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I am a Nebraska-based life coach offering virtual coaching for
-              women of all ages who have spent years surviving and are ready to
-              reconnect with who they truly are, rebuild confidence, and create
-              a meaningful next chapter.
+              Nebraska-based virtual life coaching for women of all ages who
+              are ready to rebuild confidence, understand what has been keeping
+              them stuck, and take honest steps forward.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -100,8 +99,7 @@ export default function Home() {
                 Your next chapter can begin gently
               </p>
               <p className="mt-3 text-xl font-semibold leading-8">
-                You do not have to know every step. You only need a safe,
-                supported place to begin.
+                You do not need the whole plan. You only need a place to begin.
               </p>
             </div>
           </div>
@@ -141,13 +139,12 @@ export default function Home() {
               A Different Kind of Support
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Coaching that honors your story while helping you move forward.
+              Coaching that is gentle enough to feel safe and clear enough to
+              create movement.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
-              This work is not about pretending the past did not happen or
-              forcing positivity. It is about creating space to understand what
-              shaped you, release what no longer serves you, and practice a new
-              way of living with support.
+              We focus on what is happening now, what is underneath it, and what
+              needs to change next.
             </p>
           </div>
 
@@ -175,7 +172,7 @@ export default function Home() {
               What Becomes Possible
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              A life-changing experience begins with reconnecting to yourself.
+              Small shifts can change the way you move through your whole life.
             </h2>
           </div>
 
@@ -199,12 +196,11 @@ export default function Home() {
               Begin with a conversation
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              You do not have to figure out your next chapter alone.
+              Let this be the first honest step.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f7efe8]">
-              A Discovery Call gives us space to talk about where you are, what
-              feels heavy or unclear, and whether coaching is the right support
-              for your season.
+              We will talk about where you are, what you want to change, and
+              whether coaching feels like the right fit.
             </p>
           </div>
 
