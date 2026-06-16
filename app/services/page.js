@@ -213,30 +213,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              Offer Suite
-            </p>
-            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Choose the level of support that fits your season.
-            </h2>
-            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              Each coaching experience is designed to help you build awareness,
-              strengthen self-trust, and take intentional steps toward a more
-              meaningful next chapter.
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-2">
-            {programs.map((program) => (
-              <ProgramCard key={program.name} program={program} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#3f342c] shadow-2xl shadow-[#3f342c]/20">
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
@@ -283,6 +259,30 @@ export default function ServicesPage() {
                 emergency service.
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Offer Suite
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Choose the level of support that fits your season.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
+              Each coaching experience is designed to help you build awareness,
+              strengthen self-trust, and take intentional steps toward a more
+              meaningful next chapter.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {programs.map((program) => (
+              <ProgramCard key={program.name} program={program} />
+            ))}
           </div>
         </div>
       </section>
