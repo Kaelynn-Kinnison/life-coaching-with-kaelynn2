@@ -249,7 +249,7 @@ export default function TestimonialsPage() {
             </Link>
 
             <Link
-              href="/pricing"
+              href="/services"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
               View Programs & Investment

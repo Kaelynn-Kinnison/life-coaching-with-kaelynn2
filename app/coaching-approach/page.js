@@ -3,296 +3,188 @@ import Link from "next/link";
 export const metadata = {
   title: "Coaching Approach | Life Coaching with Kaelynn",
   description:
-    "Discover what coaching with Kaelynn feels like: compassionate support, honest accountability, confidence-building, clarity, and action-focused growth for women creating their next chapter.",
+    "Learn what coaching with Kaelynn feels like: trauma-informed support, Core Belief Transformation, compassionate accountability, and meaningful next-step growth.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-const sessionFlow = [
+const approach = [
   {
-    title: "You Bring What Is Real",
-    text: "We begin with what is actually happening in your life, your emotions, your goals, and the places where you feel stuck or uncertain.",
+    title: "We begin with what is true",
+    text: "You bring the honest version of what you are carrying, not the polished version you show the world.",
   },
   {
-    title: "We Slow Down the Pattern",
-    text: "Together, we notice the thoughts, reactions, fears, habits, or beliefs that may be shaping your choices.",
+    title: "We uncover what is underneath",
+    text: "Together, we notice the beliefs, fears, stories, and patterns that may be shaping how you see yourself and what you choose.",
   },
   {
-    title: "We Create Clarity",
-    text: "You begin seeing what is yours to carry, what is not, what needs to change, and what next step feels aligned.",
-  },
-  {
-    title: "You Leave With Direction",
-    text: "Each session is designed to help you leave with practical next steps, self-awareness, and accountability.",
+    title: "We create supported action",
+    text: "Insight becomes change through aligned steps, accountability, boundaries, and new ways of practicing self-trust.",
   },
 ];
 
-const coachingStyle = [
-  "Compassionate",
-  "Honest",
-  "Encouraging",
-  "Grounded",
-  "Reflective",
-  "Action-oriented",
-];
-
-const rightFit = [
-  "You want to feel heard without being judged.",
-  "You are tired of repeating the same patterns.",
-  "You want to understand yourself on a deeper level.",
-  "You are ready to rebuild confidence and self-trust.",
-  "You want support that is both compassionate and honest.",
-  "You are ready to take action, not just talk about change.",
+const feelsLike = [
+  "Calm enough to be honest",
+  "Structured enough to create momentum",
+  "Compassionate without avoiding truth",
+  "Future-focused without dismissing your story",
+  "Personalized to your season and goals",
+  "Rooted in confidence, self-worth, and sustainable growth",
 ];
 
 const notAbout = [
-  "Being told what to do",
   "Being judged for where you are",
-  "Pretending everything is fine",
-  "Quick fixes that do not last",
+  "Being rushed into quick fixes",
+  "Pretending the hard things did not matter",
+  "Being told who you should become",
 ];
 
-const about = [
-  "Feeling safe enough to be honest",
+const isAbout = [
+  "Feeling seen and supported",
   "Understanding what keeps you stuck",
-  "Building confidence from the inside out",
-  "Taking realistic steps toward change",
-];
-
-const clientJourney = [
-  {
-    title: "Feeling Stuck",
-    text: "You may begin feeling overwhelmed, uncertain, disconnected, or unsure of what needs to change.",
-  },
-  {
-    title: "Finding Clarity",
-    text: "Through coaching, you begin sorting through the noise and understanding what is really happening beneath the surface.",
-  },
-  {
-    title: "Taking Aligned Action",
-    text: "You start making choices that support the woman you are becoming, with accountability and encouragement along the way.",
-  },
+  "Rebuilding confidence from the inside out",
+  "Creating a next chapter that feels aligned and meaningful",
 ];
 
 export default function CoachingApproachPage() {
   return (
-    <main className="bg-white text-slate-900">
-      <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-slate-50 px-6 py-24">
-        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-teal-200/40 blur-3xl" />
-        <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-slate-300/30 blur-3xl" />
-
-        <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+    <main className="bg-[#fdf8f3] text-[#3f342c]">
+      <section className="px-6 pb-16 pt-14 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
               Coaching Approach
             </p>
 
-            <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              A Coaching Space for Women Ready to Rebuild Confidence and Create
-              Their Next Chapter
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              A supportive process for understanding yourself and creating
+              meaningful change.
             </h1>
 
-            <p className="mb-8 text-lg leading-8 text-slate-700 md:text-xl">
-              Coaching with me is not about being judged, rushed, or told who
-              you should be. It is a supportive space to slow down, understand
-              what is keeping you stuck, rebuild confidence, and take meaningful
-              steps toward the woman you are becoming.
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
+              Coaching with me is not about judgment, pressure, or pretending
+              everything is fine. It is a safe, structured space to understand
+              what has been keeping you stuck, rebuild confidence, and move
+              toward the life you want to create.
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
                 href={bookingLink}
                 target="_blank"
-                className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
+                className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
               >
-                Book a Discovery Call
+                Schedule a Discovery Call
               </Link>
 
               <Link
                 href="/services"
-                className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
+                className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
               >
-                View Programs
+                View Coaching Programs
               </Link>
             </div>
           </div>
 
-          <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-2xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-              What This Work Feels Like
+          <div className="rounded-[2rem] bg-[#3f342c] p-8 text-white shadow-2xl shadow-[#8b6f5c]/20">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">
+              The heart of the work
             </p>
-
-            <h2 className="mb-6 text-3xl font-bold">
-              Safe enough to be honest. Strong enough to create change.
+            <h2 className="mt-5 text-3xl font-bold leading-tight">
+              Safe enough to tell the truth. Strong enough to support change.
             </h2>
-
-            <p className="mb-6 leading-8 text-slate-300">
-              You do not have to have everything figured out before you begin.
-              You only need a willingness to be honest, curious, and open to
-              seeing yourself differently.
-            </p>
-
-            <p className="leading-8 text-slate-300">
-              My role is to help you notice what has been happening beneath the
-              surface, support you as you process it, and help you move forward
-              with clarity, courage, and accountability.
+            <p className="mt-5 leading-8 text-[#f7efe8]">
+              You do not have to know exactly what you need before you begin.
+              We start with where you are, then create clarity one honest step
+              at a time.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            The Heart of My Approach
-          </p>
-
-          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-5xl">
-            You Are Not a Problem to Fix
-          </h2>
-
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-            You are a person with a story, emotions, goals, patterns,
-            strengths, and experiences that deserve to be understood. My
-            coaching approach begins with seeing the whole person, not just the
-            problem you want to solve.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-slate-950 px-6 py-20 text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-              Coaching Is Not About
-            </p>
-
-            <div className="grid gap-4">
-              {notAbout.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-white/10 p-5 text-lg font-medium text-slate-200"
-                >
-                  ✕ {item}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-              Coaching Is About
-            </p>
-
-            <div className="grid gap-4">
-              {about.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-teal-300/20 p-5 text-lg font-medium text-white"
-                >
-                  ✓ {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-teal-50 px-6 py-20">
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              The Client Journey
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              The Process
             </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 md:text-5xl">
-              From Feeling Stuck to Taking Aligned Action
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              From feeling overwhelmed to moving with direction.
             </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {clientJourney.map((item, index) => (
+          <div className="grid gap-5 md:grid-cols-3">
+            {approach.map((item, index) => (
               <article
                 key={item.title}
-                className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-teal-100"
+                className="rounded-2xl border border-[#eadfd5] bg-[#fdf8f3] p-6"
               >
-                <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-teal-700">
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
                   Phase 0{index + 1}
                 </p>
-
-                <h3 className="mb-4 text-2xl font-bold text-slate-900">
-                  {item.title}
-                </h3>
-
-                <p className="leading-8 text-slate-700">{item.text}</p>
+                <h3 className="mt-4 text-2xl font-bold">{item.title}</h3>
+                <p className="mt-4 leading-7 text-[#6f5a4d]">{item.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              What Sessions Are Like
+      <section className="px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
+          <div className="rounded-[2rem] bg-[#3f342c] p-8 text-white">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">
+              Coaching is not about
             </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 md:text-5xl">
-              Simple, Supportive, and Focused on Real Growth
-            </h2>
+            <div className="mt-6 grid gap-4">
+              {notAbout.map((item) => (
+                <div key={item} className="rounded-2xl bg-white/10 p-5">
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {sessionFlow.map((item, index) => (
-              <article
-                key={item.title}
-                className="rounded-3xl bg-slate-50 p-8 shadow-md ring-1 ring-slate-200"
-              >
-                <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-teal-700">
-                  Session Step 0{index + 1}
-                </p>
-
-                <h3 className="mb-4 text-2xl font-bold text-slate-900">
-                  {item.title}
-                </h3>
-
-                <p className="leading-8 text-slate-700">{item.text}</p>
-              </article>
-            ))}
+          <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#eadfd5]">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Coaching is about
+            </p>
+            <div className="mt-6 grid gap-4">
+              {isAbout.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-[#f7efe8] p-5 text-[#5f4c41]"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              My Coaching Style
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              What Sessions Feel Like
             </p>
-
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-5xl">
-              Compassionate Support With Honest Accountability
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Grounded, personal, and focused on real life.
             </h2>
-
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              I believe growth requires both safety and challenge. You deserve a
-              space where you can be honest about what you are experiencing
-              while also being supported to take the next step forward.
-            </p>
-
-            <p className="text-lg leading-8 text-slate-700">
-              I will encourage you, ask thoughtful questions, help you notice
-              patterns, and support you in creating action that aligns with the
-              life you want to build.
+            <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
+              Each session creates space for reflection and insight, but the
+              work does not stop there. You leave with next steps that connect
+              the inner work to the choices, boundaries, conversations, and
+              actions in your everyday life.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            {coachingStyle.map((item) => (
+          <div className="grid gap-4 md:grid-cols-2">
+            {feelsLike.map((item) => (
               <div
                 key={item}
-                className="rounded-3xl bg-slate-950 p-6 text-center text-lg font-semibold text-white shadow-md"
+                className="rounded-2xl bg-[#fdf8f3] p-5 font-semibold leading-7 shadow-sm ring-1 ring-[#eadfd5]"
               >
                 {item}
               </div>
@@ -301,135 +193,39 @@ export default function CoachingApproachPage() {
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
-          <div className="rounded-3xl bg-teal-50 p-10 shadow-xl ring-1 ring-teal-100">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              This Is For the Woman Who
-            </p>
-
-            <h2 className="mb-8 text-3xl font-bold text-slate-900 md:text-4xl">
-              Is Ready to Stop Carrying Everything Alone
-            </h2>
-
-            <div className="grid gap-4">
-              {rightFit.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
-                >
-                  <span className="font-bold text-teal-700">✓</span> {item}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-3xl bg-slate-950 p-10 text-white shadow-xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-              My Promise
-            </p>
-
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-              I Will Meet You With Compassion, Not Judgment
-            </h2>
-
-            <p className="mb-5 leading-8 text-slate-300">
-              You will not be shamed for where you are. You will not be rushed
-              into becoming someone you are not. You will be supported as you
-              reconnect with your voice, your confidence, and your ability to
-              choose differently.
-            </p>
-
-            <p className="mb-5 leading-8 text-slate-300">
-              Coaching is a partnership. I bring support, structure, reflection,
-              and accountability. You bring honesty, willingness, and the
-              courage to grow.
-            </p>
-
-            <p className="text-xl font-semibold leading-8 text-teal-300">
-              Together, we create space for the woman you are becoming.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-teal-50 px-6 py-20">
-        <div className="mx-auto max-w-5xl rounded-3xl bg-white p-10 text-center shadow-xl ring-1 ring-teal-100">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Signature Method Integration
-          </p>
-
-          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-            Core Belief Work May Be Woven Into Coaching
-          </h2>
-
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700">
-            When it supports your goals, my signature Core Belief
-            Transformation Method may be part of your coaching experience. The
-            full Core Belief page explains the method in detail, while this page
-            is designed to help you understand the experience of working with
-            me.
-          </p>
-
-          <div className="mt-8">
-            <Link
-              href="/core-belief-coaching"
-              className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
-            >
-              Learn About Core Belief Coaching
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 px-6 py-16">
-        <div className="mx-auto max-w-4xl rounded-3xl bg-white p-8 shadow-md ring-1 ring-slate-200">
-          <h2 className="mb-4 text-2xl font-bold text-slate-900">
-            Coaching Disclaimer
-          </h2>
-
-          <p className="leading-8 text-slate-700">
-            Coaching is not therapy, counseling, or medical treatment. Coaching
-            focuses on self-awareness, personal growth, accountability, mindset,
-            goal achievement, and future-focused action. If you are experiencing
-            a mental health crisis or need clinical support, please contact a
-            licensed mental health professional or emergency service.
+      <section className="px-6 py-16 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-4xl rounded-[2rem] bg-white p-8 text-sm leading-7 text-[#6f5a4d] shadow-sm ring-1 ring-[#eadfd5]">
+          <p className="font-bold text-[#3f342c]">Coaching Disclaimer</p>
+          <p className="mt-2">
+            Coaching is not therapy, counseling, medical care, mental health
+            treatment, or crisis support. Coaching focuses on self-awareness,
+            personal growth, accountability, mindset, goal achievement, and
+            future-focused action. If you are experiencing a crisis or need
+            clinical support, please contact a licensed mental health
+            professional or emergency service.
           </p>
         </div>
       </section>
 
-      <section className="bg-slate-950 px-6 py-24 text-center text-white">
+      <section className="bg-[#f7efe8] px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-            Begin Your Growth
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+            Begin With Support
           </p>
-
-          <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            You Do Not Have to Navigate This Season Alone
+          <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+            You do not have to navigate this season alone.
           </h2>
-
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-300">
-            Schedule a complimentary Discovery Call to discuss your goals, your
-            current challenges, and how coaching can support your next season of
-            growth.
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
+            Schedule a Discovery Call to talk through where you are, what you
+            want to change, and whether coaching is the right next step.
           </p>
-
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href={bookingLink}
-              target="_blank"
-              className="rounded-full bg-white px-8 py-4 font-semibold text-slate-950 transition hover:bg-teal-50"
-            >
-              Book Discovery Call
-            </Link>
-
-            <Link
-              href="/services"
-              className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-950"
-            >
-              View Programs
-            </Link>
-          </div>
+          <Link
+            href={bookingLink}
+            target="_blank"
+            className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
+          >
+            Schedule a Discovery Call
+          </Link>
         </div>
       </section>
     </main>

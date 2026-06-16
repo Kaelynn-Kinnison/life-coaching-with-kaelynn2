@@ -36,7 +36,7 @@ export default function FAQ() {
     {
       question: "Which package is right for me?",
       answer:
-        "If you are new to coaching, the Free Discovery Call or Clarity Session is a great place to start. If you are ready for deeper support, the Foundation, Growth & Empowerment, or Premium Transformation programs may be a better fit.",
+        "If you are new to coaching, a Discovery Call is the best place to start. We can talk through whether the Clarity & Confidence Accelerator, The Next Chapter Transformation, Reclaim Her VIP Experience, or Growth Membership is the right fit for your season.",
     },
     {
       question: "What is a Clarity Appointment?",

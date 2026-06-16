@@ -1,210 +1,154 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Coaching Services | Life Coaching with Kaelynn",
+  title: "Coaching Programs | Life Coaching with Kaelynn",
   description:
-    "Explore coaching services for women ready to navigate life transitions, transform limiting beliefs, rebuild confidence, strengthen self-worth, and create lasting personal growth.",
+    "Explore Core Belief Transformation coaching programs for women ready to reconnect with who they are, rebuild confidence, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-const services = [
+const programs = [
   {
-    badge: "Life Transition Support",
-    title: "Life Transition Coaching",
-    length: "10 Weeks",
-    icon: "✦",
-    statement: "Move from uncertainty to confidence.",
-    description:
-      "For women navigating a new season of life and seeking clarity, direction, confidence, and support.",
-    bestFor: [
-      "Are navigating a major life change",
-      "Feel uncertain about what comes next",
-      "Have lost confidence in themselves",
-      "Want clarity and direction",
-      "Are ready to stop feeling stuck",
-    ],
+    name: "Clarity & Confidence Accelerator",
+    duration: "8-week coaching experience",
+    investment: "$1,997",
+    tagline: "Gain Direction. Build Confidence. Take Action.",
+    audience:
+      "For women who feel stuck, overwhelmed, or uncertain about what comes next.",
     includes: [
-      "Weekly 1:1 coaching sessions",
-      "Personalized growth plan",
-      "Confidence-building exercises",
-      "Values and vision clarification",
-      "Goal setting and action planning",
-      "Accountability support",
-      "Coaching resources and worksheets",
+      "Identify what is keeping you stuck",
+      "Build confidence and self-trust",
+      "Clarify goals and vision",
+      "Create an action plan",
+      "Develop momentum toward meaningful change",
     ],
   },
   {
-    badge: "Signature Program",
-    title: "Core Belief Transformation Coaching",
-    length: "12 Weeks",
-    icon: "★",
-    statement: "Transform the beliefs that are keeping you stuck.",
-    description:
-      "For women ready to uncover limiting beliefs, rebuild self-worth, and create lasting transformation from the inside out.",
+    name: "The Next Chapter Transformation",
+    duration: "12-week signature coaching experience",
+    investment: "$3,497",
+    tagline: "Stop surviving. Start creating a life you genuinely love.",
+    audience:
+      "For women ready to transform old patterns, rebuild self-worth, and move into a more intentional next chapter.",
     featured: true,
-    bestFor: [
-      "Feel stuck in repeating patterns",
-      "Struggle with self-worth",
-      "Battle self-doubt or people-pleasing",
-      "Know something deeper is holding them back",
-      "Want lasting transformation",
-    ],
     includes: [
-      "Weekly 1:1 coaching sessions",
-      "Core belief assessment",
-      "Limiting belief identification",
-      "Core Belief Transformation framework",
-      "Self-worth and confidence development",
-      "Personalized transformation plan",
-      "Accountability and action planning",
-      "Coaching resources and worksheets",
-      "Email support between sessions",
+      "H.E.A.L. Framework",
+      "Core Belief Transformation",
+      "Uncover limiting beliefs",
+      "Rebuild self-worth and confidence",
+      "Release old patterns",
+      "Strengthen boundaries",
+      "Create sustainable transformation",
     ],
   },
   {
-    badge: "Highest Level of Support",
-    title: "Premium Transformation Experience",
-    length: "16 Weeks",
-    icon: "✧",
-    statement: "Deep transformation. Personalized support. Lasting change.",
-    description:
-      "For women who are fully committed to significant personal growth and want the highest level of support.",
+    name: "Reclaim Her VIP Experience",
+    duration: "6-month private coaching experience",
+    investment: "$5,997",
+    tagline: "Rediscover Yourself. Reclaim Your Life.",
+    audience:
+      "For women who desire the deepest private coaching support, spacious transformation, and continued implementation.",
     premium: true,
-    bestFor: [
-      "Are committed to significant personal growth",
-      "Want deeper coaching support",
-      "Desire greater accountability",
-      "Are ready for transformational change",
-      "Want a highly personalized experience",
-    ],
     includes: [
-      "Everything in Core Belief Transformation Coaching",
-      "Extended coaching timeline",
-      "Priority email support",
-      "Additional accountability check-ins",
-      "Personalized growth roadmap",
-      "Custom resources and exercises",
-      "Advanced transformation work",
-      "Ongoing strategy and support",
+      "Personalized transformation roadmap",
+      "Advanced Core Belief Transformation work",
+      "Accountability and implementation support",
+      "Ongoing guidance between sessions",
+      "Deep identity and self-worth work",
     ],
   },
   {
-    badge: "Continuing Support",
-    title: "Growth & Accountability Membership",
-    length: "Monthly Membership",
-    icon: "❀",
-    statement: "Stay connected to your growth long after coaching ends.",
-    description:
-      "For women who have completed coaching and want continued accountability, encouragement, and support.",
-    bestFor: [
-      "Want continued accountability",
-      "Do not want to lose momentum",
-      "Desire ongoing support",
-      "Want a trusted coach in their corner",
-      "Are committed to continued growth",
-    ],
+    name: "Growth Membership",
+    duration: "Monthly membership",
+    investment: "$197/month",
+    tagline: "Continue Growing with Coaching, Accountability & Community.",
+    audience:
+      "For women who want continued encouragement, coaching, and accountability as they keep growing.",
     includes: [
-      "Monthly coaching session",
-      "Accountability check-ins",
-      "Goal review and planning",
-      "Continued growth support",
-      "Access to coaching resources",
-      "Priority member scheduling",
-      "Community and encouragement",
+      "Monthly coaching calls",
+      "Accountability support",
+      "Personal growth trainings",
+      "Community connection",
+      "Continued encouragement and guidance",
     ],
   },
 ];
 
-function ServiceCard({ service }) {
-  const cardClass = service.premium
-    ? "relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 p-8 text-white shadow-xl"
-    : service.featured
-      ? "relative overflow-hidden rounded-3xl border-4 border-teal-700 bg-white p-8 shadow-xl"
-      : "relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-lg";
+function ProgramTitle({ name }) {
+  return (
+    <>
+      {name}
+      <sup className="ml-1 text-sm font-semibold">&trade;</sup>
+    </>
+  );
+}
 
-  const badgeClass = service.premium
-    ? "mb-5 inline-block rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-slate-900"
-    : service.featured
-      ? "mb-5 inline-block rounded-full bg-teal-700 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white"
-      : "mb-5 inline-block rounded-full bg-teal-50 px-4 py-2 text-xs font-bold uppercase tracking-wide text-teal-800";
+function ProgramCard({ program }) {
+  const cardClass = program.premium
+    ? "relative flex h-full flex-col overflow-hidden rounded-3xl bg-[#3f342c] p-7 text-white shadow-2xl shadow-[#3f342c]/20 ring-1 ring-[#6d594b]/40"
+    : program.featured
+      ? "relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-7 text-[#3f342c] shadow-2xl shadow-[#8b6f5c]/20 ring-2 ring-[#b7835f]"
+      : "relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-7 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5]";
 
-  const textClass = service.premium ? "text-slate-200" : "text-slate-700";
-  const headingClass = service.premium ? "text-white" : "text-slate-900";
-  const boxClass = service.premium
-    ? "rounded-2xl bg-white/10 p-5"
-    : "rounded-2xl bg-teal-50 p-5";
+  const textClass = program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]";
+  const mutedClass = program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]";
+  const listClass = program.premium ? "text-[#f7efe8]" : "text-[#5f4c41]";
 
   return (
     <article className={cardClass}>
-      <div className="absolute right-6 top-6 text-5xl opacity-20">
-        {service.icon}
-      </div>
+      {program.featured && (
+        <div className="absolute right-5 top-5 rounded-full bg-[#b7835f] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">
+          Most Popular
+        </div>
+      )}
 
-      <div className="mb-5 text-2xl tracking-widest text-teal-600">
-        ★ ★ ★
-      </div>
-
-      <p className={badgeClass}>{service.badge}</p>
-
-      <h2 className={`mb-3 text-3xl font-bold ${headingClass}`}>
-        {service.title}
-      </h2>
-
-      <p className="mb-4 text-lg font-bold text-teal-600">{service.length}</p>
-
-      <p className={`mb-5 text-xl font-bold ${headingClass}`}>
-        {service.statement}
+      <p className={`pr-28 text-sm font-bold uppercase tracking-[0.18em] ${mutedClass}`}>
+        {program.duration}
       </p>
 
-      <p className={`mb-8 leading-8 ${textClass}`}>{service.description}</p>
+      <h2 className="mt-5 text-3xl font-bold leading-tight">
+        <ProgramTitle name={program.name} />
+      </h2>
 
-      <div className="mb-8">
-        <h3 className={`mb-4 text-lg font-bold ${headingClass}`}>
-          For Women Who:
-        </h3>
+      <p className={`mt-4 text-xl font-semibold leading-8 ${mutedClass}`}>
+        {program.tagline}
+      </p>
 
-        <ul className={`space-y-3 leading-7 ${textClass}`}>
-          {service.bestFor.map((item) => (
-            <li key={item}>
-              <span className="font-bold text-teal-600">✓</span>{" "}
-              <strong>{item}</strong>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <p className={`mt-5 leading-7 ${textClass}`}>{program.audience}</p>
 
-      <div className="mb-8">
-        <h3 className={`mb-4 text-lg font-bold ${headingClass}`}>Includes:</h3>
-
-        <ul className={`space-y-3 leading-7 ${textClass}`}>
-          {service.includes.map((item) => (
-            <li key={item}>
-              <span className="font-bold text-teal-600">✓</span> {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className={boxClass}>
-        <p className={`font-bold ${headingClass}`}>Focus:</p>
-        <p className={`mt-2 leading-7 ${textClass}`}>
-          Supporting <strong>clarity</strong>, <strong>confidence</strong>,{" "}
-          <strong>self-worth</strong>, <strong>accountability</strong>, and{" "}
-          <strong>growth</strong>.
+      <div
+        className={
+          program.premium
+            ? "mt-7 rounded-2xl bg-white/10 p-5"
+            : "mt-7 rounded-2xl bg-[#f7efe8] p-5"
+        }
+      >
+        <p className="text-sm font-bold uppercase tracking-[0.18em]">
+          Investment
         </p>
+        <p className="mt-2 text-3xl font-bold">{program.investment}</p>
+      </div>
+
+      <div className="mt-7 flex-1">
+        <h3 className="text-lg font-bold">What is included:</h3>
+        <ul className={`mt-4 list-disc space-y-3 pl-5 leading-7 ${listClass}`}>
+          {program.includes.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </div>
 
       <Link
         href={bookingLink}
         target="_blank"
         className={
-          service.premium
-            ? "mt-8 inline-flex w-full justify-center rounded-full bg-white px-6 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
-            : "mt-8 inline-flex w-full justify-center rounded-full bg-teal-700 px-6 py-4 font-semibold text-white transition hover:bg-teal-800"
+          program.premium
+            ? "mt-8 inline-flex justify-center rounded-full bg-white px-6 py-4 text-sm font-bold text-[#3f342c] transition hover:bg-[#f7efe8]"
+            : "mt-8 inline-flex justify-center rounded-full bg-[#0f766e] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#115e59]"
         }
       >
-        Schedule Your Free Discovery Call
+        Schedule a Discovery Call
       </Link>
     </article>
   );
@@ -212,68 +156,160 @@ function ServiceCard({ service }) {
 
 export default function ServicesPage() {
   return (
-    <main className="bg-white text-slate-900">
-      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
-        <div className="mx-auto max-w-5xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-teal-700">
-            Coaching Services
-          </p>
+    <main className="bg-[#fdf8f3] text-[#3f342c]">
+      <section className="px-6 pb-16 pt-16 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Coaching Programs
+            </p>
 
-          <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            Choose the Coaching Support That Fits Your{" "}
-            <span className="text-teal-700">Next Chapter</span>
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              Reconnect with who you are and create your next chapter with
+              confidence.
+            </h1>
 
-          <p className="mx-auto max-w-3xl text-xl leading-8 text-slate-700">
-            Coaching services for women ready to navigate a{" "}
-            <strong>life transition</strong>, transform{" "}
-            <strong>limiting beliefs</strong>, rebuild{" "}
-            <strong>confidence</strong>, strengthen <strong>self-worth</strong>,
-            and create meaningful <strong>growth</strong>.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
+              I help women who have spent years surviving reconnect with who
+              they truly are, rebuild their confidence, and create a meaningful
+              next chapter through Core Belief Transformation and intentional
+              personal growth.
+            </p>
 
-          <div className="mt-10 flex justify-center">
-            <Link
-              href={bookingLink}
-              target="_blank"
-              className="rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
-            >
-              Schedule Your Free Discovery Call
-            </Link>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href={bookingLink}
+                target="_blank"
+                className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
+              >
+                Schedule a Discovery Call
+              </Link>
+
+              <Link
+                href="#programs"
+                className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
+              >
+                Explore Programs
+              </Link>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
+            <img
+              src="/services-hero.jpg"
+              alt="A calm sunrise over a peaceful lake"
+              className="h-80 w-full object-cover sm:h-96"
+            />
+            <div className="p-7">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
+                Core Belief Transformation
+              </p>
+              <p className="mt-3 text-xl font-semibold leading-8 text-[#3f342c]">
+                Gentle support, clear structure, and practical growth tools for
+                women ready to move beyond survival mode.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-          {services.map((service) => (
-            <ServiceCard key={service.title} service={service} />
-          ))}
+      <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Offer Suite
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Choose the level of support that fits your season.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
+              Each coaching experience is designed to help you build awareness,
+              strengthen self-trust, and take intentional steps toward a more
+              meaningful next chapter.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {programs.map((program) => (
+              <ProgramCard key={program.name} program={program} />
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 text-center">
-        <div className="mx-auto max-w-4xl rounded-3xl bg-teal-50 p-10 shadow-md ring-1 ring-teal-100">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            Not Sure Where to Begin?
+      <section className="px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#3f342c] shadow-2xl shadow-[#3f342c]/20">
+          <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="bg-[#4f3b4d] p-8 text-white md:p-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">
+                Guarantee & Risk Reversal
+              </p>
+              <h2 className="mt-5 text-3xl font-bold leading-tight md:text-5xl">
+                My Commitment to You
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-[#f7efe8]">
+                Transformation is a partnership. My commitment is to bring
+                guidance, accountability, support, and proven tools. Your
+                commitment is to show up, engage, and take action.
+              </p>
+            </div>
+
+            <div className="space-y-5 bg-white p-8 text-lg leading-8 text-[#5f4c41] md:p-12">
+              <p>
+                I believe transformation happens when coaching and commitment
+                work together. My role is to provide guidance, accountability,
+                support, and proven tools for growth. Your role is to show up,
+                engage in the process, and take action.
+              </p>
+
+              <p>
+                If after your first coaching session you feel we are not the
+                right fit, I will gladly refund your investment minus the value
+                of the completed session.
+              </p>
+
+              <p>
+                My goal is not simply to provide coaching sessions. It is to
+                provide a transformational experience that supports you in
+                creating your next chapter with clarity, confidence, and
+                purpose.
+              </p>
+
+              <div className="rounded-2xl bg-[#f7efe8] p-5 text-base leading-7 text-[#6f5a4d]">
+                Coaching does not guarantee specific outcomes and is not
+                therapy, medical care, mental health treatment, or crisis
+                support. If you are experiencing a crisis or need clinical
+                support, please contact a licensed mental health professional or
+                emergency service.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f7efe8] px-6 py-20 text-center md:px-12">
+        <div className="mx-auto max-w-4xl">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+            Begin With a Conversation
           </p>
 
-          <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-            You Do Not Need to Have All the Answers Before You Start
+          <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+            You do not have to know the whole path before you take the first
+            step.
           </h2>
 
-          <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-700">
-            A complimentary Discovery Call gives you space to talk through your
-            goals, your current season, and which coaching support may be the
-            best fit for you.
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
+            A Discovery Call gives us space to talk through where you are, what
+            you want to change, and which coaching experience may best support
+            your next chapter.
           </p>
 
           <Link
             href={bookingLink}
             target="_blank"
-            className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
+            className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule Your Free Discovery Call
+            Schedule a Discovery Call
           </Link>
         </div>
       </section>

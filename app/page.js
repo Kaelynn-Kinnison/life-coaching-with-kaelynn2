@@ -2,254 +2,205 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Life Coach for Women | Clarity, Confidence & Your Next Chapter",
+  title: "Life Coaching with Kaelynn | Core Belief Transformation for Women",
   description:
-    "Life Coaching with Kaelynn helps women who feel stuck, unfulfilled, or uncertain about what's next rebuild confidence, strengthen self-worth, and create a meaningful next chapter.",
+    "Life Coaching with Kaelynn helps women who have spent years surviving reconnect with who they are, rebuild confidence, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-const signs = [
-  "You keep wondering, “Is this all there is?”",
-  "You feel stuck between who you were and who you want to become",
-  "You have spent years caring for everyone else",
-  "You feel disconnected from yourself, your purpose, or your confidence",
-  "You are navigating a life transition and need direction",
-  "You know you want more, but you do not know where to begin",
+const clientFeelings = [
+  "You have been strong for so long that you are tired of only surviving.",
+  "You are ready to reconnect with who you are beneath the roles and responsibilities.",
+  "You want confidence, clarity, and a life that feels meaningful again.",
+];
+
+const path = [
+  {
+    title: "Feel Seen",
+    text: "We begin with honest space for what you are carrying, without judgment or pressure to have it all figured out.",
+  },
+  {
+    title: "Understand the Pattern",
+    text: "Together, we look beneath the surface at the beliefs, fears, and old stories that may be shaping your choices.",
+  },
+  {
+    title: "Create Your Next Chapter",
+    text: "You begin taking aligned action with support, accountability, and a clearer sense of who you are becoming.",
+  },
 ];
 
 const outcomes = [
-  "Clarity about what you truly want next",
-  "Renewed confidence and self-trust",
-  "Stronger self-worth and boundaries",
-  "Support through life transitions",
-  "Accountability for meaningful action",
-  "A vision for your next chapter",
-];
-
-const discoveryCallSteps = [
-  "Talk about where you are right now",
-  "Explore what feels stuck or unclear",
-  "Discuss what you want to change",
-  "Decide which coaching support fits your season",
+  "Rebuild confidence and self-trust",
+  "Reconnect with your needs, voice, and identity",
+  "Understand limiting beliefs and old patterns",
+  "Clarify what you want your next chapter to look like",
+  "Take meaningful steps with accountability and support",
+  "Create change that feels grounded, honest, and sustainable",
 ];
 
 export default function Home() {
   return (
-    <main className="bg-white text-slate-900">
-      <section className="bg-gradient-to-b from-teal-50 via-white to-white px-6 py-24 text-center">
-        <div className="mx-auto max-w-5xl">
-          <Image
-            src="/hibiscus-logo.png"
-            alt="Life Coaching with Kaelynn logo"
-            width={240}
-            height={240}
-            className="mx-auto mb-6"
-            priority
-          />
+    <main className="bg-[#fdf8f3] text-[#3f342c]">
+      <section className="px-6 pb-16 pt-14 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Life Coaching with Kaelynn
+            </p>
 
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-teal-700">
-            Life Coaching with Kaelynn
-          </p>
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              For the woman who is ready to stop surviving and begin living
+              with clarity, confidence, and purpose.
+            </h1>
 
-          <h1 className="mb-6 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
-            Feeling Stuck in Life?{" "}
-            <span className="text-teal-700">
-              Let’s Discover What Comes Next.
-            </span>
-          </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
+              I help women who have spent years surviving reconnect with who
+              they truly are, rebuild their confidence, and create a meaningful
+              next chapter through Core Belief Transformation and intentional
+              personal growth.
+            </p>
 
-          <p className="mx-auto mb-6 max-w-4xl text-xl leading-8 text-slate-700 md:text-2xl">
-            Supportive life coaching for women who are ready to{" "}
-            <strong>rebuild confidence</strong>,{" "}
-            <strong>reconnect with themselves</strong>, and{" "}
-            <strong>create a meaningful next chapter</strong>.
-          </p>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href={bookingLink}
+                target="_blank"
+                className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
+              >
+                Schedule a Discovery Call
+              </Link>
 
-          <p className="mx-auto mb-8 max-w-3xl text-lg leading-8 text-slate-600">
-            You do not have to figure out this season alone. Coaching gives you
-            space to <strong>feel heard</strong>, <strong>gain clarity</strong>,
-            and <strong>move forward with support and accountability</strong>.
-          </p>
+              <Link
+                href="/services"
+                className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
+              >
+                Explore Coaching Programs
+              </Link>
+            </div>
+          </div>
 
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Link
-              href={bookingLink}
-              target="_blank"
-              className="rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
-            >
-              Schedule Your Free Discovery Call
-            </Link>
-
-            <Link
-              href="/services"
-              className="rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
-            >
-              View Coaching Services
-            </Link>
+          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
+            <Image
+              src="/life-coaching-hero.png"
+              alt="A woman walking toward sunrise on a mountain path"
+              width={1200}
+              height={800}
+              className="h-80 w-full object-cover sm:h-[28rem]"
+              priority
+            />
+            <div className="p-7">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
+                Your next chapter can begin gently
+              </p>
+              <p className="mt-3 text-xl font-semibold leading-8">
+                You do not have to know every step. You only need a safe,
+                supported place to begin.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-6 text-center text-3xl font-black uppercase tracking-[0.2em] text-teal-700 md:text-4xl">
-            Is This You?
-          </p>
-
-          <h2 className="mb-6 text-center text-5xl font-black tracking-tight text-slate-900 md:text-6xl">
-            You May Be Ready for Coaching If...
-          </h2>
-
-          <p className="mx-auto mb-12 max-w-3xl text-center text-xl leading-8 text-slate-700">
-            If these statements resonate with you, you are not alone. Many women
-            arrive here feeling exhausted, discouraged, uncertain, or
-            disconnected from themselves.
-          </p>
-
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {signs.map((item) => (
-              <div
-                key={item}
-                className="rounded-3xl bg-teal-50 p-6 text-xl font-semibold leading-8 text-slate-800 shadow-md ring-1 ring-teal-100"
-              >
-                <span className="font-bold text-teal-700">✓</span> {item}
+      <section className="px-6 py-12 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl border-y border-[#eadfd5] py-12">
+          <div className="grid gap-6 md:grid-cols-3">
+            {clientFeelings.map((item) => (
+              <div key={item} className="text-lg leading-8 text-[#5f4c41]">
+                <span className="mb-4 block h-1 w-12 rounded-full bg-[#b7835f]" />
+                {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-950 px-6 py-20 text-center text-white">
-        <div className="mx-auto max-w-5xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
-            A New Way Forward
-          </p>
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              A Different Kind of Support
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Coaching that honors your story while helping you move forward.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
+              This work is not about pretending the past did not happen or
+              forcing positivity. It is about creating space to understand what
+              shaped you, release what no longer serves you, and practice a new
+              way of living with support.
+            </p>
+          </div>
 
-          <h2 className="mb-8 text-4xl font-bold md:text-5xl">
-            Maybe You Are Not Stuck.
-            <span className="block text-teal-300">
-              Maybe You Are Being Called Into Your Next Chapter.
-            </span>
-          </h2>
-
-          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-300">
-            Many women believe something is wrong with them because they feel
-            restless, disconnected, or unsure. But sometimes that feeling is not
-            failure. Sometimes it is a sign that you are{" "}
-            <strong className="text-white">
-              outgrowing the version of yourself that got you here.
-            </strong>
-          </p>
+          <div className="grid gap-5">
+            {path.map((item, index) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-[#eadfd5] bg-[#fdf8f3] p-6"
+              >
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
+                  Step 0{index + 1}
+                </p>
+                <h3 className="mt-3 text-2xl font-bold">{item.title}</h3>
+                <p className="mt-3 leading-7 text-[#6f5a4d]">{item.text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="bg-teal-50 px-6 py-20">
-        <div className="mx-auto max-w-6xl text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-            What Coaching Can Help You Create
-          </p>
-
-          <h2 className="mb-10 text-3xl font-bold text-slate-900 md:text-4xl">
-            Support for <span className="text-teal-700">Clarity</span>,{" "}
-            <span className="text-teal-700">Confidence</span>, and{" "}
-            <span className="text-teal-700">Meaningful Change</span>
-          </h2>
+      <section className="px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              What Becomes Possible
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              A life-changing experience begins with reconnecting to yourself.
+            </h2>
+          </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {outcomes.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
+                className="rounded-2xl bg-white p-6 font-semibold leading-7 text-[#4f3b4d] shadow-sm ring-1 ring-[#eadfd5]"
               >
-                <span className="font-bold text-teal-700">✓</span>{" "}
-                <strong>{item}</strong>
+                {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+      <section className="bg-[#3f342c] px-6 py-20 text-white md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Discovery Call
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">
+              Begin with a conversation
             </p>
-
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 md:text-4xl">
-              What Happens During Your{" "}
-              <span className="text-teal-700">Free Discovery Call?</span>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              You do not have to figure out your next chapter alone.
             </h2>
-
-            <p className="mb-6 text-lg leading-8 text-slate-700">
-              Your Discovery Call is a supportive conversation where we discuss
-              what you are currently navigating, what you want to change, and
-              whether coaching is the right next step for you.
-            </p>
-
-            <p className="text-lg leading-8 text-slate-700">
-              There is <strong>no pressure</strong>. It is simply a chance to be{" "}
-              <strong>heard</strong>, ask questions, and explore what level of
-              support fits your current season.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f7efe8]">
+              A Discovery Call gives us space to talk about where you are, what
+              feels heavy or unclear, and whether coaching is the right support
+              for your season.
             </p>
           </div>
 
-          <div className="rounded-3xl bg-teal-50 p-8 shadow-md">
-            <div className="grid gap-4">
-              {discoveryCallSteps.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-white p-5 text-slate-700 shadow-sm"
-                >
-                  <span className="font-bold text-teal-700">✓</span>{" "}
-                  <strong>{item}</strong>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 text-center">
-              <Link
-                href={bookingLink}
-                target="_blank"
-                className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white transition hover:bg-teal-800"
-              >
-                Schedule Your Free Discovery Call
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-900 px-6 py-24 text-center text-white">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            Your Next Chapter Is Waiting
-          </h2>
-
-          <p className="mb-10 text-lg leading-8 text-slate-200">
-            You do not have to spend another year wondering what is next for
-            you. Together, we can uncover what has been holding you back, build
-            confidence in who you are becoming, and create a future that feels{" "}
-            <strong className="text-white">
-              meaningful, purposeful, and aligned with who you truly are.
-            </strong>
-          </p>
-
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+          <div className="flex flex-col gap-4 sm:flex-row lg:justify-end">
             <Link
               href={bookingLink}
               target="_blank"
-              className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
+              className="inline-flex justify-center rounded-full bg-white px-7 py-4 text-sm font-bold text-[#3f342c] transition hover:bg-[#f7efe8]"
             >
-              Schedule Your Free Discovery Call
+              Schedule a Discovery Call
             </Link>
-
             <Link
-              href="/services"
-              className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+              href="/about"
+              className="inline-flex justify-center rounded-full border border-white px-7 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#3f342c]"
             >
-              View Coaching Services
+              Meet Kaelynn
             </Link>
           </div>
         </div>
