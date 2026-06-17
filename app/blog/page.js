@@ -73,7 +73,7 @@ export default function BlogPage() {
               <div className="bg-[#f7efe8] p-3 sm:p-4">
                 <img
                   src="/life-coaching-hero.png"
-                  alt="A woman walking toward sunrise on a mountain path"
+                  alt="A woman walking a mountain path at sunrise"
                   className="h-72 w-full rounded-[1.4rem] object-cover object-center sm:h-80"
                 />
               </div>

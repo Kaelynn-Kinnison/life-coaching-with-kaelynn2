@@ -2,13 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "Nebraska Life Coach for Women | Virtual Coaching with Kaelynn",
+  title: "Nebraska Life Coach for Women | Virtual Coaching with Kaelynn",
   description:
-    "Nebraska-based virtual life coaching for women of all ages who are ready to rebuild confidence, reconnect with themselves, and create a meaningful next chapter.",
+    "Nebraska-based virtual life coaching for women who have lost themselves while surviving life and are ready to rebuild confidence, reconnect with themselves, and create a meaningful next chapter.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+
+const niche = [
+  "I don't even know who I am anymore.",
+  "I've spent my whole life putting myself last.",
+  "I keep repeating the same patterns.",
+  "I know I want more, but I don't know where to start.",
+];
+
+const coachingAccess = [
+  "Nebraska-based coaching with a personal, grounded feel",
+  "Virtual sessions available for women across the U.S.",
+  "Support for women of all ages and seasons of life",
+];
 
 const clientFeelings = [
   "You look capable, but inside you feel disconnected.",
@@ -40,18 +52,6 @@ const outcomes = [
   "A stronger sense of self",
 ];
 
-const coachingAccess = [
-  "Nebraska-based coaching with a personal, grounded feel",
-  "Virtual sessions available for women across the U.S.",
-  "Support for women of all ages and seasons of life",
-];
-
-const niche = [
-  "Women who have spent years surviving",
-  "Women who feel disconnected from themselves",
-  "Women ready for confidence, clarity, and a meaningful next chapter",
-];
-
 export default function Home() {
   return (
     <main className="bg-[#fdf8f3] text-[#3f342c]">
@@ -63,14 +63,13 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Come back to yourself and create a life that feels meaningful
-              again.
+              For the woman who has lost herself while surviving life.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              Nebraska-based virtual life coaching for women of all ages who
-              are ready to rebuild confidence, understand what has been keeping
-              them stuck, and take honest steps forward.
+              I help women reconnect with who they truly are, rebuild their
+              confidence, and create a meaningful next chapter through Core
+              Belief Transformation and intentional personal growth.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -130,18 +129,43 @@ export default function Home() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
             Who I Help
           </p>
+
           <h2 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl">
-            My work is for women who are ready to stop living in survival mode.
+            Have you spent so long surviving that you no longer know who you
+            are?
           </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-[#6f5a4d]">
+            You may look strong on the outside, but inside you feel exhausted,
+            disconnected, and unsure how to move forward. You have carried pain,
+            pressure, responsibilities, disappointment, and expectations for so
+            long that somewhere along the way, you stopped feeling like
+            yourself.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
             {niche.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl bg-[#f7efe8] p-5 font-semibold leading-7 text-[#5f4c41]"
+                className="rounded-2xl bg-[#f7efe8] p-5 text-lg font-semibold leading-7 text-[#5f4c41]"
               >
-                {item}
+                “{item}”
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 rounded-2xl bg-[#0f766e] p-6 text-white">
+            <p className="text-xl font-bold leading-8">
+              I help women who have lost themselves while surviving life
+              reconnect with who they truly are, rebuild their confidence, and
+              create a meaningful next chapter.
+            </p>
+            <p className="mt-4 leading-7 text-[#e6fffb]">
+              Through Core Belief Transformation and intentional personal
+              growth, we work together to uncover what has been keeping you
+              stuck and begin building a life that feels aligned, grounded, and
+              possible.
+            </p>
           </div>
         </div>
       </section>
