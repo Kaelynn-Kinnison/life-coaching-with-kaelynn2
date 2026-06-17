@@ -1,5 +1,16 @@
 export const posts = [
   {
+    title:
+      "When Survival Becomes Your Normal: Childhood Trauma, Adult Survival, and Learning to Be Present",
+    slug: "childhood-trauma-adult-survival-mode",
+    category: "Trauma-Informed Growth",
+    description:
+      "Understand how childhood trauma can shape adult survival mode, presence, connection, rest, and healing.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "When Life Changes, So Must You",
     slug: "life-transitions-with-confidence",
     category: "Life Transitions",
