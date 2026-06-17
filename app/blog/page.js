@@ -10,6 +10,7 @@ export const metadata = {
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const categories = [
+  "Trauma-Informed Growth",
   "Core Beliefs",
   "Limiting Beliefs",
   "Self-Worth",
@@ -23,9 +24,10 @@ const categories = [
 ];
 
 export default function BlogPage() {
+  const spotlightPost = posts.find((post) => post.spotlight && post.published);
   const featuredPosts = posts.filter((post) => post.featured && post.published);
   const publishedPosts = posts.filter(
-    (post) => !post.featured && post.published
+    (post) => !post.featured && !post.spotlight && post.published
   );
   const comingSoonPosts = posts.filter((post) => !post.published);
 
@@ -66,35 +68,35 @@ export default function BlogPage() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
-            <div className="bg-[#f7efe8] p-3 sm:p-4">
-              <img
-                src="/blog-banner.png"
-                alt="Life Coaching with Kaelynn blog banner"
-                className="h-auto w-full rounded-[1.4rem] object-contain"
-              />
-            </div>
+          {spotlightPost && (
+            <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-[#8b6f5c]/20 ring-1 ring-[#eadfd5]">
+              <div className="bg-[#f7efe8] p-3 sm:p-4">
+                <img
+                  src="/life-coaching-hero.png"
+                  alt="A woman walking toward sunrise on a mountain path"
+                  className="h-72 w-full rounded-[1.4rem] object-cover object-center sm:h-80"
+                />
+              </div>
 
-            <div className="border-t border-[#eadfd5] p-6 sm:p-7">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
-                New Article
-              </p>
-              <h2 className="mt-2 text-2xl font-bold leading-tight text-[#3f342c]">
-                When Hope Feels Lost
-              </h2>
-              <p className="mt-3 leading-7 text-[#6f5a4d]">
-                A supportive coaching article about hopelessness, limiting
-                beliefs, emotional wellness, and finding hope through healing
-                and growth.
-              </p>
-              <Link
-                href="/blog/when-hope-feels-lost"
-                className="mt-5 inline-flex rounded-full bg-[#0f766e] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#115e59]"
-              >
-                Read the Article
-              </Link>
+              <div className="border-t border-[#eadfd5] p-6 sm:p-7">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
+                  Featured Article
+                </p>
+                <h2 className="mt-2 text-2xl font-bold leading-tight text-[#3f342c]">
+                  {spotlightPost.title}
+                </h2>
+                <p className="mt-3 leading-7 text-[#6f5a4d]">
+                  {spotlightPost.description}
+                </p>
+                <Link
+                  href={`/blog/${spotlightPost.slug}`}
+                  className="mt-5 inline-flex rounded-full bg-[#0f766e] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#115e59]"
+                >
+                  Read the Article
+                </Link>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
