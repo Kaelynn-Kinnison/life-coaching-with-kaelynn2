@@ -114,16 +114,16 @@ export default function PricingPage() {
                 </h2>
 
                 <div className="mt-6 rounded-2xl bg-[#f7efe8] p-5">
-                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#6f5a4d]">
+                  <p className="text-base font-black uppercase tracking-[0.18em] text-[#6f5a4d]">
                     Investment Starts At
                   </p>
-                  <p className="mt-2 text-4xl font-bold">
+                  <p className="mt-2 text-5xl font-black">
                     {program.investment}
                   </p>
                   {program.foundingRate && (
-                    <p className="mt-3 leading-7 text-[#6f5a4d]">
+                    <p className="mt-3 text-lg font-bold leading-7 text-[#6f5a4d]">
                       Founding client rate may be available from{" "}
-                      <strong>{program.foundingRate}</strong>.
+                      {program.foundingRate}.
                     </p>
                   )}
                 </div>

@@ -128,14 +128,13 @@ function ProgramCard({ program }) {
             : "mt-7 rounded-2xl bg-[#f7efe8] p-5"
         }
       >
-        <p className="text-sm font-bold uppercase tracking-[0.18em]">
+        <p className="text-base font-black uppercase tracking-[0.18em]">
           Investment Starts At
         </p>
-        <p className="mt-2 text-3xl font-bold">{program.investment}</p>
-        <p className={`mt-3 text-sm leading-6 ${textClass}`}>
-          Founding client rate may be available from{" "}
-          <strong>{program.foundingRate}</strong> for a limited number of
-          clients.
+        <p className="mt-2 text-4xl font-black">{program.investment}</p>
+        <p className={`mt-3 text-base font-bold leading-7 ${textClass}`}>
+          Founding client rate may be available from {program.foundingRate} for
+          a limited number of clients.
         </p>
       </div>
 
