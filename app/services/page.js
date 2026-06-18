@@ -12,7 +12,8 @@ const programs = [
   {
     name: "Clarity & Confidence Accelerator",
     duration: "8-week coaching experience",
-    investment: "$1,997",
+    investment: "$697",
+    foundingRate: "$497",
     tagline: "Gain Direction. Build Confidence. Take Action.",
     audience:
       "For women who feel stuck, overwhelmed, or uncertain about what comes next.",
@@ -27,7 +28,8 @@ const programs = [
   {
     name: "The Next Chapter Transformation",
     duration: "12-week signature coaching experience",
-    investment: "$3,497",
+    investment: "$997",
+    foundingRate: "$747",
     tagline: "Stop surviving. Start creating a life you genuinely love.",
     audience:
       "For women ready to transform old patterns, rebuild self-worth, and move into a more intentional next chapter.",
@@ -45,7 +47,8 @@ const programs = [
   {
     name: "Reclaim Her VIP Experience",
     duration: "6-month private coaching experience",
-    investment: "$5,997",
+    investment: "$1,497",
+    foundingRate: "$1,197",
     tagline: "Rediscover Yourself. Reclaim Your Life.",
     audience:
       "For women who desire the deepest private coaching support, spacious transformation, and continued implementation.",
@@ -61,7 +64,8 @@ const programs = [
   {
     name: "Growth Membership",
     duration: "Monthly membership",
-    investment: "$197/month",
+    investment: "$147/month",
+    foundingRate: "$97/month",
     tagline: "Continue Growing with Coaching, Accountability & Community.",
     audience:
       "For women who want continued encouragement, coaching, and accountability as they keep growing.",
@@ -125,9 +129,14 @@ function ProgramCard({ program }) {
         }
       >
         <p className="text-sm font-bold uppercase tracking-[0.18em]">
-          Investment
+          Investment Starts At
         </p>
         <p className="mt-2 text-3xl font-bold">{program.investment}</p>
+        <p className={`mt-3 text-sm leading-6 ${textClass}`}>
+          Founding client rate may be available from{" "}
+          <strong>{program.foundingRate}</strong> for a limited number of
+          clients.
+        </p>
       </div>
 
       <div className="mt-7 flex-1">
@@ -269,6 +278,18 @@ export default function ServicesPage() {
               Compare the options below and choose the experience that matches
               the depth of support you want right now.
             </p>
+
+            <div className="mt-8 rounded-[2rem] border border-[#eadfd5] bg-[#fdf8f3] p-6 shadow-lg shadow-[#8b6f5c]/10">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
+                Limited Founding Client Offer
+              </p>
+              <p className="mt-3 text-lg leading-8 text-[#5f4c41]">
+                I am currently accepting a small number of founding clients at
+                an introductory rate in exchange for honest feedback, a
+                testimonial, and permission to feature the coaching experience
+                in my portfolio where appropriate.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
