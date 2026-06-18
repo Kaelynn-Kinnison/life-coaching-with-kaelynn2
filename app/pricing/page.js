@@ -7,6 +7,7 @@ export const metadata = {
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
+const promotionDate = "July 31, 2026";
 
 const programs = [
   {
@@ -76,14 +77,14 @@ export default function PricingPage() {
 
       <section className="px-6 pb-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-10 rounded-[2rem] border border-[#eadfd5] bg-white p-8 shadow-xl shadow-[#8b6f5c]/10">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
-              Limited Founding Client Offer
+          <div className="mb-10 rounded-[2rem] border-2 border-[#b7835f] bg-[#fffaf5] p-8 text-center shadow-2xl shadow-[#8b6f5c]/15">
+            <p className="text-sm font-black uppercase tracking-[0.24em] text-[#9b6f5d]">
+              * * * Limited Founding Client Offer * * *
             </p>
-            <h2 className="text-3xl font-bold leading-tight">
-              Introductory rates are available for a small number of clients.
+            <h2 className="mt-4 text-3xl font-black leading-tight md:text-4xl">
+              Introductory coaching rates are available through {promotionDate}.
             </h2>
-            <p className="mt-5 max-w-4xl text-lg leading-8 text-[#6f5a4d]">
+            <p className="mx-auto mt-5 max-w-4xl text-lg font-bold leading-8 text-[#6f5a4d]">
               I am currently accepting a limited number of founding clients at
               an introductory rate in exchange for honest feedback, a
               testimonial, and permission to feature the coaching experience in

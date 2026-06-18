@@ -312,10 +312,10 @@ export default function BlogPage() {
             </Link>
 
             <Link
-              href="/services"
+              href="/pricing"
               className="inline-flex justify-center rounded-full border border-white px-7 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#3f342c]"
             >
-              View Services
+              View Programs & Pricing
             </Link>
           </div>
         </div>

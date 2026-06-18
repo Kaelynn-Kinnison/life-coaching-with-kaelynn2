@@ -78,10 +78,10 @@ export default function CoachingApproachPage() {
               </Link>
 
               <Link
-                href="/services"
+                href="/pricing"
                 className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
               >
-                View Coaching Programs
+                View Programs & Pricing
               </Link>
             </div>
           </div>

@@ -25,6 +25,7 @@ const navigation = [
   { name: "Coaching Approach", href: "/coaching-approach" },
   { name: "Core Belief Coaching", href: "/core-belief-coaching" },
   { name: "H.E.A.L. Framework", href: "/heal-framework" },
+  { name: "Programs & Pricing", href: "/pricing" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },

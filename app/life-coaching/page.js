@@ -97,10 +97,10 @@ export default function LifeCoachingPage() {
               </Link>
 
               <Link
-                href="/services"
+                href="/pricing"
                 className="inline-flex rounded-full border border-teal-700 px-8 py-4 font-semibold text-teal-800 transition hover:bg-teal-50"
               >
-                View Programs
+                View Programs & Pricing
               </Link>
             </div>
           </div>
@@ -382,10 +382,10 @@ export default function LifeCoachingPage() {
             </Link>
 
             <Link
-              href="/services"
+              href="/pricing"
               className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
             >
-              View Programs
+              View Programs & Pricing
             </Link>
           </div>
         </div>
