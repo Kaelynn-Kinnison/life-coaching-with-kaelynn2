@@ -121,6 +121,54 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <section id="privacy-policy" className="px-6 pb-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-8 shadow-lg shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5] md:p-10">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+            Privacy & Confidentiality Disclosure
+          </p>
+
+          <h2 className="text-3xl font-bold leading-tight">
+            Your privacy matters.
+          </h2>
+
+          <div className="mt-6 space-y-5 leading-8 text-[#6f5a4d]">
+            <p>
+              Information you share when contacting me, scheduling a Discovery
+              Call, or participating in coaching is treated with care and
+              respect. Coaching conversations are held in a supportive,
+              non-judgmental space.
+            </p>
+
+            <p>
+              I may use the information you provide to respond to inquiries,
+              schedule calls, communicate about coaching, and provide coaching
+              support. This website may also use analytics tools, including
+              Google Analytics, to understand general website activity and
+              improve the visitor experience.
+            </p>
+
+            <p>
+              Personal information is not sold. Confidentiality may have limits
+              if there is a concern about safety, legal requirements, or risk of
+              harm. Coaching is not therapy, medical care, mental health
+              treatment, or crisis support.
+            </p>
+
+            <p>
+              If you have questions about privacy or confidentiality, you may
+              contact me at{" "}
+              <a
+                href={`mailto:${email}`}
+                className="font-semibold text-[#0f766e] underline decoration-[#0f766e]/40 underline-offset-4"
+              >
+                {email}
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
