@@ -1,12 +1,21 @@
 export const posts = [
   {
+    title: "Asking for Help Is a Strength, Not a Weakness",
+    slug: "asking-for-help",
+    category: "Support & Growth",
+    description:
+      "A compassionate reminder that asking for help is not weakness, but a powerful part of healing, connection, and lasting growth.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title:
       "When Survival Becomes Your Normal: Childhood Trauma, Adult Survival, and Learning to Be Present",
     slug: "childhood-trauma-adult-survival-mode",
     category: "Trauma-Informed Growth",
     description:
       "Understand how childhood trauma can shape adult survival mode, presence, connection, rest, and healing.",
-    spotlight: true,
     featured: false,
     published: true,
   },
