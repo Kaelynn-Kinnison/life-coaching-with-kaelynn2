@@ -10,6 +10,7 @@ const email = "hello@lifecoachingwithkaelynn.com";
 const phone = "402-799-8166";
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
+const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
 
 const callSteps = [
   "Share what brings you here",
@@ -119,6 +120,20 @@ export default function Contact() {
                 </p>
                 <a
                   href={facebookLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex text-lg font-semibold underline decoration-[#f7d7c7]/60 underline-offset-4"
+                >
+                  Life Coaching with Kaelynn
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#f7d7c7]">
+                  LinkedIn
+                </p>
+                <a
+                  href={linkedinLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex text-lg font-semibold underline decoration-[#f7d7c7]/60 underline-offset-4"

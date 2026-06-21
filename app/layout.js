@@ -32,6 +32,7 @@ const navigation = [
 ];
 
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
+const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
 
 export default function RootLayout({ children }) {
   return (
@@ -119,6 +120,14 @@ export default function RootLayout({ children }) {
                 className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
               >
                 Facebook
+              </a>
+              <a
+                href={linkedinLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
+              >
+                LinkedIn
               </a>
               <Link
                 href="/contact#privacy-policy"
