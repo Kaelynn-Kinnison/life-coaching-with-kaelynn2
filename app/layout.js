@@ -31,6 +31,8 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
+const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
@@ -109,12 +111,22 @@ export default function RootLayout({ children }) {
               &copy; {new Date().getFullYear()} Life Coaching with Kaelynn. All
               rights reserved.
             </p>
-            <Link
-              href="/contact#privacy-policy"
-              className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
-            >
-              Privacy & Confidentiality
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={facebookLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
+              >
+                Facebook
+              </a>
+              <Link
+                href="/contact#privacy-policy"
+                className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
+              >
+                Privacy & Confidentiality
+              </Link>
+            </div>
           </div>
         </footer>
       </body>
