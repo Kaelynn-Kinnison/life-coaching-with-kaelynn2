@@ -1,11 +1,20 @@
 export const posts = [
   {
+    title: "Why Peace Feels Boring When Chaos Feels Familiar",
+    slug: "peace-feels-boring-chaos-feels-familiar",
+    category: "Healing Patterns",
+    description:
+      "Explore why calm, stability, and healthy connection can feel unfamiliar when chaos has become normal.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "Asking for Help Is a Strength, Not a Weakness",
     slug: "asking-for-help",
     category: "Support & Growth",
     description:
       "A compassionate reminder that asking for help is not weakness, but a powerful part of healing, connection, and lasting growth.",
-    spotlight: true,
     featured: false,
     published: true,
   },
