@@ -1,11 +1,20 @@
 export const posts = [
   {
+    title: "You Don't Have to Have It All Figured Out to Begin Again",
+    slug: "begin-again-before-ready",
+    category: "Personal Growth",
+    description:
+      "A gentle reminder that healing and transformation can begin with one honest step before you feel fully ready.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "Why Peace Feels Boring When Chaos Feels Familiar",
     slug: "peace-feels-boring-chaos-feels-familiar",
     category: "Healing Patterns",
     description:
       "Explore why calm, stability, and healthy connection can feel unfamiliar when chaos has become normal.",
-    spotlight: true,
     featured: false,
     published: true,
   },
