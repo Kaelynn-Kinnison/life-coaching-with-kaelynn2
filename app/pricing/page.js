@@ -13,31 +13,84 @@ const programs = [
     name: "Free Discovery Call",
     duration: "20-30 minutes",
     investment: "Free",
+    focus: "A no-pressure first conversation",
     description:
       "A supportive first conversation to talk through your goals, questions, self-doubt patterns, and whether coaching is the right fit.",
+    bestFor:
+      "Women who are curious about coaching and want clarity before choosing a private coaching experience.",
+    includes: [
+      "Space to share what is bringing you to coaching",
+      "A conversation about your goals and current self-doubt patterns",
+      "Guidance on which level of support may fit best",
+      "Time to ask questions before making a decision",
+    ],
+    outcome:
+      "You leave with a clearer sense of your next best step and whether this coaching relationship feels aligned.",
   },
   {
     name: "The Confidence Rebuild",
     duration: "12-week signature Core Belief Transformation experience",
     investment: "$2,497",
+    focus: "The signature transformation experience",
     description:
       "For women ready to transform limiting core beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
     featured: true,
+    bestFor:
+      "Women who are ready to stop second-guessing themselves, strengthen self-trust, and build confidence from the inside out.",
+    includes: [
+      "Private 1:1 coaching sessions",
+      "Core Belief Transformation work",
+      "H.E.A.L. Framework guidance",
+      "Limiting belief identification and reframing",
+      "Self-worth and confidence development",
+      "Personalized reflection prompts and action steps",
+      "Accountability between sessions",
+      "Support with confident decision-making and follow-through",
+    ],
+    outcome:
+      "You begin rebuilding the inner foundation that allows confidence, self-trust, and aligned action to feel more natural and sustainable.",
   },
   {
     name: "The Confidence Reclamation",
     duration: "6-month private coaching experience",
     investment: "$4,997",
+    focus: "The deepest private coaching container",
     description:
       "For women who want the deepest private coaching support as they reclaim self-trust and build lasting confidence from the inside out.",
     premium: true,
+    bestFor:
+      "Women who want spacious, high-touch support as they move through deeper identity, self-worth, and confidence transformation.",
+    includes: [
+      "Everything in The Confidence Rebuild",
+      "Extended private coaching timeline",
+      "Personalized transformation roadmap",
+      "Advanced Core Belief Transformation work",
+      "Deeper self-trust and confidence integration",
+      "Ongoing accountability and implementation support",
+      "Support for boundaries, identity, self-worth, and aligned choices",
+      "Priority guidance between sessions",
+    ],
+    outcome:
+      "You receive the time, structure, and support to not only rebuild confidence, but embody it more deeply in your decisions, relationships, and next chapter.",
   },
   {
     name: "Growth Membership",
     duration: "Monthly membership",
     investment: "$197/month",
+    focus: "Continued support after private coaching",
     description:
       "For past clients who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
+    bestFor:
+      "Past clients who have completed private coaching and want ongoing support to maintain momentum.",
+    includes: [
+      "Monthly coaching support",
+      "Goal review and accountability",
+      "Continued reflection and confidence reinforcement",
+      "Support for new decisions, boundaries, and growth edges",
+      "Encouragement to stay connected to the work you have already begun",
+    ],
+    outcome:
+      "You stay supported as you continue practicing confidence, self-trust, and aligned action beyond the initial coaching experience.",
   },
 ];
 
@@ -129,6 +182,76 @@ export default function PricingPage() {
                 >
                   {program.description}
                 </p>
+
+                <div
+                  className={`mt-7 rounded-2xl p-5 ${
+                    program.premium ? "bg-white/10" : "bg-[#fffaf5]"
+                  }`}
+                >
+                  <p
+                    className={`text-sm font-black uppercase tracking-[0.18em] ${
+                      program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
+                    }`}
+                  >
+                    Focus
+                  </p>
+                  <p
+                    className={`mt-2 font-semibold leading-7 ${
+                      program.premium ? "text-white" : "text-[#3f342c]"
+                    }`}
+                  >
+                    {program.focus}
+                  </p>
+                </div>
+
+                <div className="mt-7">
+                  <h3
+                    className={`text-lg font-bold ${
+                      program.premium ? "text-white" : "text-[#3f342c]"
+                    }`}
+                  >
+                    Best For
+                  </h3>
+                  <p
+                    className={`mt-3 leading-7 ${
+                      program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
+                    }`}
+                  >
+                    {program.bestFor}
+                  </p>
+                </div>
+
+                <div className="mt-7">
+                  <h3
+                    className={`text-lg font-bold ${
+                      program.premium ? "text-white" : "text-[#3f342c]"
+                    }`}
+                  >
+                    What Is Included
+                  </h3>
+                  <ul
+                    className={`mt-4 list-disc space-y-3 pl-5 leading-7 ${
+                      program.premium ? "text-[#f7efe8]" : "text-[#5f4c41]"
+                    }`}
+                  >
+                    {program.includes.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div
+                  className={`mt-7 rounded-2xl p-5 ${
+                    program.premium ? "bg-white text-[#3f342c]" : "bg-[#f7efe8]"
+                  }`}
+                >
+                  <p className="text-sm font-black uppercase tracking-[0.18em] text-[#9b6f5d]">
+                    Transformation Outcome
+                  </p>
+                  <p className="mt-3 font-semibold leading-7">
+                    {program.outcome}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
