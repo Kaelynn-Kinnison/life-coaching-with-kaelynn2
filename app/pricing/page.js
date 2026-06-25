@@ -69,13 +69,13 @@ export default function PricingPage() {
             {programs.map((program) => (
               <article
                 key={program.name}
-                className={`rounded-[2rem] bg-white p-8 shadow-lg shadow-[#8b6f5c]/10 ring-1 ${
+                className={
                   program.premium
-                    ? "bg-[#3f342c] text-white ring-[#6d594b]"
+                    ? "rounded-[2rem] bg-[#3f342c] p-8 text-white shadow-2xl shadow-[#3f342c]/20 ring-1 ring-[#6d594b]"
                     : program.featured
-                      ? "ring-2 ring-[#b7835f]"
-                      : "ring-[#eadfd5]"
-                }`}
+                      ? "rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-2 ring-[#b7835f]"
+                      : "rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5]"
+                }
               >
                 {program.featured && (
                   <p className="mb-5 inline-block rounded-full bg-[#b7835f] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">
@@ -97,7 +97,11 @@ export default function PricingPage() {
                   {program.duration}
                 </p>
 
-                <h2 className="mt-4 text-3xl font-bold leading-tight">
+                <h2
+                  className={`mt-4 text-3xl font-bold leading-tight ${
+                    program.premium ? "text-white" : "text-[#3f342c]"
+                  }`}
+                >
                   {program.name}
                 </h2>
 
