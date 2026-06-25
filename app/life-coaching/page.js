@@ -1,20 +1,20 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Life Coaching for Women | Clarity, Confidence & Support",
+  title: "Life Coaching for Women | Overcome Self-Doubt & Build Confidence",
   description:
-    "Life Coaching with Kaelynn supports women who feel stuck, overwhelmed, or uncertain about what's next with clarity, confidence, accountability, emotional wellness, and life transition support.",
+    "Life Coaching with Kaelynn supports women ready to overcome self-doubt, strengthen self-worth, and build lasting confidence with clarity and accountability.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const signs = [
-  "You feel stuck but are not sure what needs to change",
-  "You want more clarity, confidence, or direction",
-  "You are navigating a major life transition",
-  "You feel overwhelmed by everything you are carrying",
-  "You have lost touch with your own needs and goals",
-  "You want support, accountability, and encouragement",
+  "You second-guess yourself even when you know what you want",
+  "You want more self-trust, confidence, and direction",
+  "You overthink decisions and talk yourself out of action",
+  "You feel capable in some areas but doubt yourself in others",
+  "You want to stop shrinking your needs, goals, and voice",
+  "You want support, accountability, and encouragement as you build confidence",
 ];
 
 const supportAreas = [
@@ -24,7 +24,7 @@ const supportAreas = [
   },
   {
     title: "Confidence",
-    text: "Strengthen self-trust so you can make decisions and move forward with more courage.",
+    text: "Strengthen self-trust so you can make decisions and move forward with more courage and less self-doubt.",
   },
   {
     title: "Accountability",
@@ -46,7 +46,7 @@ const supportAreas = [
 
 const coachingProcess = [
   "We talk about what is happening in your life right now",
-  "We identify what feels stuck, unclear, or overwhelming",
+  "We identify the self-doubt pattern or belief underneath the hesitation",
   "We explore what you want instead",
   "We create realistic next steps",
   "We build accountability around your growth",
@@ -58,7 +58,7 @@ const results = [
   "Stronger boundaries",
   "Improved decision-making",
   "More consistent follow-through",
-  "A renewed sense of purpose",
+  "Lasting confidence from the inside out",
 ];
 
 export default function LifeCoachingPage() {
@@ -72,13 +72,13 @@ export default function LifeCoachingPage() {
             </p>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              Support for the Woman Who Is Ready for Her Next Chapter
+              Life coaching for women ready to overcome self-doubt.
             </h1>
 
             <p className="mb-6 text-xl leading-8 text-slate-700">
-              Life coaching gives you a supportive space to pause, reflect,
-              gain clarity, rebuild confidence, and take meaningful steps
-              toward the life you want to create.
+              Life coaching gives you a supportive space to understand what is
+              keeping you stuck, rebuild self-trust, and take meaningful steps
+              toward lasting confidence.
             </p>
 
             <p className="mb-8 text-lg leading-8 text-slate-600">

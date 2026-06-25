@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Core Belief Transformation | Life Coaching with Kaelynn",
+  title: "Core Belief Transformation for Self-Doubt & Confidence",
   description:
-    "Learn how hidden core beliefs can shape confidence, self-worth, boundaries, and the choices women make in their next chapter.",
+    "Learn how hidden core beliefs can create self-doubt, shape confidence, affect self-worth, and influence the choices women make.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -40,14 +40,14 @@ export default function CoreBeliefCoachingPage() {
           </p>
 
           <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-            Sometimes the thing keeping you stuck is not a lack of effort.
+            Sometimes self-doubt is not a lack of effort.
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
             It may be an old belief about who you are, what you deserve, or what
             is possible for your life. Core Belief Transformation helps you
-            notice those hidden stories and begin choosing from a healthier,
-            more honest place.
+            notice those hidden stories and begin building confidence from a
+            healthier, more honest place.
           </p>
 
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">

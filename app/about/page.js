@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Kaelynn Kinnison | Nebraska Life Coach for Women",
+  title: "About Kaelynn Kinnison | Confidence Coach for Women",
   description:
-    "Meet Kaelynn Kinnison, a Nebraska-based life coach offering virtual coaching for women of all ages who are creating a meaningful next chapter.",
+    "Meet Kaelynn Kinnison, a Nebraska-based life coach helping women overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -46,18 +46,18 @@ export default function AboutPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              I know how much it matters to feel understood.
+              I know how much it matters to feel confident in who you are.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
               I created Life Coaching with Kaelynn for women who are tired of
-              carrying everything quietly and are ready for honest, steady
-              support.
+              second-guessing themselves and are ready for honest, steady
+              support as they build lasting confidence.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
               I relate to the woman who looks capable on the outside while
-              quietly wondering how to feel like herself again.
+              quietly wondering how to trust herself again.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">

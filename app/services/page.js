@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Nebraska & Virtual Coaching Programs for Women | Kaelynn",
+  title: "Confidence Coaching Programs for Women | Kaelynn",
   description:
-    "Explore Nebraska-based virtual coaching programs for women of all ages ready to rebuild confidence, transform core beliefs, and create a meaningful next chapter.",
+    "Explore virtual coaching programs for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -17,9 +17,9 @@ const programs = [
     foundingRate: "$497",
     tagline: "Gain Direction. Build Confidence. Take Action.",
     audience:
-      "For women who feel stuck, overwhelmed, or uncertain about what comes next.",
+      "For women who are tired of second-guessing themselves and want clarity, confidence, and momentum.",
     includes: [
-      "Identify what is keeping you stuck",
+      "Identify what is feeding self-doubt",
       "Build confidence and self-trust",
       "Clarify goals and vision",
       "Create an action plan",
@@ -31,16 +31,16 @@ const programs = [
     duration: "12-week signature coaching experience",
     investment: "$997",
     foundingRate: "$747",
-    tagline: "Stop surviving. Start creating a life you genuinely love.",
+    tagline: "Transform self-doubt into lasting confidence.",
     audience:
-      "For women ready to transform old patterns, rebuild self-worth, and move into a more intentional next chapter.",
+      "For women ready to transform limiting beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
     featured: true,
     includes: [
       "H.E.A.L. Framework",
       "Core Belief Transformation",
       "Uncover limiting beliefs",
       "Rebuild self-worth and confidence",
-      "Release old patterns",
+      "Release self-doubt patterns",
       "Strengthen boundaries",
       "Create sustainable transformation",
     ],
@@ -52,7 +52,7 @@ const programs = [
     foundingRate: "$1,197",
     tagline: "Rediscover Yourself. Reclaim Your Life.",
     audience:
-      "For women who desire the deepest private coaching support, spacious transformation, and continued implementation.",
+      "For women who want the deepest private coaching support as they build lasting confidence from the inside out.",
     premium: true,
     includes: [
       "Personalized transformation roadmap",
@@ -69,7 +69,7 @@ const programs = [
     foundingRate: "$97/month",
     tagline: "Continue Growing with Coaching, Accountability & Community.",
     audience:
-      "For women who want continued encouragement, coaching, and accountability as they keep growing.",
+      "For women who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
     includes: [
       "Monthly coaching calls",
       "Accountability support",

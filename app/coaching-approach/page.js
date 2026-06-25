@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Coaching Approach | Life Coaching with Kaelynn",
+  title: "Confidence Coaching Approach | Life Coaching with Kaelynn",
   description:
-    "Learn what coaching with Kaelynn feels like: trauma-informed support, Core Belief Transformation, compassionate accountability, and meaningful next-step growth.",
+    "Learn how Core Belief Transformation, compassionate accountability, and confidence coaching help women overcome self-doubt and build lasting confidence.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -15,7 +15,7 @@ const approach = [
   },
   {
     title: "We uncover what is underneath",
-    text: "Together, we notice the beliefs, fears, stories, and patterns that may be shaping how you see yourself and what you choose.",
+    text: "Together, we notice the beliefs, fears, stories, and self-doubt patterns that may be shaping how you see yourself and what you choose.",
   },
   {
     title: "We create supported action",
@@ -41,9 +41,9 @@ const notAbout = [
 
 const isAbout = [
   "Feeling seen and supported",
-  "Understanding what keeps you stuck",
+  "Understanding what keeps self-doubt in place",
   "Rebuilding confidence from the inside out",
-  "Creating a next chapter that feels aligned and meaningful",
+  "Creating confidence that feels aligned and meaningful",
 ];
 
 export default function CoachingApproachPage() {
@@ -57,15 +57,14 @@ export default function CoachingApproachPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A supportive process for understanding yourself and creating
-              meaningful change.
+              A supportive process for turning self-doubt into confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
               Coaching with me is not about judgment, pressure, or pretending
               everything is fine. It is a safe, structured space to understand
-              what has been keeping you stuck, rebuild confidence, and move
-              toward the life you want to create.
+              what has been keeping self-doubt in place, rebuild confidence,
+              and move toward the life you want to create.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">

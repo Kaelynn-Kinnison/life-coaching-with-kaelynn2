@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Programs & Investment | Life Coaching with Kaelynn",
   description:
-    "Explore coaching program investments, founding client rates, and free discovery call options with Life Coaching with Kaelynn.",
+    "Explore coaching program investments for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
@@ -16,7 +16,7 @@ const programs = [
     investment: "Free",
     foundingRate: null,
     description:
-      "A supportive first conversation to talk through your goals, questions, and whether coaching is the right fit.",
+      "A supportive first conversation to talk through your goals, questions, self-doubt patterns, and whether coaching is the right fit.",
   },
   {
     name: "Clarity & Confidence Accelerator",
@@ -24,7 +24,7 @@ const programs = [
     investment: "$697",
     foundingRate: "$497",
     description:
-      "For women who feel stuck, overwhelmed, or uncertain about what comes next and want direction, confidence, and momentum.",
+      "For women who are tired of second-guessing themselves and want direction, confidence, and momentum.",
   },
   {
     name: "The Next Chapter Transformation",
@@ -32,7 +32,7 @@ const programs = [
     investment: "$997",
     foundingRate: "$747",
     description:
-      "For women ready to transform old patterns, rebuild self-worth, and move into a more intentional next chapter.",
+      "For women ready to transform limiting core beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
     featured: true,
   },
   {
@@ -41,7 +41,7 @@ const programs = [
     investment: "$1,497",
     foundingRate: "$1,197",
     description:
-      "For women who want the deepest private coaching support, spacious transformation, and continued implementation.",
+      "For women who want the deepest private coaching support as they build lasting confidence from the inside out.",
   },
   {
     name: "Growth Membership",
@@ -49,7 +49,7 @@ const programs = [
     investment: "$147/month",
     foundingRate: "$97/month",
     description:
-      "For women who want continued encouragement, coaching, and accountability as they keep growing.",
+      "For women who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
   },
 ];
 
@@ -67,10 +67,10 @@ export default function PricingPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-            Each coaching experience is designed to support clarity,
-            confidence, self-worth, accountability, and meaningful personal
-            growth. Final recommendations are discussed during your free
-            Discovery Call.
+            Each coaching experience is designed to help you overcome
+            self-doubt, transform limiting beliefs, strengthen self-worth, and
+            build confidence that lasts. Final recommendations are discussed
+            during your free Discovery Call.
           </p>
         </div>
       </section>

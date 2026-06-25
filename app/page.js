@@ -2,55 +2,70 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Nebraska Life Coach for Women | Virtual Coaching with Kaelynn",
+  title: "Confidence Coach for Women | Life Coaching with Kaelynn",
   description:
-    "Nebraska-based virtual life coaching for women who have lost themselves while surviving life and are ready to rebuild confidence, reconnect with themselves, and create a meaningful next chapter.",
+    "Virtual life coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence from the inside out.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const promotionDate = "July 31, 2026";
 
 const niche = [
-  "I don't even know who I am anymore.",
-  "I've spent my whole life putting myself last.",
-  "I keep repeating the same patterns.",
-  "I know I want more, but I don't know where to start.",
+  "I keep second-guessing myself.",
+  "I know I am capable, but I do not feel confident.",
+  "I talk myself out of what I really want.",
+  "I am ready to stop letting self-doubt make my decisions.",
 ];
 
 const coachingAccess = [
-  "Nebraska-based coaching with a personal, grounded feel",
-  "Virtual sessions available for women across the U.S.",
-  "Support for women of all ages and seasons of life",
+  "Confidence coaching for women with a personal, grounded feel",
+  "Virtual life coaching available across the U.S.",
+  "Nebraska-based support for self-doubt, self-worth, and confidence",
 ];
 
 const clientFeelings = [
-  "You look capable, but inside you feel disconnected.",
-  "You are tired of living on autopilot.",
-  "You are ready for life to feel like yours again.",
+  "You look capable, but inside you question yourself constantly.",
+  "You are tired of overthinking every next step.",
+  "You are ready to trust yourself and move with confidence.",
 ];
 
 const path = [
   {
-    title: "Feel Seen",
-    text: "We start with what is real, without judgment or pressure.",
+    title: "Identify the Belief",
+    text: "We uncover the core belief underneath the self-doubt, fear, people-pleasing, or hesitation.",
   },
   {
-    title: "Find the Pattern",
-    text: "We notice the beliefs and habits that keep pulling you back.",
+    title: "Challenge the Pattern",
+    text: "We gently question the old story and begin building a more supportive way to see yourself.",
   },
   {
-    title: "Move Differently",
-    text: "You practice new choices with support, clarity, and accountability.",
+    title: "Practice Confidence",
+    text: "You take aligned steps with support, accountability, and tools that help confidence become lasting.",
   },
 ];
 
 const outcomes = [
   "More self-trust",
-  "Clearer direction",
-  "Healthier boundaries",
+  "Less self-doubt",
+  "Lasting confidence",
   "Less overthinking",
-  "More aligned action",
-  "A stronger sense of self",
+  "Clearer decisions",
+  "Stronger follow-through",
+];
+
+const supportStyle = [
+  {
+    title: "Compassionate Honesty",
+    text: "We name what is really happening without shame, pressure, or pretending you should already have it figured out.",
+  },
+  {
+    title: "Practical Accountability",
+    text: "You leave with next steps that help you practice self-trust in real life, not just talk about confidence.",
+  },
+  {
+    title: "Lasting Inner Change",
+    text: "We work beneath surface-level motivation so confidence can grow from a stronger belief in yourself.",
+  },
 ];
 
 export default function Home() {
@@ -60,17 +75,17 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              Life Coaching with Kaelynn
+              Confidence Coaching for Women
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              For the woman who has lost herself while surviving life.
+              Helping women overcome self-doubt and build lasting confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I help women reconnect with who they truly are, rebuild their
-              confidence, and create a meaningful next chapter through Core
-              Belief Transformation and intentional personal growth.
+              I help women transform the limiting core beliefs that keep them
+              second-guessing themselves, holding back, and questioning their
+              worth so they can move forward with self-trust and confidence.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -102,10 +117,11 @@ export default function Home() {
             />
             <div className="p-7">
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#9b6f5d]">
-                Your next chapter can begin gently
+                Confidence can be built from the inside out
               </p>
               <p className="mt-3 text-xl font-semibold leading-8">
-                You do not need the whole plan. You only need a place to begin.
+                You do not need to feel fearless. You need a place to begin
+                trusting yourself again.
               </p>
             </div>
           </div>
@@ -157,6 +173,41 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              The Technique
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Core Belief Transformation for lasting confidence.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
+              Self-doubt is often connected to a deeper belief about who you
+              are, what you deserve, or what is possible for you. My coaching
+              technique helps you identify that belief, understand how it has
+              shaped your choices, and begin practicing a more confident way of
+              thinking, deciding, and showing up.
+            </p>
+          </div>
+
+          <div className="grid gap-5">
+            {path.map((item, index) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-[#eadfd5] bg-[#fdf8f3] p-6"
+              >
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
+                  Step 0{index + 1}
+                </p>
+                <h3 className="mt-3 text-2xl font-bold">{item.title}</h3>
+                <p className="mt-3 leading-7 text-[#6f5a4d]">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-12 md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#eadfd5] md:p-10">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
@@ -164,16 +215,15 @@ export default function Home() {
           </p>
 
           <h2 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl">
-            Have you spent so long surviving that you no longer know who you
-            are?
+            Does self-doubt keep you from trusting yourself?
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-[#6f5a4d]">
-            You may look strong on the outside, but inside you feel exhausted,
-            disconnected, and unsure how to move forward. You have carried pain,
-            pressure, responsibilities, disappointment, and expectations for so
-            long that somewhere along the way, you stopped feeling like
-            yourself.
+            You may look capable on the outside, but inside you question your
+            decisions, downplay your needs, and wonder if you are really enough.
+            Coaching gives you space to understand where that self-doubt began
+            and build confidence that does not disappear the moment life feels
+            uncertain.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -189,15 +239,14 @@ export default function Home() {
 
           <div className="mt-8 rounded-2xl bg-[#0f766e] p-6 text-white">
             <p className="text-xl font-bold leading-8">
-              I help women who have lost themselves while surviving life
-              reconnect with who they truly are, rebuild their confidence, and
-              create a meaningful next chapter.
+              I help women overcome self-doubt, rebuild self-trust, and create
+              lasting confidence from the inside out.
             </p>
             <p className="mt-4 leading-7 text-[#e6fffb]">
               Through Core Belief Transformation and intentional personal
-              growth, we work together to uncover what has been keeping you
-              stuck and begin building a life that feels aligned, grounded, and
-              possible.
+              growth, we work together to uncover the beliefs that have been
+              keeping you small and begin building a life that feels aligned,
+              grounded, and possible.
             </p>
           </div>
         </div>
@@ -224,23 +273,20 @@ export default function Home() {
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
               Coaching that is gentle enough to feel safe and clear enough to
-              create movement.
+              build confidence.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
-              We focus on what is happening now, what is underneath it, and what
-              needs to change next.
+              We focus on what is happening now, the belief underneath the
+              self-doubt, and the next confident choice you can practice.
             </p>
           </div>
 
           <div className="grid gap-5">
-            {path.map((item, index) => (
+            {supportStyle.map((item) => (
               <article
                 key={item.title}
                 className="rounded-2xl border border-[#eadfd5] bg-[#fdf8f3] p-6"
               >
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
-                  Step 0{index + 1}
-                </p>
                 <h3 className="mt-3 text-2xl font-bold">{item.title}</h3>
                 <p className="mt-3 leading-7 text-[#6f5a4d]">{item.text}</p>
               </article>
