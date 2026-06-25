@@ -110,7 +110,7 @@ const structuredData = {
   sameAs: [facebookLink, linkedinLink],
   serviceType: [
     "Confidence coaching for women",
-    "Core Belief Transformation Coaching",
+    "Confidence Coaching for Women",
     "Self-doubt coaching",
     "Virtual life coaching",
   ],
@@ -189,7 +189,7 @@ export default function RootLayout({ children }) {
                   </span>
 
                   <span className="block text-[11px] text-[#8b6f5c] sm:text-xs">
-                    Core Belief Transformation Coaching
+                    Confidence Coaching for Women
                   </span>
                 </div>
               </Link>
