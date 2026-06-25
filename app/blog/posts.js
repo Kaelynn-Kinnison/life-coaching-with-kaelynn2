@@ -1,11 +1,21 @@
 export const posts = [
   {
+    title: "Why Self-Doubt Keeps Showing Up and How to Rebuild Confidence",
+    slug: "why-self-doubt-keeps-showing-up",
+    category: "Confidence",
+    description:
+      "Learn why self-doubt keeps showing up, how limiting core beliefs affect confidence, and how women can begin rebuilding self-trust from the inside out.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "You Don't Have to Have It All Figured Out to Begin Again",
     slug: "begin-again-before-ready",
     category: "Personal Growth",
     description:
       "A gentle reminder that healing and transformation can begin with one honest step before you feel fully ready.",
-    spotlight: true,
+    spotlight: false,
     featured: false,
     published: true,
   },
