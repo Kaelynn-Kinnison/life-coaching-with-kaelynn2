@@ -7,7 +7,6 @@ export const metadata = {
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
-const promotionDate = "July 31, 2026";
 
 const programs = [
   {
@@ -248,28 +247,6 @@ export default function ServicesPage() {
 
       <section id="programs" className="bg-white px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 rounded-[2rem] border-2 border-[#b7835f] bg-[#fffaf5] p-7 text-center shadow-2xl shadow-[#8b6f5c]/15">
-            <p className="text-sm font-black uppercase tracking-[0.24em] text-[#9b6f5d]">
-              * * * Limited Founding Client Offer * * *
-            </p>
-            <h2 className="mt-4 text-3xl font-black leading-tight text-[#3f342c] md:text-4xl">
-              Preferred founding client enrollment is available through{" "}
-              {promotionDate}.
-            </h2>
-            <p className="mx-auto mt-4 max-w-4xl text-lg font-bold leading-8 text-[#5f4c41]">
-              I am currently accepting a small number of founding clients at an
-              early enrollment investment in exchange for honest feedback, a
-              testimonial, and permission to feature the coaching experience in
-              my portfolio where appropriate.
-            </p>
-            <Link
-              href="/pricing"
-              className="mt-6 inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#115e59]"
-            >
-              View Programs & Pricing
-            </Link>
-          </div>
-
           <div className="grid gap-6 lg:grid-cols-2">
             {programs.map((program) => (
               <ProgramCard key={program.name} program={program} />

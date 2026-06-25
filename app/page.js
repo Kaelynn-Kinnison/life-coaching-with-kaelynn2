@@ -8,7 +8,6 @@ export const metadata = {
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
-const promotionDate = "July 31, 2026";
 
 const niche = [
   "I keep second-guessing myself.",
@@ -124,39 +123,6 @@ export default function Home() {
                 trusting yourself again.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-10 md:px-12 lg:px-20">
-        <div className="mx-auto max-w-7xl rounded-[2rem] border-2 border-[#b7835f] bg-[#fffaf5] p-7 text-center shadow-2xl shadow-[#8b6f5c]/15">
-          <p className="text-sm font-black uppercase tracking-[0.24em] text-[#9b6f5d]">
-            * * * Limited Founding Client Offer * * *
-          </p>
-          <h2 className="mt-4 text-3xl font-black leading-tight text-[#3f342c] md:text-4xl">
-            Preferred founding client enrollment is available through{" "}
-            {promotionDate}.
-          </h2>
-          <p className="mx-auto mt-4 max-w-4xl text-lg font-bold leading-8 text-[#5f4c41]">
-            I am accepting a small number of founding clients at an
-            early enrollment investment in exchange for honest feedback, a
-            testimonial, and permission to feature the coaching experience in my
-            portfolio where appropriate.
-          </p>
-          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link
-              href="/pricing"
-              className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#115e59]"
-            >
-              View Programs & Pricing
-            </Link>
-            <Link
-              href={bookingLink}
-              target="_blank"
-              className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-[#f7efe8]"
-            >
-              Schedule a Discovery Call
-            </Link>
           </div>
         </div>
       </section>
