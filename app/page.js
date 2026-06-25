@@ -134,13 +134,14 @@ export default function Home() {
             * * * Limited Founding Client Offer * * *
           </p>
           <h2 className="mt-4 text-3xl font-black leading-tight text-[#3f342c] md:text-4xl">
-            Introductory coaching rates are available through {promotionDate}.
+            Preferred founding client enrollment is available through{" "}
+            {promotionDate}.
           </h2>
           <p className="mx-auto mt-4 max-w-4xl text-lg font-bold leading-8 text-[#5f4c41]">
             I am accepting a small number of founding clients at an
-            introductory rate in exchange for honest feedback, a testimonial,
-            and permission to feature the coaching experience in my portfolio
-            where appropriate.
+            early enrollment investment in exchange for honest feedback, a
+            testimonial, and permission to feature the coaching experience in my
+            portfolio where appropriate.
           </p>
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
             <Link

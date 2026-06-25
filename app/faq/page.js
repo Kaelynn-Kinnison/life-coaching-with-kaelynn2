@@ -36,7 +36,7 @@ export default function FAQ() {
     {
       question: "Which package is right for me?",
       answer:
-        "If you are new to coaching, a Discovery Call is the best place to start. We can talk through whether the Clarity & Confidence Accelerator, The Next Chapter Transformation, Reclaim Her VIP Experience, or Growth Membership is the right fit for your season.",
+        "If you are new to coaching, a Discovery Call is the best place to start. We can talk through whether The Confidence Rebuild, The Confidence Reclamation, or the Growth Membership for past clients is the right fit for your season.",
     },
     {
       question: "What is a Clarity Appointment?",

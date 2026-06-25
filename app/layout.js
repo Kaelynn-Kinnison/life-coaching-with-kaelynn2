@@ -14,9 +14,57 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nebraska Life Coach for Women | Life Coaching with Kaelynn",
+  metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
+  title: {
+    default:
+      "Confidence Coach for Women | Life Coaching with Kaelynn",
+    template: "%s | Life Coaching with Kaelynn",
+  },
   description:
     "Nebraska-based virtual life coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
+  keywords: [
+    "confidence coach for women",
+    "life coach for women",
+    "self-doubt coaching",
+    "confidence coaching",
+    "Core Belief Transformation",
+    "self-worth coaching",
+    "virtual life coach",
+    "Nebraska life coach",
+    "women's confidence coach",
+    "limiting beliefs coaching",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Confidence Coach for Women | Life Coaching with Kaelynn",
+    description:
+      "Virtual confidence coaching for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
+    url: "https://www.lifecoachingwithkaelynn.com",
+    siteName: "Life Coaching with Kaelynn",
+    images: [
+      {
+        url: "/life-coaching-hero.png",
+        width: 1200,
+        height: 800,
+        alt: "Life Coaching with Kaelynn confidence coaching for women",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Confidence Coach for Women | Life Coaching with Kaelynn",
+    description:
+      "Helping women overcome self-doubt and build lasting confidence through Core Belief Transformation.",
+    images: ["/life-coaching-hero.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const navigation = [
@@ -33,6 +81,72 @@ const navigation = [
 
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
 const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
+const siteUrl = "https://www.lifecoachingwithkaelynn.com";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${siteUrl}/#business`,
+  name: "Life Coaching with Kaelynn",
+  url: siteUrl,
+  logo: `${siteUrl}/hibiscus-logo.png`,
+  image: `${siteUrl}/life-coaching-hero.png`,
+  description:
+    "Virtual confidence coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
+  areaServed: [
+    {
+      "@type": "State",
+      name: "Nebraska",
+    },
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+  ],
+  founder: {
+    "@type": "Person",
+    name: "Kaelynn Kinnison",
+  },
+  sameAs: [facebookLink, linkedinLink],
+  serviceType: [
+    "Confidence coaching for women",
+    "Core Belief Transformation Coaching",
+    "Self-doubt coaching",
+    "Virtual life coaching",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Confidence Coaching Programs",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        name: "The Confidence Rebuild",
+        price: "2497",
+        priceCurrency: "USD",
+        url: `${siteUrl}/pricing`,
+        itemOffered: {
+          "@type": "Service",
+          name: "The Confidence Rebuild",
+          description:
+            "A 12-week Core Belief Transformation experience for women ready to overcome self-doubt and build lasting confidence.",
+        },
+      },
+      {
+        "@type": "Offer",
+        name: "The Confidence Reclamation",
+        price: "4997",
+        priceCurrency: "USD",
+        url: `${siteUrl}/pricing`,
+        itemOffered: {
+          "@type": "Service",
+          name: "The Confidence Reclamation",
+          description:
+            "A 6-month private Core Belief Transformation experience for women ready to reclaim self-trust and build lasting confidence.",
+        },
+      },
+    ],
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -51,6 +165,13 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-7M7KB7PY2W');
           `}
         </Script>
+
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
 
         <header className="sticky top-0 z-50 border-b border-[#eadfd5] bg-[#fdf8f3]/95 backdrop-blur">
           <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6">

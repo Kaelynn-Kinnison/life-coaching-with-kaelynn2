@@ -11,26 +11,9 @@ const promotionDate = "July 31, 2026";
 
 const programs = [
   {
-    name: "Clarity & Confidence Accelerator",
-    duration: "8-week coaching experience",
-    investment: "$697",
-    foundingRate: "$497",
-    tagline: "Gain Direction. Build Confidence. Take Action.",
-    audience:
-      "For women who are tired of second-guessing themselves and want clarity, confidence, and momentum.",
-    includes: [
-      "Identify what is feeding self-doubt",
-      "Build confidence and self-trust",
-      "Clarify goals and vision",
-      "Create an action plan",
-      "Develop momentum toward meaningful change",
-    ],
-  },
-  {
-    name: "The Next Chapter Transformation",
-    duration: "12-week signature coaching experience",
-    investment: "$997",
-    foundingRate: "$747",
+    name: "The Confidence Rebuild",
+    duration: "12-week signature Core Belief Transformation experience",
+    investment: "$2,497",
     tagline: "Transform self-doubt into lasting confidence.",
     audience:
       "For women ready to transform limiting beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
@@ -42,34 +25,36 @@ const programs = [
       "Rebuild self-worth and confidence",
       "Release self-doubt patterns",
       "Strengthen boundaries",
+      "Practice confident decision-making",
       "Create sustainable transformation",
     ],
   },
   {
-    name: "Reclaim Her VIP Experience",
+    name: "The Confidence Reclamation",
     duration: "6-month private coaching experience",
-    investment: "$1,497",
-    foundingRate: "$1,197",
-    tagline: "Rediscover Yourself. Reclaim Your Life.",
+    investment: "$4,997",
+    tagline:
+      "Reclaim your self-trust. Expand your confidence. Become rooted in who you are.",
     audience:
       "For women who want the deepest private coaching support as they build lasting confidence from the inside out.",
     premium: true,
     includes: [
+      "Everything in The Confidence Rebuild",
       "Personalized transformation roadmap",
       "Advanced Core Belief Transformation work",
       "Accountability and implementation support",
       "Ongoing guidance between sessions",
+      "Deeper self-trust and confidence integration",
       "Deep identity and self-worth work",
     ],
   },
   {
     name: "Growth Membership",
     duration: "Monthly membership",
-    investment: "$147/month",
-    foundingRate: "$97/month",
+    investment: "$197/month",
     tagline: "Continue Growing with Coaching, Accountability & Community.",
     audience:
-      "For women who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
+      "For past clients who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
     includes: [
       "Monthly coaching calls",
       "Accountability support",
@@ -133,10 +118,6 @@ function ProgramCard({ program }) {
           Investment Starts At
         </p>
         <p className="mt-2 text-4xl font-black">{program.investment}</p>
-        <p className={`mt-3 text-base font-bold leading-7 ${textClass}`}>
-          Founding client rate may be available from {program.foundingRate} for
-          a limited number of clients.
-        </p>
       </div>
 
       <div className="mt-7 flex-1">
@@ -174,14 +155,13 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Choose the coaching experience that fits this season of your
-              life.
+              Two transformational coaching experiences for lasting confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              These virtual coaching experiences offer different levels of
-              structure, depth, and support for women in Nebraska and across the
-              U.S.
+              These private coaching experiences are designed for women ready to
+              overcome self-doubt, transform limiting beliefs, and build
+              confidence from the inside out.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -197,7 +177,7 @@ export default function ServicesPage() {
                 href="#programs"
                 className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
               >
-                Explore Programs
+                Explore Signature Offers
               </Link>
             </div>
           </div>
@@ -213,7 +193,8 @@ export default function ServicesPage() {
                 Core Belief Transformation
               </p>
               <p className="mt-3 text-xl font-semibold leading-8 text-[#3f342c]">
-                A clear path, steady support, and practical tools for real life.
+                A clear path to rebuild self-trust and create lasting
+                confidence.
               </p>
             </div>
           </div>
@@ -272,13 +253,14 @@ export default function ServicesPage() {
               * * * Limited Founding Client Offer * * *
             </p>
             <h2 className="mt-4 text-3xl font-black leading-tight text-[#3f342c] md:text-4xl">
-              Introductory coaching rates are available through {promotionDate}.
+              Preferred founding client enrollment is available through{" "}
+              {promotionDate}.
             </h2>
             <p className="mx-auto mt-4 max-w-4xl text-lg font-bold leading-8 text-[#5f4c41]">
               I am currently accepting a small number of founding clients at an
-              introductory rate in exchange for honest feedback, a testimonial,
-              and permission to feature the coaching experience in my portfolio
-              where appropriate.
+              early enrollment investment in exchange for honest feedback, a
+              testimonial, and permission to feature the coaching experience in
+              my portfolio where appropriate.
             </p>
             <Link
               href="/pricing"

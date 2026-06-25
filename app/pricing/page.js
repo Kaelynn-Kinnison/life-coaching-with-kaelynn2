@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Programs & Investment | Life Coaching with Kaelynn",
+  title: "Programs & Pricing | Life Coaching with Kaelynn",
   description:
     "Explore coaching program investments for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
 };
@@ -14,42 +14,31 @@ const programs = [
     name: "Free Discovery Call",
     duration: "20-30 minutes",
     investment: "Free",
-    foundingRate: null,
     description:
       "A supportive first conversation to talk through your goals, questions, self-doubt patterns, and whether coaching is the right fit.",
   },
   {
-    name: "Clarity & Confidence Accelerator",
-    duration: "8-week coaching experience",
-    investment: "$697",
-    foundingRate: "$497",
-    description:
-      "For women who are tired of second-guessing themselves and want direction, confidence, and momentum.",
-  },
-  {
-    name: "The Next Chapter Transformation",
-    duration: "12-week signature coaching experience",
-    investment: "$997",
-    foundingRate: "$747",
+    name: "The Confidence Rebuild",
+    duration: "12-week signature Core Belief Transformation experience",
+    investment: "$2,497",
     description:
       "For women ready to transform limiting core beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
     featured: true,
   },
   {
-    name: "Reclaim Her VIP Experience",
+    name: "The Confidence Reclamation",
     duration: "6-month private coaching experience",
-    investment: "$1,497",
-    foundingRate: "$1,197",
+    investment: "$4,997",
     description:
-      "For women who want the deepest private coaching support as they build lasting confidence from the inside out.",
+      "For women who want the deepest private coaching support as they reclaim self-trust and build lasting confidence from the inside out.",
+    premium: true,
   },
   {
     name: "Growth Membership",
     duration: "Monthly membership",
-    investment: "$147/month",
-    foundingRate: "$97/month",
+    investment: "$197/month",
     description:
-      "For women who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
+      "For past clients who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
   },
 ];
 
@@ -59,11 +48,11 @@ export default function PricingPage() {
       <section className="px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-5xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-            Programs & Investment
+            Programs & Pricing
           </p>
 
           <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-            Coaching support with clear starting investment.
+            Signature transformation offers for lasting confidence.
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
@@ -82,11 +71,12 @@ export default function PricingPage() {
               * * * Limited Founding Client Offer * * *
             </p>
             <h2 className="mt-4 text-3xl font-black leading-tight md:text-4xl">
-              Introductory coaching rates are available through {promotionDate}.
+              Preferred founding client enrollment is available through{" "}
+              {promotionDate}.
             </h2>
             <p className="mx-auto mt-5 max-w-4xl text-lg font-bold leading-8 text-[#6f5a4d]">
               I am currently accepting a limited number of founding clients at
-              an introductory rate in exchange for honest feedback, a
+              an early enrollment investment in exchange for honest feedback, a
               testimonial, and permission to feature the coaching experience in
               my portfolio where appropriate.
             </p>
@@ -97,16 +87,30 @@ export default function PricingPage() {
               <article
                 key={program.name}
                 className={`rounded-[2rem] bg-white p-8 shadow-lg shadow-[#8b6f5c]/10 ring-1 ${
-                  program.featured ? "ring-2 ring-[#b7835f]" : "ring-[#eadfd5]"
+                  program.premium
+                    ? "bg-[#3f342c] text-white ring-[#6d594b]"
+                    : program.featured
+                      ? "ring-2 ring-[#b7835f]"
+                      : "ring-[#eadfd5]"
                 }`}
               >
                 {program.featured && (
                   <p className="mb-5 inline-block rounded-full bg-[#b7835f] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">
-                    Signature Program
+                    Signature Offer
                   </p>
                 )}
 
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#9b6f5d]">
+                {program.premium && (
+                  <p className="mb-5 inline-block rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#3f342c]">
+                    VIP Experience
+                  </p>
+                )}
+
+                <p
+                  className={`text-sm font-bold uppercase tracking-[0.18em] ${
+                    program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
+                  }`}
+                >
                   {program.duration}
                 </p>
 
@@ -114,22 +118,28 @@ export default function PricingPage() {
                   {program.name}
                 </h2>
 
-                <div className="mt-6 rounded-2xl bg-[#f7efe8] p-5">
-                  <p className="text-base font-black uppercase tracking-[0.18em] text-[#6f5a4d]">
+                <div
+                  className={`mt-6 rounded-2xl p-5 ${
+                    program.premium ? "bg-white/10" : "bg-[#f7efe8]"
+                  }`}
+                >
+                  <p
+                    className={`text-base font-black uppercase tracking-[0.18em] ${
+                      program.premium ? "text-[#f7d7c7]" : "text-[#6f5a4d]"
+                    }`}
+                  >
                     Investment Starts At
                   </p>
                   <p className="mt-2 text-5xl font-black">
                     {program.investment}
                   </p>
-                  {program.foundingRate && (
-                    <p className="mt-3 text-lg font-bold leading-7 text-[#6f5a4d]">
-                      Founding client rate may be available from{" "}
-                      {program.foundingRate}.
-                    </p>
-                  )}
                 </div>
 
-                <p className="mt-6 leading-8 text-[#6f5a4d]">
+                <p
+                  className={`mt-6 leading-8 ${
+                    program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
+                  }`}
+                >
                   {program.description}
                 </p>
               </article>
