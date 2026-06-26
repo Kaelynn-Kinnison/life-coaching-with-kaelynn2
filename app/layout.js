@@ -86,6 +86,8 @@ const navigation = [
 
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
 const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
+const merchantCircleLink =
+  "https://www.merchantcircle.com/life-coaching-with-kaelynn-lincoln-ne";
 const siteUrl = "https://www.lifecoachingwithkaelynn.com";
 
 const structuredData = {
@@ -256,6 +258,14 @@ export default function RootLayout({ children }) {
                 className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
               >
                 LinkedIn
+              </a>
+              <a
+                href={merchantCircleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#0f766e] underline-offset-4 transition hover:underline"
+              >
+                Review us on MerchantCircle
               </a>
               <Link
                 href="/contact#privacy-policy"
