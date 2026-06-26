@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "How Accountability Creates Lasting Change | Life Coaching with Kaelynn",
+  title: "Accountability Creates Lasting Change",
   description:
     "Discover how accountability provides support, structure, and consistency to help create meaningful and lasting personal growth.",
 };

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Why Self-Sabotage Happens | Life Coaching with Kaelynn",
+  title: "Why Self-Sabotage Happens",
   description:
     "Understand why self-sabotage happens, how it connects to limiting beliefs, fear, self-worth, and old emotional patterns.",
 };

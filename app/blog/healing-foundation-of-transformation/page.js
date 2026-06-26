@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Why Healing Is the Foundation of Transformation | Life Coaching with Kaelynn",
+  title: "Healing as the Foundation of Growth",
   description:
     "Explore why emotional healing, self-awareness, and self-compassion are essential foundations for lasting personal transformation.",
 };

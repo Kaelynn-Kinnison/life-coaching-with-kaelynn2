@@ -1,6 +1,6 @@
 export const metadata = {
   title:
-    "You Don't Have to Have It All Figured Out to Begin Again | Life Coaching with Kaelynn",
+    "Begin Again Before You Feel Ready",
   description:
     "A warm coaching article about beginning again before you feel fully ready, healing old patterns, rebuilding self-trust, and taking one honest step toward growth.",
 };

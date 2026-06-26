@@ -1,6 +1,6 @@
 export const metadata = {
   title:
-    "Why Self-Doubt Keeps Showing Up and How to Rebuild Confidence | Life Coaching with Kaelynn",
+    "Why Self-Doubt Keeps Showing Up",
   description:
     "A confidence coaching article for women about why self-doubt keeps showing up, how limiting core beliefs shape self-trust, and how to begin rebuilding lasting confidence.",
 };

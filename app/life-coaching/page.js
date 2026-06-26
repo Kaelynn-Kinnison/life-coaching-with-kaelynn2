@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Life Coaching for Women | Overcome Self-Doubt & Build Confidence",
+  title: "Life Coaching for Women",
   description:
     "Life Coaching with Kaelynn supports women ready to overcome self-doubt, strengthen self-worth, and build lasting confidence with clarity and accountability.",
 };

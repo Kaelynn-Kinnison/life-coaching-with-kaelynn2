@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export const metadata = {
   metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
-  title: "Testimonials | Life Coaching with Kaelynn",
+  title: "Testimonials",
   description:
-    "Read testimonials and professional feedback focused on self-worth, limiting beliefs, confidence, accountability, healing, and transformation through Life Coaching with Kaelynn.",
+    "Read Life Coaching with Kaelynn testimonials about self-worth, limiting beliefs, confidence, healing, accountability, and personal transformation.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

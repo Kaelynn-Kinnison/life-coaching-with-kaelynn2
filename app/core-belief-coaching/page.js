@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Core Belief Transformation for Self-Doubt & Confidence",
+  title: "Core Belief Coaching for Confidence",
   description:
     "Learn how hidden core beliefs can create self-doubt, shape confidence, affect self-worth, and influence the choices women make.",
 };

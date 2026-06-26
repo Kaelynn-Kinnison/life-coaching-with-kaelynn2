@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "When Hope Feels Lost | Life Coaching with Kaelynn",
+  title: "When Hope Feels Lost",
   description:
     "A coaching article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing, growth, and transformation.",
 };

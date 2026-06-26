@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Confidence Coaching Programs for Women | Kaelynn",
+  title: "Confidence Coaching Programs for Women",
   description:
     "Explore virtual coaching programs for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
 };

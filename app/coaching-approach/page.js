@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Confidence Coaching Approach | Life Coaching with Kaelynn",
+  title: "Confidence Coaching Approach",
   description:
     "Learn how Core Belief Transformation, compassionate accountability, and confidence coaching help women overcome self-doubt and build lasting confidence.",
 };

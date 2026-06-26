@@ -17,7 +17,7 @@ export const metadata = {
   metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
   title: {
     default:
-      "Confidence Coach for Women | Life Coaching with Kaelynn",
+      "Life Coach for Women | Confidence & Growth Coaching",
     template: "%s | Life Coaching with Kaelynn",
   },
   description:
@@ -38,7 +38,7 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Confidence Coach for Women | Life Coaching with Kaelynn",
+    title: "Life Coach for Women | Confidence & Growth Coaching",
     description:
       "Virtual confidence coaching for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
     url: "https://www.lifecoachingwithkaelynn.com",
@@ -56,7 +56,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Confidence Coach for Women | Life Coaching with Kaelynn",
+    title: "Life Coach for Women | Confidence & Growth Coaching",
     description:
       "Helping women overcome self-doubt and build lasting confidence through Core Belief Transformation.",
     images: ["/life-coaching-hero.png"],

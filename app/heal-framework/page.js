@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "H.E.A.L. Framework | Life Coaching with Kaelynn",
+  title: "H.E.A.L. Framework",
   description:
     "A simple overview of Kaelynn's H.E.A.L. Framework: Hear, Expose, Align, and Live.",
 };

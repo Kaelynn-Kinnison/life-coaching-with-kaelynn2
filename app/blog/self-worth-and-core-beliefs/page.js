@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "The Connection Between Self-Worth and Core Beliefs | Life Coaching with Kaelynn",
+  title: "Self-Worth and Core Beliefs",
   description:
     "Discover how core beliefs shape self-worth, confidence, relationships, and personal growth. Learn how identifying and transforming limiting beliefs can help you heal, grow, and create lasting change.",
 };

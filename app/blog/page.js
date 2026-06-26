@@ -2,7 +2,7 @@ import Link from "next/link";
 import { posts } from "./posts";
 
 export const metadata = {
-  title: "Core Belief Coaching Blog | Life Coaching with Kaelynn",
+  title: "Core Belief Coaching Blog",
   description:
     "Read professional coaching articles on core beliefs, limiting beliefs, self-worth, confidence, emotional wellness, accountability, personal growth, and lasting transformation.",
 };

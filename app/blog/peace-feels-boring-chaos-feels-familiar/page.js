@@ -1,6 +1,6 @@
 export const metadata = {
   title:
-    "Why Peace Feels Boring When Chaos Feels Familiar | Life Coaching with Kaelynn",
+    "Why Peace Feels Boring",
   description:
     "Explore why calm relationships, rest, and stability can feel unfamiliar when chaos has become normal, and how healing helps you learn to trust peace.",
 };

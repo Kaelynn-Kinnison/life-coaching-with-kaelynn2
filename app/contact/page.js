@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact Nebraska Life Coach Kaelynn | Virtual Coaching",
+  title: "Contact Kaelynn",
   description:
     "Schedule a Discovery Call with Nebraska-based life coach Kaelynn for virtual coaching that supports clarity, confidence, and your next chapter.",
 };

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "The Hidden Core Beliefs That May Be Holding You Back | Life Coaching with Kaelynn",
+  title: "Hidden Core Beliefs Holding You Back",
   description:
     "Discover how limiting core beliefs influence confidence, relationships, decision-making, and personal growth.",
 };

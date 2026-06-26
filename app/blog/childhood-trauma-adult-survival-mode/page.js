@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Childhood Trauma and Adult Survival Mode: Why It's Hard to Be Present",
+  title: "Childhood Trauma and Survival Mode",
   description:
     "Discover how childhood trauma can lead to adult survival mode, making it difficult to feel present, connected, and at peace. Learn why healing begins with understanding your survival responses.",
 };

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Programs & Pricing | Life Coaching with Kaelynn",
+  title: "Programs & Pricing",
   description:
     "Explore coaching program investments for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
 };

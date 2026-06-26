@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title:
-    "When Life Changes, So Must You | Life Coaching with Kaelynn",
+    "When Life Changes, So Must You",
   description:
     "A supportive blog article for women navigating life transitions, rebuilding confidence, reconnecting with themselves, and creating a meaningful new chapter.",
 };

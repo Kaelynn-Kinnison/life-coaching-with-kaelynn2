@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Kaelynn Kinnison | Confidence Coach for Women",
+  title: "About Kaelynn Kinnison",
   description:
     "Meet Kaelynn Kinnison, a Nebraska-based life coach helping women overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
 };
