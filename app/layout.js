@@ -21,10 +21,12 @@ export const metadata = {
     template: "%s | Life Coaching with Kaelynn",
   },
   description:
-    "Nebraska-based virtual life coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
+    "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
   keywords: [
     "confidence coach for women",
     "life coach for women",
+    "personal growth coaching",
+    "confidence coaching for women",
     "self-doubt coaching",
     "confidence coaching",
     "Core Belief Transformation",
@@ -41,7 +43,7 @@ export const metadata = {
     title:
       "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
     description:
-      "Virtual confidence coaching for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
+      "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
     url: "https://www.lifecoachingwithkaelynn.com",
     siteName: "Life Coaching with Kaelynn",
     images: [
@@ -60,7 +62,7 @@ export const metadata = {
     title:
       "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
     description:
-      "Helping women overcome self-doubt and build lasting confidence through Core Belief Transformation.",
+      "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
     images: ["/life-coaching-hero.png"],
   },
   robots: {
@@ -94,7 +96,7 @@ const structuredData = {
   logo: `${siteUrl}/hibiscus-logo.png`,
   image: `${siteUrl}/life-coaching-hero.png`,
   description:
-    "Virtual confidence coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
+    "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
   areaServed: [
     {
       "@type": "State",

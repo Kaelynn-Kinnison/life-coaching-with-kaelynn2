@@ -7,7 +7,7 @@ export const metadata = {
       "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
   },
   description:
-    "Virtual life coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence from the inside out.",
+    "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
