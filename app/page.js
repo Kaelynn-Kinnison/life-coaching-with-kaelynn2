@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: {
-    absolute: "Confidence Coaching for Women | Personal Growth Coaching",
+    absolute:
+      "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
   },
   description:
     "Virtual life coaching for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence from the inside out.",
