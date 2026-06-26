@@ -88,8 +88,8 @@ export default function Home() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
               I help women transform the limiting core beliefs that keep them
               second-guessing themselves, holding back, and questioning their
-              worth. My confidence coaching for women helps you move forward
-              with self-trust, clarity, and lasting confidence.
+              worth. This coaching helps you move forward with self-trust,
+              clarity, and lasting confidence.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -244,8 +244,8 @@ export default function Home() {
               A Different Kind of Support
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Coaching that is gentle enough to feel safe and clear enough to
-              build confidence.
+              Confidence coaching for women that feels safe and builds lasting
+              self-trust.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
               We focus on what is happening now, the belief underneath the
