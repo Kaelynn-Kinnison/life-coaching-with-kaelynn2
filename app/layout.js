@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import Link from "next/link";
 import { Playfair_Display, Inter } from "next/font/google";
+import SocialShareButtons from "./components/SocialShareButtons";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -230,6 +231,8 @@ export default function RootLayout({ children }) {
         </header>
 
         {children}
+
+        <SocialShareButtons />
 
         <footer className="border-t border-[#eadfd5] bg-[#fdf8f3] px-6 py-8 text-sm text-[#6f5a4d]">
           <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
