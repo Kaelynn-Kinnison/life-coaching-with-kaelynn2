@@ -81,13 +81,15 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Helping women overcome self-doubt and build lasting confidence.
+              A premier life coach for women helping you build lasting
+              confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
               I help women transform the limiting core beliefs that keep them
               second-guessing themselves, holding back, and questioning their
-              worth so they can move forward with self-trust and confidence.
+              worth. My confidence coaching for women helps you move forward
+              with self-trust, clarity, and lasting confidence.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -150,14 +152,14 @@ export default function Home() {
               The Technique
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Core Belief Transformation for lasting confidence.
+              Core Belief Transformation through personal growth coaching.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
               Self-doubt is often connected to a deeper belief about who you
-              are, what you deserve, or what is possible for you. My coaching
-              technique helps you identify that belief, understand how it has
-              shaped your choices, and begin practicing a more confident way of
-              thinking, deciding, and showing up.
+              are, what you deserve, or what is possible for you. As a life
+              coach for women, I help you identify that belief, understand how
+              it has shaped your choices, and begin practicing a more confident
+              way of thinking, deciding, and showing up.
             </p>
           </div>
 
@@ -214,9 +216,9 @@ export default function Home() {
             </p>
             <p className="mt-4 leading-7 text-[#e6fffb]">
               Through Core Belief Transformation and intentional personal
-              growth, we work together to uncover the beliefs that have been
-              keeping you small and begin building a life that feels aligned,
-              grounded, and possible.
+              growth, my personal growth coaching helps uncover the beliefs
+              that have been keeping you small and begin building a life that
+              feels aligned, grounded, and possible.
             </p>
           </div>
         </div>
