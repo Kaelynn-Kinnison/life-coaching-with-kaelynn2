@@ -46,18 +46,19 @@ export default function AboutPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              I know how much it matters to feel confident in who you are.
+              I am Kaelynn, and I help women come back to themselves.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I created Life Coaching with Kaelynn for women who are tired of
-              second-guessing themselves and are ready for honest, steady
-              support as they build lasting confidence.
+              My coaching style is warm, honest, and practical. I support women
+              who are ready to understand the beliefs behind their self-doubt
+              and begin making choices from self-trust instead of fear.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              I relate to the woman who looks capable on the outside while
-              quietly wondering how to trust herself again.
+              I am based in Nebraska and work virtually with women who want a
+              grounded space to be heard, challenged, encouraged, and reminded
+              that change can happen one honest step at a time.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -100,19 +101,23 @@ export default function AboutPage() {
               Why This Work Matters to Me
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              My work is personal because transformation is personal.
+              I care about the person underneath the pattern.
             </h2>
           </div>
 
           <div className="space-y-5 text-lg leading-8 text-[#6f5a4d]">
             <p>
-              I care about creating a space where you can tell the truth, hear
-              yourself clearly, and begin making choices from self-trust instead
-              of fear.
+              Many women come to coaching after years of being capable,
+              responsible, and strong for everyone else. On the outside they may
+              be functioning. On the inside, they are tired of questioning
+              themselves, shrinking their needs, or waiting until they feel
+              completely ready.
             </p>
             <p>
-              From Nebraska, I work virtually with women of all ages and stages
-              of life.
+              My work is not about pushing you harder. It is about helping you
+              understand what has been shaping your choices, reconnect with your
+              own voice, and practice a steadier kind of confidence in real
+              life.
             </p>
           </div>
         </div>
