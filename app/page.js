@@ -25,6 +25,21 @@ const coachingAccess = [
   "Nebraska-based support for self-doubt, self-worth, and confidence",
 ];
 
+const trustSignals = [
+  {
+    label: "Training",
+    value: "Health & Wellness Coaching Certificate",
+  },
+  {
+    label: "Specialty",
+    value: "Core Beliefs, Confidence & Self-Trust",
+  },
+  {
+    label: "Support",
+    value: "Private virtual coaching from Nebraska",
+  },
+];
+
 const clientFeelings = [
   "You look capable, but inside you question yourself constantly.",
   "You are tired of overthinking every next step.",
@@ -81,15 +96,14 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A premier life coach for women helping you build lasting
-              confidence.
+              A life coach for women ready to stop second-guessing themselves.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I help women transform the limiting core beliefs that keep them
-              second-guessing themselves, holding back, and questioning their
-              worth. This coaching helps you move forward with self-trust,
-              clarity, and lasting confidence.
+              I help women understand the limiting core beliefs that keep them
+              holding back, questioning their worth, and talking themselves out
+              of what they want. Together, we rebuild self-trust so confidence
+              becomes something you can actually practice in daily life.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -124,8 +138,9 @@ export default function Home() {
                 Confidence can be built from the inside out
               </p>
               <p className="mt-3 text-xl font-semibold leading-8">
-                You do not need to feel fearless. You need a place to begin
-                trusting yourself again.
+                You do not need to become fearless before you begin. You need a
+                steady place to hear yourself clearly and take the next honest
+                step.
               </p>
             </div>
           </div>
@@ -145,11 +160,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="px-6 pb-12 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-6xl gap-5 rounded-[2rem] bg-[#3f342c] p-6 text-white shadow-xl shadow-[#3f342c]/10 md:grid-cols-3 md:p-8">
+          {trustSignals.map((item) => (
+            <div key={item.label} className="rounded-2xl bg-white/10 p-5">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#f7d7c7]">
+                {item.label}
+              </p>
+              <p className="mt-2 text-lg font-semibold leading-7">
+                {item.value}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              The Technique
+              How the Work Begins
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
               Core Belief Transformation through personal growth coaching.
@@ -158,8 +188,8 @@ export default function Home() {
               Self-doubt is often connected to a deeper belief about who you
               are, what you deserve, or what is possible for you. As a life
               coach for women, I help you identify that belief, understand how
-              it has shaped your choices, and begin practicing a more confident
-              way of thinking, deciding, and showing up.
+              it has shaped your choices, and begin practicing new ways of
+              thinking, deciding, and showing up.
             </p>
           </div>
 
@@ -211,14 +241,14 @@ export default function Home() {
 
           <div className="mt-8 rounded-2xl bg-[#0f766e] p-6 text-white">
             <p className="text-xl font-bold leading-8">
-              I help women overcome self-doubt, rebuild self-trust, and create
-              lasting confidence from the inside out.
+              This is for the woman who is tired of looking capable while
+              quietly questioning herself.
             </p>
             <p className="mt-4 leading-7 text-[#e6fffb]">
               Through Core Belief Transformation and intentional personal
-              growth, my personal growth coaching helps uncover the beliefs
-              that have been keeping you small and begin building a life that
-              feels aligned, grounded, and possible.
+              growth, my personal growth coaching helps you uncover the beliefs
+              that have been keeping you small and begin choosing from a place
+              that feels more grounded, honest, and possible.
             </p>
           </div>
         </div>
@@ -248,8 +278,9 @@ export default function Home() {
               self-trust.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d]">
-              We focus on what is happening now, the belief underneath the
-              self-doubt, and the next confident choice you can practice.
+              We focus on what is happening now, what belief may be underneath
+              the self-doubt, and what next choice you can practice without
+              forcing yourself to have it all figured out.
             </p>
           </div>
 
@@ -274,7 +305,8 @@ export default function Home() {
               What Becomes Possible
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Small shifts can change the way you move through your whole life.
+              The goal is not a perfect life. It is a stronger relationship
+              with yourself.
             </h2>
           </div>
 
@@ -301,8 +333,9 @@ export default function Home() {
               Let this be the first honest step.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f7efe8]">
-              We will talk about where you are, what you want to change, and
-              whether coaching feels like the right fit.
+              A Discovery Call is a simple, no-pressure conversation about
+              where you are, what you want to change, and whether this support
+              feels aligned.
             </p>
           </div>
 
