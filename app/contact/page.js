@@ -7,7 +7,8 @@ export const metadata = {
 };
 
 const email = "hello@lifecoachingwithkaelynn.com";
-const phone = "402-799-8166";
+const phone = "(402) 413-9819";
+const phoneHref = "+14024139819";
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
 const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
@@ -109,7 +110,7 @@ export default function Contact() {
                   Phone
                 </p>
                 <a
-                  href={`tel:${phone}`}
+                  href={`tel:${phoneHref}`}
                   className="mt-2 inline-flex text-lg font-semibold underline decoration-[#f7d7c7]/60 underline-offset-4"
                 >
                   {phone}
