@@ -12,11 +12,12 @@ export const metadata = {
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
-const niche = [
-  "I keep second-guessing myself.",
-  "I know I am capable, but I do not feel confident.",
-  "I talk myself out of what I really want.",
-  "I am ready to stop letting self-doubt make my decisions.",
+const rightPlaceSigns = [
+  "You keep second-guessing yourself, even after you have thought things through.",
+  "You know you are capable, but you do not feel confident inside.",
+  "You talk yourself out of what you want because fear gets too loud.",
+  "You look steady to other people, but privately you question your worth.",
+  "You want to trust yourself, make clear decisions, and stop shrinking back.",
 ];
 
 const coachingAccess = [
@@ -38,12 +39,6 @@ const trustSignals = [
     label: "Support",
     value: "Private virtual coaching from Nebraska",
   },
-];
-
-const clientFeelings = [
-  "You look capable, but inside you question yourself constantly.",
-  "You are tired of overthinking every next step.",
-  "You are ready to trust yourself and move with confidence.",
 ];
 
 const path = [
@@ -92,18 +87,21 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              Confidence Coaching for Women
+              Am I in the right place?
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A life coach for women ready to stop second-guessing themselves.
+              A life coach for women who struggle with self-doubt and a lack of
+              confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              I help women understand the limiting core beliefs that keep them
-              holding back, questioning their worth, and talking themselves out
-              of what they want. Together, we rebuild self-trust so confidence
-              becomes something you can actually practice in daily life.
+              Yes, if you are tired of questioning yourself, holding back, and
+              wondering why confidence feels so hard to keep. Through confidence
+              coaching for women and personal growth coaching, I help you
+              identify the core beliefs keeping you stuck, challenge the old
+              patterns that make you second-guess yourself, and practice new
+              choices that build self-trust from the inside out.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -213,56 +211,43 @@ export default function Home() {
       <section className="px-6 py-12 md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#eadfd5] md:p-10">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-            Who I Help
+            Is this for me?
           </p>
 
           <h2 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl">
-            Does self-doubt keep you from trusting yourself?
+            You are in the right place if self-doubt keeps talking you out of
+            trusting yourself.
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-[#6f5a4d]">
-            You may look capable on the outside, but inside you question your
-            decisions, downplay your needs, and wonder if you are really enough.
-            Coaching gives you space to understand where that self-doubt began
-            and build confidence that does not disappear the moment life feels
-            uncertain.
+            This is not for women who need a quick pep talk. It is for women who
+            want to understand why they keep doubting themselves, where those
+            patterns came from, and how to begin choosing from self-trust
+            instead of fear.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {niche.map((item) => (
+            {rightPlaceSigns.map((item) => (
               <div
                 key={item}
                 className="rounded-2xl bg-[#f7efe8] p-5 text-lg font-semibold leading-7 text-[#5f4c41]"
               >
-                “{item}”
+                {item}
               </div>
             ))}
           </div>
 
           <div className="mt-8 rounded-2xl bg-[#0f766e] p-6 text-white">
             <p className="text-xl font-bold leading-8">
-              This is for the woman who is tired of looking capable while
-              quietly questioning herself.
+              If you have been looking for support that feels honest,
+              compassionate, and practical, you are in the right place.
             </p>
             <p className="mt-4 leading-7 text-[#e6fffb]">
-              Through Core Belief Transformation and intentional personal
-              growth, my personal growth coaching helps you uncover the beliefs
-              that have been keeping you small and begin choosing from a place
-              that feels more grounded, honest, and possible.
+              Through Core Belief Transformation, we work underneath the surface
+              of self-doubt so confidence is not just something you talk about.
+              It becomes something you practice in your decisions, boundaries,
+              relationships, and daily life.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-12 md:px-12 lg:px-20">
-        <div className="mx-auto max-w-6xl border-y border-[#eadfd5] py-12">
-          <div className="grid gap-6 md:grid-cols-3">
-            {clientFeelings.map((item) => (
-              <div key={item} className="text-lg leading-8 text-[#5f4c41]">
-                <span className="mb-4 block h-1 w-12 rounded-full bg-[#b7835f]" />
-                {item}
-              </div>
-            ))}
           </div>
         </div>
       </section>

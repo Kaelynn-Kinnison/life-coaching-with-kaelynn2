@@ -51,8 +51,9 @@ export default function AboutPage() {
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
               My coaching style is warm, honest, and practical. I support women
-              who are ready to understand the beliefs behind their self-doubt
-              and begin making choices from self-trust instead of fear.
+              who struggle with self-doubt and a lack of confidence by helping
+              them understand the beliefs behind those patterns and begin making
+              choices from self-trust instead of fear.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
