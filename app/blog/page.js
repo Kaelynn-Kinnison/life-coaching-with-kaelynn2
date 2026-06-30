@@ -10,6 +10,7 @@ export const metadata = {
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 
 const categories = [
+  "Self-Trust",
   "Healing Patterns",
   "Support & Growth",
   "Trauma-Informed Growth",

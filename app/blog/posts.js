@@ -1,11 +1,21 @@
 export const posts = [
   {
+    title: "How to Rebuild Self-Trust After a Hard Season",
+    slug: "rebuild-self-trust-after-hard-season",
+    category: "Self-Trust",
+    description:
+      "Learn how to rebuild self-trust after a hard season with compassion, small promises, honest reflection, and gentle next steps.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "Why Self-Doubt Keeps Showing Up and How to Rebuild Confidence",
     slug: "why-self-doubt-keeps-showing-up",
     category: "Confidence",
     description:
       "Learn why self-doubt keeps showing up, how limiting core beliefs affect confidence, and how women can begin rebuilding self-trust from the inside out.",
-    spotlight: true,
+    spotlight: false,
     featured: false,
     published: true,
   },
