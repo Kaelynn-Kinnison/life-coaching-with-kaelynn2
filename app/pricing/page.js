@@ -51,6 +51,25 @@ const programs = [
       "You begin rebuilding the inner foundation that allows confidence, self-trust, and aligned action to feel more natural and sustainable.",
   },
   {
+    name: "One-Time Coaching Session",
+    duration: "Single private coaching session",
+    investment: "$215",
+    focus: "Focused support for clarity and next steps",
+    description:
+      "For women who want a single, supportive coaching session to talk through a specific challenge, decision, or area where self-doubt is showing up.",
+    bestFor:
+      "Women who want focused support before committing to a longer coaching experience, or who need guidance around one clear topic.",
+    includes: [
+      "One private 1:1 coaching session",
+      "Focused conversation around one current challenge or goal",
+      "Support identifying the belief or pattern underneath the issue",
+      "Practical next steps to help you move forward with more clarity",
+      "Space to ask questions and receive personalized guidance",
+    ],
+    outcome:
+      "You leave with greater clarity, a grounded next step, and a deeper understanding of what may be keeping you stuck.",
+  },
+  {
     name: "The Confidence Reclamation",
     duration: "6-month private coaching experience",
     investment: "$4,997",
