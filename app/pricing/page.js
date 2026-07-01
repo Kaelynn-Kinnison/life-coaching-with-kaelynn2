@@ -28,6 +28,25 @@ const programs = [
       "You leave with a clearer sense of your next best step and whether this coaching relationship feels aligned.",
   },
   {
+    name: "One-Time Coaching Session",
+    duration: "Single private coaching session",
+    investment: "$215",
+    focus: "Focused support for clarity and next steps",
+    description:
+      "For women who want a single, supportive coaching session to talk through a specific challenge, decision, or area where self-doubt is showing up.",
+    bestFor:
+      "Women who want focused support before committing to a longer coaching experience, or who need guidance around one clear topic.",
+    includes: [
+      "One private 1:1 coaching session",
+      "Focused conversation around one current challenge or goal",
+      "Support identifying the belief or pattern underneath the issue",
+      "Practical next steps to help you move forward with more clarity",
+      "Space to ask questions and receive personalized guidance",
+    ],
+    outcome:
+      "You leave with greater clarity, a grounded next step, and a deeper understanding of what may be keeping you stuck.",
+  },
+  {
     name: "The Confidence Rebuild",
     duration: "12-week signature Core Belief Transformation experience",
     investment: "$2,497",
@@ -49,25 +68,6 @@ const programs = [
     ],
     outcome:
       "You begin rebuilding the inner foundation that allows confidence, self-trust, and aligned action to feel more natural and sustainable.",
-  },
-  {
-    name: "One-Time Coaching Session",
-    duration: "Single private coaching session",
-    investment: "$215",
-    focus: "Focused support for clarity and next steps",
-    description:
-      "For women who want a single, supportive coaching session to talk through a specific challenge, decision, or area where self-doubt is showing up.",
-    bestFor:
-      "Women who want focused support before committing to a longer coaching experience, or who need guidance around one clear topic.",
-    includes: [
-      "One private 1:1 coaching session",
-      "Focused conversation around one current challenge or goal",
-      "Support identifying the belief or pattern underneath the issue",
-      "Practical next steps to help you move forward with more clarity",
-      "Space to ask questions and receive personalized guidance",
-    ],
-    outcome:
-      "You leave with greater clarity, a grounded next step, and a deeper understanding of what may be keeping you stuck.",
   },
   {
     name: "The Confidence Reclamation",
@@ -92,6 +92,9 @@ const programs = [
     outcome:
       "You receive the time, structure, and support to not only rebuild confidence, but embody it more deeply in your decisions, relationships, and next chapter.",
   },
+];
+
+const continuedSupport = [
   {
     name: "Growth Membership",
     duration: "Monthly membership",
@@ -112,6 +115,139 @@ const programs = [
       "You stay supported as you continue practicing confidence, self-trust, and aligned action beyond the initial coaching experience.",
   },
 ];
+
+function ProgramCard({ program }) {
+  return (
+    <article
+      className={
+        program.premium
+          ? "flex h-full flex-col rounded-[2rem] bg-[#3f342c] p-8 text-white shadow-2xl shadow-[#3f342c]/20 ring-1 ring-[#6d594b]"
+          : program.featured
+            ? "flex h-full flex-col rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-2 ring-[#b7835f]"
+            : "flex h-full flex-col rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5]"
+      }
+    >
+      {program.featured && (
+        <p className="mb-5 inline-block w-fit rounded-full bg-[#b7835f] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">
+          Preferred Package
+        </p>
+      )}
+
+      {program.premium && (
+        <p className="mb-5 inline-block w-fit rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#3f342c]">
+          Premium Package
+        </p>
+      )}
+
+      <p
+        className={`text-sm font-bold uppercase tracking-[0.18em] ${
+          program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
+        }`}
+      >
+        {program.duration}
+      </p>
+
+      <h2
+        className={`mt-4 text-3xl font-bold leading-tight ${
+          program.premium ? "text-white" : "text-[#3f342c]"
+        }`}
+      >
+        {program.name}
+      </h2>
+
+      <div
+        className={`mt-6 rounded-2xl p-5 ${
+          program.premium ? "bg-white/10" : "bg-[#f7efe8]"
+        }`}
+      >
+        <p
+          className={`text-base font-black uppercase tracking-[0.18em] ${
+            program.premium ? "text-[#f7d7c7]" : "text-[#6f5a4d]"
+          }`}
+        >
+          Investment Starts At
+        </p>
+        <p className="mt-2 text-5xl font-black">{program.investment}</p>
+      </div>
+
+      <p
+        className={`mt-6 leading-8 ${
+          program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
+        }`}
+      >
+        {program.description}
+      </p>
+
+      <div
+        className={`mt-7 rounded-2xl p-5 ${
+          program.premium ? "bg-white/10" : "bg-[#fffaf5]"
+        }`}
+      >
+        <p
+          className={`text-sm font-black uppercase tracking-[0.18em] ${
+            program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
+          }`}
+        >
+          Focus
+        </p>
+        <p
+          className={`mt-2 font-semibold leading-7 ${
+            program.premium ? "text-white" : "text-[#3f342c]"
+          }`}
+        >
+          {program.focus}
+        </p>
+      </div>
+
+      <div className="mt-7">
+        <h3
+          className={`text-lg font-bold ${
+            program.premium ? "text-white" : "text-[#3f342c]"
+          }`}
+        >
+          Best For
+        </h3>
+        <p
+          className={`mt-3 leading-7 ${
+            program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
+          }`}
+        >
+          {program.bestFor}
+        </p>
+      </div>
+
+      <div className="mt-7">
+        <h3
+          className={`text-lg font-bold ${
+            program.premium ? "text-white" : "text-[#3f342c]"
+          }`}
+        >
+          What Is Included
+        </h3>
+        <ul
+          className={`mt-4 list-disc space-y-3 pl-5 leading-7 ${
+            program.premium ? "text-[#f7efe8]" : "text-[#5f4c41]"
+          }`}
+        >
+          {program.includes.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div
+        className={`mt-7 rounded-2xl p-5 ${
+          program.premium ? "bg-white text-[#3f342c]" : "bg-[#f7efe8]"
+        }`}
+      >
+        <p className="text-sm font-black uppercase tracking-[0.18em] text-[#9b6f5d]">
+          Transformation Outcome
+        </p>
+        <p className="mt-3 font-semibold leading-7">{program.outcome}</p>
+      </div>
+    </article>
+  );
+}
 
 export default function PricingPage() {
   return (
@@ -137,142 +273,36 @@ export default function PricingPage() {
 
       <section className="px-6 pb-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Choose Your Next Step
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-4xl">
+              Start with clarity, then choose the level of support that fits.
+            </h2>
+          </div>
+
           <div className="grid gap-6 lg:grid-cols-2">
             {programs.map((program) => (
-              <article
-                key={program.name}
-                className={
-                  program.premium
-                    ? "rounded-[2rem] bg-[#3f342c] p-8 text-white shadow-2xl shadow-[#3f342c]/20 ring-1 ring-[#6d594b]"
-                    : program.featured
-                      ? "rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-2 ring-[#b7835f]"
-                      : "rounded-[2rem] bg-white p-8 text-[#3f342c] shadow-lg shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5]"
-                }
-              >
-                {program.featured && (
-                  <p className="mb-5 inline-block rounded-full bg-[#b7835f] px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white">
-                    Signature Offer
-                  </p>
-                )}
-
-                {program.premium && (
-                  <p className="mb-5 inline-block rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#3f342c]">
-                    VIP Experience
-                  </p>
-                )}
-
-                <p
-                  className={`text-sm font-bold uppercase tracking-[0.18em] ${
-                    program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
-                  }`}
-                >
-                  {program.duration}
-                </p>
-
-                <h2
-                  className={`mt-4 text-3xl font-bold leading-tight ${
-                    program.premium ? "text-white" : "text-[#3f342c]"
-                  }`}
-                >
-                  {program.name}
-                </h2>
-
-                <div
-                  className={`mt-6 rounded-2xl p-5 ${
-                    program.premium ? "bg-white/10" : "bg-[#f7efe8]"
-                  }`}
-                >
-                  <p
-                    className={`text-base font-black uppercase tracking-[0.18em] ${
-                      program.premium ? "text-[#f7d7c7]" : "text-[#6f5a4d]"
-                    }`}
-                  >
-                    Investment Starts At
-                  </p>
-                  <p className="mt-2 text-5xl font-black">
-                    {program.investment}
-                  </p>
-                </div>
-
-                <p
-                  className={`mt-6 leading-8 ${
-                    program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
-                  }`}
-                >
-                  {program.description}
-                </p>
-
-                <div
-                  className={`mt-7 rounded-2xl p-5 ${
-                    program.premium ? "bg-white/10" : "bg-[#fffaf5]"
-                  }`}
-                >
-                  <p
-                    className={`text-sm font-black uppercase tracking-[0.18em] ${
-                      program.premium ? "text-[#f7d7c7]" : "text-[#9b6f5d]"
-                    }`}
-                  >
-                    Focus
-                  </p>
-                  <p
-                    className={`mt-2 font-semibold leading-7 ${
-                      program.premium ? "text-white" : "text-[#3f342c]"
-                    }`}
-                  >
-                    {program.focus}
-                  </p>
-                </div>
-
-                <div className="mt-7">
-                  <h3
-                    className={`text-lg font-bold ${
-                      program.premium ? "text-white" : "text-[#3f342c]"
-                    }`}
-                  >
-                    Best For
-                  </h3>
-                  <p
-                    className={`mt-3 leading-7 ${
-                      program.premium ? "text-[#f7efe8]" : "text-[#6f5a4d]"
-                    }`}
-                  >
-                    {program.bestFor}
-                  </p>
-                </div>
-
-                <div className="mt-7">
-                  <h3
-                    className={`text-lg font-bold ${
-                      program.premium ? "text-white" : "text-[#3f342c]"
-                    }`}
-                  >
-                    What Is Included
-                  </h3>
-                  <ul
-                    className={`mt-4 list-disc space-y-3 pl-5 leading-7 ${
-                      program.premium ? "text-[#f7efe8]" : "text-[#5f4c41]"
-                    }`}
-                  >
-                    {program.includes.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div
-                  className={`mt-7 rounded-2xl p-5 ${
-                    program.premium ? "bg-white text-[#3f342c]" : "bg-[#f7efe8]"
-                  }`}
-                >
-                  <p className="text-sm font-black uppercase tracking-[0.18em] text-[#9b6f5d]">
-                    Transformation Outcome
-                  </p>
-                  <p className="mt-3 font-semibold leading-7">
-                    {program.outcome}
-                  </p>
-                </div>
-              </article>
+              <ProgramCard key={program.name} program={program} />
             ))}
+          </div>
+
+          <div className="mt-12 border-t border-[#eadfd5] pt-12">
+            <div className="mx-auto mb-8 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+                Continued Support
+              </p>
+              <h2 className="text-3xl font-bold leading-tight">
+                For past clients who want to keep building momentum.
+              </h2>
+            </div>
+
+            <div className="mx-auto max-w-3xl">
+              {continuedSupport.map((program) => (
+                <ProgramCard key={program.name} program={program} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
