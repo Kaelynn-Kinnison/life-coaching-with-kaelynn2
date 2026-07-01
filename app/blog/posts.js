@@ -1,11 +1,21 @@
 export const posts = [
   {
+    title: "When You Keep Shrinking to Keep the Peace",
+    slug: "shrinking-to-keep-the-peace",
+    category: "Boundaries",
+    description:
+      "Explore how people-pleasing, fear of conflict, and old beliefs can lead you to shrink yourself to keep the peace.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "How to Rebuild Self-Trust After a Hard Season",
     slug: "rebuild-self-trust-after-hard-season",
     category: "Self-Trust",
     description:
       "Learn how to rebuild self-trust after a hard season with compassion, small promises, honest reflection, and gentle next steps.",
-    spotlight: true,
+    spotlight: false,
     featured: false,
     published: true,
   },
