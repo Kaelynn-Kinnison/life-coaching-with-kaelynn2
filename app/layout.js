@@ -160,7 +160,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-[#fdf8f3] text-[#3f342c] antialiased">
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-7M7KB7PY2W"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JHDHNN24Z6"
           strategy="afterInteractive"
         />
 
@@ -169,7 +169,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-7M7KB7PY2W');
+            gtag('config', 'G-JHDHNN24Z6');
           `}
         </Script>
 
