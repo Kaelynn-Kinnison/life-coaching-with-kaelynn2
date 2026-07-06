@@ -46,20 +46,21 @@ export default function AboutPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              I am Kaelynn, and I help women come back to themselves.
+              I became a life coach for the woman who looks capable but quietly
+              questions herself.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              My coaching style is warm, honest, and practical. I support women
-              who struggle with self-doubt and a lack of confidence by helping
-              them understand the beliefs behind those patterns and begin making
-              choices from self-trust instead of fear.
+              I help women who struggle with self-doubt, lack of confidence,
+              overthinking, people-pleasing, and trusting themselves begin
+              rebuilding confidence from the inside out.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
-              I am based in Nebraska and work virtually with women who want a
-              grounded space to be heard, challenged, encouraged, and reminded
-              that change can happen one honest step at a time.
+              My coaching style is warm, honest, and grounded. Together, we look
+              beneath the surface of self-doubt to understand the beliefs that
+              may be shaping your choices, confidence, boundaries, and
+              self-worth.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -102,23 +103,28 @@ export default function AboutPage() {
               Why This Work Matters to Me
             </p>
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              I care about the person underneath the pattern.
+              I care about the woman underneath the pattern.
             </h2>
           </div>
 
           <div className="space-y-5 text-lg leading-8 text-[#6f5a4d]">
             <p>
               Many women come to coaching after years of being capable,
-              responsible, and strong for everyone else. On the outside they may
-              be functioning. On the inside, they are tired of questioning
-              themselves, shrinking their needs, or waiting until they feel
-              completely ready.
+              responsible, and strong for everyone else. On the outside, they
+              may be functioning. On the inside, they are tired of questioning
+              themselves, shrinking their needs, overthinking every next step,
+              or waiting until they feel completely ready.
             </p>
             <p>
               My work is not about pushing you harder. It is about helping you
               understand what has been shaping your choices, reconnect with your
               own voice, and practice a steadier kind of confidence in real
               life.
+            </p>
+            <p>
+              I am based in Nebraska and work virtually with women who want a
+              grounded space to be heard, challenged, encouraged, and supported
+              as they learn to trust themselves one honest step at a time.
             </p>
           </div>
         </div>
@@ -165,6 +171,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
+          <div className="rounded-[2rem] bg-[#f7efe8] p-8 md:p-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              My Coaching Method
+            </p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
+              We look beneath the self-doubt.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
+              Through Core Belief Transformation, we explore the beliefs that
+              may be influencing how you see yourself, what you believe you are
+              allowed to want, and how confidently you make decisions.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-[#eadfd5] md:p-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Working With Me
+            </p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
+              Warm support with honest reflection.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[#6f5a4d]">
+              You will not be pushed to become someone you are not. You will be
+              supported as you understand yourself more clearly, challenge old
+              patterns, and practice trusting yourself in a way that feels
+              grounded and real.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7efe8] px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
@@ -174,8 +213,9 @@ export default function AboutPage() {
             If my approach feels like the kind of support you need, let us talk.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
-            A Discovery Call is a simple first conversation to see whether
-            coaching together feels like the right fit.
+            If you are tired of second-guessing yourself and ready to understand
+            what has been keeping you stuck, I would be honored to meet you in a
+            Discovery Call.
           </p>
           <Link
             href={bookingLink}
