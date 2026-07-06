@@ -1,11 +1,21 @@
 export const posts = [
   {
+    title: "How to Rebuild Confidence After Trauma or a Difficult Relationship",
+    slug: "confidence-after-trauma-difficult-relationship",
+    category: "Trauma-Informed Growth",
+    description:
+      "A compassionate guide to rebuilding confidence, self-trust, boundaries, and identity after trauma or a difficult relationship.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "When You Keep Shrinking to Keep the Peace",
     slug: "shrinking-to-keep-the-peace",
     category: "Boundaries",
     description:
       "Explore how people-pleasing, fear of conflict, and old beliefs can lead you to shrink yourself to keep the peace.",
-    spotlight: true,
+    spotlight: false,
     featured: false,
     published: true,
   },
