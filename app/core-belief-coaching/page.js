@@ -4,6 +4,9 @@ export const metadata = {
   title: "Core Belief Coaching for Confidence",
   description:
     "Learn how hidden core beliefs can create self-doubt, shape confidence, affect self-worth, and influence the choices women make.",
+  alternates: {
+    canonical: "/core-belief-coaching",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

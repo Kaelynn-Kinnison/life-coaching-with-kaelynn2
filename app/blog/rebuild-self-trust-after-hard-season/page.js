@@ -3,6 +3,9 @@ export const metadata = {
     "How to Rebuild Self-Trust After a Hard Season | Life Coaching with Kaelynn",
   description:
     "Learn how to rebuild self-trust after a hard season with compassion, small promises, honest reflection, and gentle next steps toward healing and growth.",
+  alternates: {
+    canonical: "/blog/rebuild-self-trust-after-hard-season",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

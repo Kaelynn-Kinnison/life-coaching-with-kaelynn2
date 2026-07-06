@@ -2,6 +2,9 @@ export const metadata = {
   title: "When Hope Feels Lost",
   description:
     "A coaching article about hopelessness, limiting beliefs, emotional wellness, and finding hope through healing, growth, and transformation.",
+  alternates: {
+    canonical: "/blog/when-hope-feels-lost",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

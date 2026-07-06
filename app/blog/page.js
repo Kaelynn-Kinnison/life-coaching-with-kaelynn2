@@ -5,6 +5,9 @@ export const metadata = {
   title: "Core Belief Coaching Blog",
   description:
     "Read professional coaching articles on core beliefs, limiting beliefs, self-worth, confidence, emotional wellness, accountability, personal growth, and lasting transformation.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

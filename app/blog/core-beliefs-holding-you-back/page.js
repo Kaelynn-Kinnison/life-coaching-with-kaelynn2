@@ -2,6 +2,9 @@ export const metadata = {
   title: "Hidden Core Beliefs Holding You Back",
   description:
     "Discover how limiting core beliefs influence confidence, relationships, decision-making, and personal growth.",
+  alternates: {
+    canonical: "/blog/core-beliefs-holding-you-back",
+  },
 };
 
 export default function CoreBeliefsArticle() {

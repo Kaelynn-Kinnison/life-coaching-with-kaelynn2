@@ -5,6 +5,9 @@ export const metadata = {
   title: "Testimonials",
   description:
     "Read Life Coaching with Kaelynn testimonials about self-worth, limiting beliefs, confidence, healing, accountability, and personal transformation.",
+  alternates: {
+    canonical: "/testimonials",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

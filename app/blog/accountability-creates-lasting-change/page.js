@@ -2,6 +2,9 @@ export const metadata = {
   title: "Accountability Creates Lasting Change",
   description:
     "Discover how accountability provides support, structure, and consistency to help create meaningful and lasting personal growth.",
+  alternates: {
+    canonical: "/blog/accountability-creates-lasting-change",
+  },
 };
 
 export default function AccountabilityArticle() {

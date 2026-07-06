@@ -3,6 +3,9 @@ export const metadata = {
     "Why Self-Doubt Keeps Showing Up",
   description:
     "A confidence coaching article for women about why self-doubt keeps showing up, how limiting core beliefs shape self-trust, and how to begin rebuilding lasting confidence.",
+  alternates: {
+    canonical: "/blog/why-self-doubt-keeps-showing-up",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

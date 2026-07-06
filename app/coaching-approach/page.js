@@ -4,6 +4,9 @@ export const metadata = {
   title: "Confidence Coaching Approach",
   description:
     "Learn how Core Belief Transformation, compassionate accountability, and confidence coaching help women overcome self-doubt and build lasting confidence.",
+  alternates: {
+    canonical: "/coaching-approach",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

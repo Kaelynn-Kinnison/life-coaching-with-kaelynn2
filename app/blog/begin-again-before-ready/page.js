@@ -3,6 +3,9 @@ export const metadata = {
     "Begin Again Before You Feel Ready",
   description:
     "A warm coaching article about beginning again before you feel fully ready, healing old patterns, rebuilding self-trust, and taking one honest step toward growth.",
+  alternates: {
+    canonical: "/blog/begin-again-before-ready",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

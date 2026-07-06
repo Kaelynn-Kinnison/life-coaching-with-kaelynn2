@@ -37,9 +37,6 @@ export const metadata = {
     "women's confidence coach",
     "limiting beliefs coaching",
   ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title:
       "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",

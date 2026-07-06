@@ -4,6 +4,9 @@ export const metadata = {
   title: "Programs & Pricing",
   description:
     "Explore coaching program investments for women ready to overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
+  alternates: {
+    canonical: "/pricing",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

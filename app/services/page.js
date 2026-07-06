@@ -4,6 +4,9 @@ export const metadata = {
   title: "Confidence Coaching Programs for Women",
   description:
     "Explore virtual coaching programs for women ready to overcome self-doubt, transform limiting core beliefs, and build lasting confidence.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

@@ -5,6 +5,9 @@ export const metadata = {
     "When Life Changes, So Must You",
   description:
     "A supportive blog article for women navigating life transitions, rebuilding confidence, reconnecting with themselves, and creating a meaningful new chapter.",
+  alternates: {
+    canonical: "/blog/life-transitions-with-confidence",
+  },
 };
 
 export default function Page() {

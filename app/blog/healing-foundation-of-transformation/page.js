@@ -2,6 +2,9 @@ export const metadata = {
   title: "Healing as the Foundation of Growth",
   description:
     "Explore why emotional healing, self-awareness, and self-compassion are essential foundations for lasting personal transformation.",
+  alternates: {
+    canonical: "/blog/healing-foundation-of-transformation",
+  },
 };
 
 export default function HealingFoundationArticle() {

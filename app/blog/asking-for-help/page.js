@@ -2,6 +2,9 @@ export const metadata = {
   title: "Asking for Help Is a Strength",
   description:
     "Explore why asking for help can feel difficult, how old beliefs can keep you carrying everything alone, and why support is part of healing, growth, and lasting change.",
+  alternates: {
+    canonical: "/blog/asking-for-help",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

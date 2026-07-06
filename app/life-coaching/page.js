@@ -4,6 +4,9 @@ export const metadata = {
   title: "Life Coaching for Women",
   description:
     "Life Coaching with Kaelynn supports women ready to overcome self-doubt, strengthen self-worth, and build lasting confidence with clarity and accountability.",
+  alternates: {
+    canonical: "/life-coaching",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

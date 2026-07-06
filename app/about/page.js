@@ -5,6 +5,9 @@ export const metadata = {
   title: "About Kaelynn Kinnison",
   description:
     "Meet Kaelynn Kinnison, a Nebraska-based life coach helping women overcome self-doubt, transform limiting beliefs, and build lasting confidence.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

@@ -3,6 +3,9 @@ export const metadata = {
     "How to Rebuild Confidence After Trauma or a Difficult Relationship | Life Coaching with Kaelynn",
   description:
     "A compassionate coaching article about rebuilding confidence, self-trust, boundaries, identity, and hope after trauma or a difficult relationship.",
+  alternates: {
+    canonical: "/blog/confidence-after-trauma-difficult-relationship",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

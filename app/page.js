@@ -8,6 +8,9 @@ export const metadata = {
   },
   description:
     "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

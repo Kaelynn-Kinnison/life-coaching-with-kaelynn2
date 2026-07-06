@@ -3,6 +3,9 @@ export const metadata = {
     "When You Keep Shrinking to Keep the Peace | Life Coaching with Kaelynn",
   description:
     "Explore how people-pleasing, fear of conflict, and old core beliefs can lead you to shrink yourself to keep the peace, and how healing helps you choose yourself with compassion.",
+  alternates: {
+    canonical: "/blog/shrinking-to-keep-the-peace",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

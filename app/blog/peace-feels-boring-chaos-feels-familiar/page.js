@@ -3,6 +3,9 @@ export const metadata = {
     "Why Peace Feels Boring",
   description:
     "Explore why calm relationships, rest, and stability can feel unfamiliar when chaos has become normal, and how healing helps you learn to trust peace.",
+  alternates: {
+    canonical: "/blog/peace-feels-boring-chaos-feels-familiar",
+  },
 };
 
 const bookingUrl = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

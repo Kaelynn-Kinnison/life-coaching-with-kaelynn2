@@ -4,6 +4,9 @@ export const metadata = {
   title: "Why Self-Sabotage Happens",
   description:
     "Understand why self-sabotage happens, how it connects to limiting beliefs, fear, self-worth, and old emotional patterns.",
+  alternates: {
+    canonical: "/blog/why-self-sabotage-happens",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

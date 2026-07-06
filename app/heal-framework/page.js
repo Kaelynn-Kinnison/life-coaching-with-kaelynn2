@@ -4,6 +4,9 @@ export const metadata = {
   title: "H.E.A.L. Framework",
   description:
     "A simple overview of Kaelynn's H.E.A.L. Framework: Hear, Expose, Align, and Live.",
+  alternates: {
+    canonical: "/heal-framework",
+  },
 };
 
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";

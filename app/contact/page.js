@@ -4,6 +4,9 @@ export const metadata = {
   title: "Contact Kaelynn",
   description:
     "Schedule a Discovery Call with Nebraska-based life coach Kaelynn for virtual coaching that supports clarity, confidence, and your next chapter.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const email = "hello@lifecoachingwithkaelynn.com";
