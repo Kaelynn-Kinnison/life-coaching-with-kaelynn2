@@ -52,13 +52,13 @@ const programs = [
   {
     name: "The Confidence Rebuild",
     duration: "12-week signature Core Belief Transformation experience",
-    investment: "$2,497",
-    focus: "The signature transformation experience",
+    investment: "$1,997",
+    focus: "A clear, structured reset for self-trust and confidence",
     description:
-      "For women ready to transform limiting core beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
+      "For women ready to identify the limiting beliefs beneath self-doubt, rebuild self-worth, and begin making choices from a steadier inner foundation.",
     featured: true,
     bestFor:
-      "Women who are ready to stop second-guessing themselves, strengthen self-trust, and build confidence from the inside out.",
+      "Women who want a focused private coaching experience to stop second-guessing themselves, understand the patterns keeping them stuck, and practice more confident follow-through.",
     includes: [
       "Private 1:1 coaching sessions",
       "Core Belief Transformation work",
@@ -66,34 +66,34 @@ const programs = [
       "Limiting belief identification and reframing",
       "Self-worth and confidence development",
       "Personalized reflection prompts and action steps",
-      "Accountability between sessions",
+      "Accountability between sessions to support real-life practice",
       "Support with confident decision-making and follow-through",
     ],
     outcome:
-      "You begin rebuilding the inner foundation that allows confidence, self-trust, and aligned action to feel more natural and sustainable.",
+      "You leave with a clearer understanding of what has been driving self-doubt, a stronger sense of self-trust, and practical ways to keep choosing differently.",
   },
   {
     name: "The Confidence Reclamation",
     duration: "6-month private coaching experience",
-    investment: "$4,997",
-    focus: "The deepest private coaching container",
+    investment: "$2,997",
+    focus: "Deeper identity work, integration, and high-touch support",
     description:
-      "For women who want the deepest private coaching support as they reclaim self-trust and build lasting confidence from the inside out.",
+      "For women who want the deepest private coaching support as they reclaim self-trust, strengthen boundaries, and integrate confidence into their daily decisions, relationships, and next chapter.",
     premium: true,
     bestFor:
-      "Women who want spacious, high-touch support as they move through deeper identity, self-worth, and confidence transformation.",
+      "Women who know their self-doubt is connected to deeper identity, self-worth, relationship, or life-transition patterns and want more spacious support as they practice becoming who they are ready to be.",
     includes: [
       "Everything in The Confidence Rebuild",
-      "Extended private coaching timeline",
-      "Personalized transformation roadmap",
+      "Extended private coaching timeline for deeper integration",
+      "Personalized confidence roadmap for your next chapter",
       "Advanced Core Belief Transformation work",
-      "Deeper self-trust and confidence integration",
-      "Ongoing accountability and implementation support",
-      "Support for boundaries, identity, self-worth, and aligned choices",
-      "Priority guidance between sessions",
+      "Monthly integration check-ins to help the work stick",
+      "Ongoing accountability and implementation support between sessions",
+      "Support applying the work to boundaries, relationships, decisions, and identity shifts",
+      "Priority between-session support when old patterns or confidence blocks come up in real life",
     ],
     outcome:
-      "You receive the time, structure, and support to not only rebuild confidence, but embody it more deeply in your decisions, relationships, and next chapter.",
+      "You receive the time, structure, and support to not only rebuild confidence, but live from it more consistently as you make decisions, set boundaries, and step into your next chapter.",
   },
 ];
 
@@ -271,6 +271,33 @@ export default function PricingPage() {
             build confidence that lasts. Final recommendations are discussed
             during your free Discovery Call.
           </p>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 md:px-12">
+        <div className="mx-auto grid max-w-6xl gap-8 border-y border-[#eadfd5] py-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
+              Why This Work Matters
+            </p>
+            <h2 className="text-3xl font-bold leading-tight md:text-4xl">
+              The investment is not just for more confidence. It is for the way
+              your life changes when self-doubt stops leading.
+            </h2>
+          </div>
+
+          <div className="space-y-5 text-lg leading-8 text-[#6f5a4d]">
+            <p>
+              When self-doubt is running the show, it can make your decisions
+              smaller, your boundaries softer, your voice quieter, and your next
+              chapter feel harder to trust.
+            </p>
+            <p>
+              Coaching gives you space to understand the beliefs underneath
+              those patterns, rebuild self-worth from the inside out, and
+              practice choosing from clarity instead of fear.
+            </p>
+          </div>
         </div>
       </section>
 
