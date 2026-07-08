@@ -1,11 +1,22 @@
 export const posts = [
   {
+    title:
+      "You Are Not Lazy: Understanding Emotional Exhaustion and the Pressure to Keep Going",
+    slug: "emotional-exhaustion-not-laziness",
+    category: "Emotional Wellness",
+    description:
+      "Understand how emotional exhaustion can look like laziness and discover compassionate ways to restore your energy without abandoning yourself.",
+    spotlight: true,
+    featured: false,
+    published: true,
+  },
+  {
     title: "How to Rebuild Confidence After Trauma or a Difficult Relationship",
     slug: "confidence-after-trauma-difficult-relationship",
     category: "Trauma-Informed Growth",
     description:
       "A compassionate guide to rebuilding confidence, self-trust, boundaries, and identity after trauma or a difficult relationship.",
-    spotlight: true,
+    spotlight: false,
     featured: false,
     published: true,
   },
