@@ -38,10 +38,9 @@ export const metadata = {
     "limiting beliefs coaching",
   ],
   openGraph: {
-    title:
-      "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
+    title: "Life Coaching with Kaelynn | Confidence Coach for Women",
     description:
-      "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
+      "Confidence coaching for women ready to rebuild self-trust, quiet self-doubt, and create personal growth with virtual life coaching.",
     url: "https://www.lifecoachingwithkaelynn.com",
     siteName: "Life Coaching with Kaelynn",
     images: [
@@ -57,10 +56,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
+    title: "Life Coaching with Kaelynn | Confidence Coach for Women",
     description:
-      "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
+      "Confidence coaching for women ready to rebuild self-trust, quiet self-doubt, and create personal growth with virtual life coaching.",
     images: ["/life-coaching-hero.png"],
   },
   robots: {
