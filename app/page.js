@@ -94,8 +94,8 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              I am a life coach who helps women who struggle with self-doubt and
-              a lack of confidence.
+              I am a life coach for women who struggle with self-doubt and a
+              lack of confidence.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
