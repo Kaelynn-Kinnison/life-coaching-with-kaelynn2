@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: {
     absolute:
-      "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
+      "Life Coach for Women | Confidence Coaching with Kaelynn",
   },
   description:
     "Confidence coaching for capable women who privately struggle with self-doubt, overthinking, people-pleasing, boundaries, and trusting their decisions.",

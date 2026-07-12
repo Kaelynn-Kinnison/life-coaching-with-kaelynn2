@@ -18,7 +18,7 @@ export const metadata = {
   metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
   title: {
     default:
-      "Life Coach for Women | Confidence Coaching for Women | Personal Growth Coaching",
+      "Life Coach for Women | Confidence Coaching with Kaelynn",
     template: "%s | Life Coaching with Kaelynn",
   },
   description:
