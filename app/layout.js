@@ -123,7 +123,7 @@ const structuredData = {
       {
         "@type": "Offer",
         name: "The Confidence Rebuild",
-        price: "2497",
+        price: "1997",
         priceCurrency: "USD",
         url: `${siteUrl}/pricing`,
         itemOffered: {
@@ -136,14 +136,14 @@ const structuredData = {
       {
         "@type": "Offer",
         name: "The Confidence Reclamation",
-        price: "4997",
+        price: "2997",
         priceCurrency: "USD",
         url: `${siteUrl}/pricing`,
         itemOffered: {
           "@type": "Service",
           name: "The Confidence Reclamation",
           description:
-            "A 6-month private Core Belief Transformation experience for women ready to reclaim self-trust and build lasting confidence.",
+            "A 16-week high-touch Core Belief Transformation experience for women ready to reclaim self-trust and integrate confidence into daily life.",
         },
       },
     ],

@@ -15,12 +15,13 @@ const programs = [
   {
     name: "The Confidence Rebuild",
     duration: "12-week signature Core Belief Transformation experience",
-    investment: "$2,497",
+    investment: "$1,997",
     tagline: "Transform self-doubt into lasting confidence.",
     audience:
       "For women ready to transform limiting beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
     featured: true,
     includes: [
+      "Private 45-60 minute sessions across 12 weeks",
       "H.E.A.L. Framework",
       "Core Belief Transformation",
       "Uncover limiting beliefs",
@@ -33,21 +34,21 @@ const programs = [
   },
   {
     name: "The Confidence Reclamation",
-    duration: "6-month private coaching experience",
-    investment: "$4,997",
+    duration: "16-week high-touch private coaching experience",
+    investment: "$2,997",
     tagline:
       "Reclaim your self-trust. Expand your confidence. Become rooted in who you are.",
     audience:
       "For women who want the deepest private coaching support as they build lasting confidence from the inside out.",
     premium: true,
     includes: [
-      "Everything in The Confidence Rebuild",
-      "Personalized transformation roadmap",
-      "Advanced Core Belief Transformation work",
-      "Accountability and implementation support",
-      "Ongoing guidance between sessions",
-      "Deeper self-trust and confidence integration",
-      "Deep identity and self-worth work",
+      "Private 45-60 minute sessions across 16 weeks",
+      "Personalized Confidence Reclamation Roadmap",
+      "Deeper work across identity, self-worth, relationships, and transitions",
+      "Boundary and self-trust practice for real-life decisions",
+      "Priority between-session support during support hours",
+      "Progress reviews and personalized action steps",
+      "A post-program confidence integration plan",
     ],
   },
   {
@@ -58,10 +59,9 @@ const programs = [
     audience:
       "For past clients who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
     includes: [
-      "Monthly coaching calls",
-      "Accountability support",
-      "Personal growth trainings",
-      "Community connection",
+      "One private 45-60 minute session each month",
+      "One weekly check-in by phone, email, or text",
+      "Accountability and goal review",
       "Continued encouragement and guidance",
     ],
   },
@@ -140,7 +140,7 @@ function ProgramCard({ program }) {
             : "mt-8 inline-flex justify-center rounded-full bg-[#0f766e] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#115e59]"
         }
       >
-        Schedule a Discovery Call
+        Book a Complimentary Clarity Call
       </Link>
     </article>
   );
@@ -172,7 +172,7 @@ export default function ServicesPage() {
                 target="_blank"
                 className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
               >
-                Schedule a Discovery Call
+                Book a Complimentary Clarity Call
               </Link>
 
               <Link
@@ -265,7 +265,7 @@ export default function ServicesPage() {
           </p>
 
           <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-            Start with a Discovery Call.
+            Start with a Complimentary Confidence Clarity Call.
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
@@ -278,7 +278,7 @@ export default function ServicesPage() {
             target="_blank"
             className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule a Discovery Call
+            Book Your Complimentary Clarity Call
           </Link>
         </div>
       </section>

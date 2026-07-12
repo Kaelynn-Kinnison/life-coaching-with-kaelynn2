@@ -39,12 +39,22 @@ export default function FAQ() {
     {
       question: "Which package is right for me?",
       answer:
-        "If you are new to coaching, a Discovery Call is the best place to start. We can talk through whether The Confidence Rebuild, The Confidence Reclamation, or the Growth Membership for past clients is the right fit for your season.",
+        "If you are new to coaching, begin with a complimentary Confidence Clarity Call. The one-time session supports one focused issue, The Confidence Rebuild offers a concentrated 12-week experience, and The Confidence Reclamation provides 16 weeks of high-touch support for deeper, interconnected patterns. The Growth Membership is reserved for coaching alumni.",
     },
     {
-      question: "What is a Clarity Appointment?",
+      question: "What is a Complimentary Confidence Clarity Call?",
       answer:
-        "A Clarity Appointment is a supportive conversation designed to help you discuss your goals, ask questions, and determine which coaching option best fits your current needs.",
+        "It is a free, no-pressure conversation to identify where self-doubt is showing up, clarify what you want to change, ask questions, and determine which coaching option best fits your needs.",
+    },
+    {
+      question: "How does between-session support work?",
+      answer:
+        "Support is available by phone, chat, email, or text between 8:00 a.m. and 10:00 p.m. CT. The Confidence Reclamation includes priority support with replies generally within one hour during those hours. Coaching support is not emergency or crisis care.",
+    },
+    {
+      question: "Can I participate in coaching while I am in therapy?",
+      answer:
+        "Yes. Coaching can complement therapy when each has a clear role. Coaching is forward-focused and does not replace mental-health treatment, diagnosis, or crisis support.",
     },
     {
       question: "Is coaching confidential?",
@@ -93,15 +103,15 @@ export default function FAQ() {
           </h2>
 
           <p className="text-lg mb-8 text-[#f7e9df]">
-            A clarity appointment is a great way to ask questions, learn more
-            about coaching, and decide if this support is right for you.
+            Your complimentary Confidence Clarity Call is a supportive place to
+            name what you want to change and decide whether coaching fits.
           </p>
 
           <Link
             href="/contact#book"
             className="bg-white text-[#7b4f43] px-8 py-4 rounded-full font-semibold hover:bg-[#f5e8df]"
           >
-            Book a Clarity Appointment
+            Book Your Complimentary Clarity Call
           </Link>
         </div>
       </section>
