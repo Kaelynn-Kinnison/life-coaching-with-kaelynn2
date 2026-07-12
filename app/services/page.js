@@ -16,6 +16,7 @@ const programs = [
     name: "The Confidence Rebuild",
     duration: "12-week signature Core Belief Transformation experience",
     investment: "$1,997",
+    paymentPlan: "or 3 monthly payments of $699 ($2,097 total)",
     tagline: "Transform self-doubt into lasting confidence.",
     audience:
       "For women ready to transform limiting beliefs, rebuild self-worth, and stop letting self-doubt lead their choices.",
@@ -36,6 +37,7 @@ const programs = [
     name: "The Confidence Reclamation",
     duration: "16-week high-touch private coaching experience",
     investment: "$2,997",
+    paymentPlan: "or 4 monthly payments of $799 ($3,196 total)",
     tagline:
       "Reclaim your self-trust. Expand your confidence. Become rooted in who you are.",
     audience:
@@ -117,9 +119,17 @@ function ProgramCard({ program }) {
         }
       >
         <p className="text-base font-black uppercase tracking-[0.18em]">
-          Investment Starts At
+          Investment
         </p>
         <p className="mt-2 text-4xl font-black">{program.investment}</p>
+        {program.paymentPlan && (
+          <>
+            <p className={`mt-1 text-sm font-semibold ${textClass}`}>paid in full</p>
+            <p className={`mt-4 border-t pt-4 font-bold leading-7 ${program.premium ? "border-white/20 text-white" : "border-[#ddcfc3] text-[#3f342c]"}`}>
+              {program.paymentPlan}
+            </p>
+          </>
+        )}
       </div>
 
       <div className="mt-7 flex-1">

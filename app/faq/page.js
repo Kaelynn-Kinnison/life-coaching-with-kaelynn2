@@ -52,6 +52,11 @@ export default function FAQ() {
         "Support is available by phone, chat, email, or text between 8:00 a.m. and 10:00 p.m. CT. The Confidence Reclamation includes priority support with replies generally within one hour during those hours. Coaching support is not emergency or crisis care.",
     },
     {
+      question: "Do you offer payment plans?",
+      answer:
+        "Yes. The Confidence Rebuild is $1,997 paid in full or three monthly payments of $699. The Confidence Reclamation is $2,997 paid in full or four monthly payments of $799. The first payment is due at enrollment, and the remaining payments are automatically charged every 30 days. Choosing a payment plan is a commitment to the full program investment.",
+    },
+    {
       question: "Can I participate in coaching while I am in therapy?",
       answer:
         "Yes. Coaching can complement therapy when each has a clear role. Coaching is forward-focused and does not replace mental-health treatment, diagnosis, or crisis support.",

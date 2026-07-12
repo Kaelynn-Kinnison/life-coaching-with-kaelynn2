@@ -56,6 +56,7 @@ const programs = [
     name: "The Confidence Rebuild",
     duration: "12-week private coaching experience",
     investment: "$1,997",
+    paymentPlan: "or 3 monthly payments of $699 ($2,097 total)",
     focus: "A clear, structured reset for self-trust and confidence",
     description:
       "For women ready to identify the limiting beliefs beneath self-doubt, rebuild self-worth, and begin making choices from a steadier inner foundation.",
@@ -79,6 +80,7 @@ const programs = [
     name: "The Confidence Reclamation",
     duration: "16-week high-touch private coaching experience",
     investment: "$2,997",
+    paymentPlan: "or 4 monthly payments of $799 ($3,196 total)",
     focus: "Deeper identity work, integration, and high-touch support",
     description:
       "For women ready to change interconnected patterns—not just understand them—and receive close support while practicing self-trust, boundaries, and confident choices in real life.",
@@ -164,6 +166,10 @@ const featuredTestimonials = [
 
 const pricingFaqs = [
   {
+    question: "Are payment plans available?",
+    answer: "Yes. The Confidence Rebuild is available for $1,997 paid in full or three monthly payments of $699. The Confidence Reclamation is available for $2,997 paid in full or four monthly payments of $799. The first payment is due at enrollment, and remaining payments are automatically charged every 30 days. Payment plans are a commitment to the full program investment, not a month-to-month coaching membership.",
+  },
+  {
     question: "Which coaching option should I choose?",
     answer: "Choose the one-time session when you want focused support around one clear issue. The Confidence Rebuild is designed for a concentrated 12-week shift. The Confidence Reclamation is best when several patterns are connected and you want closer support while practicing change in daily life. We can decide together during your complimentary call.",
   },
@@ -234,9 +240,19 @@ function ProgramCard({ program }) {
             program.premium ? "text-[#f7d7c7]" : "text-[#6f5a4d]"
           }`}
         >
-          Investment Starts At
+          Investment
         </p>
         <p className="mt-2 text-5xl font-black">{program.investment}</p>
+        {program.paymentPlan && (
+          <>
+            <p className={`mt-1 text-sm font-semibold ${program.premium ? "text-[#f7d7c7]" : "text-[#6f5a4d]"}`}>
+              paid in full
+            </p>
+            <p className={`mt-4 border-t pt-4 text-base font-bold leading-7 ${program.premium ? "border-white/20 text-white" : "border-[#ddcfc3] text-[#3f342c]"}`}>
+              {program.paymentPlan}
+            </p>
+          </>
+        )}
       </div>
 
       <p
