@@ -99,7 +99,7 @@ export default function WhenHopeFeelsLostPage() {
           </section>
 
           <section className="rounded-3xl bg-teal-700 p-8 text-white shadow-sm sm:p-10">
-            <h2 className="text-2xl font-bold">Discovery Call CTA</h2>
+            <h2 className="text-2xl font-bold">Confidence Clarity Call CTA</h2>
             <p className="mt-4 max-w-3xl text-base leading-8 text-teal-50">
               If you are ready to explore what is keeping you stuck and begin
               moving toward healing and transformation, I would be honored to
@@ -110,7 +110,7 @@ export default function WhenHopeFeelsLostPage() {
                 href={bookingUrl}
                 className="inline-flex justify-center rounded-full bg-white px-6 py-3 text-sm font-bold text-teal-700 transition hover:bg-teal-50"
               >
-                Schedule Your Free Discovery Call
+                Book Your Complimentary Clarity Call
               </a>
               <a
                 href="/blog"

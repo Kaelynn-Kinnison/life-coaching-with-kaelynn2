@@ -511,6 +511,20 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="px-6 pb-20 md:px-12">
+        <div className="mx-auto grid max-w-6xl overflow-hidden rounded-[2rem] shadow-xl lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="bg-[#4f3b4d] p-8 text-white md:p-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#f7d7c7]">My Commitment to You</p>
+            <h2 className="mt-5 text-3xl font-bold leading-tight md:text-5xl">Clear support. Honest expectations.</h2>
+          </div>
+          <div className="space-y-5 bg-white p-8 leading-8 text-[#5f4c41] md:p-12">
+            <p>I bring guidance, accountability, thoughtful questions, and practical tools. You bring your honesty, participation, and willingness to practice new choices between sessions.</p>
+            <p>If, after your first program session, you feel we are not the right fit, your remaining investment can be refunded minus the value of the completed session.</p>
+            <p className="rounded-2xl bg-[#f7efe8] p-5 text-sm leading-7">Coaching cannot guarantee a specific outcome and is not therapy, medical care, mental-health treatment, or crisis support.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7efe8] px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">

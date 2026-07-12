@@ -272,7 +272,7 @@ export default function Page() {
               rel="noopener noreferrer"
               className="inline-block rounded-full bg-[#9b6f5d] px-8 py-4 font-semibold text-white transition hover:bg-[#7f5748]"
             >
-              Schedule a Discovery Call
+              Book Your Complimentary Clarity Call
             </a>
           </div>
 

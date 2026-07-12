@@ -288,7 +288,7 @@ export default function WhySelfSabotageHappensPage() {
               target="_blank"
               className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
             >
-              Schedule Your Free Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
 
             <Link

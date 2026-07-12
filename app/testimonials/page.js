@@ -4,7 +4,7 @@ export const metadata = {
   metadataBase: new URL("https://www.lifecoachingwithkaelynn.com"),
   title: "Testimonials",
   description:
-    "Read Life Coaching with Kaelynn testimonials about self-worth, limiting beliefs, confidence, healing, accountability, and personal transformation.",
+    "Read client reflections about confidence coaching, self-trust, boundaries, decisions, accountability, and changing limiting beliefs with Kaelynn.",
   alternates: {
     canonical: "/testimonials",
   },
@@ -93,14 +93,13 @@ export default function TestimonialsPage() {
           </p>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-            Stories of Self-Worth, Confidence, and Transformation
+            What changes when capable women stop questioning themselves.
           </h1>
 
           <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
-            Coaching is more than setting goals. It is about uncovering the
-            beliefs, patterns, and self-doubt that keep you stuck so you can
-            begin healing, growing, and moving forward with clarity and
-            confidence.
+            These reflections speak to the real-life shifts women seek through
+            coaching: trusting a decision, holding a boundary, recognizing an
+            old belief, and moving forward without abandoning themselves.
           </p>
         </div>
       </section>
@@ -113,14 +112,13 @@ export default function TestimonialsPage() {
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-              Deeper Growth Begins With What You Believe About Yourself
+              Client Reflections on Self-Trust and Confidence
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              These reflections represent the kind of transformation clients
-              often seek through coaching: clarity, confidence, self-trust,
-              emotional growth, accountability, and freedom from limiting
-              beliefs.
+              Every coaching experience is personal. These clients describe
+              what became clearer as they understood old patterns and practiced
+              responding differently in daily life.
             </p>
           </div>
 
@@ -216,12 +214,10 @@ export default function TestimonialsPage() {
           </h2>
 
           <p className="leading-8 text-slate-700">
-            Testimonials and feedback reflect individual experiences and are not
-            a guarantee of specific results. Coaching outcomes vary based on
-            each client&apos;s goals, commitment, circumstances, and level of
-            participation. Some testimonials may be representative examples used
-            to reflect the type of growth and support clients may experience
-            through coaching.
+            Testimonials and feedback reflect individual experiences and are
+            not a guarantee of specific results. Coaching outcomes vary based
+            on each client&apos;s goals, commitment, circumstances, and level of
+            participation.
           </p>
         </div>
       </section>
@@ -233,13 +229,12 @@ export default function TestimonialsPage() {
           </p>
 
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            Ready to Rewrite the Story Holding You Back?
+            Ready to trust your own voice more clearly?
           </h2>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-200">
-            Schedule your complimentary Discovery Call and explore how coaching
-            can support your confidence, self-worth, core belief awareness,
-            accountability, and personal transformation.
+            Book your complimentary Confidence Clarity Call to name where
+            self-doubt is showing up and explore which level of support may fit.
           </p>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
@@ -248,7 +243,7 @@ export default function TestimonialsPage() {
               target="_blank"
               className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
             >
-              Schedule Your Free Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
 
             <Link

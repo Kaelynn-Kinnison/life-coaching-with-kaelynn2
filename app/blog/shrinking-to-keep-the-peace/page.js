@@ -227,7 +227,7 @@ export default function ShrinkingToKeepThePeacePage() {
                 rel="noreferrer"
                 className="inline-flex justify-center rounded-full bg-white px-6 py-3 text-sm font-bold text-teal-700 transition hover:bg-teal-50"
               >
-                Schedule a Free Discovery Call
+                Book Your Complimentary Clarity Call
               </a>
               <a
                 href="/blog"

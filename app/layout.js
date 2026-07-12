@@ -22,7 +22,7 @@ export const metadata = {
     template: "%s | Life Coaching with Kaelynn",
   },
   description:
-    "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
+    "Virtual confidence coaching for capable women who struggle with self-doubt, overthinking, people-pleasing, boundaries, and trusting their decisions.",
   keywords: [
     "confidence coach for women",
     "life coach for women",
@@ -68,15 +68,12 @@ export const metadata = {
 };
 
 const navigation = [
-  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Coaching Approach", href: "/coaching-approach" },
-  { name: "Core Belief Coaching", href: "/core-belief-coaching" },
-  { name: "H.E.A.L. Framework", href: "/heal-framework" },
+  { name: "How Coaching Works", href: "/coaching-approach" },
   { name: "Programs & Pricing", href: "/pricing" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "Book a Clarity Call", href: "/contact" },
 ];
 
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
@@ -94,7 +91,7 @@ const structuredData = {
   logo: `${siteUrl}/hibiscus-logo.png`,
   image: `${siteUrl}/life-coaching-hero.png`,
   description:
-    "Seeking a life coach for women? Kaelynn provides personal growth coaching and confidence coaching for women to help you unlock your full potential.",
+    "Virtual confidence coaching for capable women who struggle with self-doubt, overthinking, people-pleasing, boundaries, and trusting their decisions.",
   areaServed: [
     {
       "@type": "State",
@@ -215,7 +212,7 @@ export default function RootLayout({ children }) {
                   key={link.href}
                   href={link.href}
                   className={`rounded-full px-3 py-2 ${
-                    link.name === "Contact"
+                    link.name === "Book a Clarity Call"
                       ? "col-span-2 bg-[#3f342c] text-white"
                       : "border border-[#eadfd5] bg-white"
                   }`}

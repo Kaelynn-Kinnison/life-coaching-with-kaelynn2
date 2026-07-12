@@ -72,7 +72,7 @@ export default function AboutPage() {
                 target="_blank"
                 className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
               >
-                Schedule a Discovery Call
+                Book Your Complimentary Clarity Call
               </Link>
 
               <Link
@@ -218,15 +218,20 @@ export default function AboutPage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
             If you are tired of second-guessing yourself and ready to understand
             what has been keeping you stuck, I would be honored to meet you in a
-            Discovery Call.
+            Confidence Clarity Call.
           </p>
           <Link
             href={bookingLink}
             target="_blank"
             className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule a Discovery Call
+            Book Your Complimentary Clarity Call
           </Link>
+          <div className="mt-6 flex flex-wrap justify-center gap-5 text-sm font-bold text-[#0f766e]">
+            <Link href="/core-belief-coaching" className="underline underline-offset-4">Explore Core Belief Coaching</Link>
+            <Link href="/heal-framework" className="underline underline-offset-4">See the H.E.A.L. Framework</Link>
+            <Link href="/pricing" className="underline underline-offset-4">Compare Programs</Link>
+          </div>
         </div>
       </section>
     </main>

@@ -70,7 +70,7 @@ export default function BlogPage() {
                 target="_blank"
                 className="inline-flex justify-center rounded-full border border-[#0f766e] bg-white/70 px-7 py-4 text-sm font-bold text-[#0f766e] transition hover:bg-white"
               >
-                Schedule Your Free Discovery Call
+                Book Your Complimentary Clarity Call
               </Link>
             </div>
           </div>
@@ -303,9 +303,8 @@ export default function BlogPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#f7efe8]">
-              Schedule your complimentary Discovery Call and explore how
-              coaching can support your confidence, self-worth, accountability,
-              and personal transformation.
+              Book your complimentary Confidence Clarity Call to name where
+              self-doubt is showing up and explore which level of support may fit.
             </p>
           </div>
 
@@ -315,7 +314,7 @@ export default function BlogPage() {
               target="_blank"
               className="inline-flex justify-center rounded-full bg-white px-7 py-4 text-sm font-bold text-[#3f342c] transition hover:bg-[#f7efe8]"
             >
-              Schedule Your Free Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
 
             <Link

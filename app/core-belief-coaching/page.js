@@ -59,7 +59,7 @@ export default function CoreBeliefCoachingPage() {
               target="_blank"
               className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
             >
-              Schedule a Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
 
             <Link
@@ -159,6 +159,19 @@ export default function CoreBeliefCoachingPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl rounded-[2rem] bg-[#f7efe8] p-8 md:p-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">What This Can Look Like</p>
+          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">A boundary problem may begin as a belief problem.</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-6"><p className="font-bold text-[#0f766e]">The moment</p><p className="mt-3 leading-7 text-[#6f5a4d]">You want to say no, but agree because disappointing someone feels unbearable.</p></div>
+            <div className="rounded-2xl bg-white p-6"><p className="font-bold text-[#0f766e]">The belief</p><p className="mt-3 leading-7 text-[#6f5a4d]">“My needs make me difficult, and keeping people happy keeps me safe.”</p></div>
+            <div className="rounded-2xl bg-white p-6"><p className="font-bold text-[#0f766e]">The new practice</p><p className="mt-3 leading-7 text-[#6f5a4d]">Pause, name what you need, communicate it clearly, and practice holding the boundary.</p></div>
+          </div>
+          <p className="mt-6 text-sm leading-7 text-[#6f5a4d]">Coaching helps you notice and practice around beliefs in the present; it does not diagnose or treat trauma or mental-health conditions.</p>
+        </div>
+      </section>
+
       <section className="px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
@@ -168,7 +181,7 @@ export default function CoreBeliefCoachingPage() {
             You do not have to untangle old beliefs alone.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
-            A Discovery Call is a simple place to talk through where you feel
+            A Confidence Clarity Call is a simple place to talk through where you feel
             stuck and whether this work is the right fit for your next chapter.
           </p>
           <Link
@@ -176,7 +189,7 @@ export default function CoreBeliefCoachingPage() {
             target="_blank"
             className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule a Discovery Call
+            Book Your Complimentary Clarity Call
           </Link>
         </div>
       </section>

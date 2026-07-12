@@ -60,14 +60,14 @@ export default function CoachingApproachPage() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              A supportive process for turning self-doubt into confidence.
+              Support that helps you feel understood—and still moves you forward.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-              Coaching with me is not about judgment, pressure, or pretending
-              everything is fine. It is a safe, structured space to understand
-              what has been keeping self-doubt in place, rebuild confidence,
-              and move toward the life you want to create.
+              My confidence coaching approach combines compassionate honesty,
+              practical accountability, and Core Belief Transformation. You
+              have room to tell the truth about where you are—and support to
+              practice a different choice in real life.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -76,7 +76,7 @@ export default function CoachingApproachPage() {
                 target="_blank"
                 className="inline-flex justify-center rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
               >
-                Schedule a Discovery Call
+                Book Your Complimentary Clarity Call
               </Link>
 
               <Link
@@ -195,6 +195,27 @@ export default function CoachingApproachPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">Go Deeper</p>
+            <h2 className="mt-4 text-3xl font-bold md:text-5xl">Understand the belief. Follow a clear process.</h2>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <Link href="/core-belief-coaching" className="rounded-3xl bg-[#fdf8f3] p-8 ring-1 ring-[#eadfd5]">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">Why the pattern persists</p>
+              <h3 className="mt-3 text-2xl font-bold">Explore Core Belief Coaching</h3>
+              <p className="mt-4 leading-7 text-[#6f5a4d]">See how quiet beliefs can shape overthinking, boundaries, and the choices you make.</p>
+            </Link>
+            <Link href="/heal-framework" className="rounded-3xl bg-[#3f342c] p-8 text-white">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#f7d7c7]">How change is practiced</p>
+              <h3 className="mt-3 text-2xl font-bold">See the H.E.A.L. Framework</h3>
+              <p className="mt-4 leading-7 text-[#f7efe8]">Learn the four-part process that turns awareness into supported action.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-16 md:px-12 lg:px-20">
         <div className="mx-auto max-w-4xl rounded-[2rem] bg-white p-8 text-sm leading-7 text-[#6f5a4d] shadow-sm ring-1 ring-[#eadfd5]">
           <p className="font-bold text-[#3f342c]">Coaching Disclaimer</p>
@@ -218,15 +239,16 @@ export default function CoachingApproachPage() {
             You do not have to navigate this season alone.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
-            Schedule a Discovery Call to talk through where you are, what you
-            want to change, and whether coaching is the right next step.
+            Your complimentary Confidence Clarity Call is a place to talk
+            through where you are, what you want to change, and whether
+            coaching is the right next step.
           </p>
           <Link
             href={bookingLink}
             target="_blank"
             className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule a Discovery Call
+            Book Your Complimentary Clarity Call
           </Link>
         </div>
       </section>

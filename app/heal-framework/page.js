@@ -115,6 +115,23 @@ export default function HealFrameworkPage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">H.E.A.L. in Real Life</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-bold leading-tight md:text-5xl">From feeling guilty for saying no to practicing a boundary you can trust.</h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Hear", "I feel guilty every time I say no."],
+              ["Expose", "I learned to believe my needs make me difficult."],
+              ["Align", "My needs and boundaries matter too."],
+              ["Live", "Communicate one clear boundary and practice holding it."],
+            ].map(([title, text]) => (
+              <div key={title} className="rounded-2xl bg-[#fdf8f3] p-6 ring-1 ring-[#eadfd5]"><p className="font-bold text-[#0f766e]">{title}</p><p className="mt-3 leading-7 text-[#6f5a4d]">{text}</p></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7efe8] px-6 py-20 text-center md:px-12">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
@@ -124,15 +141,15 @@ export default function HealFrameworkPage() {
             Your story deserves to be heard with care.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6f5a4d]">
-            Schedule a Discovery Call to explore whether this framework is the
-            right support for what you are ready to change.
+            Your complimentary Confidence Clarity Call is a place to explore
+            whether this framework fits what you are ready to change.
           </p>
           <Link
             href={bookingLink}
             target="_blank"
             className="mt-9 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
           >
-            Schedule a Discovery Call
+            Book Your Complimentary Clarity Call
           </Link>
         </div>
       </section>

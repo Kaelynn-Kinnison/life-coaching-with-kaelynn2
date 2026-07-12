@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Life Coaching for Women",
   description:
-    "Life Coaching with Kaelynn supports women ready to overcome self-doubt, strengthen self-worth, and build lasting confidence with clarity and accountability.",
+    "Virtual life coaching for women in Nebraska and across the U.S. who want support with self-doubt, boundaries, decisions, confidence, and life transitions.",
   alternates: {
     canonical: "/life-coaching",
   },
@@ -38,8 +38,8 @@ const supportAreas = [
     text: "Navigate change, uncertainty, reinvention, or a new chapter with support and direction.",
   },
   {
-    title: "Emotional Wellness",
-    text: "Create space to process overwhelm, recognize patterns, and respond to life with more intention.",
+    title: "Steadier Responses",
+    text: "Recognize patterns, slow down automatic reactions, and respond to everyday challenges with more intention.",
   },
   {
     title: "Personal Growth",
@@ -71,17 +71,17 @@ export default function LifeCoachingPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-700">
-              Life Coaching
+              Virtual Life Coaching for Women
             </p>
 
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
-              Life coaching for women ready to overcome self-doubt.
+              Nebraska-based coaching for women ready to trust their next step.
             </h1>
 
             <p className="mb-6 text-xl leading-8 text-slate-700">
-              Life coaching gives you a supportive space to understand what is
-              keeping you stuck, rebuild self-trust, and take meaningful steps
-              toward lasting confidence.
+              Available virtually across the U.S., coaching gives you a
+              structured place to understand what keeps you stuck, rebuild
+              self-trust, and take meaningful action in your current season.
             </p>
 
             <p className="mb-8 text-lg leading-8 text-slate-600">
@@ -96,7 +96,7 @@ export default function LifeCoachingPage() {
                 target="_blank"
                 className="inline-flex rounded-full bg-teal-700 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-teal-800"
               >
-                Schedule a Discovery Call
+                Book Your Complimentary Clarity Call
               </Link>
 
               <Link
@@ -370,7 +370,7 @@ export default function LifeCoachingPage() {
           </h2>
 
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-8 text-slate-200">
-            A Discovery Call is a supportive first step to talk through your
+            A Confidence Clarity Call is a supportive first step to talk through your
             goals, current challenges, and whether coaching is the right fit for
             your next chapter.
           </p>
@@ -381,7 +381,7 @@ export default function LifeCoachingPage() {
               target="_blank"
               className="rounded-full bg-white px-8 py-4 font-semibold text-slate-900 transition hover:bg-teal-50"
             >
-              Schedule a Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
 
             <Link

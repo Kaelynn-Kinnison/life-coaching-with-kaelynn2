@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Contact Kaelynn",
   description:
-    "Schedule a Discovery Call with Nebraska-based life coach Kaelynn for virtual coaching that supports clarity, confidence, and your next chapter.",
+    "Book a complimentary Confidence Clarity Call with Nebraska-based life coach Kaelynn and explore virtual confidence coaching for women.",
   alternates: {
     canonical: "/contact",
   },
@@ -19,9 +19,9 @@ const merchantCircleLink =
   "https://www.merchantcircle.com/life-coaching-with-kaelynn-lincoln-ne";
 
 const callSteps = [
-  "Share what brings you here",
-  "Ask questions about coaching",
-  "Choose the next best step",
+  "Name where self-doubt is showing up",
+  "Clarify what you want to change",
+  "Identify the coaching option that fits",
 ];
 
 export default function Contact() {
@@ -34,13 +34,13 @@ export default function Contact() {
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-            Let us start with a conversation.
+            Let&apos;s get clear on what is keeping you stuck—and what support could help.
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[#6f5a4d] md:text-xl">
-            I am based in Nebraska and offer virtual coaching for women of all
-            ages. A Discovery Call is a simple place to see if coaching feels
-            like the right fit.
+            I offer virtual confidence coaching for women across the U.S. who
+            are ready to stop second-guessing themselves and build steadier
+            self-trust. Your complimentary call is a no-pressure place to begin.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function Contact() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="rounded-[2rem] bg-white p-8 shadow-xl shadow-[#8b6f5c]/10 ring-1 ring-[#eadfd5] md:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#9b6f5d]">
-              Schedule a Discovery Call
+              Book Your Complimentary Clarity Call
             </p>
 
             <h2 className="mt-4 text-3xl font-bold leading-tight">
@@ -77,7 +77,7 @@ export default function Contact() {
               target="_blank"
               className="mt-8 inline-flex rounded-full bg-[#0f766e] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-teal-900/10 transition hover:bg-[#115e59]"
             >
-              Schedule a Discovery Call
+              Book Your Complimentary Clarity Call
             </Link>
           </div>
 
@@ -92,7 +92,7 @@ export default function Contact() {
 
             <p className="mt-5 leading-8 text-[#f7efe8]">
               You are welcome to email or call with questions before scheduling
-              a Discovery Call.
+              a Confidence Clarity Call.
             </p>
 
             <div className="mt-8 space-y-5">

@@ -24,7 +24,7 @@ export default function FAQ() {
     {
       question: "Who is life coaching for?",
       answer:
-        "Life coaching can support individuals who feel stuck, overwhelmed, uncertain, or ready for change. It may be helpful if you are seeking clarity, confidence, accountability, emotional wellness, healing, or support during a life transition.",
+        "My coaching is designed for capable women who may look confident on the outside but privately struggle with second-guessing, overthinking, people-pleasing, boundaries, or trusting their decisions. It is especially helpful when you are ready to understand the pattern and practice a different response.",
     },
     {
       question: "What can I expect during a coaching session?",
@@ -35,6 +35,11 @@ export default function FAQ() {
       question: "Do you offer virtual coaching?",
       answer:
         "Yes. Coaching sessions can be offered virtually, making it easier to receive support from a comfortable and convenient location.",
+    },
+    {
+      question: "How long are sessions and programs?",
+      answer:
+        "Private sessions typically last 45-60 minutes. The Confidence Rebuild runs for 12 weeks, and The Confidence Reclamation provides 16 weeks of high-touch support. The alumni Growth Membership includes one private session each month and one weekly check-in.",
     },
     {
       question: "Which package is right for me?",
@@ -62,6 +67,11 @@ export default function FAQ() {
         "Yes. Coaching can complement therapy when each has a clear role. Coaching is forward-focused and does not replace mental-health treatment, diagnosis, or crisis support.",
     },
     {
+      question: "What happens after my private program ends?",
+      answer:
+        "You will leave with practices and next steps for continuing your work. Clients who complete a private coaching program may also choose the Growth Membership for monthly coaching and weekly accountability support.",
+    },
+    {
       question: "Is coaching confidential?",
       answer:
         "Coaching conversations are treated with care, respect, and privacy. Your personal goals, experiences, and challenges are held in a supportive and non-judgmental space.",
@@ -81,8 +91,8 @@ export default function FAQ() {
           </h1>
 
           <p className="text-lg text-[#6b4b43] leading-relaxed">
-            Learn more about life coaching, what to expect, and how coaching can
-            support your healing, growth, and transformation.
+            Learn what to expect, how each coaching option works, and whether
+            this kind of confidence support fits your current season.
           </p>
         </div>
       </section>
