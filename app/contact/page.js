@@ -10,8 +10,8 @@ export const metadata = {
 };
 
 const email = "hello@lifecoachingwithkaelynn.com";
-const phone = "(402) 413-9819";
-const phoneHref = "+14024139819";
+const phone = "(531) 280-9425";
+const phoneHref = "+15312809425";
 const bookingLink = "https://calendar.app.google/YdUEyKBPG7xa4ox99";
 const facebookLink = "https://www.facebook.com/Lifecoachingwithkaelynn";
 const linkedinLink = "https://www.linkedin.com/in/lifecoachingwithkaelynn";
