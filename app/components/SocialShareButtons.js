@@ -6,6 +6,11 @@ const siteUrl = "https://www.lifecoachingwithkaelynn.com";
 
 export default function SocialShareButtons() {
   const pathname = usePathname() || "/";
+
+  if (pathname.startsWith("/payment-success")) {
+    return null;
+  }
+
   const pageUrl = `${siteUrl}${pathname}`;
   const shareText =
     "Life Coaching with Kaelynn offers confidence coaching for women and personal growth coaching.";

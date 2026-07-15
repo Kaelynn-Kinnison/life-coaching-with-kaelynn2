@@ -51,6 +51,9 @@ const programs = [
     ],
     outcome:
       "You leave with greater clarity, a grounded next step, and a deeper understanding of what may be keeping you stuck.",
+    checkoutOptions: [
+      { plan: "one-time-session", label: "Book & Pay — $215" },
+    ],
   },
   {
     name: "The Confidence Rebuild",
@@ -75,6 +78,10 @@ const programs = [
     ],
     outcome:
       "You leave with a clearer understanding of what has been driving self-doubt, a stronger sense of self-trust, and practical ways to keep choosing differently.",
+    checkoutOptions: [
+      { plan: "rebuild-paid-in-full", label: "Pay in Full — $1,997" },
+      { plan: "rebuild-payment-plan", label: "Choose 3 Payments — $699/month" },
+    ],
   },
   {
     name: "The Confidence Reclamation",
@@ -99,6 +106,10 @@ const programs = [
     ],
     outcome:
       "You receive the time, structure, and support to not only rebuild confidence, but live from it more consistently as you make decisions, set boundaries, and step into your next chapter.",
+    checkoutOptions: [
+      { plan: "reclamation-paid-in-full", label: "Pay in Full — $2,997" },
+      { plan: "reclamation-payment-plan", label: "Choose 4 Payments — $799/month" },
+    ],
   },
 ];
 
@@ -123,6 +134,9 @@ const continuedSupport = [
     ],
     outcome:
       "You stay supported as you continue practicing confidence, self-trust, and aligned action beyond the initial coaching experience.",
+    checkoutOptions: [
+      { plan: "growth-membership", label: "Join — $197/month" },
+    ],
   },
 ];
 
@@ -330,6 +344,37 @@ function ProgramCard({ program }) {
         </p>
         <p className="mt-3 font-semibold leading-7">{program.outcome}</p>
       </div>
+
+      {program.checkoutOptions && (
+        <div className="mt-auto space-y-3 pt-8">
+          {program.checkoutOptions.map((option, index) => (
+            <form key={option.plan} action="/api/stripe/checkout" method="POST">
+              <input type="hidden" name="plan" value={option.plan} />
+              <button
+                type="submit"
+                className={`inline-flex w-full items-center justify-center rounded-full px-6 py-4 text-center text-sm font-bold transition ${
+                  program.premium
+                    ? index === 0
+                      ? "bg-white text-[#3f342c] hover:bg-[#f7efe8]"
+                      : "bg-[#b7835f] text-white hover:bg-[#9b6f5d]"
+                    : index === 0
+                      ? "bg-[#0f766e] text-white hover:bg-[#115e59]"
+                      : "bg-[#f7efe8] text-[#3f342c] ring-1 ring-[#ddcfc3] hover:bg-[#eadfd5]"
+                }`}
+              >
+                {option.label}
+              </button>
+            </form>
+          ))}
+          <p
+            className={`text-center text-xs leading-5 ${
+              program.premium ? "text-[#eadfd5]" : "text-[#7b675b]"
+            }`}
+          >
+            Secure checkout powered by Stripe
+          </p>
+        </div>
+      )}
     </article>
   );
 }
