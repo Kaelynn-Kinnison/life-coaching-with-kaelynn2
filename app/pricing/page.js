@@ -36,8 +36,8 @@ const programs = [
   {
     name: "One-Time Coaching Session",
     duration: "One private 45-60 minute session",
-    investment: "$215",
-    focus: "Focused support for clarity and next steps",
+    investment: "$115",
+    focus: "I need help with this one thing right now.",
     description:
       "For women who want a single, supportive coaching session to talk through a specific challenge, decision, or area where self-doubt is showing up.",
     bestFor:
@@ -52,15 +52,15 @@ const programs = [
     outcome:
       "You leave with greater clarity, a grounded next step, and a deeper understanding of what may be keeping you stuck.",
     checkoutOptions: [
-      { plan: "one-time-session", label: "Book & Pay — $215" },
+      { plan: "one-time-session", label: "Book & Pay — $115" },
     ],
   },
   {
     name: "The Confidence Rebuild",
     duration: "12-week private coaching experience",
-    investment: "$1,997",
-    paymentPlan: "or 3 monthly payments of $699 ($2,097 total)",
-    focus: "A clear, structured reset for self-trust and confidence",
+    investment: "$1,200",
+    paymentPlan: "or 3 monthly payments of $400 ($1,200 total)",
+    focus: "I have one recurring pattern I am ready to change.",
     description:
       "For women ready to identify the limiting beliefs beneath self-doubt, rebuild self-worth, and begin making choices from a steadier inner foundation.",
     featured: true,
@@ -79,16 +79,16 @@ const programs = [
     outcome:
       "You leave with a clearer understanding of what has been driving self-doubt, a stronger sense of self-trust, and practical ways to keep choosing differently.",
     checkoutOptions: [
-      { plan: "rebuild-paid-in-full", label: "Pay in Full — $1,997" },
-      { plan: "rebuild-payment-plan", label: "Choose 3 Payments — $699/month" },
+      { plan: "rebuild-paid-in-full", label: "Pay in Full — $1,200" },
+      { plan: "rebuild-payment-plan", label: "Choose 3 Payments — $400/month" },
     ],
   },
   {
     name: "The Confidence Reclamation",
     duration: "16-week high-touch private coaching experience",
-    investment: "$2,997",
-    paymentPlan: "or 4 monthly payments of $799 ($3,196 total)",
-    focus: "Deeper identity work, integration, and high-touch support",
+    investment: "$1,800",
+    paymentPlan: "or 4 monthly payments of $450 ($1,800 total)",
+    focus: "There are several areas of my life where I've lost trust in myself, and I'm ready for deeper support.",
     description:
       "For women ready to change interconnected patterns—not just understand them—and receive close support while practicing self-trust, boundaries, and confident choices in real life.",
     premium: true,
@@ -107,8 +107,8 @@ const programs = [
     outcome:
       "You receive the time, structure, and support to not only rebuild confidence, but live from it more consistently as you make decisions, set boundaries, and step into your next chapter.",
     checkoutOptions: [
-      { plan: "reclamation-paid-in-full", label: "Pay in Full — $2,997" },
-      { plan: "reclamation-payment-plan", label: "Choose 4 Payments — $799/month" },
+      { plan: "reclamation-paid-in-full", label: "Pay in Full — $1,800" },
+      { plan: "reclamation-payment-plan", label: "Choose 4 Payments — $450/month" },
     ],
   },
 ];
@@ -117,7 +117,7 @@ const continuedSupport = [
   {
     name: "Growth Membership",
     duration: "Private coaching alumni membership",
-    investment: "$197/month",
+    investment: "$99/month",
     focus: "Continued support after private coaching",
     description:
       "For past clients who want continued encouragement, coaching, and accountability as they keep strengthening confidence.",
@@ -135,7 +135,7 @@ const continuedSupport = [
     outcome:
       "You stay supported as you continue practicing confidence, self-trust, and aligned action beyond the initial coaching experience.",
     checkoutOptions: [
-      { plan: "growth-membership", label: "Join — $197/month" },
+      { plan: "growth-membership", label: "Join — $99/month" },
     ],
   },
 ];
@@ -181,7 +181,7 @@ const featuredTestimonials = [
 const pricingFaqs = [
   {
     question: "Are payment plans available?",
-    answer: "Yes. The Confidence Rebuild is available for $1,997 paid in full or three monthly payments of $699. The Confidence Reclamation is available for $2,997 paid in full or four monthly payments of $799. The first payment is due at enrollment, and remaining payments are automatically charged every 30 days. Payment plans are a commitment to the full program investment, not a month-to-month coaching membership.",
+    answer: "Yes. The Confidence Rebuild is available for $1,200 paid in full or three monthly payments of $400. The Confidence Reclamation is available for $1,800 paid in full or four monthly payments of $450. The first payment is due at enrollment, and remaining payments are automatically charged every 30 days. Payment plans are a commitment to the full program investment, not a month-to-month coaching membership.",
   },
   {
     question: "Which coaching option should I choose?",

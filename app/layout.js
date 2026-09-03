@@ -120,7 +120,7 @@ const structuredData = {
       {
         "@type": "Offer",
         name: "The Confidence Rebuild",
-        price: "1997",
+        price: "1200",
         priceCurrency: "USD",
         url: `${siteUrl}/pricing`,
         itemOffered: {
@@ -133,7 +133,7 @@ const structuredData = {
       {
         "@type": "Offer",
         name: "The Confidence Reclamation",
-        price: "2997",
+        price: "1800",
         priceCurrency: "USD",
         url: `${siteUrl}/pricing`,
         itemOffered: {

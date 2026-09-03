@@ -59,7 +59,7 @@ export default function FAQ() {
     {
       question: "Do you offer payment plans?",
       answer:
-        "Yes. The Confidence Rebuild is $1,997 paid in full or three monthly payments of $699. The Confidence Reclamation is $2,997 paid in full or four monthly payments of $799. The first payment is due at enrollment, and the remaining payments are automatically charged every 30 days. Choosing a payment plan is a commitment to the full program investment.",
+        "Yes. The Confidence Rebuild is $1,200 paid in full or three monthly payments of $400. The Confidence Reclamation is $1,800 paid in full or four monthly payments of $450. The first payment is due at enrollment, and the remaining payments are automatically charged every 30 days. Choosing a payment plan is a commitment to the full program investment.",
     },
     {
       question: "Can I participate in coaching while I am in therapy?",
